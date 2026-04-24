@@ -1,0 +1,395 @@
+/* Shell estilo app (mobile first); complementa o CSS inline. */
+
+/* Scroll principal: coluna, área intermédia a rolar, tab bar fora. */
+body.has-app-ui {
+  min-height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body.has-app-ui .wrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-width: min(960px, 100vw);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: max(var(--r-section), env(safe-area-inset-top, 12px));
+  padding-left: max(0.85rem, env(safe-area-inset-left, 0px));
+  padding-right: max(0.85rem, env(safe-area-inset-right, 0px));
+  padding-bottom: 0;
+}
+#appMain {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  #appMain {
+    scroll-behavior: auto;
+  }
+}
+body.has-app-ui .app-tabbar {
+  flex-shrink: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  z-index: 96;
+  padding-left: max(0.3rem, env(safe-area-inset-left, 0px));
+  padding-right: max(0.3rem, env(safe-area-inset-right, 0px));
+}
+body.has-app-ui {
+  --app-fab-boost: 0.25rem;
+}
+body.has-app-ui .wrap {
+  padding-bottom: calc(var(--app-tabbar-h, 3.35rem) + var(--app-bar-pad, 0.45rem) + env(safe-area-inset-bottom, 0px) + 0.35rem);
+}
+body.has-app-ui .fab-top {
+  bottom: calc(4.25rem + var(--app-bar-pad) + max(0.2rem, env(safe-area-inset-bottom, 0px)) + var(--app-fab-boost, 0.25rem));
+}
+body.has-app-ui .app-toast {
+  bottom: calc(4.25rem + var(--app-bar-pad) + max(0.15rem, env(safe-area-inset-bottom, 0px)) + 0.25rem);
+}
+@media (min-width: 900px) and (min-height: 600px) {
+  body.has-app-ui {
+    max-height: none;
+  }
+  body.has-app-ui .wrap {
+    padding-bottom: clamp(2.5rem, 7vw, 4.5rem);
+  }
+  #appMain {
+    max-height: none;
+  }
+}
+
+/* Barra de leitura: desactivar em toque (aspecto "blog") */
+@media (pointer: coarse) {
+  .scroll-progress {
+    display: none !important;
+  }
+}
+
+/* Hero e toolbar mais compactas em móvel */
+@media (max-width: 640px) {
+  header.hero {
+    padding: 1.05rem 1.1rem;
+  }
+  header.hero h1 {
+    font-size: 1.45rem;
+  }
+  .meta-row {
+    margin-top: 0.9rem;
+  }
+  .toolbar--app {
+    position: static;
+  }
+  .toolbar-hint--toolbar {
+    display: none;
+  }
+}
+
+/* Toolbar: pesquisa é ícone → abre ecrã */
+.toolbar--app {
+  position: static;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.toolbar-search-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: auto;
+}
+
+/* Ecrã / modal de pesquisa (dialog) */
+.app-search-dlg {
+  z-index: 200;
+  border: none;
+  border-radius: var(--radius) var(--radius) 0 0;
+  max-height: 92dvh;
+  max-width: 100%;
+  width: 100%;
+  max-width: min(520px, 100% - 1.5rem);
+  padding: 0;
+  margin: auto;
+  background: var(--card-solid);
+  color: var(--ink);
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.2);
+  padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(
+      safe-area-inset-bottom,
+      0.75rem
+    )
+    env(safe-area-inset-left, 0);
+}
+.app-search-dlg::backdrop {
+  background: rgba(10, 10, 18, 0.48);
+  backdrop-filter: blur(4px);
+}
+html[data-theme="dark"] .app-search-dlg::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+.app-search-dlg__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--line-subtle);
+  position: sticky;
+  top: 0;
+  background: var(--card-solid);
+}
+.app-search-dlg__head h2 {
+  margin: 0;
+  flex: 1;
+  font-size: 1.05rem;
+  font-weight: 700;
+  font-family: var(--font-sans);
+}
+.trip-search-wrap--dialog {
+  padding: 0.75rem 1rem 1.25rem;
+  flex: 1;
+  min-width: 0;
+}
+.trip-search-wrap--dialog .trip-search-wrap--inner {
+  position: relative;
+  width: 100%;
+}
+.trip-search-wrap--dialog .trip-search-wrap--inner::before {
+  content: "⌕";
+  position: absolute;
+  left: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  opacity: 0.45;
+  pointer-events: none;
+}
+.trip-search-wrap--dialog .trip-search-wrap--inner input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1rem;
+  padding: 0.55rem 0.85rem 0.55rem 2.35rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--card-solid);
+  color: var(--ink);
+  min-height: 44px;
+}
+.trip-search-hint {
+  display: block;
+  margin-top: 0.65rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Roteiro: lista de dias (aparência lista app) */
+.app-dia-topbar {
+  display: none;
+  align-items: center;
+  gap: 0.65rem;
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  margin: 0 0 0.75rem;
+  padding: 0.4rem 0.15rem 0.6rem 0.15rem;
+  background: linear-gradient(
+    180deg,
+    var(--bg) 70%,
+    color-mix(in srgb, var(--bg) 0%, transparent) 100%
+  );
+}
+#dias.app-roteiro--detalhe .app-dia-topbar {
+  display: flex;
+}
+.app-dia-voltar {
+  font: inherit;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0.35rem 0.65rem 0.35rem 0.2rem;
+  background: none;
+  border: none;
+  color: var(--accent-2);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.app-dia-voltar::before {
+  content: "‹";
+  font-size: 1.35em;
+  margin-right: 0.15rem;
+  line-height: 1;
+}
+.app-dia-voltar:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+.app-dia-breadcrumb {
+  font-size: 0.9rem;
+  color: var(--muted-deep);
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.app-dia-list {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-subtle);
+  background: var(--glass-bg);
+  overflow: hidden;
+}
+.app-dia-list li {
+  margin: 0;
+  border-bottom: 1px solid var(--line-subtle);
+}
+.app-dia-list li:last-child {
+  border-bottom: none;
+}
+.app-dia-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem 0.65rem;
+  width: 100%;
+  min-height: 3.1rem;
+  padding: 0.65rem 0.9rem 0.65rem 0.75rem;
+  text-align: left;
+  background: none;
+  border: none;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.06);
+  transition: background 0.15s ease;
+}
+.app-dia-row:hover,
+.app-dia-row:focus-visible {
+  background: color-mix(in srgb, var(--accent-2) 6%, var(--card-solid) 94%);
+}
+.app-dia-row:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 2px var(--accent-2);
+}
+.app-dia-row__date {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  padding: 0.2rem 0.45rem;
+  border-radius: 8px;
+}
+html[data-theme="dark"] .app-dia-row__date {
+  color: var(--gray-950);
+}
+.app-dia-row__mid {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.app-dia-row__title {
+  font-size: 0.97rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+.app-dia-row::after {
+  content: "›";
+  color: var(--muted);
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1;
+  flex-shrink: 0;
+}
+#dias.app-roteiro--lista details.day {
+  display: none !important;
+}
+#dias.app-roteiro--detalhe .app-dia-list,
+#dias.app-roteiro--detalhe .day-type-legend,
+#dias.app-roteiro--detalhe .day-index-table,
+#dias.app-roteiro--detalhe .day-timeline-title,
+#dias.app-roteiro--detalhe h2#dias-heading,
+#dias.app-roteiro--detalhe .lede,
+#dias.app-roteiro--detalhe .note:not(.app-dia-note) {
+  display: none;
+}
+#dias.app-roteiro--detalhe .hoje-destaque[hidden] {
+  display: none !important;
+}
+#dias.app-roteiro--detalhe details.day {
+  display: block !important;
+  margin-bottom: 0.75rem;
+}
+#dias.app-roteiro--detalhe .day-index-card {
+  display: none;
+}
+#dias.app-roteiro--detalhe details.day.app-dia--hidden {
+  display: none !important;
+}
+
+/* Hub "Mais" (lista estilo definições) */
+.app-settings-hub {
+  margin-bottom: 1.25rem;
+}
+.app-settings-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--line-subtle);
+  background: var(--glass-bg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.app-settings-list a {
+  display: flex;
+  align-items: center;
+  min-height: 2.9rem;
+  padding: 0.55rem 0.9rem 0.55rem 0.75rem;
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--line-subtle);
+  position: relative;
+  gap: 0.5rem;
+}
+.app-settings-list li:last-child a {
+  border-bottom: none;
+}
+.app-settings-list a::after {
+  content: "›";
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.app-settings-list a:hover,
+.app-settings-list a:focus-visible {
+  background: color-mix(in srgb, var(--accent-2) 5%, var(--card-solid) 95%);
+  color: var(--ink);
+  outline: none;
+}
+.app-settings-list a:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--accent-2);
+}
+
+/* Links "web" no corpo: menos azul, mais botão de linha onde já existe padrão */
+#appMain .card a:not([class]) {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-2);
+  text-underline-offset: 3px;
+}
