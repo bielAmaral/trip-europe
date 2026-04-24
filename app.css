@@ -2,11 +2,18 @@
 
 /* Scroll principal: coluna, área intermédia a rolar, tab bar fora. */
 body.has-app-ui {
+  /* dvh: navegador; -webkit-fill-available: iOS (PWA/Safari) alinha à altura visível com viewport-fit */
   min-height: 100dvh;
   max-height: 100dvh;
+  min-height: -webkit-fill-available;
+  max-height: -webkit-fill-available;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+}
+html.app-doc {
+  height: 100%;
+  height: -webkit-fill-available;
 }
 body.has-app-ui .wrap {
   flex: 1 1 auto;
@@ -45,14 +52,15 @@ body.has-app-ui .app-tabbar {
 body.has-app-ui {
   --app-fab-boost: 0.25rem;
 }
+/* Só var(--app-bar-pad) para o safe-area em baixo: já é max(0.45rem, env(safe-area...)); não somar env() outra vez */
 body.has-app-ui .wrap {
-  padding-bottom: calc(var(--app-tabbar-h, 3.35rem) + var(--app-bar-pad, 0.45rem) + env(safe-area-inset-bottom, 0px) + 0.35rem);
+  padding-bottom: calc(var(--app-tabbar-h, 3.35rem) + var(--app-bar-pad, 0.45rem) + 0.35rem);
 }
 body.has-app-ui .fab-top {
-  bottom: calc(4.25rem + var(--app-bar-pad) + max(0.2rem, env(safe-area-inset-bottom, 0px)) + var(--app-fab-boost, 0.25rem));
+  bottom: calc(4.25rem + var(--app-bar-pad) + var(--app-fab-boost, 0.25rem));
 }
 body.has-app-ui .app-toast {
-  bottom: calc(4.25rem + var(--app-bar-pad) + max(0.15rem, env(safe-area-inset-bottom, 0px)) + 0.25rem);
+  bottom: calc(4.25rem + var(--app-bar-pad) + 0.4rem);
 }
 @media (min-width: 900px) and (min-height: 600px) {
   body.has-app-ui {

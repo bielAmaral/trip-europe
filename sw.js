@@ -1,4 +1,4 @@
-const CACHE = "roteiro-pwa-v10";
+const CACHE = "roteiro-pwa-v11";
 const PRECACHE = [
   "./",
   "./index.html",
