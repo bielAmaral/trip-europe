@@ -1,19 +1,16 @@
 /* Shell estilo app (mobile first); complementa o CSS inline. */
 
 /* Scroll principal: coluna, área intermédia a rolar, tab bar fora. */
+/* Evitar -webkit-fill-available: no PWA iOS encurtava a altura e a tab bar (sticky) ficava “a flutuar”. */
 body.has-app-ui {
-  /* dvh: navegador; -webkit-fill-available: iOS (PWA/Safari) alinha à altura visível com viewport-fit */
   min-height: 100dvh;
   max-height: 100dvh;
-  min-height: -webkit-fill-available;
-  max-height: -webkit-fill-available;
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 html.app-doc {
   height: 100%;
-  height: -webkit-fill-available;
 }
 body.has-app-ui .wrap {
   flex: 1 1 auto;
@@ -40,11 +37,14 @@ body.has-app-ui .wrap {
     scroll-behavior: auto;
   }
 }
+/* fixed ao viewport: não substituir por sticky (iOS: sticky + scroll em #appMain deixava a barra a meio) */
 body.has-app-ui .app-tabbar {
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
   z-index: 96;
   padding-left: max(0.3rem, env(safe-area-inset-left, 0px));
   padding-right: max(0.3rem, env(safe-area-inset-right, 0px));

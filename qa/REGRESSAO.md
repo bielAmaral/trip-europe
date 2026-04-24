@@ -107,7 +107,7 @@
 
 | # | Caso | Nota |
 |---|------|------|
-| 9.1 | `sw.js` registado | Só com serviço permitido; actualizar a versão do `CACHE` ao mudar ficheiros críticos (ex. `v11`) |
+| 9.1 | `sw.js` registado | Só com serviço permitido; actualizar a versão do `CACHE` ao mudar ficheiros críticos (ex. `v12`) |
 | 9.2 | Navegação (network-first no SW) | HTML a partir da rede; fallback a cache se offline (conforme `sw.js` actual) |
 | 9.3 | `manifest.webmanifest` | Ícones, `name`, `start_url` |
 

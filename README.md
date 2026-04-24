@@ -21,7 +21,7 @@ Depois visite `http://localhost:8080/`.
 
 ## PWA / Service Worker
 
-- O `sw.js` usa **network-first para navegação** (HTML da rede quando possível, com fallback em cache offline) e **cache com versão** para ativos estáticos; o nome do cache inclui `v11` — incrementar ao alterar ficheiros críticos para forçar atualização em clientes antigos.
+- O `sw.js` usa **network-first para navegação** (HTML da rede quando possível, com fallback em cache offline) e **cache com versão** para ativos estáticos; o nome do cache inclui `v12` — incrementar ao alterar ficheiros críticos para forçar atualização em clientes antigos.
 
 ## QA (regressão e smoke)
 
