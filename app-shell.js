@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var TABS = { inicio: 1, roteiro: 1, mapa: 1, mais: 1 };
+  var TABS = { inicio: 1, roteiro: 1, mapa: 1, lgbt: 1, mais: 1 };
   var KEY = "roteiro-app-tab-v1";
   var _tab = "inicio";
   var _searchPeek = false;
@@ -29,6 +29,7 @@
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
     if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
     if (id === "mapa" || id === "cidades" || (id && id.indexOf("city-") === 0)) return "mapa";
+    if (id === "lgbt-bares" || (id && id.indexOf("lgbt-") === 0)) return "lgbt";
     if (id === "cambio" || id === "mais-hub") return "mais";
     if (
       id === "horarios-bilhetes" ||

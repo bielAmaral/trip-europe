@@ -38,6 +38,7 @@ const mustHave = [
   "data-app-panel=\"mais\"",
   "data-app-panel=\"mapa\"",
   "data-app-panel=\"roteiro\"",
+  "data-app-panel=\"lgbt\"",
   "roteiroApplyAppTab",
 ];
 
@@ -52,8 +53,8 @@ if (dayMatches.length < 19) {
 }
 console.log("QA OK: " + dayMatches.length + " IDs day-2026-… (details dia)");
 
-const byTab = { inicio: 0, roteiro: 0, mapa: 0, mais: 0 };
-const rePanel = /data-app-panel="(inicio|roteiro|mapa|mais)"/g;
+const byTab = { inicio: 0, roteiro: 0, mapa: 0, lgbt: 0, mais: 0 };
+const rePanel = /data-app-panel="(inicio|roteiro|mapa|lgbt|mais)"/g;
 let m;
 while ((m = rePanel.exec(html)) !== null) {
   if (byTab[m[1]] !== undefined) byTab[m[1]] += 1;
@@ -61,7 +62,19 @@ while ((m = rePanel.exec(html)) !== null) {
 for (const t of Object.keys(byTab)) {
   if (byTab[t] < 1) err("data-app-panel " + t + " deve aparecer ≥1x (contado " + byTab[t] + ")");
 }
-console.log("QA OK: data-app-panel { inicio: " + byTab.inicio + ", roteiro: " + byTab.roteiro + ", mapa: " + byTab.mapa + ", mais: " + byTab.mais + " }");
+console.log(
+  "QA OK: data-app-panel { inicio: " +
+    byTab.inicio +
+    ", roteiro: " +
+    byTab.roteiro +
+    ", mapa: " +
+    byTab.mapa +
+    ", lgbt: " +
+    byTab.lgbt +
+    ", mais: " +
+    byTab.mais +
+    " }"
+);
 
 const appFiles = ["app.css", "app-shell.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest"];
 for (const f of appFiles) {
