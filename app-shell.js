@@ -20,6 +20,25 @@
     }
   }
 
+  /** A secção #lgbt-bares está no fim do HTML; após scrollAppToTop() ficava fora do ecrã. */
+  function scrollAfterTabChange(t) {
+    scrollAppToTop();
+    if (t !== "lgbt") return;
+    function focusLgbt() {
+      var el = document.getElementById("lgbt-bares");
+      if (el && el.scrollIntoView) {
+        try {
+          el.scrollIntoView({ block: "start", behavior: "auto" });
+        } catch (e1) {}
+      }
+    }
+    try {
+      requestAnimationFrame(focusLgbt);
+    } catch (e2) {
+      setTimeout(focusLgbt, 0);
+    }
+  }
+
   function getPanels() {
     return document.querySelectorAll("[data-app-panel]");
   }
@@ -46,6 +65,9 @@
 
   function nudgeRevealIn(root) {
     if (!root) return;
+    if (root.classList && root.classList.contains("reveal") && !root.classList.contains("is-visible")) {
+      root.classList.add("is-visible", "reveal-motion-done");
+    }
     if (root.querySelectorAll) {
       root.querySelectorAll(".reveal:not(.is-visible)").forEach(function (el) {
         el.classList.add("is-visible", "reveal-motion-done");
@@ -97,7 +119,7 @@
       }
     }
     if (opts.scrollTop) {
-      scrollAppToTop();
+      scrollAfterTabChange(t);
     }
   };
 
@@ -165,7 +187,7 @@
           showPanelsForTab(t);
         }
         if (!_searchPeek) {
-          scrollAppToTop();
+          scrollAfterTabChange(t);
         }
         return;
       }
@@ -257,6 +279,11 @@
     onSearchPeek(true);
   } else {
     showPanelsForTab(_tab);
+    if (_tab === "lgbt") {
+      setTimeout(function () {
+        scrollAfterTabChange("lgbt");
+      }, 0);
+    }
   }
 
   if (!location.hash) {
