@@ -19,12 +19,15 @@ const mustHave = [
   "id=\"appMain\"",
   "id=\"dias\"",
   "id=\"mapa\"",
+  "id=\"explorar\"",
+  "id=\"explorar-calendario-noite\"",
   "id=\"cidades\"",
   "id=\"cambio\"",
   "id=\"compras\"",
   "id=\"tripSearch\"",
   "id=\"tripSearchDialog\"",
   "id=\"appTabInicio\"",
+  "id=\"appTabExplorar\"",
   "id=\"appTabMais\"",
   "id=\"appDiaListHost\"",
   "id=\"mapCityPanel\"",
@@ -38,7 +41,7 @@ const mustHave = [
   "data-app-panel=\"mais\"",
   "data-app-panel=\"mapa\"",
   "data-app-panel=\"roteiro\"",
-  "data-app-panel=\"lgbt\"",
+  "data-app-panel=\"explorar\"",
   "roteiroApplyAppTab",
 ];
 
@@ -53,8 +56,8 @@ if (dayMatches.length < 19) {
 }
 console.log("QA OK: " + dayMatches.length + " IDs day-2026-… (details dia)");
 
-const byTab = { inicio: 0, roteiro: 0, mapa: 0, lgbt: 0, mais: 0 };
-const rePanel = /data-app-panel="(inicio|roteiro|mapa|lgbt|mais)"/g;
+const byTab = { inicio: 0, roteiro: 0, mapa: 0, explorar: 0, mais: 0 };
+const rePanel = /data-app-panel="(inicio|roteiro|mapa|explorar|mais)"/g;
 let m;
 while ((m = rePanel.exec(html)) !== null) {
   if (byTab[m[1]] !== undefined) byTab[m[1]] += 1;
@@ -69,8 +72,8 @@ console.log(
     byTab.roteiro +
     ", mapa: " +
     byTab.mapa +
-    ", lgbt: " +
-    byTab.lgbt +
+    ", explorar: " +
+    byTab.explorar +
     ", mais: " +
     byTab.mais +
     " }"

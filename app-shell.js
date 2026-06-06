@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var TABS = { inicio: 1, roteiro: 1, mapa: 1, lgbt: 1, mais: 1 };
+  var TABS = { inicio: 1, roteiro: 1, mapa: 1, explorar: 1, mais: 1 };
   var KEY = "roteiro-app-tab-v1";
   var _tab = "inicio";
   var _searchPeek = false;
@@ -20,12 +20,12 @@
     }
   }
 
-  /** A secção #lgbt-bares está no fim do HTML; após scrollAppToTop() ficava fora do ecrã. */
+  /** A secção #explorar fica no topo do HTML; após scrollAppToTop() pode ficar fora do ecrã. */
   function scrollAfterTabChange(t) {
     scrollAppToTop();
-    if (t !== "lgbt") return;
+    if (t !== "explorar") return;
     function focusLgbt() {
-      var el = document.getElementById("lgbt-bares");
+      var el = document.getElementById("explorar");
       if (el && el.scrollIntoView) {
         try {
           el.scrollIntoView({ block: "start", behavior: "auto" });
@@ -48,7 +48,14 @@
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
     if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
     if (id === "mapa" || id === "cidades" || (id && id.indexOf("city-") === 0)) return "mapa";
-    if (id === "lgbt-bares" || (id && id.indexOf("lgbt-") === 0)) return "lgbt";
+    if (
+      id === "explorar" ||
+      id === "lgbt-bares" ||
+      id === "explorar-calendario-noite" ||
+      (id && id.indexOf("explorar-") === 0) ||
+      (id && id.indexOf("lgbt-") === 0)
+    )
+      return "explorar";
     if (id === "cambio" || id === "mais-hub") return "mais";
     if (
       id === "horarios-bilhetes" ||
@@ -221,6 +228,12 @@
         } catch (e2) {}
         return "mais";
       }
+      if (s === "lgbt") {
+        try {
+          localStorage.setItem(KEY, "explorar");
+        } catch (e3) {}
+        return "explorar";
+      }
       if (s && TABS.hasOwnProperty(s)) return s;
     } catch (e) {}
     return "inicio";
@@ -279,9 +292,9 @@
     onSearchPeek(true);
   } else {
     showPanelsForTab(_tab);
-    if (_tab === "lgbt") {
+    if (_tab === "explorar") {
       setTimeout(function () {
-        scrollAfterTabChange("lgbt");
+        scrollAfterTabChange("explorar");
       }, 0);
     }
   }

@@ -401,3 +401,15 @@ html[data-theme="dark"] .app-dia-row__date {
   text-decoration-color: var(--accent-2);
   text-underline-offset: 3px;
 }
+
+/* Explorar: calendário de noites + atalhos nos dias */
+table.data tr.row-highlight td {
+  background: color-mix(in srgb, var(--accent-2) 8%, var(--card-solid) 92%);
+}
+.explorar-night {
+  border-left: 3px solid var(--accent-2);
+}
+.route-pack summary {
+  cursor: pointer;
+  font-weight: 600;
+}
