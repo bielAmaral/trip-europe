@@ -45,7 +45,9 @@
 
   function scrollToFastPlan(target) {
     if (!target) return;
-    var plan = target.querySelector(".fast-plan");
+    var anchor =
+      target.querySelector(".fast-plan__badge--maps") ||
+      target.querySelector(".fast-plan");
     var main = document.getElementById("appMain");
     var reduce =
       window.matchMedia &&
@@ -53,18 +55,18 @@
     var behavior = reduce ? "auto" : "smooth";
     requestAnimationFrame(function () {
       requestAnimationFrame(function () {
-        if (plan) {
+        if (anchor) {
           try {
             if (main) {
               var mainRect = main.getBoundingClientRect();
-              var planRect = plan.getBoundingClientRect();
+              var planRect = anchor.getBoundingClientRect();
               var offset = planRect.top - mainRect.top + main.scrollTop - 10;
               main.scrollTo({ top: Math.max(0, offset), behavior: behavior });
             } else {
-              plan.scrollIntoView({ block: "start", behavior: behavior });
+              anchor.scrollIntoView({ block: "start", behavior: behavior });
             }
           } catch (e) {
-            plan.scrollIntoView({ block: "start" });
+            anchor.scrollIntoView({ block: "start" });
           }
         } else if (main) {
           main.scrollTo({ top: 0, behavior: behavior });
@@ -92,6 +94,16 @@
     if (bread) {
       var summ = target && target.querySelector("summary .city");
       bread.textContent = summ ? summ.textContent.replace(/\s+/g, " ").trim() : "Dia";
+    }
+    if (target) {
+      if (window.roteiroRefreshDayMapRoteiro) {
+        window.roteiroRefreshDayMapRoteiro(target.id);
+      } else if (window.roteiroRefreshDayTransport) {
+        window.roteiroRefreshDayTransport(target.id);
+      }
+      target.querySelectorAll("details.transit-collapse").forEach(function (tc) {
+        tc.open = true;
+      });
     }
     scrollToFastPlan(target);
   }

@@ -599,6 +599,83 @@ html[data-theme="dark"] .fast-plan {
   border-color: color-mix(in srgb, var(--accent-2) 28%, transparent);
   color: var(--accent-2);
 }
+a.fast-plan__badge--maps {
+  text-decoration: none;
+  cursor: pointer;
+  background: color-mix(in srgb, var(--forest-soft) 45%, var(--card-solid) 55%);
+  border-color: color-mix(in srgb, var(--forest) 32%, transparent);
+  color: var(--forest);
+}
+a.fast-plan__badge--maps:hover,
+a.fast-plan__badge--maps:focus-visible {
+  border-color: var(--forest);
+  color: var(--forest);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--forest) 25%, transparent);
+  outline: none;
+}
+html[data-theme="dark"] a.fast-plan__badge--maps {
+  color: #34d399;
+  border-color: color-mix(in srgb, #34d399 35%, transparent);
+  background: color-mix(in srgb, #064e3b 35%, var(--card-solid) 65%);
+}
+.fast-plan__mapa-detail {
+  margin-bottom: 0;
+}
+.fast-plan__mapa-detail-body {
+  padding-top: 0.15rem;
+}
+.mapas-inline-link {
+  flex-shrink: 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+html[data-theme="dark"] .mapas-inline-link {
+  color: #34d399;
+}
+.fast-plan__mapa-detail .mapas-stop-list--dia {
+  gap: 0;
+}
+.fast-plan__mapa-detail .mapas-leg--compact {
+  border: none;
+  border-left: none;
+  border-radius: 0;
+  background: transparent;
+  margin: 0;
+  padding: 0.35rem 0 0.35rem 1.35rem;
+  border-bottom: 1px dashed color-mix(in srgb, var(--line) 70%, transparent);
+  font-size: 0.82rem;
+}
+.fast-plan__mapa-detail .mapas-leg--compact .mapas-leg__detail {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--muted-deep);
+}
+.fast-plan__mapa-detail .mapas-leg--train .mapas-leg__detail,
+.fast-plan__mapa-detail .mapas-leg--bus .mapas-leg__detail,
+.fast-plan__mapa-detail .mapas-leg--flight .mapas-leg__detail {
+  color: var(--muted-deep);
+}
+.fast-plan__mapa-detail .mapas-stop--compact {
+  background: transparent;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  border-radius: 0;
+}
+.fast-plan__mapa-detail .mapas-stop--compact .mapas-stop__num {
+  font-size: 0.75rem;
+  color: var(--forest);
+  min-width: 1.1rem;
+}
+html[data-theme="dark"] .fast-plan__mapa-detail .mapas-stop--compact .mapas-stop__num {
+  color: #34d399;
+}
+.fast-plan__mapa-detail .mapas-stop--compact .mapas-stop__name {
+  font-size: 0.88rem;
+  font-weight: 600;
+}
 .fast-plan__mode {
   flex: 1 1 100%;
   font-size: 0.84rem;
@@ -642,12 +719,19 @@ html[data-theme="dark"] .fast-plan__when {
   padding-left: 0.6rem;
   margin-top: 0.65rem;
 }
+.fast-plan__mapa-error {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+}
 #dias.app-roteiro--detalhe .fast-plan {
   border-width: 2px;
   margin-bottom: 0.85rem;
 }
 #dias.app-roteiro--detalhe .transit-collapse {
-  margin-top: 0.35rem;
+  margin-top: 0.75rem;
+}
+#dias.app-roteiro--detalhe details.transit-collapse summary {
+  font-size: 0.82rem;
 }
 
 /* Transporte colapsável (referência metro/comboio) */
@@ -781,8 +865,9 @@ body.has-app-ui .cursor-root {
 .mapas-leg__detail {
   flex: 1 1 12rem;
   min-width: 0;
+  font-size: 0.9rem;
   font-weight: 650;
-  line-height: 1.4;
+  line-height: 1.45;
   color: var(--ink, #0f172a);
 }
 .mapas-leg__dir {
@@ -821,20 +906,109 @@ body.has-app-ui .cursor-root {
   border-left-color: #ca8a04;
   background: color-mix(in srgb, #fef3c7 50%, var(--card, #fff));
 }
-.fast-plan-legs {
-  margin: 1rem 0 0.85rem;
-  padding: 0.85rem 1rem;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 25%, var(--card, #fff));
-}
-.fast-plan-legs__title {
-  margin: 0 0 0.65rem;
-  font-size: 0.8rem;
+.fast-plan__schedule-label {
+  margin: 1.1rem 0 0.45rem;
+  font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--muted-deep);
+}
+
+/* Roteiro do mapa dentro de cada dia (#dias) */
+.dia-mapa-roteiro {
+  margin: 0 0 1rem;
+  padding: 1rem 1rem 0.9rem;
+  border: 2px solid color-mix(in srgb, var(--accent-2, #7c3aed) 45%, var(--forest, #0d9488));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 28%, var(--card, #fff));
+  box-shadow: 0 3px 14px color-mix(in srgb, var(--forest, #0d9488) 14%, transparent);
+}
+.dia-mapa-roteiro__title {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
   color: var(--forest, #0d9488);
+}
+.dia-mapa-roteiro__intro {
+  margin: 0 0 0.75rem;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: var(--muted-deep);
+}
+.dia-mapa-roteiro__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+.dia-mapa-roteiro__route {
+  font-size: 0.9rem;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.9rem;
+}
+.dia-mapa-roteiro__link-mapas {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--accent-2, #7c3aed);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mapas-stop-list--dia {
+  gap: 0.5rem;
+}
+.dia-mapa-roteiro .mapas-leg {
+  align-items: center;
+}
+.dia-mapa-roteiro .mapas-leg__dir {
+  min-height: 40px;
+  padding: 0 0.75rem;
+  white-space: nowrap;
+}
+.dia-mapa-roteiro .mapas-stop__maps {
+  min-height: 40px;
+  padding: 0 0.75rem;
+  white-space: nowrap;
+}
+.dia-mapa-roteiro .mapas-stop {
+  padding: 0.55rem 0.65rem;
+}
+html[data-theme="dark"] .dia-mapa-roteiro {
+  background: color-mix(in srgb, var(--forest, #0d9488) 12%, var(--gray-900, #0f172a));
+}
+
+.fast-plan-legs {
+  margin: 0.85rem 0 0.5rem;
+  padding: 1rem 1rem 0.85rem;
+  border: 2px solid color-mix(in srgb, var(--forest, #0d9488) 55%, var(--line));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 35%, var(--card, #fff));
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--forest, #0d9488) 12%, transparent);
+}
+.fast-plan-legs__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--forest, #0d9488);
+}
+.fast-plan-legs__intro {
+  margin: 0 0 0.75rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--muted-deep);
+}
+.fast-plan-legs__tools {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--line-subtle);
+}
+.fast-plan-legs__route {
+  display: inline-flex;
+  font-size: 0.88rem;
 }
 .mapas-stop-list--fast {
   gap: 0.45rem;

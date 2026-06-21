@@ -4,7 +4,9 @@
 (function () {
   "use strict";
 
-  var CSV_URL = "data/mapas-paradas.csv?v=25";
+  var CSV_URL = "data/mapas-paradas.csv?v=33";
+
+  var daysById = {};
 
   var LEG_ICONS = {
     walk: "🚶",
@@ -126,57 +128,77 @@
     return "mapas-stop--" + (cat || "sight");
   }
 
-  function legDetailText(leg) {
+  function legDetailText(leg, fromName, toName) {
     if (!leg || !leg.leg_mode) return "";
-    if (leg.leg_hint) {
-      return (leg.leg_mode_pt || leg.leg_mode) + " — " + leg.leg_hint;
+    var mode = leg.leg_mode_pt || leg.leg_mode;
+    var transport = leg.leg_hint ? mode + " — " + leg.leg_hint : mode;
+    if (fromName && toName) {
+      return fromName + " → " + toName + ": " + transport;
     }
-    return leg.leg_mode_pt || leg.leg_mode;
+    if (toName) return "Até " + toName + ": " + transport;
+    return transport;
   }
 
-  function renderLeg(leg) {
+  function renderLeg(leg, fromStop, toStop, compact) {
     if (!leg || !leg.leg_mode) return null;
 
     var li = document.createElement("li");
-    li.className = "mapas-leg mapas-leg--" + leg.leg_mode;
+    li.className =
+      "mapas-leg mapas-leg--" + leg.leg_mode + (compact ? " mapas-leg--compact" : "");
 
-    var icon = document.createElement("span");
-    icon.className = "mapas-leg__icon";
-    icon.setAttribute("aria-hidden", "true");
-    icon.textContent = LEG_ICONS[leg.leg_mode] || "→";
-    li.appendChild(icon);
+    if (!compact) {
+      var icon = document.createElement("span");
+      icon.className = "mapas-leg__icon";
+      icon.setAttribute("aria-hidden", "true");
+      icon.textContent = LEG_ICONS[leg.leg_mode] || "→";
+      li.appendChild(icon);
+    }
 
     var detail = document.createElement("span");
     detail.className = "mapas-leg__detail";
-    detail.textContent = legDetailText(leg);
+    if (compact) {
+      var mode = leg.leg_mode_pt || leg.leg_mode;
+      detail.textContent = leg.leg_hint ? mode + " · " + leg.leg_hint : mode;
+    } else {
+      detail.textContent = legDetailText(
+        leg,
+        fromStop ? fromStop.name_pt : "",
+        toStop ? toStop.name_pt : ""
+      );
+    }
     li.appendChild(detail);
 
-    if (leg.leg_maps_url) {
+    var mapsUrl = leg.leg_maps_url || (toStop && toStop.maps_search_url);
+    if (mapsUrl) {
       var dir = document.createElement("a");
-      dir.className = "mapas-leg__dir btn-maps";
-      dir.href = leg.leg_maps_url;
+      dir.className = compact ? "mapas-inline-link" : "mapas-leg__dir btn-maps";
+      dir.href = mapsUrl;
       dir.target = "_blank";
       dir.rel = "noopener noreferrer";
-      dir.textContent = "Abrir rota";
+      dir.setAttribute("aria-label", "Abrir rota no Google Maps");
+      dir.textContent = "Maps";
       li.appendChild(dir);
     }
 
     return li;
   }
 
-  function renderStop(s) {
+  function renderStop(s, compact) {
     var li = document.createElement("li");
-    li.className = "mapas-stop " + catClass(s.category);
+    li.className =
+      "mapas-stop " + catClass(s.category) + (compact ? " mapas-stop--compact" : "");
 
     var num = document.createElement("span");
     num.className = "mapas-stop__num";
     num.textContent = s.order;
     li.appendChild(num);
 
-    var badge = document.createElement("span");
-    badge.className = "mapas-stop__cat";
-    badge.textContent = s.category_pt || s.category;
-    li.appendChild(badge);
+    if (!compact) {
+      var badge = document.createElement("span");
+      badge.className = "mapas-stop__cat";
+      badge.textContent = s.category_pt || s.category;
+      li.appendChild(badge);
+    }
 
     var name = document.createElement("span");
     name.className = "mapas-stop__name";
@@ -184,7 +206,7 @@
     li.appendChild(name);
 
     var link = document.createElement("a");
-    link.className = "mapas-stop__maps";
+    link.className = compact ? "mapas-inline-link" : "mapas-stop__maps btn-maps";
     link.href = s.maps_search_url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
@@ -196,18 +218,104 @@
   }
 
   function buildStopListOl(day, listClass) {
+    var compact = listClass && listClass.indexOf("--dia") >= 0;
     var ol = document.createElement("ol");
     ol.className = listClass || "mapas-stop-list";
 
+    var prev = null;
     day.stops.forEach(function (s) {
       if (s.leg_mode) {
-        var legEl = renderLeg(s);
+        var legEl = renderLeg(s, prev, s, compact);
         if (legEl) ol.appendChild(legEl);
       }
-      ol.appendChild(renderStop(s));
+      ol.appendChild(renderStop(s, compact));
+      prev = s;
     });
 
     return ol;
+  }
+
+  function removeDayMapInjections(dayEl, plan) {
+    if (dayEl) {
+      var body = dayEl.querySelector(".body");
+      if (body) {
+        body.querySelectorAll(".dia-mapa-roteiro").forEach(function (n) {
+          n.remove();
+        });
+      }
+    }
+    if (plan) {
+      plan.querySelectorAll(
+        ".fast-plan__badge--maps, .fast-plan__mapa-detail, .fast-plan__mapa-bar, .fast-plan-legs"
+      ).forEach(function (n) {
+        n.remove();
+      });
+    }
+  }
+
+  function buildFastPlanMapLink(day) {
+    if (!day.route_url) return null;
+    var routeA = document.createElement("a");
+    routeA.className = "fast-plan__badge fast-plan__badge--maps";
+    routeA.href = day.route_url;
+    routeA.target = "_blank";
+    routeA.rel = "noopener noreferrer";
+    routeA.textContent = "Maps · rota";
+    routeA.setAttribute("aria-label", "Abrir rota do dia no Google Maps");
+    routeA.id = "mapa-roteiro-" + day.day_id;
+    return routeA;
+  }
+
+  function buildFastPlanMapDetails(day) {
+    var det = document.createElement("details");
+    det.className = "transit-collapse fast-plan__mapa-detail";
+    var sum = document.createElement("summary");
+    sum.textContent = "Paradas no Maps (" + day.stops.length + ")";
+    det.appendChild(sum);
+    var inner = document.createElement("div");
+    inner.className = "transit transit--nested fast-plan__mapa-detail-body";
+    inner.appendChild(buildStopListOl(day, "mapas-stop-list mapas-stop-list--dia"));
+    det.appendChild(inner);
+    return det;
+  }
+
+  function ensureScheduleLabel(plan) {
+    if (plan.querySelector(".fast-plan__schedule-label")) return;
+    var tableWrap = plan.querySelector(".fast-plan__table-wrap");
+    if (!tableWrap) return;
+    var schedLabel = document.createElement("p");
+    schedLabel.className = "fast-plan__schedule-label";
+    schedLabel.textContent = "Resumo por horário";
+    tableWrap.insertAdjacentElement("beforebegin", schedLabel);
+  }
+
+  function injectDayMapRoteiro(day) {
+    var dayEl = document.getElementById(day.day_id);
+    if (!dayEl || !day.stops.length) return;
+
+    var plan = document.getElementById("fast-" + day.day_id);
+    if (!plan) return;
+
+    removeDayMapInjections(dayEl, plan);
+
+    var meta = plan.querySelector(".fast-plan__meta");
+    var mapLink = buildFastPlanMapLink(day);
+    var details = buildFastPlanMapDetails(day);
+
+    if (meta && mapLink) {
+      meta.appendChild(mapLink);
+    }
+
+    var body = dayEl.querySelector(".body");
+    var transit =
+      body && body.querySelector("details.transit-collapse:not(.fast-plan__mapa-detail)");
+    if (transit && transit.parentNode) {
+      transit.parentNode.insertBefore(details, transit);
+    } else {
+      plan.appendChild(details);
+    }
+
+    ensureScheduleLabel(plan);
   }
 
   function renderMapasSection(days) {
@@ -267,46 +375,51 @@
   }
 
   function injectFastPlanLegs(days) {
-    days.forEach(function (day) {
-      var plan = document.getElementById("fast-" + day.day_id);
-      if (!plan || plan.querySelector(".fast-plan-legs")) return;
-
-      var hasLegs = day.stops.some(function (s) {
-        return !!s.leg_mode;
-      });
-      if (!hasLegs) return;
-
-      var wrap = document.createElement("div");
-      wrap.className = "fast-plan-legs";
-
-      var title = document.createElement("p");
-      title.className = "fast-plan-legs__title";
-      title.textContent = "Como ir de ponto a ponto";
-      wrap.appendChild(title);
-
-      wrap.appendChild(buildStopListOl(day, "mapas-stop-list mapas-stop-list--fast"));
-
-      var tableWrap = plan.querySelector(".fast-plan__table-wrap");
-      if (tableWrap) {
-        tableWrap.insertAdjacentElement("afterend", wrap);
-      } else {
-        plan.appendChild(wrap);
-      }
-    });
+    days.forEach(injectDayMapRoteiro);
   }
 
   function showMapasError(msg) {
     var host = document.getElementById("mapasDiasHost");
-    if (!host) return;
-    host.removeAttribute("aria-busy");
-    host.innerHTML = '<p class="note mapas-error">' + escapeHtml(msg) + "</p>";
+    if (host) {
+      host.removeAttribute("aria-busy");
+      host.innerHTML = '<p class="note mapas-error">' + escapeHtml(msg) + "</p>";
+    }
+    document.querySelectorAll(".fast-plan").forEach(function (plan) {
+      if (plan.querySelector(".fast-plan__badge--maps")) return;
+      var err = document.createElement("p");
+      err.className = "fast-plan__mapa-error note";
+      err.textContent = "Mapa indisponível: " + msg;
+      var meta = plan.querySelector(".fast-plan__meta");
+      if (meta) {
+        plan.insertBefore(err, meta.nextSibling);
+      } else {
+        plan.insertBefore(err, plan.firstChild);
+      }
+    });
   }
 
   function onDataLoaded(days) {
+    daysById = {};
+    days.forEach(function (d) {
+      daysById[d.day_id] = d;
+    });
     renderMapasSection(days);
     injectFastPlanLegs(days);
     if (window.refreshLucide) window.refreshLucide();
+
+    var h = (location.hash || "").replace(/^#/, "");
+    if (h.indexOf("day-20") === 0 && window.roteiroRefreshDayMapRoteiro) {
+      window.roteiroRefreshDayMapRoteiro(h);
+    }
   }
+
+  window.roteiroRefreshDayMapRoteiro = function (dayId) {
+    var day = daysById[dayId];
+    if (!day) return;
+    injectDayMapRoteiro(day);
+  };
+
+  window.roteiroRefreshDayTransport = window.roteiroRefreshDayMapRoteiro;
 
   var host = document.getElementById("mapasDiasHost");
   if (host) host.setAttribute("aria-busy", "true");
@@ -318,9 +431,16 @@
     })
     .then(function (text) {
       var table = parseCsv(text);
+      if (!table.length) throw new Error("CSV vazio");
+      var headers = table[0];
       var objects = rowsToObjects(table);
-      if (!objects.length) throw new Error("CSV vazio");
-      if (!objects[0].leg_mode && objects[0].longitude) {
+      if (!objects.length) throw new Error("CSV sem linhas de dados");
+      var hasLegCols =
+        headers.indexOf("leg_mode") >= 0 && headers.indexOf("leg_maps_url") >= 0;
+      var hasAnyLeg = objects.some(function (o) {
+        return o.leg_mode;
+      });
+      if (!hasLegCols || (!hasAnyLeg && objects.length > 3)) {
         throw new Error("CSV desatualizado — corre python3 scripts/generate_mapas_csv.py");
       }
       onDataLoaded(groupByDay(objects));
