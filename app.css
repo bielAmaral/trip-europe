@@ -364,6 +364,43 @@ html[data-theme="dark"] .app-dia-row__energy.oper-energy--mid {
 #dias.app-roteiro--lista details.day {
   display: none !important;
 }
+body.has-app-ui #dias.app-has-dia-list.app-roteiro--lista h2#dias-heading {
+  display: none;
+}
+body.has-app-ui #dias.app-has-dia-list.app-roteiro--lista #indice-dias {
+  display: none;
+}
+body.has-app-ui #dias.app-has-dia-list.app-roteiro--lista .app-dia-lede {
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+}
+body.has-app-ui #dias.app-has-dia-list .dia-extra-info {
+  margin: 0 0 0.75rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+}
+body.has-app-ui #dias.app-has-dia-list .dia-extra-info summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted-deep);
+  padding: 0.35rem 0;
+}
+body.has-app-ui #dias.app-has-dia-list .dia-extra-info summary::-webkit-details-marker {
+  display: none;
+}
+body.has-app-ui #dias.app-has-dia-list .dia-extra-info[open] {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius);
+  background: var(--glass-bg);
+}
+body.has-app-ui #dias.app-has-dia-list.app-roteiro--detalhe .dia-extra-info {
+  display: none;
+}
 #dias.app-roteiro--detalhe .app-dia-list,
 #dias.app-roteiro--detalhe .day-type-legend,
 #dias.app-roteiro--detalhe .day-index-table,

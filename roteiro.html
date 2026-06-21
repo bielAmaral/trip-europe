@@ -852,7 +852,7 @@
       </div>
     </section>
 
-    <section id="operacional" class="block app-panel" data-app-panel="roteiro" aria-labelledby="operacional-heading">
+    <section id="operacional" class="block app-panel" data-app-panel="mais" aria-labelledby="operacional-heading">
       <h2 id="operacional-heading">Plano operacional · cidade a cidade</h2>
       <p class="lede">Estratégia de <strong>hub</strong>, ritmo de energia e <strong>orçamento de bolso</strong> para comer, passear, compras e noite. Envelope alvo: <strong>€2.000</strong> (Wise) — <em>fora</em> hotéis, transportes intercidades e voo internacional (já pagos ou em calendário separado). Detalhe hora a hora: <a href="#dias">Roteiro dia a dia</a>.</p>
 
@@ -937,8 +937,19 @@
         <button type="button" class="app-dia-voltar" id="appDiaVoltar">Voltar</button>
         <span class="app-dia-breadcrumb" id="appDiaBreadcrumb" aria-live="polite"></span>
       </div>
-      <p class="lede"><strong>FAST TOURIST:</strong> cada dia tem tabela <strong>09:00–21:00</strong> (exterior-only) com teto € e energia. Cada dia abre ao clicar. Aqui entra o <strong>delta operacional</strong> (o que fazer em cada data), com manhã / tarde / noite e transporte de referência. <strong>Orçamento e ritmo por cidade:</strong> <a href="#operacional">Plano operacional</a>. O contexto “por cidade” está em <a href="#cidades">Detalhes por cidade</a>. Compras: <a href="#compras-matriz-dia">matriz cidade × janela</a>. Noite / restaurantes: <a href="#explorar-calendario-noite">calendário Explorar</a> e secção <a href="#explorar">#explorar</a>.</p>
-      <p class="note" style="margin-top:0.5rem;">Linhas de metro/autocarro abaixo são <strong>referência típica</strong>. Obras e horários mudam — no dia use o <strong>Google Maps</strong> ou apps oficiais: <strong>MVV</strong> (Munique), <strong>ÖBB</strong> / Wiener Linien (Viena), <strong>IDS BK</strong> (Bratislava), <strong>BKK FUTÁR</strong> (Budapeste), <strong>BVG</strong> (Berlim), <strong>PID Lítačka</strong> (Praga), <strong>SNCB</strong> (Bruxelas).</p>
+      <p class="lede app-dia-lede">Toque num dia — plano <strong>09:00–21:00</strong> com teto € e energia. <a href="#operacional">Orçamento</a> · <a href="#cidades">Cidades</a> · <a href="#compras">Compras</a> · <a href="#explorar">Noite</a></p>
+
+      <details class="dia-extra-info card">
+        <summary>Legenda dos selos e apps de transporte</summary>
+        <p class="note" style="margin-top:0.5rem;">Metro/comboio nos dias são <strong>referência</strong> — no dia use <strong>Google Maps</strong> ou MVV, ÖBB, IDS BK, BKK, BVG, PID Lítačka, SNCB.</p>
+        <ul class="day-type-legend" aria-label="Significado dos selos">
+          <li><span class="dt dt-base" aria-hidden="true">Base</span> Dia na cidade, sem mudança de base.</li>
+          <li><span class="dt dt-transfer" aria-hidden="true">Transferência</span> Troca de cidade ou trecho longo.</li>
+          <li><span class="dt dt-icon" aria-hidden="true">Ícone</span> Dia intenso ou excursão.</li>
+          <li><span class="dt dt-flight" aria-hidden="true">Aéreo</span> Voo relevante no dia.</li>
+          <li><span class="dt dt-shop" aria-hidden="true">Compras</span> Janela de compras (<a href="#compras">onde comprar</a>).</li>
+        </ul>
+      </details>
 
       <div class="hoje-destaque card" id="hojeDestaque" hidden>
         <h3 class="hoje-destaque__kicker">Hoje</h3>
@@ -948,16 +959,8 @@
 
       <div id="appDiaListHost" class="app-dia-list-host" aria-live="polite"></div>
       <div class="card day-index-card" id="indice-dias">
-        <h3>Legenda · tipos de dia</h3>
-        <p class="note" style="margin-top:0;">Tabela de orçamento/energia por data: <a href="#operacional-tabela-dias">Plano operacional</a>. Índice rápido abaixo.</p>
-        <p style="margin-top:0;">Os <strong>selos coloridos</strong> no título de cada dia ajudam a ver, de relance, carga de deslocação e foco.</p>
-        <ul class="day-type-legend" aria-label="Significado dos selos">
-          <li><span class="dt dt-base" aria-hidden="true">Base</span> Dia principalmente na cidade, sem mudança de base.</li>
-          <li><span class="dt dt-transfer" aria-hidden="true">Transferência</span> Troca de cidade ou trecho longo de autocarro/comboio.</li>
-          <li><span class="dt dt-icon" aria-hidden="true">Ícone</span> Dia “postal” / intenso (muito tempo a pé ou excursão).</li>
-          <li><span class="dt dt-flight" aria-hidden="true">Aéreo</span> Voo relevante no dia (curto na UE ou intercontinental).</li>
-          <li><span class="dt dt-shop" aria-hidden="true">Compras</span> Janela de compras planeada (ver <a href="#compras">Onde comprar</a>).</li>
-        </ul>
+        <h3>Índice completo (web)</h3>
+        <p class="note" style="margin-top:0;">Na app, use a lista acima. Orçamento por data: <a href="#operacional-tabela-dias">Plano operacional</a>.</p>
         <div class="table-scroll">
         <table class="data day-index-table">
           <thead>
@@ -1894,10 +1897,10 @@
 
   <nav class="app-tabbar" id="appTabbar" role="tablist" aria-label="Navegação do roteiro">
     <button type="button" class="app-tab" id="appTabInicio" role="tab" data-app-tab="inicio" aria-selected="true" aria-controls="inicio-hero resumo indice-toc"><i data-lucide="home" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Início</span></button>
-    <button type="button" class="app-tab" id="appTabRoteiro" role="tab" data-app-tab="roteiro" aria-selected="false" aria-controls="operacional dias"><i data-lucide="calendar" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Dias</span></button>
+    <button type="button" class="app-tab" id="appTabRoteiro" role="tab" data-app-tab="roteiro" aria-selected="false" aria-controls="dias"><i data-lucide="calendar" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Dias</span></button>
     <button type="button" class="app-tab" id="appTabMapa" role="tab" data-app-tab="mapa" aria-selected="false" aria-controls="mapa mapas cidades"><i data-lucide="map" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mapa</span></button>
     <button type="button" class="app-tab" id="appTabExplorar" role="tab" data-app-tab="explorar" aria-selected="false" aria-controls="explorar" aria-label="Explorar restaurantes e vida noturna"><i data-lucide="compass" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Explorar</span></button>
-    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="horarios-bilhetes voos hoteis emergencia cambio compras checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
+    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="operacional horarios-bilhetes voos hoteis emergencia cambio compras checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
   </nav>
 
   <div id="appStorageToast" class="app-toast" role="alert" hidden aria-hidden="true">Não foi possível guardar preferências (armazenamento cheio ou bloqueado). Ajustes valem nesta visita.</div>

@@ -21,7 +21,7 @@ Depois visite `http://localhost:8080/`.
 
 ## PWA / Service Worker
 
-- O `sw.js` usa **network-first para navegação** (HTML da rede quando possível, com fallback em cache offline) e **cache com versão** para ativos estáticos; o nome do cache inclui `v25` — incrementar ao alterar ficheiros críticos para forçar atualização em clientes antigos.
+- O `sw.js` usa **network-first para navegação** (HTML da rede quando possível, com fallback em cache offline) e **cache com versão** para ativos estáticos; o nome do cache inclui `v26` — incrementar ao alterar ficheiros críticos para forçar atualização em clientes antigos.
 - Ficheiros de mapas: `app-mapas.js`, `data/mapas-paradas.csv`, `scripts/mapas_legs.py` (gerar CSV com `python3 scripts/generate_mapas_csv.py`).
 
 ## QA (regressão e smoke)

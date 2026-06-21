@@ -50,7 +50,15 @@
   function whichTabForSectionId(id) {
     if (!id) return null;
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
-    if (id === "dias" || id === "indice-dias" || id === "operacional" || id.indexOf("day-") === 0) return "roteiro";
+    if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
+    if (
+      id === "operacional" ||
+      id === "operacional-envelope" ||
+      id === "operacional-por-cidade" ||
+      id === "operacional-dias" ||
+      id === "operacional-tabela-dias"
+    )
+      return "mais";
     if (id === "mapa" || id === "mapas" || id === "cidades" || (id && id.indexOf("city-") === 0) || (id && id.indexOf("mapas-") === 0)) return "mapa";
     if (
       id === "explorar" ||
