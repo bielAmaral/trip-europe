@@ -1166,3 +1166,282 @@ html[data-theme="dark"] .mapas-stop--transport .mapas-stop__cat {
   background: #581c87;
   color: #d8b4fe;
 }
+
+/* ═══════════════════════════════════════════════════════════
+   Responsive — mobile & tablet (complementa styles.css)
+   ═══════════════════════════════════════════════════════════ */
+
+#appMain img,
+#appMain video,
+#appMain iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+#appMain .map-svg-wrap svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#appMain p,
+#appMain li,
+#appMain td,
+#appMain th,
+#appMain a,
+#appMain summary,
+#appMain .lede,
+#appMain code {
+  overflow-wrap: anywhere;
+}
+
+/* Tablets: tabelas em cartões (styles.css só até 768px) */
+@media (max-width: 900px) {
+  .table-scroll {
+    overflow: visible;
+    border: none;
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .table-scroll table.data {
+    min-width: 0 !important;
+    display: block;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+  }
+
+  table.data thead {
+    display: none;
+  }
+
+  table.data tbody {
+    display: block;
+  }
+
+  table.data tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem 1.15rem;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur) saturate(1.1);
+    -webkit-backdrop-filter: var(--glass-blur) saturate(1.1);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow);
+  }
+
+  table.data tbody td {
+    display: block;
+    width: 100% !important;
+    border: none !important;
+    padding: 0.55rem 0 !important;
+    background: transparent !important;
+  }
+
+  table.data tbody td:first-of-type {
+    padding-top: 0.15rem !important;
+  }
+
+  table.data tbody td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--muted);
+    margin-bottom: 0.28rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .fast-plan .table-scroll table.data tbody tr {
+    margin-bottom: 0.65rem;
+    padding: 0.75rem 0.85rem;
+    background: color-mix(in srgb, var(--card-solid) 90%, transparent);
+    box-shadow: none;
+  }
+
+  .fast-plan__when {
+    width: auto;
+    white-space: normal;
+    font-size: 0.88rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .fast-plan {
+    padding: 0.85rem 0.9rem 0.95rem;
+  }
+
+  .mapas-leg__dir,
+  .mapas-stop__maps,
+  .dia-mapa-roteiro .mapas-leg__dir,
+  .dia-mapa-roteiro .mapas-stop__maps {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0.25rem;
+  }
+
+  .mapas-stop {
+    align-items: flex-start;
+  }
+
+  .mapas-stop__name {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  body.has-app-ui .wrap {
+    padding-left: max(0.65rem, env(safe-area-inset-left, 0px));
+    padding-right: max(0.65rem, env(safe-area-inset-right, 0px));
+  }
+
+  section.block {
+    margin-bottom: 1.65rem;
+    scroll-margin-top: 4.5rem;
+  }
+
+  section.block > h2 {
+    font-size: clamp(1.05rem, 4.5vw, 1.2rem);
+    padding-left: 0.35rem;
+  }
+
+  .card,
+  nav.toc {
+    padding: 1rem 1.05rem;
+  }
+
+  details.day .body {
+    padding: 0.85rem 0.9rem 1rem;
+    gap: 0.65rem;
+  }
+
+  details.day summary {
+    gap: 0.35rem 0.5rem;
+  }
+
+  details.day .day-badges {
+    flex-basis: 100%;
+    margin-left: 0;
+    margin-top: 0.15rem;
+  }
+
+  .meta-row {
+    gap: 0.4rem;
+  }
+
+  .meta-row .pill {
+    font-size: 0.76rem;
+    padding: 0.38rem 0.65rem;
+  }
+
+  nav.toc .toc-group-list {
+    grid-template-columns: 1fr;
+  }
+
+  .map-city-panel-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .map-city-panel-actions .btn-maps,
+  .map-city-panel-actions .btn-copy,
+  .map-city-panel-actions a.map-city-panel-ficha {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .map-legend {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.55rem;
+  }
+
+  .toolbar--app {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+  }
+
+  .app-dia-row {
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+    padding: 0.6rem 0.7rem;
+  }
+
+  .app-dia-row__mid {
+    flex: 1 1 calc(100% - 5.5rem);
+    min-width: 0;
+  }
+
+  .app-dia-row__budget {
+    margin-left: auto;
+  }
+
+  .fast-plan__meta {
+    gap: 0.3rem 0.4rem;
+  }
+
+  .fast-plan__badge--style,
+  .fast-plan__mode {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .app-tab {
+    font-size: 0.58rem;
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0.08rem 0.12rem;
+  }
+
+  .app-tab .lucide-ico {
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  header.hero h1 {
+    font-size: 1.3rem;
+    line-height: 1.2;
+  }
+
+  header.hero .sub {
+    font-size: 0.9rem;
+  }
+
+  .app-dia-row__mid {
+    flex: 1 1 100%;
+  }
+
+  .app-dia-row::after {
+    margin-left: auto;
+  }
+
+  details.day summary::after {
+    width: 1.65rem;
+    height: 1.65rem;
+  }
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  header.hero {
+    padding: 0.75rem 0.95rem;
+  }
+
+  header.hero h1 {
+    font-size: 1.2rem;
+  }
+
+  header.hero .meta-row {
+    margin-top: 0.55rem;
+  }
+}

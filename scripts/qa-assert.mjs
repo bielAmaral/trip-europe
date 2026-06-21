@@ -41,7 +41,6 @@ const mustHave = [
   'src="app-mapas.js',
   'src="app-views.js',
   "src=\"app-search-ui.js\"",
-  "href=\"app.css\"",
   "href=\"styles.css\"",
   "data-app-panel=\"inicio\"",
   "data-app-panel=\"mais\"",
@@ -53,6 +52,9 @@ const mustHave = [
 
 for (const s of mustHave) {
   if (!html.includes(s)) err('falta: "' + s + '" em index.html');
+}
+if (!html.includes('href="app.css') && !html.includes("href='app.css")) {
+  err("falta link app.css em index.html");
 }
 console.log("QA OK: " + mustHave.length + " marcadores críticos no index.html");
 
