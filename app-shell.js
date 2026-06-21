@@ -12,7 +12,11 @@
 
   function scrollAppToTop() {
     var m = document.getElementById("appMain");
-    if (m) m.scrollTo(0, 0);
+    var useMain =
+      m &&
+      window.getComputedStyle(m).overflowY !== "visible" &&
+      m.scrollHeight > m.clientHeight + 2;
+    if (useMain) m.scrollTo(0, 0);
     else {
       try {
         window.scrollTo(0, 0);
@@ -46,8 +50,8 @@
   function whichTabForSectionId(id) {
     if (!id) return null;
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
-    if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
-    if (id === "mapa" || id === "cidades" || (id && id.indexOf("city-") === 0)) return "mapa";
+    if (id === "dias" || id === "indice-dias" || id === "operacional" || id.indexOf("day-") === 0) return "roteiro";
+    if (id === "mapa" || id === "mapas" || id === "cidades" || (id && id.indexOf("city-") === 0) || (id && id.indexOf("mapas-") === 0)) return "mapa";
     if (
       id === "explorar" ||
       id === "lgbt-bares" ||
@@ -56,7 +60,7 @@
       (id && id.indexOf("lgbt-") === 0)
     )
       return "explorar";
-    if (id === "cambio" || id === "mais-hub") return "mais";
+    if (id === "cambio") return "mais";
     if (
       id === "horarios-bilhetes" ||
       id === "voos" ||

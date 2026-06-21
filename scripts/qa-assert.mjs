@@ -19,9 +19,13 @@ const mustHave = [
   "id=\"appMain\"",
   "id=\"dias\"",
   "id=\"mapa\"",
+  "id=\"mapas\"",
+  "id=\"mapasDiasHost\"",
   "id=\"explorar\"",
   "id=\"explorar-calendario-noite\"",
   "id=\"cidades\"",
+  "id=\"operacional\"",
+  "id=\"operacional-envelope\"",
   "id=\"cambio\"",
   "id=\"compras\"",
   "id=\"tripSearch\"",
@@ -34,9 +38,11 @@ const mustHave = [
   "id=\"hojeDestaque\"",
   "class=\"has-app-ui\"",
   "src=\"app-shell.js\"",
+  "src=\"app-mapas.js\"",
   "src=\"app-views.js\"",
   "src=\"app-search-ui.js\"",
   "href=\"app.css\"",
+  "href=\"styles.css\"",
   "data-app-panel=\"inicio\"",
   "data-app-panel=\"mais\"",
   "data-app-panel=\"mapa\"",
@@ -55,6 +61,23 @@ if (dayMatches.length < 19) {
   err("esperados 19+ blocos de dia; encontrado " + dayMatches.length);
 }
 console.log("QA OK: " + dayMatches.length + " IDs day-2026-… (details dia)");
+
+const fastPlans = html.match(/class="fast-plan"/g) || [];
+if (fastPlans.length < 19) {
+  err("esperados 19 blocos .fast-plan; encontrado " + fastPlans.length);
+}
+console.log("QA OK: " + fastPlans.length + " blocos FAST TOURIST (.fast-plan)");
+
+const transitCollapse = html.match(/class="transit-collapse"/g) || [];
+if (transitCollapse.length < 15) {
+  err("esperados 15+ blocos transit-collapse; encontrado " + transitCollapse.length);
+}
+console.log("QA OK: " + transitCollapse.length + " blocos transporte colapsável");
+
+if (html.includes("<style>")) {
+  err("index.html ainda contém CSS inline — extrair para styles.css");
+}
+console.log("QA OK: sem CSS inline em index.html");
 
 const byTab = { inicio: 0, roteiro: 0, mapa: 0, explorar: 0, mais: 0 };
 const rePanel = /data-app-panel="(inicio|roteiro|mapa|explorar|mais)"/g;
@@ -79,7 +102,26 @@ console.log(
     " }"
 );
 
-const appFiles = ["app.css", "app-shell.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest"];
+const appFiles = ["styles.css", "app.css", "app-shell.js", "app-mapas.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml"];
+
+const mymaps = readFileSync(join(root, "data/mapas-my-maps.csv"), "utf8");
+if (!mymaps.includes("Latitude") || !mymaps.includes("Longitude")) {
+  err("mapas-my-maps.csv deve ter colunas Latitude e Longitude");
+}
+if (!mymaps.includes("Layer")) {
+  err("mapas-my-maps.csv deve ter coluna Layer para agrupar por dia");
+}
+console.log("QA OK: mapas-my-maps.csv com coordenadas GPS e Layer");
+
+const paradas = readFileSync(join(root, "data/mapas-paradas.csv"), "utf8");
+if (!paradas.includes("leg_mode") || !paradas.includes("leg_mode_pt")) {
+  err("mapas-paradas.csv deve ter colunas leg_mode e leg_mode_pt");
+}
+if (!paradas.includes(",train,") && !paradas.includes(",walk,")) {
+  err("mapas-paradas.csv deve conter modos de transporte (walk/train/…)");
+}
+console.log("QA OK: mapas-paradas.csv com modos entre paradas");
+
 for (const f of appFiles) {
   if (!existsSync(join(root, f))) err("falta ficheiro: " + f);
 }

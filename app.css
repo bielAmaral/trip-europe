@@ -1,4 +1,4 @@
-/* Shell estilo app (mobile first); complementa o CSS inline. */
+/* Shell estilo app (mobile first); complementa styles.css + tokens base. */
 
 /* Scroll principal: coluna, área intermédia a rolar, tab bar fora. */
 /* Evitar -webkit-fill-available: no PWA iOS encurtava a altura e a tab bar (sticky) ficava “a flutuar”. */
@@ -31,6 +31,8 @@ body.has-app-ui .wrap {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  overscroll-behavior-y: contain;
+  touch-action: pan-y;
 }
 @media (prefers-reduced-motion: reduce) {
   #appMain {
@@ -63,14 +65,27 @@ body.has-app-ui .app-toast {
   bottom: calc(4.25rem + var(--app-bar-pad) + 0.4rem);
 }
 @media (min-width: 900px) and (min-height: 600px) {
+  /* Desktop: scroll na janela (evita #appMain expandir sem barra interna) */
   body.has-app-ui {
     max-height: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+  }
+  html.app-doc {
+    height: auto;
   }
   body.has-app-ui .wrap {
+    flex: none;
+    min-height: auto;
+    display: block;
     padding-bottom: clamp(2.5rem, 7vw, 4.5rem);
   }
   #appMain {
+    flex: none;
+    min-height: auto;
     max-height: none;
+    overflow-y: visible;
   }
 }
 
@@ -312,6 +327,32 @@ html[data-theme="dark"] .app-dia-row__date {
   font-weight: 600;
   line-height: 1.25;
 }
+.app-dia-row__energy {
+  display: inline-block;
+  margin-top: 0.2rem;
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.42rem;
+  border-radius: 6px;
+  line-height: 1.25;
+}
+.app-dia-row__energy.oper-energy--low {
+  background: color-mix(in srgb, var(--forest-soft) 80%, var(--card-solid) 20%);
+  color: var(--forest);
+}
+.app-dia-row__energy.oper-energy--mid {
+  background: color-mix(in srgb, var(--gold) 35%, var(--card-solid) 65%);
+  color: color-mix(in srgb, var(--gray-950) 85%, #92400e 15%);
+}
+.app-dia-row__energy.oper-energy--high {
+  background: color-mix(in srgb, var(--accent-soft) 70%, var(--card-solid) 30%);
+  color: var(--accent);
+}
+html[data-theme="dark"] .app-dia-row__energy.oper-energy--mid {
+  color: var(--gray-950);
+}
 .app-dia-row::after {
   content: "›";
   color: var(--muted);
@@ -412,4 +453,505 @@ table.data tr.row-highlight td {
 .route-pack summary {
   cursor: pointer;
   font-weight: 600;
+}
+
+/* Plano operacional: energia + orçamento */
+.oper-envelope {
+  border-left: 4px solid var(--forest);
+}
+.oper-slots {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.75rem 0;
+}
+@media (min-width: 640px) {
+  .oper-slots {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .oper-city .oper-slots:has(.slot:nth-child(2):last-child) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.oper-budget-table td:nth-child(4),
+.oper-budget-table th:nth-child(4) {
+  font-variant-numeric: tabular-nums;
+}
+.oper-energy {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.42rem;
+  border-radius: 6px;
+  line-height: 1.2;
+  border: 1px solid transparent;
+}
+.oper-energy--low {
+  background: color-mix(in srgb, var(--gray-300) 35%, var(--gray-0) 65%);
+  color: var(--muted-deep);
+}
+.oper-energy--mid {
+  background: color-mix(in srgb, var(--gold) 22%, var(--gray-0) 78%);
+  color: color-mix(in srgb, var(--gray-950) 80%, #92400e 20%);
+}
+.oper-energy--high {
+  background: var(--forest-soft);
+  color: var(--forest);
+}
+.oper-energy--max {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+html[data-theme="dark"] .oper-energy--mid {
+  color: var(--gray-900);
+}
+details.city-block.oper-city summary .nights {
+  color: var(--forest);
+  background: var(--forest-soft);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+/* FAST TOURIST — plano hora a hora */
+.fast-plan {
+  grid-column: 1 / -1;
+  margin: 0 0 0.65rem;
+  padding: 1rem 1.05rem 1.1rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid color-mix(in srgb, var(--forest) 38%, var(--line));
+  background: linear-gradient(
+    155deg,
+    color-mix(in srgb, var(--forest-soft) 55%, var(--card-solid) 45%) 0%,
+    var(--card-solid) 100%
+  );
+  box-shadow: 0 8px 32px color-mix(in srgb, var(--forest) 14%, transparent);
+}
+html[data-theme="dark"] .fast-plan {
+  border-color: color-mix(in srgb, var(--forest) 45%, #38bdf8 20%);
+  box-shadow: 0 8px 36px rgba(0, 12, 28, 0.45), 0 0 0 1px color-mix(in srgb, #38bdf8 12%, transparent);
+}
+.fast-plan__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.fast-plan__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-subtle);
+  background: var(--card-solid);
+  color: var(--ink);
+}
+.fast-plan__badge--budget strong {
+  font-size: 0.95em;
+  letter-spacing: 0;
+  text-transform: none;
+}
+.fast-plan__badge--style {
+  background: color-mix(in srgb, var(--accent-2) 12%, var(--card-solid) 88%);
+  border-color: color-mix(in srgb, var(--accent-2) 28%, transparent);
+  color: var(--accent-2);
+}
+.fast-plan__mode {
+  flex: 1 1 100%;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--muted-deep);
+  margin: 0.1rem 0 0;
+  line-height: 1.4;
+}
+.fast-plan__table-wrap {
+  margin: 0;
+}
+.fast-plan-table {
+  min-width: 0 !important;
+}
+.fast-plan__when {
+  font-variant-numeric: tabular-nums;
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--forest);
+  white-space: nowrap;
+  width: 7.5rem;
+  vertical-align: top;
+}
+html[data-theme="dark"] .fast-plan__when {
+  color: #34d399;
+}
+.fast-plan-table td:last-child {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.fast-plan__foot {
+  margin: 0.5rem 0 0;
+  font-size: 0.86rem;
+  color: var(--muted-deep);
+  line-height: 1.5;
+}
+.fast-plan__foot--warn {
+  color: color-mix(in srgb, var(--accent) 85%, var(--ink) 15%);
+  border-left: 3px solid var(--accent);
+  padding-left: 0.6rem;
+  margin-top: 0.65rem;
+}
+#dias.app-roteiro--detalhe .fast-plan {
+  border-width: 2px;
+  margin-bottom: 0.85rem;
+}
+#dias.app-roteiro--detalhe .transit-collapse {
+  margin-top: 0.35rem;
+}
+
+/* Transporte colapsável (referência metro/comboio) */
+details.transit-collapse {
+  grid-column: 1 / -1;
+  margin-top: 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid color-mix(in srgb, var(--forest) 22%, var(--line));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--forest-soft) 45%, var(--gray-50) 55%) 0%,
+    var(--gray-100) 100%
+  );
+  overflow: hidden;
+}
+html[data-theme="dark"] details.transit-collapse {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--forest-soft) 30%, var(--gray-100) 70%) 0%,
+    var(--gray-100) 100%
+  );
+}
+details.transit-collapse summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.62rem 0.9rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--forest);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  user-select: none;
+}
+details.transit-collapse summary::-webkit-details-marker {
+  display: none;
+}
+details.transit-collapse summary::after {
+  content: "+";
+  margin-left: auto;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--forest-soft);
+  color: var(--forest);
+  flex-shrink: 0;
+}
+details.transit-collapse[open] summary::after {
+  content: "−";
+}
+details.transit-collapse .transit.transit--nested {
+  margin: 0;
+  padding: 0.75rem 0.95rem 0.9rem;
+  border: none;
+  border-top: 1px dashed color-mix(in srgb, var(--forest) 18%, var(--line));
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+details.transit-collapse .transit.transit--nested > strong {
+  display: none;
+}
+
+/* Lista de dias: teto € visível */
+.app-dia-row__budget {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--forest);
+  background: var(--forest-soft);
+  padding: 0.22rem 0.5rem;
+  border-radius: 8px;
+  margin-left: 0.35rem;
+  margin-right: 0.15rem;
+}
+html[data-theme="dark"] .app-dia-row__budget {
+  color: var(--gray-950);
+}
+
+/* Painéis ocultos: display none (content-visibility quebrava altura do scroll em alguns browsers) */
+body.has-app-ui:not(.app-search-peek) [data-app-panel][hidden] {
+  display: none !important;
+}
+
+/* PWA: cursor custom desliga (menos JS + melhor UX touchpad) */
+body.has-app-ui.cursor-enhanced,
+body.has-app-ui.cursor-enhanced a,
+body.has-app-ui.cursor-enhanced button {
+  cursor: auto;
+}
+body.has-app-ui .cursor-root {
+  display: none !important;
+}
+
+/* Secção #mapas — paradas GPS por dia */
+.mapas-section .lede {
+  max-width: 42rem;
+}
+.mapas-dias-host {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.mapas-leg {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.35rem 0.55rem;
+  margin: 0.15rem 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  border-left: 4px solid var(--forest, #0d9488);
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 45%, var(--card, #fff));
+  font-size: 0.88rem;
+  list-style: none;
+}
+.mapas-leg__icon {
+  font-size: 1.1rem;
+  line-height: 1.3;
+  flex-shrink: 0;
+}
+.mapas-leg__detail {
+  flex: 1 1 12rem;
+  min-width: 0;
+  font-weight: 650;
+  line-height: 1.4;
+  color: var(--ink, #0f172a);
+}
+.mapas-leg__dir {
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  align-self: center;
+}
+.mapas-leg--train {
+  border-left-color: #2563eb;
+  background: color-mix(in srgb, #dbeafe 55%, var(--card, #fff));
+}
+.mapas-leg--train .mapas-leg__detail {
+  color: #1e3a8a;
+}
+.mapas-leg--bus {
+  border-left-color: #7c3aed;
+  background: color-mix(in srgb, #ede9fe 55%, var(--card, #fff));
+}
+.mapas-leg--bus .mapas-leg__detail {
+  color: #5b21b6;
+}
+.mapas-leg--flight {
+  border-left-color: #dc2626;
+  background: color-mix(in srgb, #fee2e2 55%, var(--card, #fff));
+}
+.mapas-leg--flight .mapas-leg__detail {
+  color: #991b1b;
+}
+.mapas-leg--tram .mapas-leg__detail,
+.mapas-leg--funicular .mapas-leg__detail {
+  color: #92400e;
+}
+.mapas-leg--tram,
+.mapas-leg--funicular {
+  border-left-color: #ca8a04;
+  background: color-mix(in srgb, #fef3c7 50%, var(--card, #fff));
+}
+.fast-plan-legs {
+  margin: 1rem 0 0.85rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 25%, var(--card, #fff));
+}
+.fast-plan-legs__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--forest, #0d9488);
+}
+.mapas-stop-list--fast {
+  gap: 0.45rem;
+}
+.mapas-stop__num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--muted, #64748b);
+  min-width: 1.25rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+html[data-theme="dark"] .mapas-leg {
+  background: color-mix(in srgb, var(--forest, #0d9488) 12%, var(--gray-900, #0f172a));
+}
+html[data-theme="dark"] .mapas-leg__detail {
+  color: var(--gray-100, #f1f5f9);
+}
+html[data-theme="dark"] .mapas-leg--train .mapas-leg__detail {
+  color: #93c5fd;
+}
+html[data-theme="dark"] .mapas-leg--bus .mapas-leg__detail {
+  color: #c4b5fd;
+}
+html[data-theme="dark"] .mapas-leg--flight .mapas-leg__detail {
+  color: #fca5a5;
+}
+html[data-theme="dark"] .fast-plan-legs {
+  background: color-mix(in srgb, var(--forest, #0d9488) 10%, var(--gray-900, #0f172a));
+}
+.mapas-error {
+  color: var(--rust, #b45309);
+}
+details.mapas-day {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--card, #fff);
+  overflow: hidden;
+}
+details.mapas-day summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.72rem 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.65rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--forest-soft) 55%, transparent);
+}
+details.mapas-day summary::-webkit-details-marker {
+  display: none;
+}
+.mapas-day__date {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--forest);
+}
+.mapas-day__title {
+  flex: 1 1 auto;
+  min-width: 8rem;
+}
+.mapas-day__count {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--muted, #64748b);
+}
+.mapas-day__body {
+  padding: 0.65rem 0.95rem 0.85rem;
+  border-top: 1px dashed var(--line);
+}
+.mapas-day__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+.mapas-day__route {
+  font-size: 0.82rem;
+}
+.mapas-day__link-dia {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+ol.mapas-stop-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.mapas-stop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--line) 35%, transparent);
+  font-size: 0.88rem;
+}
+.mapas-stop__cat {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.4rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.mapas-stop--hotel .mapas-stop__cat {
+  background: #dbeafe;
+  color: #1e40af;
+}
+.mapas-stop--sight .mapas-stop__cat {
+  background: #dcfce7;
+  color: #166534;
+}
+.mapas-stop--food .mapas-stop__cat {
+  background: #ffedd5;
+  color: #c2410c;
+}
+.mapas-stop--transport .mapas-stop__cat {
+  background: #f3e8ff;
+  color: #6b21a8;
+}
+.mapas-stop__name {
+  flex: 1 1 10rem;
+  min-width: 0;
+}
+.mapas-stop__maps {
+  font-size: 0.78rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+html[data-theme="dark"] details.mapas-day {
+  background: var(--gray-900, #0f172a);
+}
+html[data-theme="dark"] .mapas-stop--hotel .mapas-stop__cat {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+html[data-theme="dark"] .mapas-stop--sight .mapas-stop__cat {
+  background: #14532d;
+  color: #86efac;
+}
+html[data-theme="dark"] .mapas-stop--food .mapas-stop__cat {
+  background: #7c2d12;
+  color: #fdba74;
+}
+html[data-theme="dark"] .mapas-stop--transport .mapas-stop__cat {
+  background: #581c87;
+  color: #d8b4fe;
 }

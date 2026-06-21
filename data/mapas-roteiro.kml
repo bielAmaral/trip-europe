@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Roteiro Europa nov-dez 2026</name>
+    <description>19 dias FAST TOURIST — pastas por dia + rotas a pé (trechos separados em transfers)</description>
+    <Style id="routeWalk">
+      <LineStyle><color>ff0d9488</color><width>4</width></LineStyle>
+    </Style>
+    <Style id="routeWalk2">
+      <LineStyle><color>ff2563eb</color><width>4</width></LineStyle>
+    </Style>
+    <Folder>
+      <name>19 nov — Munique — chegada</name>
+      <description>day-2026-11-19 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Aeroporto MUC</name>
+        <description>Aeroporto — Munich Airport, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.775083,48.353783,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - München Hauptbahnhof</name>
+        <description>Transporte — München Hauptbahnhof, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.558338,48.140228,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - B&amp;B Hotel München-Hbf</name>
+        <description>Hotel — B&amp;B Hotel München-Hbf, Arnulfstraße 30, 80335 München, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.559389,48.144472,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Marienplatz</name>
+        <description>Ponto turístico — Marienplatz, Munich, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.575382,48.137154,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Neues Rathaus</name>
+        <description>Ponto turístico — Neues Rathaus, Marienplatz, Munich, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.575863,48.137408,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Frauenkirche</name>
+        <description>Ponto turístico — Frauenkirche, Munich, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.573591,48.138796,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Viktualienmarkt</name>
+        <description>Ponto turístico — Viktualienmarkt, Munich, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.576203,48.135125,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Karlsplatz (Stachus)</name>
+        <description>Ponto turístico — Karlsplatz, Munich, Germany — #day-2026-11-19</description>
+        <Point>
+          <coordinates>11.565369,48.139003,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>11.558338,48.140228,0 11.559389,48.144472,0 11.575382,48.137154,0 11.575863,48.137408,0 11.573591,48.138796,0 11.576203,48.135125,0 11.565369,48.139003,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>20 nov — Munique — Englischer Garten</name>
+      <description>day-2026-11-20 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - B&amp;B Hotel München-Hbf</name>
+        <description>Hotel — B&amp;B Hotel München-Hbf, Arnulfstraße 30, München, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.559389,48.144472,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Hofgarten</name>
+        <description>Ponto turístico — Hofgarten, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.579620,48.142883,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Odeonsplatz</name>
+        <description>Ponto turístico — Odeonsplatz, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.577944,48.142487,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Siegestor</name>
+        <description>Ponto turístico — Siegestor, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.586000,48.151000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Englischer Garten</name>
+        <description>Ponto turístico — Englischer Garten, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.601542,48.163972,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Chinesischer Turm</name>
+        <description>Ponto turístico — Chinesischer Turm, Englischer Garten, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.592222,48.152222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Eisbachwelle</name>
+        <description>Ponto turístico — Eisbachwelle, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.587778,48.143611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Isar (Gärtnerplatz)</name>
+        <description>Ponto turístico — Gärtnerplatz, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.569722,48.129722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09 - Kaufingerstraße</name>
+        <description>Ponto turístico — Kaufingerstraße, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.570833,48.137222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>10 - Glockenbachviertel (noite)</name>
+        <description>Noite — Glockenbachviertel, Munich, Germany — #day-2026-11-20</description>
+        <Point>
+          <coordinates>11.575000,48.127800,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>11.559389,48.144472,0 11.579620,48.142883,0 11.577944,48.142487,0 11.586000,48.151000,0 11.601542,48.163972,0 11.592222,48.152222,0 11.587778,48.143611,0 11.569722,48.129722,0 11.570833,48.137222,0 11.575000,48.127800,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>21 nov — Neuschwanstein (dia inteiro)</name>
+      <description>day-2026-11-21 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - B&amp;B Hotel München-Hbf</name>
+        <description>Hotel — B&amp;B Hotel München-Hbf, Arnulfstraße 30, München, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>11.559389,48.144472,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - München ZOB</name>
+        <description>Transporte — München ZOB, Arnulfstraße, Munich, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>11.549617,48.142067,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Füssen Pulverturm (FlixBus)</name>
+        <description>Transporte — Pulverturmstraße 1, 87629 Füssen, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.701389,47.568889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Schloss Hohenschwangau</name>
+        <description>Ponto turístico — Schloss Hohenschwangau, Schwangau, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.736111,47.555556,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Neuschwanstein Castle</name>
+        <description>Ponto turístico — Neuschwanstein Castle, Schwangau, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.749800,47.557574,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Marienbrücke</name>
+        <description>Ponto turístico — Marienbrücke, Schwangau, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.741500,47.559000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Alpsee (opcional)</name>
+        <description>Ponto turístico — Alpsee, 87645 Schwangau, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.736111,47.548611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Füssen Pulverturm (volta)</name>
+        <description>Transporte — Pulverturmstraße 1, 87629 Füssen, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.701389,47.568889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09 - München ZOB</name>
+        <description>Transporte — München ZOB, Munich, Germany — #day-2026-11-21</description>
+        <Point>
+          <coordinates>11.549617,48.142067,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>11.559389,48.144472,0 11.549617,48.142067,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>10.701389,47.568889,0 10.736111,47.555556,0 10.749800,47.557574,0 10.741500,47.559000,0 10.736111,47.548611,0 10.701389,47.568889,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>22 nov — Munique -&gt; Salzburgo</name>
+      <description>day-2026-11-22 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - B&amp;B Hotel München-Hbf (check-out)</name>
+        <description>Hotel — B&amp;B Hotel München-Hbf, Arnulfstraße 30, München, Germany — #day-2026-11-22</description>
+        <Point>
+          <coordinates>11.559389,48.144472,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Marienplatz (se sobrar tempo)</name>
+        <description>Ponto turístico — Marienplatz, Munich, Germany — #day-2026-11-22</description>
+        <Point>
+          <coordinates>11.575382,48.137154,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - München ZOB</name>
+        <description>Transporte — München ZOB, Munich, Germany — #day-2026-11-22</description>
+        <Point>
+          <coordinates>11.549617,48.142067,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Salzburg P+R Süd (FlixBus)</name>
+        <description>Transporte — Salzburg P+R Süd, Austria — #day-2026-11-22</description>
+        <Point>
+          <coordinates>13.047222,47.791111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Atel Hotel Lasserhof</name>
+        <description>Hotel — Atel Hotel Lasserhof, Lasserstraße 47, 5020 Salzburg, Austria — #day-2026-11-22</description>
+        <Point>
+          <coordinates>13.043100,47.804200,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Mirabellgarten</name>
+        <description>Ponto turístico — Mirabell Palace and Gardens, Salzburg, Austria — #day-2026-11-22</description>
+        <Point>
+          <coordinates>13.040000,47.805833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Getreidegasse</name>
+        <description>Ponto turístico — Getreidegasse, Salzburg, Austria — #day-2026-11-22</description>
+        <Point>
+          <coordinates>13.043333,47.800278,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Salzburger Dom</name>
+        <description>Ponto turístico — Salzburg Cathedral, Salzburg, Austria — #day-2026-11-22</description>
+        <Point>
+          <coordinates>13.046667,47.794444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>11.559389,48.144472,0 11.575382,48.137154,0 11.549617,48.142067,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.047222,47.791111,0 13.043100,47.804200,0 13.040000,47.805833,0 13.043333,47.800278,0 13.046667,47.794444,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>23 nov — Salzburgo — Festung</name>
+      <description>day-2026-11-23 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Atel Hotel Lasserhof</name>
+        <description>Hotel — Atel Hotel Lasserhof, Lasserstraße 47, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.043100,47.804200,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Festung Hohensalzburg</name>
+        <description>Ponto turístico — Hohensalzburg Fortress, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.047778,47.794722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Residenzplatz</name>
+        <description>Ponto turístico — Residenzplatz, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.045278,47.798333,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Salzburger Dom</name>
+        <description>Ponto turístico — Salzburg Cathedral, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.046667,47.794444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Getreidegasse</name>
+        <description>Ponto turístico — Getreidegasse, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.043333,47.800278,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Mozartplatz</name>
+        <description>Ponto turístico — Mozartplatz, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.046389,47.799444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Makartsteg</name>
+        <description>Ponto turístico — Makartsteg, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.042778,47.801944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Dark Eagle (opcional)</name>
+        <description>Noite — Dark Eagle, Paracelsusstraße 11, Salzburg, Austria — #day-2026-11-23</description>
+        <Point>
+          <coordinates>13.040800,47.802500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.043100,47.804200,0 13.047778,47.794722,0 13.045278,47.798333,0 13.046667,47.794444,0 13.043333,47.800278,0 13.046389,47.799444,0 13.042778,47.801944,0 13.040800,47.802500,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>24 nov — Salzburgo -&gt; Viena</name>
+      <description>day-2026-11-24 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Atel Hotel Lasserhof (check-out)</name>
+        <description>Hotel — Atel Hotel Lasserhof, Lasserstraße 47, Salzburg, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>13.043100,47.804200,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Salzburg Hauptbahnhof</name>
+        <description>Transporte — Salzburg Hauptbahnhof, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>13.045556,47.812778,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Wien Hauptbahnhof (ICE 10:00)</name>
+        <description>Transporte — Wien Hauptbahnhof, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.372778,48.185000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Hotel Zipser</name>
+        <description>Hotel — Hotel Zipser, Lange Gasse 49, 1080 Wien, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.347778,48.211389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Prater</name>
+        <description>Ponto turístico — Prater, Vienna, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.395833,48.216111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Naschmarkt</name>
+        <description>Ponto turístico — Naschmarkt, Vienna, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.366111,48.198611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Donaukanal</name>
+        <description>Ponto turístico — Donaukanal, 1020 Vienna, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.378333,48.218889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Donaukanal / Village (noite)</name>
+        <description>Noite — Donaukanal, 1020 Vienna, Austria — #day-2026-11-24</description>
+        <Point>
+          <coordinates>16.378333,48.218889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.043100,47.804200,0 13.045556,47.812778,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>16.372778,48.185000,0 16.347778,48.211389,0 16.395833,48.216111,0 16.366111,48.198611,0 16.378333,48.218889,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>25 nov — Viena — Schönbrunn e anel</name>
+      <description>day-2026-11-25 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Hotel Zipser</name>
+        <description>Hotel — Hotel Zipser, Lange Gasse 49, Wien, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.347778,48.211389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Schönbrunn Palace</name>
+        <description>Ponto turístico — Schönbrunn Palace, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.312222,48.184722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Stadtpark</name>
+        <description>Ponto turístico — Stadtpark, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.381389,48.206111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Stephansdom</name>
+        <description>Ponto turístico — St. Stephen's Cathedral, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.373056,48.208333,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Graben</name>
+        <description>Ponto turístico — Graben, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.368611,48.208611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Hofburg</name>
+        <description>Ponto turístico — Hofburg Palace, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.365556,48.206111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Rathaus</name>
+        <description>Ponto turístico — Vienna City Hall, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.357500,48.210833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Parlamento</name>
+        <description>Ponto turístico — Austrian Parliament Building, Vienna, Austria — #day-2026-11-25</description>
+        <Point>
+          <coordinates>16.358611,48.208056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>16.347778,48.211389,0 16.312222,48.184722,0 16.381389,48.206111,0 16.373056,48.208333,0 16.368611,48.208611,0 16.365556,48.206111,0 16.357500,48.210833,0 16.358611,48.208056,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>26 nov — Viena -&gt; Bratislava</name>
+      <description>day-2026-11-26 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Hotel Zipser (check-out)</name>
+        <description>Hotel — Hotel Zipser, Lange Gasse 49, Wien, Austria — #day-2026-11-26</description>
+        <Point>
+          <coordinates>16.347778,48.211389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Josefstadt (manhã livre)</name>
+        <description>Ponto turístico — Josefstädter Straße 1, 1080 Wien, Austria — #day-2026-11-26</description>
+        <Point>
+          <coordinates>16.350000,48.210000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Vienna International Bus Terminal (VIB)</name>
+        <description>Transporte — Vienna International Bus Terminal, Austria — #day-2026-11-26</description>
+        <Point>
+          <coordinates>16.416667,48.184722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Bratislava Most SNP (FlixBus)</name>
+        <description>Transporte — Most SNP, Bratislava, Slovakia — #day-2026-11-26</description>
+        <Point>
+          <coordinates>17.104722,48.138333,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Danubia Gate Hotel</name>
+        <description>Hotel — Danubia Gate Hotel, Dunajská 26, Bratislava, Slovakia — #day-2026-11-26</description>
+        <Point>
+          <coordinates>17.117778,48.141944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Staré Mesto</name>
+        <description>Ponto turístico — Hlavné námestie, Bratislava, Slovakia — #day-2026-11-26</description>
+        <Point>
+          <coordinates>17.107778,48.143889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Bratislava Castle</name>
+        <description>Ponto turístico — Bratislava Castle, Slovakia — #day-2026-11-26</description>
+        <Point>
+          <coordinates>17.100278,48.142222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Apollon (opcional)</name>
+        <description>Noite — Apollon Gay Club, Panenská, Bratislava, Slovakia — #day-2026-11-26</description>
+        <Point>
+          <coordinates>17.110000,48.145000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>16.347778,48.211389,0 16.350000,48.210000,0 16.416667,48.184722,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>17.104722,48.138333,0 17.117778,48.141944,0 17.107778,48.143889,0 17.100278,48.142222,0 17.110000,48.145000,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>27 nov — Bratislava -&gt; Budapeste</name>
+      <description>day-2026-11-27 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Danubia Gate Hotel (check-out)</name>
+        <description>Hotel — Danubia Gate Hotel, Dunajská 26, Bratislava, Slovakia — #day-2026-11-27</description>
+        <Point>
+          <coordinates>17.117778,48.141944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Bratislava Nivy (Mlynské Nivy)</name>
+        <description>Transporte — Bratislava Nivy bus station, Slovakia — #day-2026-11-27</description>
+        <Point>
+          <coordinates>17.128611,48.148056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Budapest Kelenföld (FlixBus)</name>
+        <description>Transporte — Budapest Kelenföld, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.023056,47.464722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Medos Hotel</name>
+        <description>Hotel — Medos Hotel, Rákóczi út 40, Budapest, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.070278,47.498611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Basílica de Santo Estêvão</name>
+        <description>Ponto turístico — Szent István tér 1, Budapest, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.053889,47.500833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Andrássy út</name>
+        <description>Ponto turístico — Andrássy Avenue, Budapest, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.058611,47.503889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Chain Bridge</name>
+        <description>Ponto turístico — Széchenyi Chain Bridge, Budapest, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.043889,47.498056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Buda Castle (vista)</name>
+        <description>Ponto turístico — Buda Castle, Budapest, Hungary — #day-2026-11-27</description>
+        <Point>
+          <coordinates>19.039722,47.496389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>17.117778,48.141944,0 17.128611,48.148056,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>19.023056,47.464722,0 19.070278,47.498611,0 19.053889,47.500833,0 19.058611,47.503889,0 19.043889,47.498056,0 19.039722,47.496389,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>28 nov — Budapeste — Pest icónico</name>
+      <description>day-2026-11-28 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Medos Hotel</name>
+        <description>Hotel — Medos Hotel, Rákóczi út 40, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.070278,47.498611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Parlamento</name>
+        <description>Ponto turístico — Hungarian Parliament Building, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.045833,47.507222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Shoes on the Danube</name>
+        <description>Ponto turístico — Shoes on the Danube Bank, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.044722,47.503889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Great Market Hall</name>
+        <description>Ponto turístico — Great Market Hall, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.058889,47.486944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Fishermans Bastion</name>
+        <description>Ponto turístico — Fisherman's Bastion, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.034444,47.502778,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Matthias Church</name>
+        <description>Ponto turístico — Matthias Church, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.034167,47.502222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Szimpla Kert</name>
+        <description>Noite — Szimpla Kert, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.063056,47.496944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Instant-Fogas</name>
+        <description>Noite — Instant-Fogas, Budapest, Hungary — #day-2026-11-28</description>
+        <Point>
+          <coordinates>19.062500,47.497778,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>19.070278,47.498611,0 19.045833,47.507222,0 19.044722,47.503889,0 19.058889,47.486944,0 19.034444,47.502778,0 19.034167,47.502222,0 19.063056,47.496944,0 19.062500,47.497778,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>29 nov — Budapeste — descanso</name>
+      <description>day-2026-11-29 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Medos Hotel</name>
+        <description>Hotel — Medos Hotel, Rákóczi út 40, Budapest, Hungary — #day-2026-11-29</description>
+        <Point>
+          <coordinates>19.070278,47.498611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Jewish Quarter (opcional)</name>
+        <description>Ponto turístico — Dohány utca 2, Budapest, Hungary — #day-2026-11-29</description>
+        <Point>
+          <coordinates>19.060278,47.495833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Margaret Bridge</name>
+        <description>Ponto turístico — Margaret Bridge, Budapest, Hungary — #day-2026-11-29</description>
+        <Point>
+          <coordinates>19.042778,47.515278,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Margaret Island</name>
+        <description>Ponto turístico — Margaret Island, Budapest, Hungary — #day-2026-11-29</description>
+        <Point>
+          <coordinates>19.047222,47.527500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>19.070278,47.498611,0 19.060278,47.495833,0 19.042778,47.515278,0 19.047222,47.527500,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>30 nov — Budapeste -&gt; Berlim</name>
+      <description>day-2026-11-30 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Medos Hotel (check-out)</name>
+        <description>Hotel — Medos Hotel, Rákóczi út 40, Budapest, Hungary — #day-2026-11-30</description>
+        <Point>
+          <coordinates>19.070278,47.498611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Basílica (último passeio)</name>
+        <description>Ponto turístico — Szent István tér 1, Budapest, Hungary — #day-2026-11-30</description>
+        <Point>
+          <coordinates>19.053889,47.500833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Budapest Airport (BUD)</name>
+        <description>Aeroporto — Budapest Airport, Hungary — #day-2026-11-30</description>
+        <Point>
+          <coordinates>19.261093,47.429761,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Berlin Brandenburg Airport (BER)</name>
+        <description>Aeroporto — Berlin Brandenburg Airport, Germany — #day-2026-11-30</description>
+        <Point>
+          <coordinates>13.503333,52.366667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Premier Inn Alexanderplatz</name>
+        <description>Hotel — Premier Inn Berlin Alexanderplatz, Otto-Braun-Straße 69, Berlin, Germany — #day-2026-11-30</description>
+        <Point>
+          <coordinates>13.412778,52.523056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Alexanderplatz</name>
+        <description>Ponto turístico — Alexanderplatz 1, 10178 Berlin, Germany — #day-2026-11-30</description>
+        <Point>
+          <coordinates>13.413333,52.521944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Fernsehturm</name>
+        <description>Ponto turístico — Berlin TV Tower, Germany — #day-2026-11-30</description>
+        <Point>
+          <coordinates>13.409444,52.520833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>19.070278,47.498611,0 19.053889,47.500833,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.412778,52.523056,0 13.413333,52.521944,0 13.409444,52.520833,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>1 dez — Berlim — Mitte</name>
+      <description>day-2026-12-01 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Premier Inn Alexanderplatz</name>
+        <description>Hotel — Premier Inn Berlin Alexanderplatz, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.412778,52.523056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Brandenburg Gate</name>
+        <description>Ponto turístico — Brandenburg Gate, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.377704,52.516275,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Reichstag</name>
+        <description>Ponto turístico — Reichstag Building, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.376111,52.518611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Tiergarten</name>
+        <description>Ponto turístico — Tiergarten, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.350000,52.514444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Holocaust Memorial</name>
+        <description>Ponto turístico — Memorial to the Murdered Jews of Europe, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.378889,52.513889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Potsdamer Platz</name>
+        <description>Ponto turístico — Potsdamer Platz, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.376111,52.509444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - East Side Gallery</name>
+        <description>Ponto turístico — East Side Gallery, Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.439722,52.505000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Alexanderplatz (volta)</name>
+        <description>Ponto turístico — Alexanderplatz 1, 10178 Berlin, Germany — #day-2026-12-01</description>
+        <Point>
+          <coordinates>13.413333,52.521944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.412778,52.523056,0 13.377704,52.516275,0 13.376111,52.518611,0 13.350000,52.514444,0 13.378889,52.513889,0 13.376111,52.509444,0 13.439722,52.505000,0 13.413333,52.521944,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>2 dez — Berlim — compras</name>
+      <description>day-2026-12-02 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Premier Inn Alexanderplatz</name>
+        <description>Hotel — Premier Inn Berlin Alexanderplatz, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.412778,52.523056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Unter den Linden</name>
+        <description>Ponto turístico — Unter den Linden, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.390833,52.516944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Berliner Dom</name>
+        <description>Ponto turístico — Berlin Cathedral, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.401111,52.519167,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Lustgarten</name>
+        <description>Ponto turístico — Lustgarten, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.398889,52.519167,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Museum Island</name>
+        <description>Ponto turístico — Museum Island, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.399722,52.521111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Gendarmenmarkt</name>
+        <description>Ponto turístico — Gendarmenmarkt, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.392500,52.513611,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Kurfürstendamm</name>
+        <description>Ponto turístico — Kurfürstendamm, Berlin, Germany — #day-2026-12-02</description>
+        <Point>
+          <coordinates>13.332778,52.504167,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.412778,52.523056,0 13.390833,52.516944,0 13.401111,52.519167,0 13.398889,52.519167,0 13.399722,52.521111,0 13.392500,52.513611,0 13.332778,52.504167,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>3 dez — Berlim -&gt; Praga</name>
+      <description>day-2026-12-03 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Premier Inn Alexanderplatz (check-out)</name>
+        <description>Hotel — Premier Inn Berlin Alexanderplatz, Berlin, Germany — #day-2026-12-03</description>
+        <Point>
+          <coordinates>13.412778,52.523056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Berlin Südkreuz</name>
+        <description>Transporte — Berlin Südkreuz station, Germany — #day-2026-12-03</description>
+        <Point>
+          <coordinates>13.385556,52.476111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Praha Florenc (FlixBus)</name>
+        <description>Transporte — Florenc bus station, Prague, Czechia — #day-2026-12-03</description>
+        <Point>
+          <coordinates>14.441111,50.091389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Alton Hotel</name>
+        <description>Hotel — Alton Hotel, Legerova 22, Prague, Czechia — #day-2026-12-03</description>
+        <Point>
+          <coordinates>14.430000,50.071111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Wenceslas Square</name>
+        <description>Ponto turístico — Wenceslas Square, Prague, Czechia — #day-2026-12-03</description>
+        <Point>
+          <coordinates>14.427778,50.081111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Old Town Square</name>
+        <description>Ponto turístico — Old Town Square, Prague, Czechia — #day-2026-12-03</description>
+        <Point>
+          <coordinates>14.421389,50.087500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Astronomical Clock</name>
+        <description>Ponto turístico — Prague Astronomical Clock, Czechia — #day-2026-12-03</description>
+        <Point>
+          <coordinates>14.420833,50.086944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>13.412778,52.523056,0 13.385556,52.476111,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>14.441111,50.091389,0 14.430000,50.071111,0 14.427778,50.081111,0 14.421389,50.087500,0 14.420833,50.086944,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>4 dez — Praga — castelo</name>
+      <description>day-2026-12-04 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Alton Hotel</name>
+        <description>Hotel — Alton Hotel, Legerova 22, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.430000,50.071111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Charles Bridge</name>
+        <description>Ponto turístico — Charles Bridge, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.411389,50.086389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Malá Strana</name>
+        <description>Ponto turístico — Malá Strana, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.403889,50.087778,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Prague Castle</name>
+        <description>Ponto turístico — Prague Castle, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.401389,50.091111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Kampa Island</name>
+        <description>Ponto turístico — Kampa Island, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.408611,50.084722,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Na Příkopě</name>
+        <description>Ponto turístico — Na Příkopě, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.426389,50.085556,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Palladium</name>
+        <description>Ponto turístico — Palladium Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.428889,50.089444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Old Town Square (revisit)</name>
+        <description>Ponto turístico — Old Town Square, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.421389,50.087500,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09 - Termix (Vinohrady)</name>
+        <description>Noite — Termix Club, Prague, Czechia — #day-2026-12-04</description>
+        <Point>
+          <coordinates>14.439722,50.075000,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>14.430000,50.071111,0 14.411389,50.086389,0 14.403889,50.087778,0 14.401389,50.091111,0 14.408611,50.084722,0 14.426389,50.085556,0 14.428889,50.089444,0 14.421389,50.087500,0 14.439722,50.075000,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>5 dez — Praga -&gt; Bruxelas</name>
+      <description>day-2026-12-05 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Alton Hotel (check-out)</name>
+        <description>Hotel — Alton Hotel, Legerova 22, Prague, Czechia — #day-2026-12-05</description>
+        <Point>
+          <coordinates>14.430000,50.071111,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Charles Bridge (último passeio)</name>
+        <description>Ponto turístico — Charles Bridge, Prague, Czechia — #day-2026-12-05</description>
+        <Point>
+          <coordinates>14.411389,50.086389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Václav Havel Airport (PRG)</name>
+        <description>Aeroporto — Václav Havel Airport Prague, Czechia — #day-2026-12-05</description>
+        <Point>
+          <coordinates>14.263333,50.100833,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Brussels Airport Zaventem (BRU)</name>
+        <description>Aeroporto — Brussels Airport, Belgium — #day-2026-12-05</description>
+        <Point>
+          <coordinates>4.484444,50.901389,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Hotel des Colonies</name>
+        <description>Hotel — Hotel des Colonies Brussels, Rue des Croisades 6, Brussels, Belgium — #day-2026-12-05</description>
+        <Point>
+          <coordinates>4.357222,50.856944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Rogier / Rue Neuve</name>
+        <description>Ponto turístico — Rue Neuve, Brussels, Belgium — #day-2026-12-05</description>
+        <Point>
+          <coordinates>4.356944,50.853889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>14.430000,50.071111,0 14.411389,50.086389,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>4.357222,50.856944,0 4.356944,50.853889,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>6 dez — Bruges (bate-volta)</name>
+      <description>day-2026-12-06 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Hotel des Colonies</name>
+        <description>Hotel — Hotel des Colonies Brussels, Rue des Croisades 6, Brussels, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>4.357222,50.856944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Grand Place (opcional)</name>
+        <description>Ponto turístico — Grand Place, Brussels, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>4.352500,50.846667,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>03 - Brussels-Midi station</name>
+        <description>Transporte — Brussels-Midi station, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>4.336667,50.835556,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>04 - Bruges station</name>
+        <description>Transporte — Bruges station, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>3.216667,51.197222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Markt Bruges</name>
+        <description>Ponto turístico — Markt, Bruges, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>3.224167,51.208889,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Belfry of Bruges</name>
+        <description>Ponto turístico — Belfry of Bruges, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>3.225556,51.208056,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>07 - Rozenhoedkaai</name>
+        <description>Ponto turístico — Rozenhoedkaai, Bruges, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>3.227500,51.206944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>08 - Bruges station (volta)</name>
+        <description>Transporte — Bruges station, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>3.216667,51.197222,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>09 - Hotel des Colonies (volta)</name>
+        <description>Hotel — Hotel des Colonies Brussels, Belgium — #day-2026-12-06</description>
+        <Point>
+          <coordinates>4.357222,50.856944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 1/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>4.357222,50.856944,0 4.352500,50.846667,0 4.336667,50.835556,0</coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Rota a pé (trecho 2/2)</name>
+        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
+        <styleUrl>#routeWalk2</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>3.216667,51.197222,0 3.224167,51.208889,0 3.225556,51.208056,0 3.227500,51.206944,0 3.216667,51.197222,0</coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>7 dez — Bruxelas -&gt; Brasil</name>
+      <description>day-2026-12-07 — ordem FAST TOURIST</description>
+      <Placemark>
+        <name>01 - Hotel des Colonies (check-out)</name>
+        <description>Hotel — Hotel des Colonies Brussels, Belgium — #day-2026-12-07</description>
+        <Point>
+          <coordinates>4.357222,50.856944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>02 - Brussels Airport Zaventem (BRU)</name>
+        <description>Aeroporto — Brussels Airport, Belgium — #day-2026-12-07</description>
+        <Point>
+          <coordinates>4.484444,50.901389,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

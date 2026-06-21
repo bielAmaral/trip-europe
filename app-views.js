@@ -33,6 +33,46 @@
     }
   }
 
+  function energyClass(val) {
+    var v = (val || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    if (v === "plena" || v === "pleno") return "oper-energy--high";
+    if (v === "media" || v === "medio") return "oper-energy--mid";
+    return "oper-energy--low";
+  }
+
+  function scrollToFastPlan(target) {
+    if (!target) return;
+    var plan = target.querySelector(".fast-plan");
+    var main = document.getElementById("appMain");
+    var reduce =
+      window.matchMedia &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var behavior = reduce ? "auto" : "smooth";
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        if (plan) {
+          try {
+            if (main) {
+              var mainRect = main.getBoundingClientRect();
+              var planRect = plan.getBoundingClientRect();
+              var offset = planRect.top - mainRect.top + main.scrollTop - 10;
+              main.scrollTo({ top: Math.max(0, offset), behavior: behavior });
+            } else {
+              plan.scrollIntoView({ block: "start", behavior: behavior });
+            }
+          } catch (e) {
+            plan.scrollIntoView({ block: "start" });
+          }
+        } else if (main) {
+          main.scrollTo({ top: 0, behavior: behavior });
+        }
+      });
+    });
+  }
+
   function showDayById(id) {
     if (!isDayHash(id)) return;
     setMode(true);
@@ -43,9 +83,6 @@
         d.removeAttribute("hidden");
         d.open = true;
         target = d;
-        try {
-          d.scrollIntoView({ block: "start", behavior: "auto" });
-        } catch (e) {}
       } else {
         d.classList.add("app-dia--hidden");
         d.open = false;
@@ -56,6 +93,7 @@
       var summ = target && target.querySelector("summary .city");
       bread.textContent = summ ? summ.textContent.replace(/\s+/g, " ").trim() : "Dia";
     }
+    scrollToFastPlan(target);
   }
 
   function showList() {
@@ -96,8 +134,23 @@
       t.className = "app-dia-row__title";
       t.textContent = city ? city.textContent.replace(/\s+/g, " ").trim() : sum.textContent.slice(0, 80);
       mid.appendChild(t);
+      var energy = d.getAttribute("data-energy");
+      if (energy) {
+        var espan = document.createElement("span");
+        espan.className =
+          "app-dia-row__energy oper-energy " + energyClass(energy);
+        espan.textContent = energy;
+        mid.appendChild(espan);
+      }
       btn.appendChild(dspan);
       btn.appendChild(mid);
+      var budget = d.getAttribute("data-budget-eur");
+      if (budget) {
+        var bspan = document.createElement("span");
+        bspan.className = "app-dia-row__budget";
+        bspan.textContent = "€" + budget;
+        btn.appendChild(bspan);
+      }
       btn.addEventListener("click", function () {
         try {
           history.pushState(null, "", "#" + d.id);
@@ -108,9 +161,6 @@
         if (window.roteiroApplyAppTab) {
           window.roteiroApplyAppTab("roteiro", { skipStore: false, hash: false, scrollTop: false });
         }
-        var main = document.getElementById("appMain");
-        if (main) main.scrollTo(0, 0);
-        else window.scrollTo(0, 0);
       });
       li.appendChild(btn);
       ul.appendChild(li);
