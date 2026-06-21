@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var CSV_URL = "data/mapas-paradas.csv?v=33";
+  var CSV_URL = "data/mapas-paradas.csv?v=34";
 
   var daysById = {};
 
@@ -239,9 +239,11 @@
     if (dayEl) {
       var body = dayEl.querySelector(".body");
       if (body) {
-        body.querySelectorAll(".dia-mapa-roteiro").forEach(function (n) {
-          n.remove();
-        });
+        body.querySelectorAll(".dia-mapa-roteiro, .fast-plan__mapa-detail").forEach(
+          function (n) {
+            n.remove();
+          }
+        );
       }
     }
     if (plan) {
@@ -269,6 +271,7 @@
   function buildFastPlanMapDetails(day) {
     var det = document.createElement("details");
     det.className = "transit-collapse fast-plan__mapa-detail";
+    det.id = "mapa-paradas-" + day.day_id;
     var sum = document.createElement("summary");
     sum.textContent = "Paradas no Maps (" + day.stops.length + ")";
     det.appendChild(sum);
@@ -406,11 +409,6 @@
     renderMapasSection(days);
     injectFastPlanLegs(days);
     if (window.refreshLucide) window.refreshLucide();
-
-    var h = (location.hash || "").replace(/^#/, "");
-    if (h.indexOf("day-20") === 0 && window.roteiroRefreshDayMapRoteiro) {
-      window.roteiroRefreshDayMapRoteiro(h);
-    }
   }
 
   window.roteiroRefreshDayMapRoteiro = function (dayId) {
