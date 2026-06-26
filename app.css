@@ -895,6 +895,56 @@ body.has-app-ui .cursor-root {
   flex-direction: column;
   gap: 0.55rem;
 }
+.mapas-index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.mapas-index-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 10px;
+  background: var(--card, #fff);
+  border: 1px solid color-mix(in srgb, var(--ink, #1a1a2e) 8%, transparent);
+}
+.mapas-index-list__dia {
+  flex: 1 1 14rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.toc-compact {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.mapas-inline-heading {
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
+  font-size: 1.05rem;
+}
+.mapas-inline-lede {
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+.financas-details {
+  margin-top: 0.75rem;
+}
+.financas-details > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
 .mapas-leg {
   display: flex;
   flex-wrap: wrap;

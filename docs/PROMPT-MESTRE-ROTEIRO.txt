@@ -1,0 +1,914 @@
+# PROMPT MESTRE — Europa Central Nov–Dez 2026
+
+> **Uso:** anexar **`PROMPT-MESTRE-ROTEIRO.pdf`** (offline no telemóvel) ou colar o `.txt` em MindTrip, ChatGPT, Claude ou outro planeador.  
+> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py`  
+> **Fonte canónica:** `roteiro-viagem-europa-2025/index.html` + `data/mapas-paradas.csv`  
+> **Versão:** 2026-06-14
+
+---
+
+## PAPEL DA IA
+
+És um planeador de viagem **executável** — não um guia genérico. O viajante já tem **hotéis no Booking**, **bilhetes Omio/Iberia** e **ordem de cidades fixa**. A tua tarefa:
+
+1. Respeitar **horários de bilhete** (não mover Flix/ICE/voos).
+2. Devolver deslocações no formato **leg-a-leg** (ver abaixo).
+3. Manter **exterior-first** (fachadas, jardins, mercados) salvo entrada explícita no roteiro.
+4. Alinhar **noites LGBT/ruin bars** ao calendário — sem festa pesada em dias de voo/jet lag.
+5. Quando sugerires alterações, explicar **impacto no bilhete** e **no hotel**.
+
+### Formato obrigatório de deslocação (leg)
+
+```
+ORIGEM → DESTINO | modo | linha/serviço | embarque HH:MM → desce HH:MM | +X min a pé
+```
+
+Exemplo:
+```
+München Hbf → Marienplatz | S-Bahn | S1 ou S8 | — → — | +2 min
+```
+
+---
+
+## O QUE NÃO FAZER (erros comuns de IAs genéricas)
+
+- **Não** trocar hotéis — só os 8 Booking listados abaixo.
+- **Não** inserir Dresden, Leipzig, Ghent ou outras cidades fora do roteiro.
+- **Não** colocar Budapeste depois de Berlim (ordem: … Budapeste → **voo** Berlim → Praga → **voo** Bruxelas).
+- **Não** pernoitar em Bruges — é **bate-volta 6 dez**; base é Bruxelas (Rogier).
+- **Não** usar aeroporto **Charleroi (CRL)** — voo PRG→BRU chega em **Zaventem (BRU)**.
+- **Não** mover horários Omio: Flix 08:30 Füssen, ICE 10:00 Salzburg, Flix 10:20 Südkreuz, Ryanair 15:40 BUD, Ryanair 11:50 PRG, IB0604 07:00 BRU.
+- **Não** assumir cartão único europeu — cada cidade tem app (MVV, ÖBB, BKK, BVG, PID, SNCB).
+
+---
+
+## METADADOS DA VIAGEM
+
+| Campo | Valor |
+|-------|-------|
+| Viajante | Gabriel Torga (+ prima Iza em Bruges 6/dez) |
+| Período Europa | 19 nov – 7 dez 2026 (**18 noites**) |
+| Ida GRU | 18 nov 15:10 (IB0268) |
+| Chegada Munique | 19 nov ~11:30 |
+| Regresso | 7 dez 07:00 BRU (IB0604) |
+| Estilo | FAST · exterior · 09:00–21:00 (exceto chegadas/voos) |
+| Envelope bolso | **€2.000** Wise (fora hotéis + Omio + Iberia) |
+| Hotéis total | ~**R$ 11.423** (cartão BRL, Booking) |
+
+### Ordem das cidades (FIXA)
+
+```
+Munique → Salzburgo → Viena → Bratislava → Budapeste
+  → [voo BUD→BER 30/nov] → Berlim → Praga
+  → [voo PRG→BRU 5/dez] → Bruxelas (+ Bruges bate-volta 6/dez) → GRU
+```
+
+### Noites por cidade
+
+| Cidade | Noites | Check-in → check-out |
+|--------|--------|----------------------|
+| Munique | 3 | 19 → 22 nov |
+| Salzburgo | 2 | 22 → 24 nov |
+| Viena | 2 | 24 → 26 nov |
+| Bratislava | 1 | 26 → 27 nov |
+| Budapeste | 3 | 27 → 30 nov |
+| Berlim | 3 | 30 nov → 3 dez |
+| Praga | 2 | 3 → 5 dez |
+| Bruxelas | 2 | 5 → 7 dez |
+
+---
+
+## VOOS
+
+### Intercontinentais (Iberia)
+
+| Trecho | Partida | Chegada | Notas |
+|--------|---------|---------|-------|
+| IB0268 GRU→MAD | 18 nov 15:10 | 19 nov 05:30 | Conexão Madrid |
+| IB1309 MAD→MUC | 19 nov 08:50 | 19 nov 11:30 | Operado YW |
+| IB0604 BRU→MAD | 7 dez 07:00 | 7 dez 09:25 | Sair hotel ~**03:45** · alarme **03:00** |
+| IB0271 MAD→GRU | 7 dez 11:50 | 7 dez 19:00 | Conexão ~2h25 |
+
+### Curtos na UE (Omio)
+
+| Data | Trecho | Horário | Cia | R$ Omio |
+|------|--------|---------|-----|---------|
+| 30 nov | BUD→BER | 15:40 PM  - 17:10 PM | Ryanair + bagagens | 734,34 |
+| 5 dez | PRG→BRU | **11:50→13:20** | Ryanair + bagagens | 835,77 |
+
+**Total voos UE:** R$ 1.570,11
+
+---
+
+## BILHETES TERRESTRES (Omio) — NÃO MOVER
+
+| Data | Trecho | Horário | Operador | R$ |
+|------|--------|---------|----------|-----|
+| 21 nov | München ZOB ↔ Füssen Pulverturm | 08:30→10:30 / 17:25→19:25 | FlixBus | 143,84 |
+| 22 nov | München ZOB → Salzburg P+R Süd | 13:45→15:45 | FlixBus | 82,82 |
+| 24 nov | Salzburg Hbf → Wien Hbf | **10:00→12:47** | ÖBB ICE Sparschiene | 176,37 |
+| 26 nov | Wien VIB → Bratislava Most SNP | 12:35→13:45 | FlixBus | 46,18 |
+| 27 nov | Bratislava Nivy → Budapest Kelenföld | 10:50→13:25 | FlixBus | 103,93 |
+| 3 dez | Berlin Südkreuz → Praha Florenc | **10:20→14:20** | FlixBus | 155,85 |
+
+**Total terrestre+ICE:** R$ 708,99 · **Mobilidade Omio total:** R$ 2.279,10
+
+---
+
+## HOTÉIS (Booking.com — ÚNICOS VÁLIDOS)
+
+| Cidade | Datas | Hotel | Morada | R$ |
+|--------|-------|-------|--------|-----|
+| Munique | 19–22 nov | B&B Hotel München-Hbf | Arnulfstraße 30, 80335 München | 1.816 |
+| Salzburgo | 22–24 nov | Atel Hotel Lasserhof | Lasserstraße 47, 5020 Salzburg | 1.250 |
+| Viena | 24–26 nov | Hotel Zipser | Lange Gasse 49, 1080 Wien | 1.007 |
+| Bratislava | 26–27 nov | Danubia Gate Hotel | Dunajská 26, 811 01 Bratislava | 607 |
+| Budapeste | 27–30 nov | Medos Hotel | Rákóczi út 40, 1072 Budapest | 1.841 |
+| Berlim | 30 nov–3 dez | Premier Inn Alexanderplatz | Otto-Braun-Straße 69, 10178 Berlin | 1.843 |
+| Praga | 3–5 dez | Alton Hotel | Legerova 1581/22, 120 00 Praha 2 | 1.394 |
+| Bruxelas | 5–7 dez | Hotel des Colonies (Mercure) | Rue des Croisades 6, 1210 Brussels | 1.665 |
+
+**Soma:** ~R$ 11.423
+
+---
+
+## APPS DE TRANSPORTE
+
+| País | App |
+|------|-----|
+| Alemanha (MUC, BER) | MVV, DB Navigator, BVG |
+| Áustria (SZG, VIE) | ÖBB, Wiener Linien |
+| Eslováquia | IDS BK |
+| Hungria | BKK FUTÁR |
+| República Checa | PID Lítačka |
+| Bélgica | SNCB, STIB |
+
+---
+
+## CALENDÁRIO NOITE (LGBT / ruin bars)
+
+| Data | Cidade | Sugestão | Evitar se |
+|------|--------|----------|-----------|
+| 19 nov | Munique | Leve — jet lag | — |
+| **20 nov** | Munique | **Glockenbach** Prosecco / Sub | — |
+| 21 nov | Munique | Evitar — Neuschwanstein | Regresso 19:25 |
+| 23 nov | Salzburgo | Dark Eagle (opcional) | — |
+| **24–25 nov** | Viena | Donaukanal + Village / Why Not | 24 = chegada |
+| 26 nov | Bratislava | Apollon (se cedo) | — |
+| **28 nov** | Budapeste | **Szimpla / Instant** (sáb) | — |
+| 29 nov | Budapeste | AlterEgo (moderado) | Voo amanhã |
+| 30 nov | Berlim | Evitar — voo 15:40 | — |
+| **1–2 dez** | Berlim | Schöneberg / Kreuzberg Roses | — |
+| **4 dez** | Praga | **Vinohrady Termix** | — |
+| 5 dez | Bruxelas | Leve | Chegada 13:20 · tarde Rue Neuve |
+| **6 dez** | Bruges | Dia com Iza — **sem noite pesada** | Voo 07:00 |
+| 7 dez | Bruxelas | Evitar — embarque 07:00 | — |
+
+---
+
+## ORÇAMENTO DIÁRIO (teto € bolso)
+
+| Data | Cidade | Energia | Teto € |
+|------|--------|---------|--------|
+| 19 nov | Munique | leve | 70 |
+| 20 nov | Munique | plena | 110 |
+| 21 nov | Füssen | máxima | 85 |
+| 22 nov | → Salzburgo | média | 55 |
+| 23 nov | Salzburgo | plena | 75 |
+| 24 nov | → Viena | média | 95 |
+| 25 nov | Viena | plena | 95 |
+| 26 nov | → Bratislava | leve | 35 |
+| 27 nov | → Budapeste | média | 50 |
+| 28 nov | Budapeste | plena | 95 |
+| 29 nov | Budapeste | média | 75 |
+| 30 nov | → Berlim | leve | 40 |
+| 1 dez | Berlim | plena | 110 |
+| 2 dez | Berlim | plena | 120 |
+| 3 dez | → Praga | média | 50 |
+| 4 dez | Praga | plena | 130 |
+| 5 dez | → Bruxelas | leve | 60 |
+| 6 dez | Bruges | média | 75 |
+| 7 dez | → Brasil | mínima | 20 |
+
+---
+
+## HORÁRIOS FIXOS (NÃO MOVER)
+
+| Data | Horário | Evento |
+|------|---------|--------|
+| 18 nov | 15:10 | IB0268 GRU→MAD |
+| 19 nov | 08:50 / 11:30 | IB1309 MAD→MUC |
+| 21 nov | 08:30 / 17:25 | Flix Neuschwanstein |
+| 22 nov | 13:45 | Flix Munique→Salzburgo |
+| 24 nov | **10:00** | **ICE Salzburg→Viena** |
+| 26 nov | 12:35 | Flix Viena→Bratislava |
+| 27 nov | 10:50 | Flix Bratislava→Budapeste |
+| 30 nov | 15:40 | Ryanair BUD→BER |
+| 3 dez | **10:20** | Flix Berlim→Praga |
+| 5 dez | **11:50→13:20** | Ryanair PRG→BRU |
+| 6 dez | ~19:30–20:00 | Último trem Bruges→Bruxelas |
+| 7 dez | **07:00** | IB0604 BRU→MAD |
+
+---
+
+# ROTEIRO DIA A DIA — HORA A HORA
+
+---
+
+## 18 nov (ter) — Saída Brasil
+
+| Horário | Ação |
+|---------|------|
+| ~12:00 | Chegar GRU com folga |
+| 15:10 | **IB0268** GRU → MAD |
+| Noite | Voo noturno |
+
+---
+
+## 19 nov (qua) — Munique — CHEGADA
+
+**Hotel:** B&B München-Hbf · **Teto €70** · **Energia leve** · Tipos: Aéreo + Base  
+**Modo:** Chegada ~11h30 — sem bloco 09:00
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 05:30 | Pouso MAD |
+| 08:50 | Embarque IB1309 |
+| 11:30 | Pouso MUC |
+| 11:30–12:15 | Imigração + bagagem |
+| 12:15–13:00 | MUC → Hbf (S8/S1 ~40 min) |
+| 13:00–14:00 | Check-in B&B · bagagem |
+| 14:00–14:20 | Hbf → Marienplatz |
+| 14:20–15:00 | Marienplatz + Neues Rathaus (fachada) |
+| 15:00–15:30 | Frauenkirche (exterior) |
+| 15:30–16:15 | Viktualienmarkt (snack) |
+| 16:15–17:00 | Pé → Karlsplatz |
+| 17:00–18:30 | Karlsplatz ou volta hotel |
+| 18:30–20:00 | Jantar REWE / McDonald's Hbf |
+| 20:00–21:00 | **Dormir cedo** (jet lag) |
+
+### Legs
+
+```
+MUC → München Hbf | S-Bahn | S1 ou S8 Flughafen München → Hauptbahnhof | 12:15 → 13:00 | —
+Hbf → B&B | a pé | Arnulfstraße 30 | — → — | +5 min
+B&B → Marienplatz | S-Bahn ou U5 | S1–S8 Marienplatz OU U5 Hbf → Karlsplatz → Marienplatz | — → — | +2 min
+Marienplatz → Viktualienmarkt | a pé | — | — → — | +2 min
+Karlsplatz → B&B | S-Bahn ou U5 | sentido Hbf | — → — | +5 min
+```
+
+**Cortar se atrasar:** Karlsplatz  
+**Plano B chuva:** Marienplatz arcadas + Hbf  
+**Noite:** Evitar — jet lag  
+**Bilhete:** MVV zona aeroporto + cidade
+
+---
+
+## 20 nov (qui) — Munique — CIDADE + ENGLISCHER GARTEN + COMPRAS
+
+**Hotel:** B&B · **Teto €110** · **Energia plena** · Base + Compras
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–09:30 | Café hotel / Hbf |
+| 09:30–10:00 | Hbf → Odeonsplatz (U4) |
+| 10:00–10:45 | Hofgarten |
+| 10:45–11:15 | Odeonsplatz + Ludwigstraße / Siegestor |
+| 11:30–12:00 | U3/U6 → Universität ou Giselastraße |
+| 12:00–14:30 | Englischer Garten (Eisbach, Chinesischer Turm) |
+| 14:30–15:30 | Margem Isar / Gärtnerplatz (opcional) |
+| 16:00–18:30 | Compras Kaufingerstraße |
+| 18:30–19:30 | Jantar rápido |
+| 19:30–20:30 | **Mala Füssen amanhã** |
+| 21:00–00:00 | **Noite ⭐ Glockenbach:** Prosecco (Thekastraße) ou Sub (Müllerstraße 14) |
+
+### Legs
+
+```
+B&B → Odeonsplatz | U-Bahn | U4 Hauptbahnhof → Odeonsplatz | 09:30 → 09:45 | +3 min
+Odeonsplatz → Englischer Garten | U-Bahn | U3 ou U6 → Universität ou Giselastraße | 11:30 → 11:45 | +5 min
+Universität → Isar | U-Bahn | U3/U6 → Sendlinger Tor | 14:30 → 14:45 | —
+Centro → B&B | U-Bahn | U1/U2 ou U4/U5 Hbf | 18:00 → 18:20 | —
+```
+
+**Cortar se atrasar:** Isar  
+**Aviso:** Englischer Garten enorme — definir entrada/saída no Maps
+
+---
+
+## 21 nov (sex) — NEUSCHWANSTEIN (dia inteiro)
+
+**Hotel:** B&B (última noite MUC) · **Teto €85** · **Energia máxima** · Ícone
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 07:00–07:30 | Café + mochila | |
+| **07:45** | **Sair hotel → ZOB** | **Não atrasar** |
+| 08:00–08:30 | Embarque Flix | |
+| **08:30–10:30** | Flix ZOB → Füssen Pulverturm | Bilhete Omio |
+| 10:30–11:00 | Pulverturm → Hohenschwangau | |
+| 11:00–13:00 | Neuschwanstein (slot bilhete castelo) | |
+| 13:00–14:00 | Marienbrücke | |
+| 14:00–15:30 | Alpsee (opcional) | Cortar se atrasar |
+| 15:30–17:00 | Descida → Pulverturm | |
+| **17:25–19:25** | Flix volta → ZOB → S-Bahn hotel | |
+| 19:30–21:00 | Jantar leve · **mala Salzburgo** | Sem noite |
+
+### Legs
+
+```
+B&B → ZOB | a pé | — | 07:45 → 08:00 | +10 min
+ZOB → Füssen Pulverturm | ônibus | FlixBus | 08:30 → 10:30 | —
+Pulverturm → Hohenschwangau | ônibus local | conforme Maps | 10:30 → 11:00 | —
+Hohenschwangau → Neuschwanstein/Marienbrücke | a pé/shuttle | — | 11:00 → 14:00 | —
+Pulverturm → ZOB | ônibus | FlixBus | 17:25 → 19:25 | —
+ZOB → B&B | S-Bahn | → Hbf | 19:25 → 19:40 | +5 min
+```
+
+**Plano B:** München Hbf → Füssen RE/RB + autocarros 73/78 (DB Navigator)  
+**Plano B chuva:** Vista castelo de baixo + centro Füssen
+
+---
+
+## 22 nov (sáb) — MUNIQUE → SALZBURGO
+
+**Hotéis:** B&B check-out → **Atel Lasserhof** · **Teto €55** · Transferência  
+**Flix:** ZOB **13:45→15:45** P+R Süd
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–10:00 | Check-out · bagagem |
+| 10:00–11:00 | Opcional Marienplatz (máx 1h) |
+| **11:00** | Sair para ZOB |
+| 11:00–13:45 | Espera / almoço ZOB |
+| **13:45–15:45** | Flix ZOB → Salzburg P+R Süd |
+| 15:45–16:30 | P+R Süd → hotel |
+| 16:30–17:30 | Check-in Lasserhof |
+| 17:30–18:30 | Mirabellgarten |
+| 18:30–20:00 | Getreidegasse + Altstadt |
+| 20:00–21:00 | Salzburger Dom (exterior) · jantar |
+
+### Legs
+
+```
+B&B → ZOB | a pé | — | 11:00 → 11:15 | +10 min
+ZOB → P+R Süd | ônibus | FlixBus | 13:45 → 15:45 | —
+P+R Süd → Lasserhof | ônibus/táxi | Maps no dia | 15:45 → 16:30 | —
+Lasserhof → Mirabell | a pé | — | 17:30 → 17:40 | +10 min
+Mirabell → Altstadt | a pé | Staatsbrücke | — → — | +15 min
+```
+
+**Cortar se Flix atrasar:** Mirabell  
+**Alternativa:** Comboio Hbf → Salzburg Hbf (RE/Railjet)
+
+---
+
+## 23 nov (dom) — SALZBURGO — FESTUNG
+
+**Hotel:** Lasserhof · **Teto €75** · **Energia plena**  
+**Amanhã:** ICE **10:00** — dormir cedo
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–11:30 | Festung Hohensalzburg (exterior/vistas) |
+| 11:30–12:00 | Dom + Residenzplatz |
+| 12:00–13:30 | Almoço (Balkan Grill Walter ou café) |
+| 13:30–16:00 | Loop Altstadt: Getreidegasse, Mozartplatz |
+| 16:00–17:00 | Salzach / Makartsteg |
+| 17:00–19:00 | Jantar · **mala + dormir cedo** |
+| 21:00–23:00 | Opcional: **Dark Eagle** (Paracelsusstraße 11) |
+
+### Legs
+
+```
+Lasserhof → Festung | a pé/funicular | Festungsbahn | 09:30 → 09:45 | +15 min
+Festung → Dom | a pé | descida | — → — | +10 min
+Altstadt loop | a pé | — | — → — | —
+```
+
+**Cortar se atrasar:** Makartsteg
+
+---
+
+## 24 nov (ter) — SALZBURGO → VIENA
+
+**Hotéis:** Lasserhof check-out → **Hotel Zipser** · **Teto €95** · Transferência + Compras  
+**ICE:** **10:00→12:47** (Sparschiene — não perder)
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 08:00–08:45 | Café to-go · check-out · Salzburg Hbf |
+| **10:00–12:47** | **ÖBB ICE → Wien Hbf** |
+| 12:47–13:30 | Hbf → Zipser (U1+U2) · check-in |
+| 13:30–15:00 | **Prater** (exterior, Riesenrad) |
+| 15:00–16:30 | **Naschmarkt** (snack) |
+| 16:30–18:00 | Descanso hotel |
+| 18:00–20:00 | **Donaukanal** |
+| 20:00–21:00 | Jantar Billa · compras leves Mariahilfer |
+| 21:00–00:00 | **Noite:** Donaukanal OU Village Bar / Why Not |
+
+### Legs
+
+```
+Lasserhof → Salzburg Hbf | a pé | Elisabethstraße | 08:45 → 09:00 | +15 min
+Salzburg Hbf → Wien Hbf | trem | ÖBB ICE | 10:00 → 12:47 | —
+Wien Hbf → Zipser | metro | U1 → Karlsplatz, U2 → Rathaus, pé Lange Gasse 49 | 12:47 → 13:30 | +8 min
+Zipser → Prater | metro | U2 Rathaus → Praterstern | 13:30 → 13:45 | +10 min
+Prater → Naschmarkt | metro | U1 Praterstern → Karlsplatz, U4 → Kettenbrückengasse | 15:00 → 15:20 | —
+Naschmarkt → Donaukanal | metro | U4 Schwedenplatz ou U2 Schottenring | 18:00 → 18:15 | —
+Donaukanal → Zipser | metro | U2/U1 → Rathaus | 20:30 → 20:45 | +5 min
+```
+
+**Cortar se ICE atrasar:** Prater  
+**Aviso:** Zipser não fica no pátio do Hbf — +10 min no 1º trajeto
+
+---
+
+## 25 nov (qua) — VIENA — SCHÖNBRUNN + ANEL
+
+**Hotel:** Zipser · **Teto €95** · Compras
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–12:00 | Schönbrunn (fachada + jardins, exterior) |
+| 12:00–12:45 | Stadtpark |
+| 12:45–13:30 | Stephansdom (exterior) |
+| 13:30–14:30 | Graben (compras leves) |
+| 14:30–15:30 | Hofburg (pátios exterior) |
+| 15:30–17:00 | Rathaus + Parlament (fachadas, luzes) |
+| 17:00–18:30 | Volta hotel · descanso |
+| 18:30–19:30 | Jantar (Figlmüller ou Swing Kitchen) |
+| 19:30–20:30 | **Mala Bratislava** |
+| 21:00–00:00 | **Noite:** Why Not / Village · Naschmarkt antes |
+
+### Legs
+
+```
+Zipser → Schönbrunn | metro | U2 Rathaus → Karlsplatz, U4 → Schönbrunn | 09:00 → 09:45 | —
+Schönbrunn → Stadtpark | metro | U4 direto | 12:00 → 12:15 | —
+Stadtpark → Stephansplatz | metro | U4 (1 paragem) ou a pé ~12 min | 12:45 → 13:00 | —
+Stephansplatz → Rathaus/Parlament | a pé/tram | elétricos 1/2/D Ring | 16:00 → 16:30 | —
+Volta Zipser | metro | U2 Rathaus | 17:30 → 17:45 | +5 min
+```
+
+**Cortar se atrasar:** Hofburg
+
+---
+
+## 26 nov (qui) — VIENA → BRATISLAVA
+
+**Hotéis:** Zipser check-out 11:00 → **Danubia Gate** · **Teto €35** · Transferência  
+**Flix:** VIB **12:35→13:45** Most SNP
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–10:30 | Manhã livre Josefstadt |
+| **10:30–11:00** | Check-out Zipser |
+| 11:00–12:00 | Hotel → VIB |
+| **12:35–13:45** | Flix VIB → Most SNP |
+| 13:45–14:30 | Most SNP → Danubia Gate · check-in |
+| 14:30–17:00 | Staré Mesto (Hlavné námestie) |
+| 17:00–18:30 | Bratislava Castle (exterior) |
+| 18:30–20:00 | Jantar Old Town (Flag Ship ou Slovak Pub) |
+| 21:00–23:00 | Opcional: **Apollon** (Panenská) |
+
+### Legs
+
+```
+Zipser → VIB | metro+a pé | Maps | 11:00 → 12:00 | —
+VIB → Most SNP | ônibus | FlixBus | 12:35 → 13:45 | —
+Most SNP → Danubia Gate | elétrico | 93 ou 1/3/7 (IDS BK) | 13:45 → 14:15 | —
+Danubia Gate → Castle | a pé/elétrico | — | 17:00 → 17:20 | +15 min
+```
+
+**Cortar se atrasar:** Castle (só Old Town)  
+**Alternativa:** REX Wien Hbf → hl.st.
+
+---
+
+## 27 nov (sex) — BRATISLAVA → BUDAPESTE
+
+**Hotéis:** Danubia Gate check-out → **Medos Hotel** · **Teto €50**  
+**Flix:** Nivy **10:50→13:25** Kelenföld
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 08:00–08:30 | Café · check-out |
+| 08:30–10:00 | Danubia Gate → Mlynské Nivy |
+| 10:20–10:50 | Embarque Flix |
+| **10:50–13:25** | Flix → Budapest Kelenföld |
+| 13:25–14:30 | Metro M4 BKK → Medos · check-in |
+| 14:30–15:30 | Basílica St. Stephen (exterior) |
+| 15:30–16:30 | Andrássy út (exterior) |
+| 16:30–17:30 | Caminhada → Chain Bridge |
+| 17:30–19:00 | Vistas Buda Castle (lado Pest, exterior) |
+| 19:00–21:00 | Jantar perto hotel |
+
+### Legs
+
+```
+Danubia Gate → Nivy | a pé/metro | — | 08:30 → 09:00 | +15 min
+Nivy → Kelenföld | ônibus | FlixBus | 10:50 → 13:25 | —
+Kelenföld → Medos | metro | M4 + ligação (BKK FUTÁR) | 13:25 → 14:30 | —
+Medos → Basílica | metro | M1 Bajcsy-Zsilinszky út ou M3 Arany János utca | 14:30 → 14:45 | —
+Basílica → Parlamento (vista) | metro | M2 Deák → Batthyány tér | 16:00 → 16:15 | —
+Pest → Buda vistas | a pé | Chain Bridge | 17:00 → 17:15 | —
+```
+
+**Cortar se atrasar:** Andrássy  
+**Aviso:** Comprar bilhete BKK antes de validar
+
+---
+
+## 28 nov (sáb) — BUDAPESTE — PEST ICÓNICO + RUIN BARS
+
+**Hotel:** Medos · **Teto €95** · **Sábado ruin bars** · Ícone + Compras
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–10:30 | Parlamento (exterior) + Shoes on the Danube |
+| 10:30–12:00 | Margem Danúbio / fotos Parlamento |
+| 12:00–13:30 | Great Market Hall (snack/lángos) |
+| 13:30–14:30 | Travessia → Buda |
+| 14:30–16:30 | Fisherman's Bastion + Matthias Church (exterior) |
+| 16:30–17:30 | Volta Pest · descanso |
+| 17:30–19:00 | Compras moderadas (opcional) |
+| 19:00–20:30 | Jantar (Menza ou Retro Langos) |
+| **21:00–01:00** | **Noite ⭐:** Szimpla Kert (21h) → Instant-Fogas → AlterEgo · **Bolt** volta Medos |
+
+### Legs
+
+```
+Medos → Parlamento/Shoes | metro | M2 Kossuth Lajos tér | 09:00 → 09:20 | —
+Shoes → Great Market | metro | M4 Fővám tér ou M3 Kálvin tér | 12:00 → 12:15 | +5 min
+Market → Buda/Bastion | metro+a pé | M2 Deák, Chain Bridge, funicular Sikló ou bus 16 | 13:30 → 14:30 | —
+Buda → Medos | metro | M2 Széll Kálmán tér ou ponte a pé | 16:30 → 17:00 | —
+Medos → Jewish Quarter | metro/táxi | M2/M3 Deák, Kazinczy utca | 21:00 → 21:20 | —
+```
+
+**Cortar se atrasar:** Bastion (manter Parlamento + ruin bar)  
+**Plano B chuva:** Váci utca comercial
+
+---
+
+## 29 nov (dom) — BUDAPESTE — DESCANSO + VOO AMANHÃ
+
+**Hotel:** Medos · **Teto €75** · **Voo amanhã 15:40**
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 09:00–12:00 | Pendências OU Jewish Quarter (exterior) | |
+| 12:00–14:00 | Margaret Bridge + Margitsziget (exterior) | |
+| 14:00–17:00 | Buffer descanso · compras WestEnd/Aréna (confirmar domingo) | |
+| 17:00–19:00 | Jantar leve | |
+| 19:00–21:00 | **Mala Berlim** · dormir razoável | |
+| 21:00–23:00 | Noite moderada: AlterEgo / Why Not (opcional) | **Sem banho térmico longo** |
+
+### Legs
+
+```
+Medos → Jewish Quarter | metro | M2/M3 Deák | 09:30 → 09:45 | —
+→ Margaret Bridge/Island | elétrico | 4 ou 6 | 12:00 → 12:20 | —
+→ WestEnd (opcional) | metro | BKK FUTÁR | 14:00 → 14:30 | —
+```
+
+---
+
+## 30 nov (seg) — BUDAPESTE → BERLIM (VOO)
+
+**Hotéis:** Medos check-out → **Premier Inn Alexanderplatz** · **Teto €40**  
+**Voo:** Ryanair **BUD 15:40 → BER 17:10** (R$ 734,34)
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 08:00–09:00 | Café · check-out Medos | |
+| 09:00–10:00 | Último passeio: Basílica (10 min hotel) | Manhã **leve** |
+| 10:00–11:00 | Preparar ida aeroporto | |
+| **~11:30–12:30** | **100E** Deák Ferenc tér → BUD | Chegar ~12:30 |
+| 12:30–15:00 | Check-in Ryanair · segurança · gate | Boarding offline |
+| **15:40–17:10** | Voo BUD → BER | |
+| 17:10–18:00 | Desembarque BER | |
+| 18:00–19:00 | FEX/S9 → Hbf → U5 → Premier Inn Alex | |
+| 19:00–20:30 | Check-in · Alexanderplatz + Fernsehturm (exterior) | |
+| 20:30–21:00 | Jantar Rewe · **dormir** | |
+
+### Legs
+
+```
+Medos → Deák Ferenc tér | metro | M2/M3/M4 | 11:00 → 11:15 | —
+Deák → BUD | ônibus | 100E expresso (~35–45 min) | 11:30 → 12:15 | —
+BUD → BER | avião | Ryanair | 15:40 → 17:10 | —
+BER → Alex | trem+metro | FEX ou S9 → Hbf, U5 → Alexanderplatz | 17:30 → 18:45 | —
+```
+
+### Checklist voo BUD→BER
+
+- Passaporte + boarding Ryanair offline (app/PDF); terminal no bilhete
+- Bateria + powerbank; regras bagagem cabine
+- Plano **100E** com folga para voo 15:40
+- Fechar malas de manhã; última validação BKK
+- Após BER: FEX/S-Bahn/U5 até hotel (BVG/DB no dia)
+
+**Crítico:** Zero programa pesado de manhã
+
+---
+
+## 1 dez (ter) — BERLIM — MITTE CLÁSSICA
+
+**Hotel:** Premier Inn Alexanderplatz · **Teto €110** · **Energia plena**
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–09:20 | Alex → Brandenburger Tor (U5) |
+| 09:20–10:30 | Brandenburg Gate + Reichstag (exterior) |
+| 10:30–11:30 | Tiergarten |
+| 11:30–12:30 | Holocaust Memorial |
+| 12:30–13:30 | Almoço (Mustafa's ou Curry 36) |
+| 13:30–14:30 | Potsdamer Platz |
+| 14:30–16:30 | East Side Gallery (trecho principal) |
+| 16:30–17:30 | Volta Alexanderplatz |
+| 18:00–21:00 | Jantar · descanso |
+| **21:00–02:00** | **Noite ⭐:** Schöneberg — **Roses** (Oranienstraße 187) · Berghain só se fila ok |
+
+### Legs
+
+```
+Premier Inn → Brandenburger Tor | metro | U5 Alex → Brandenburger Tor | 09:00 → 09:15 | +5 min
+Brandenburger → Memorial | a pé | — | 11:30 → 11:40 | +5 min
+Memorial → East Side Gallery | S-Bahn | Brandenburger Tor → Ostbahnhof (S3/S5/S7/S9) ou U1 Warschauer | 14:00 → 14:30 | +10 min
+East Side → Alex | S-Bahn/U5/U8 | Ostbahnhof → Alexanderplatz | 16:30 → 17:00 | —
+Alex → Schöneberg | U-Bahn | U1/U7 | 21:00 → 21:30 | —
+```
+
+**Cortar se atrasar:** Metade East Side Gallery  
+**Aviso:** Reichstag cupula exige reserva prévia se entrar
+
+---
+
+## 2 dez (qua) — BERLIM — COMPRAS HUB
+
+**Hotel:** Premier Inn · **Teto €120** · **Dia de maior gasto em compras**
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 09:00–10:00 | Unter den Linden |
+| 10:00–11:00 | Berliner Dom + Lustgarten (exterior) |
+| 11:00–12:00 | Museum Island (só fachadas) |
+| 12:00–13:00 | Gendarmenmarkt |
+| 13:00–14:00 | Almoço Markthalle Neun (Kreuzberg) |
+| **14:00–17:00** | **Compras:** Alexa/Alexanderplatz + **U2 → Ku'damm** Primark/Inditex/**Apple** |
+| 17:00–18:30 | Mercados de Natal |
+| 18:30–19:30 | **Mala Praga** |
+| 21:00–01:00 | **Noite:** Kreuzberg Oranienstraße · Markthalle Neun se não almoçou |
+
+### Legs
+
+```
+Alex → Unter den Linden/Dom | metro/a pé | U5 Museumsinsel | 09:00 → 09:20 | —
+Dom → Gendarmenmarkt | a pé | — | 12:00 → 12:15 | +10 min
+Alex → Ku'damm | metro | U2 Alex → Zoologischer Garten | 14:00 → 14:20 | —
+Ku'damm → Alex | metro | U2 volta | 17:00 → 17:20 | —
+```
+
+**Cortar se atrasar:** Gendarmenmarkt
+
+---
+
+## 3 dez (qui) — BERLIM → PRAGA
+
+**Hotéis:** Premier Inn check-out → **Alton Hotel** · **Teto €50**  
+**Flix:** Südkreuz **10:20→14:20** Florenc
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 07:30–08:00 | Café · check-out | |
+| **08:00–08:45** | S-Bahn **Alex → Südkreuz** | No hotel **08:45** |
+| 08:45–10:10 | Espera Südkreuz · embarque Flix | |
+| **10:20–14:20** | Flix Südkreuz → Praha Florenc | |
+| 14:20–15:00 | Metro C Florenc → I.P. Pavlova · check-in Alton | |
+| 15:00–16:00 | Wenceslas Square | Cortar se atrasar |
+| 16:00–18:00 | Old Town Square + Relógio Astronômico (exterior) |
+| 18:00–21:00 | Jantar centro · passeio noturno leve | |
+
+### Legs
+
+```
+Premier Inn → Südkreuz | S-Bahn | S2/S25/S26 Alex → Südkreuz (~15 min) | 08:00 → 08:15 | —
+Südkreuz → Florenc | ônibus | FlixBus | 10:20 → 14:20 | —
+Florenc → Alton | metro | C → I.P. Pavlova | 14:20 → 14:35 | +5 min pé Legerova
+Alton → Old Town | metro | C → Muzeum, A → Staroměstská ou a pé 15–20 min | 15:30 → 15:50 | —
+```
+
+**Nota:** FlixBus não para em Dresden no mesmo sentido do EC.  
+**Alternativa EC:** U5 Alex → Hbf → EC → hl.n.
+
+---
+
+## 4 dez (sex) — PRAGA — CASTELO + COMPRAS + NOITE
+
+**Hotel:** Alton · **Teto €130** · Compras + noite CZ
+
+### Cronograma
+
+| Horário | Plano |
+|---------|-------|
+| 08:00–09:00 | Café (Café Savoy opcional — Smíchov) |
+| 09:00–10:00 | **Charles Bridge** cedo |
+| 10:00–11:00 | Subida Malá Strana |
+| 11:00–13:00 | Prague Castle (exterior, pátios) |
+| 13:00–14:00 | Almoço |
+| 14:00–15:00 | Kampa Island (opcional — cortar se atrasar) |
+| 15:00–17:00 | Compras Na Příkopě / Palladium |
+| 17:00–18:00 | Old Town revisit |
+| 19:00–20:30 | Jantar **Lokal Dlouhá** |
+| **21:00–01:00** | **Noite ⭐ Vinohrady:** Club **Termix** → Friends Bar · Bolt se ficar tarde |
+
+### Legs
+
+```
+Alton → Charles Bridge | metro/a pé | C ou a pé ~20 min | 09:00 → 09:20 | —
+Bridge → Castle | elétrico/metro | 22 de Národní/Můstek OU A → Malostranská + subida | 10:30 → 11:00 | —
+Castle → Kampa | a pé | descida Malá Strana | 14:00 → 14:15 | —
+Kampa → Palladium | metro | PID | 15:00 → 15:20 | —
+Centro → Vinohrady | metro | A/B | 21:00 → 21:20 | —
+```
+
+**Cortar se atrasar:** Kampa
+
+---
+
+## 5 dez (sáb) — PRAGA → BRUXELAS (VOO)
+
+**Hotéis:** Alton check-out (cedo) → **Hotel des Colonies** · **Teto €60** · **Energia leve**  
+**Voo:** Ryanair **PRG 11:50 → BRU 13:20** (R$ 835,77 Omio, bagagens incl.)  
+**Modo:** Voo de **manhã** — sem turismo em Praga; **tarde livre em Bruxelas** (compras + Grand Place)
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 06:30–07:00 | Acordar · café to-go | |
+| 07:00–07:30 | Check-out Alton · bagagem | |
+| 07:30–08:00 | Metro → **Nádraží Veleslavín** | Sair hotel **07:30** |
+| 08:00–08:35 | Autocarro **119** → **PRG** | |
+| 08:35–11:20 | Check-in Ryanair · segurança · gate | Chegar PRG **~09:30** (2h antes) |
+| **11:50–13:20** | Voo PRG → **BRU Zaventem** | |
+| 13:20–14:00 | Desembarque · imigração | |
+| 14:00–15:00 | SNCB + STIB aeroporto → **Rogier** · check-in des Colonies | ~40–55 min |
+| 15:00–16:00 | **Grand Place** (passeio rápido, exterior) | |
+| 16:00–17:30 | **Rue Neuve** — compras moda (fecho rota) | |
+| 17:30–18:30 | **Apple Toison d'Or** / MediaMarkt (se faltar AirPods) | Cortar se atrasar |
+| 18:30–19:30 | Jantar perto hotel (Exki ou Rue Neuve) | |
+| 19:30–21:00 | Descanso · **mala Bruges** · dormir razoável | |
+
+### Legs
+
+```
+Alton → Nádraží Veleslavín | metro | C → Muzeum, A → Veleslavín | 07:30 → 07:45 | —
+Veleslavín → PRG | ônibus | 119 (alt. AE via hl.n.) | 08:00 → 08:35 | —
+PRG → BRU | avião | Ryanair | 11:50 → 13:20 | —
+BRU → Rogier | trem+metro | SNCB + STIB | 14:00 → 14:50 | —
+Rogier → Grand Place | a pé | ~15–20 min | 15:00 → 15:20 | —
+Rogier → Toison d'Or | metro | STIB | 17:30 → 17:50 | —
+```
+
+### Checklist voo PRG→BRU
+
+- Passaporte + boarding **Ryanair** offline (app/PDF); **terminal PRG** no bilhete
+- Bagagem conforme Omio: carry-on + despacho (confira pesos no bilhete)
+- EUR e bateria; última validação **Lítačka** antes do aeroporto
+- Chegada **Zaventem (BRU)** — não CRL
+- Compras Apple/modas: resolver **hoje à tarde** (última cidade da rota antes de Bruges)
+
+**Cortar se atrasar:** Apple Toison d'Or (manter check-in + Grand Place curto)  
+**Crítico:** PRG **~09:30** — voo **11:50**, não 17:15  
+**Noite:** Leve — sem Saint-Jacques / festa pesada (Bruges amanhã cedo)
+
+---
+
+## 6 dez (dom) — BRUGES BATE-VOLTA (prima Iza)
+
+**Hotel:** des Colonies (pernoite Bruxelas) · **Teto €75** · **Não pernoitar em Bruges**
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| 08:00–09:00 | Café hotel | |
+| 09:00–10:00 | Opcional Grand Place 1h OU direto estação | |
+| 10:00–11:00 | Rogier/Nord/Central → Midi · embarque IC | |
+| 11:00–12:00 | **SNCB IC → Brugge** (~1h) | Horário real SNCB |
+| 12:00–12:15 | Estação Brugge → Markt a pé | |
+| **12:00–18:00** | **Com Iza:** Markt, Belfry (exterior), Rozenhoedkaai, canais · almoço/jantar | |
+| 18:00–19:00 | Caminhada final · preparar volta | |
+| **19:00–20:00** | **IC Brugge → Bruxelas** | Último confortável ~19:30–20:00 |
+| 20:00–21:00 | Chegada Nord/Rogier · **Tax Free prep** · **dormir cedo** | **Alarme 03:00** |
+
+### Legs
+
+```
+des Colonies → Midi/Nord | metro | STIB | 09:30 → 09:45 | —
+Midi → Brugge | trem | SNCB IC (~1h) | 11:00 → 12:00 | —
+Brugge estação → Markt | a pé | — | 12:00 → 12:12 | +12 min
+Markt → Rozenhoedkaai | a pé | — | 14:00 → 14:10 | +5 min
+Brugge → Bruxelas | trem | SNCB IC | 19:00 → 20:00 | —
+```
+
+**Noite:** Sem Saint-Jacques / festa pesada / La Demence  
+**Cortar:** Parc Cinquantenaire / catedral BRU  
+**Nota:** Voo 7 dez 07:00 — zero turismo na manhã do aeroporto
+
+---
+
+## 7 dez (seg) — BRUXELAS → BRASIL
+
+**Hotel:** des Colonies check-out · **Teto €20** · **Energia mínima**  
+**Alarme:** **03:00** (configurar na noite de **6 dez**)
+
+### Cronograma
+
+| Horário | Plano | CRÍTICO |
+|---------|-------|---------|
+| **03:00** | **Alarme** | Configurar na noite anterior |
+| 03:00–03:30 | Levantar · check-out express · mala pronta | |
+| **03:30–04:30** | Táxi/Bolt **hotel → BRU Zaventem** | Reservar Bolt na noite de **6 dez** |
+| 04:30–05:00 | Chegada terminal · fila check-in | Meta: **05:00** no aeroporto (2h antes) |
+| 05:00–07:00 | Check-in Iberia · segurança · **Tax Free** | |
+| **07:00** | **IB0604** BRU → MAD | |
+| 09:25 | Chegada MAD | Conexão ~2h25 |
+| **11:50** | **IB0271** MAD → GRU | |
+| **19:00** | Chegada GRU | |
+
+### Legs
+
+```
+des Colonies → BRU | táxi/Bolt | madrugada (~45–60 min) | 03:30 → 04:30 | —
+BRU → MAD → GRU | avião | Iberia | 07:00 → 19:00 GRU | —
+```
+
+### Checklist intercontinental
+
+- **Alarme 03:00**; sair hotel **~03:45**; Rogier → BRU (Bolt/táxi — IC madrugada pouco fiável)
+- IB0604 07:00: chegar **05:00** (2h antes); conexão Madrid conforme bilhete
+- Passaporte, boarding Iberia offline, seguro
+- Na noite de **6 dez:** Bolt agendado · mala 100% pronta · **greves/obras SNCB** (só se tentar comboio)
+
+**Crítico:** Embarque **07:00** — alarme **03:00**, não 04:15
+
+---
+
+## EMERGÊNCIA
+
+- **112** — UE (saúde, bombeiros, polícia)
+- Consulado BR: confirmar em gov.br antes da viagem
+- Seguro-viagem SOS: anotar número da apólice
+- Iberia: app/site da reserva · Ryanair/Wizz: app da companhia
+
+---
+
+## INSTRUÇÃO FINAL PARA A IA DESTINO
+
+Ao processar este prompt, para **cada dia** devolver:
+
+1. Tabela **HH:MM → ação** (refinar ±15 min se necessário)
+2. Bloco **legs** no formato padrão
+3. **Hotel base**, **teto €**, **energia**, **o que cortar**
+4. **Horários de bilhete** intocados
+5. Sequência de **POIs na ordem GPS**
+6. **Janela de noite** (se aplicável) com nomes de bares/restaurantes
+
+**Não** reorganizar cidades, **não** trocar hotéis, **não** inventar paragens fora do roteiro.
+
+---
+
+*Gerado a partir de `roteiro-viagem-europa-2025` · Gabriel Torga · 2026-06-14*

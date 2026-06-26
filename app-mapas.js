@@ -328,53 +328,33 @@
     host.innerHTML = "";
     host.removeAttribute("aria-busy");
 
-    var frag = document.createDocumentFragment();
+    var ul = document.createElement("ul");
+    ul.className = "mapas-index-list";
 
     days.forEach(function (day) {
-      var det = document.createElement("details");
-      det.className = "mapas-day";
-      det.id = "mapas-" + day.day_id;
+      var li = document.createElement("li");
+      li.className = "mapas-index-list__item";
 
-      var sum = document.createElement("summary");
-      sum.innerHTML =
-        '<span class="mapas-day__date">' +
-        escapeHtml(day.date) +
-        '</span> <span class="mapas-day__title">' +
-        escapeHtml(day.title) +
-        '</span> <span class="mapas-day__count">' +
-        day.stops.length +
-        " paradas</span>";
-      det.appendChild(sum);
-
-      var body = document.createElement("div");
-      body.className = "mapas-day__body";
-
-      var tools = document.createElement("div");
-      tools.className = "mapas-day__tools";
+      var diaA = document.createElement("a");
+      diaA.className = "mapas-index-list__dia";
+      diaA.href = "#" + day.day_id;
+      diaA.textContent = day.date + " — " + day.title + " (" + day.stops.length + " paradas)";
+      li.appendChild(diaA);
 
       if (day.route_url) {
         var routeA = document.createElement("a");
-        routeA.className = "btn-maps mapas-day__route";
+        routeA.className = "mapas-index-list__maps btn-maps";
         routeA.href = day.route_url;
         routeA.target = "_blank";
         routeA.rel = "noopener noreferrer";
-        routeA.textContent = "Abrir rota do dia no Maps";
-        tools.appendChild(routeA);
+        routeA.textContent = "Rota Maps";
+        li.appendChild(routeA);
       }
 
-      var diaA = document.createElement("a");
-      diaA.className = "mapas-day__link-dia";
-      diaA.href = "#" + day.day_id;
-      diaA.textContent = "Ver plano FAST no roteiro";
-      tools.appendChild(diaA);
-
-      body.appendChild(tools);
-      body.appendChild(buildStopListOl(day));
-      det.appendChild(body);
-      frag.appendChild(det);
+      ul.appendChild(li);
     });
 
-    host.appendChild(frag);
+    host.appendChild(ul);
   }
 
   function injectFastPlanLegs(days) {
