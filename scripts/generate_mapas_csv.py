@@ -273,17 +273,14 @@ DAYS = [
     {
         "day_id": "day-2026-12-06",
         "date": "6 dez",
-        "title": "Bruges (bate-volta)",
+        "title": "Bruxelas — descanso + prep voo",
         "stops": [
             (1, "hotel", "Hotel des Colonies", "Hotel des Colonies Brussels, Rue des Croisades 6, Brussels, Belgium"),
-            (2, "sight", "Grand Place (opcional)", "Grand Place, Brussels, Belgium"),
-            (3, "transport", "Brussels-Midi station", "Brussels-Midi station, Belgium"),
-            (4, "transport", "Bruges station", "Bruges station, Belgium"),
-            (5, "sight", "Markt Bruges", "Markt, Bruges, Belgium"),
-            (6, "sight", "Belfry of Bruges", "Belfry of Bruges, Belgium"),
-            (7, "sight", "Rozenhoedkaai", "Rozenhoedkaai, Bruges, Belgium"),
-            (8, "transport", "Bruges station (volta)", "Bruges station, Belgium"),
-            (9, "hotel", "Hotel des Colonies (volta)", "Hotel des Colonies Brussels, Belgium"),
+            (2, "sight", "Grand Place", "Grand Place, Brussels, Belgium"),
+            (3, "sight", "Galeries Royales Saint-Hubert", "Galeries Royales Saint-Hubert, Brussels, Belgium"),
+            (4, "sight", "Mont des Arts", "Mont des Arts, Brussels, Belgium"),
+            (5, "sight", "Rue Neuve (opcional)", "Rue Neuve, Brussels, Belgium"),
+            (6, "hotel", "Hotel des Colonies (prep voo)", "Hotel des Colonies Brussels, Belgium"),
         ],
     },
     {

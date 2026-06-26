@@ -317,7 +317,7 @@
         hotel: "Hotel des Colonies Brussels by Mercure (Rogier)",
         station: "Rogier / Bruxelles-Nord; chegada 5 dez via BRU (Zaventem) + SNCB/STIB",
         poi: [
-          "Grand Place (5 dez); 6 dez bate-volta Bruges com prima Iza",
+          "Grand Place (5 dez); 6 dez descanso + prep voo em Bruxelas",
           "Seg.: voo BRU → Brasil (7 dez)",
         ],
         mapsUrl:

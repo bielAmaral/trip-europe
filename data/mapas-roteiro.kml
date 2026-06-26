@@ -1220,7 +1220,7 @@
       </Placemark>
     </Folder>
     <Folder>
-      <name>6 dez — Bruges (bate-volta)</name>
+      <name>6 dez — Bruxelas — descanso + prep voo</name>
       <description>day-2026-12-06 — ordem FAST TOURIST</description>
       <Placemark>
         <name>01 - Hotel des Colonies</name>
@@ -1230,77 +1230,47 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>02 - Grand Place (opcional)</name>
+        <name>02 - Grand Place</name>
         <description>Ponto turístico — Grand Place, Brussels, Belgium — #day-2026-12-06</description>
         <Point>
           <coordinates>4.352500,50.846667,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>03 - Brussels-Midi station</name>
-        <description>Transporte — Brussels-Midi station, Belgium — #day-2026-12-06</description>
+        <name>03 - Galeries Royales Saint-Hubert</name>
+        <description>Ponto turístico — Galeries Royales Saint-Hubert, Brussels, Belgium — #day-2026-12-06</description>
         <Point>
-          <coordinates>4.336667,50.835556,0</coordinates>
+          <coordinates>4.354722,50.848611,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>04 - Bruges station</name>
-        <description>Transporte — Bruges station, Belgium — #day-2026-12-06</description>
+        <name>04 - Mont des Arts</name>
+        <description>Ponto turístico — Mont des Arts, Brussels, Belgium — #day-2026-12-06</description>
         <Point>
-          <coordinates>3.216667,51.197222,0</coordinates>
+          <coordinates>4.359444,50.842778,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>05 - Markt Bruges</name>
-        <description>Ponto turístico — Markt, Bruges, Belgium — #day-2026-12-06</description>
+        <name>05 - Rue Neuve (opcional)</name>
+        <description>Ponto turístico — Rue Neuve, Brussels, Belgium — #day-2026-12-06</description>
         <Point>
-          <coordinates>3.224167,51.208889,0</coordinates>
+          <coordinates>4.356944,50.853889,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>06 - Belfry of Bruges</name>
-        <description>Ponto turístico — Belfry of Bruges, Belgium — #day-2026-12-06</description>
-        <Point>
-          <coordinates>3.225556,51.208056,0</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>07 - Rozenhoedkaai</name>
-        <description>Ponto turístico — Rozenhoedkaai, Bruges, Belgium — #day-2026-12-06</description>
-        <Point>
-          <coordinates>3.227500,51.206944,0</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>08 - Bruges station (volta)</name>
-        <description>Transporte — Bruges station, Belgium — #day-2026-12-06</description>
-        <Point>
-          <coordinates>3.216667,51.197222,0</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>09 - Hotel des Colonies (volta)</name>
+        <name>06 - Hotel des Colonies (prep voo)</name>
         <description>Hotel — Hotel des Colonies Brussels, Belgium — #day-2026-12-06</description>
         <Point>
           <coordinates>4.357222,50.856944,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>Rota a pé (trecho 1/2)</name>
+        <name>Rota a pé</name>
         <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
         <styleUrl>#routeWalk</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>4.357222,50.856944,0 4.352500,50.846667,0 4.336667,50.835556,0</coordinates>
-        </LineString>
-      </Placemark>
-      <Placemark>
-        <name>Rota a pé (trecho 2/2)</name>
-        <description>Linha de referência na ordem FAST — não use como navegação entre cidades distantes.</description>
-        <styleUrl>#routeWalk2</styleUrl>
-        <LineString>
-          <tessellate>1</tessellate>
-          <coordinates>3.216667,51.197222,0 3.224167,51.208889,0 3.225556,51.208056,0 3.227500,51.206944,0 3.216667,51.197222,0</coordinates>
+          <coordinates>4.357222,50.856944,0 4.352500,50.846667,0 4.354722,50.848611,0 4.359444,50.842778,0 4.356944,50.853889,0 4.357222,50.856944,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>

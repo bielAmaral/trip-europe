@@ -114,6 +114,8 @@ GEO: dict[str, tuple[float, float]] = {
     "Hotel des Colonies Brussels, Belgium": (50.856944, 4.357222),
     "Rue Neuve, Brussels, Belgium": (50.853889, 4.356944),
     "Grand Place, Brussels, Belgium": (50.846667, 4.352500),
+    "Galeries Royales Saint-Hubert, Brussels, Belgium": (50.848611, 4.354722),
+    "Mont des Arts, Brussels, Belgium": (50.842778, 4.359444),
     "Brussels-Midi station, Belgium": (50.835556, 4.336667),
     "Bruges station, Belgium": (51.197222, 3.216667),
     "Markt, Bruges, Belgium": (51.208889, 3.224167),
