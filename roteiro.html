@@ -15,16 +15,12 @@
   <title>Roteiro · Europa Central · Nov–Dez 2026</title>
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="app.css?v=36" />
+  <link rel="stylesheet" href="app.css?v=40" />
 </head>
 <body class="has-app-ui">
   <a class="skip-link" href="#resumo">Saltar para o conteúdo</a>
   <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso de leitura do roteiro"></div>
-  <div id="cursorRoot" class="cursor-root" aria-hidden="true">
-    <div class="cursor-dot"></div>
-    <div class="cursor-ring"></div>
-  </div>
-  <div class="bg-mesh-extra" aria-hidden="true"></div>
+<div class="bg-mesh-extra" aria-hidden="true"></div>
   <div class="wrap">
   <dialog class="app-search-dlg" id="tripSearchDialog" aria-labelledby="tripSearchTitle">
     <form method="dialog" class="app-search-dlg__form">
@@ -37,7 +33,7 @@
         <div class="trip-search-wrap--inner">
           <input type="search" id="tripSearch" name="tripSearch" placeholder="Cidade, estação, loja, data…" enterkeyhint="search" autocomplete="off" autocapitalize="off" spellcheck="false" />
         </div>
-        <p class="trip-search-hint">A pesquisa abrange todo o conteúdo. Campo vazio repõe a vista; secções sem correspondência ficam ocultas (exceto na pré-visualização de resultados). Toque fora para fechar.</p>
+        <p class="trip-search-hint">Campo vazio repõe a vista. Toque fora para fechar.</p>
       </div>
     </form>
   </dialog>
@@ -60,62 +56,21 @@
       <div class="toolbar-search-actions">
       <button type="button" class="btn-icon" id="themeToggle" title="Tema claro / escuro" aria-label="Alternar tema claro ou escuro"><i data-lucide="sun" class="lucide-ico theme-ico-light" aria-hidden="true"></i><i data-lucide="moon" class="lucide-ico theme-ico-dark" aria-hidden="true"></i></button>
       </div>
-      <span class="toolbar-hint toolbar-hint--toolbar">Pesquisa em todo o roteiro; campo vazio repõe a vista. Dica PWA no fim da página.</span>
     </div>
 
     <nav class="toc reveal app-panel" data-app-panel="inicio" aria-label="Índice" id="indice-toc">
       <h2>Índice</h2>
-      <div class="toc-groups">
-        <div class="toc-group">
-          <p class="toc-group-label" id="toc-lbl-panorama">Panorama e deslocações</p>
-          <ul class="toc-group-list" aria-labelledby="toc-lbl-panorama">
-            <li><a href="#resumo">Resumo e noites</a></li>
-            <li><a href="#mapa">Mapa intercidades</a></li>
-            <li><a href="#mapas">Mapas dia a dia (GPS)</a></li>
-            <li><a href="#horarios-bilhetes">Horários Omio (bilhetes)</a></li>
-            <li><a href="#voos">Voos intercontinentais</a></li>
-            <li><a href="#hoteis">Hotéis confirmados (Booking)</a></li>
-            <li><a href="#emergencia">Emergência e contactos</a></li>
-          </ul>
-        </div>
-        <div class="toc-group">
-          <p class="toc-group-label" id="toc-lbl-dinheiro-cidades">Dinheiro e contexto por cidade</p>
-          <ul class="toc-group-list" aria-labelledby="toc-lbl-dinheiro-cidades">
-            <li><a href="#cambio">Câmbio e custos (estim.)</a></li>
-            <li><a href="#cidades">Detalhes por cidade</a></li>
-          </ul>
-        </div>
-        <div class="toc-group">
-          <p class="toc-group-label" id="toc-lbl-dia-compras">Dia a dia e compras</p>
-          <ul class="toc-group-list" aria-labelledby="toc-lbl-dia-compras">
-            <li><a href="#dias">Roteiro dia a dia</a></li>
-            <li><a href="#operacional">Plano operacional · orçamento</a></li>
-            <li><a href="#indice-dias">Legenda: tipos de dia</a></li>
-            <li><a href="#compras">Onde comprar (moda + Apple)</a></li>
-          </ul>
-        </div>
-        <div class="toc-group">
-          <p class="toc-group-label" id="toc-lbl-explorar">Comer, beber, noite</p>
-          <ul class="toc-group-list" aria-labelledby="toc-lbl-explorar">
-            <li><a href="#explorar">Explorar · restaurantes e vida noturna</a></li>
-            <li><a href="#explorar-calendario-noite">Calendário · melhores noites</a></li>
-            <li><a href="#lgbt-bares">LGBT+ · bares (atalho)</a></li>
-          </ul>
-        </div>
-        <div class="toc-group">
-          <p class="toc-group-label" id="toc-lbl-fecho">Fecho da viagem</p>
-          <ul class="toc-group-list" aria-labelledby="toc-lbl-fecho">
-            <li><a href="#checklist">Checklist final</a></li>
-          </ul>
-        </div>
-      </div>
+      <ul class="toc-compact">
+        <li><a href="#dias">Dias</a> · <a href="#mapa">Mapa</a> · <a href="#mapas">GPS</a> · <a href="#explorar">Explorar</a></li>
+        <li><a href="#horarios-bilhetes">Omio</a> · <a href="#voos">Voos</a> · <a href="#hoteis">Hotéis</a> · <a href="#emergencia">SOS</a></li>
+        <li><a href="#financas">Dinheiro</a> · <a href="#compras">Compras</a> · <a href="#checklist">Checklist</a></li>
+      </ul>
     </nav>
 
     <section id="explorar" class="block app-panel" data-app-panel="explorar" aria-labelledby="explorar-heading">
       <span id="lgbt-bares" class="visually-hidden" aria-hidden="true"></span>
       <h2 id="explorar-heading">Explorar · comer, beber, noite</h2>
-      <p class="lede">Restaurantes, bares LGBT+, zonas de hostel/vida noturna e um <strong>calendário de melhores noites</strong> alinhado ao roteiro (comboios, voos, dias pesados). Você fica em <strong>hotel</strong> — hostels listados são <strong>pontos sociais</strong> e bairros, não alojamento.</p>
-      <p class="note" style="margin-top:0;"><strong>Confirme horários</strong> no Google Maps ou site oficial perto da data. <strong>La Demence</strong> (Bruxelas) é festa mensal — <a href="https://lademence.com/" rel="noopener noreferrer">lademence.com</a>. <strong>Connection</strong> (Berlim) pode estar em obras.</p>
+      <p class="lede">Restaurantes, LGBT+ e <a href="#explorar-calendario-noite">calendário de noites</a>. Hostels = zona social, não alojamento.</p>
 
       <div class="card" id="explorar-calendario-noite">
         <h3>Calendário · melhores noites LGBT / ruin bar / social</h3>
@@ -140,7 +95,7 @@
             <tr class="row-highlight"><td><strong>1–2 dez</strong></td><td>Berlim</td><td><strong>Schöneberg / Kreuzberg</strong></td><td>Roses, Oranienstr.; Berghain opcional</td><td><a href="#day-2026-12-01">#</a> · <a href="#day-2026-12-02">#</a></td></tr>
             <tr><td>3 dez</td><td>→ Praga</td><td>Transferência</td><td>FlixBus ~4h</td><td><a href="#day-2026-12-03">#</a></td></tr>
             <tr class="row-highlight"><td><strong>4 dez</strong></td><td>Praga</td><td><strong>Vinohrady</strong> — Termix</td><td>Melhor noite CZ</td><td><a href="#day-2026-12-04">#</a></td></tr>
-            <tr><td>5 dez</td><td>→ Bruxelas</td><td>Leve se chegar cedo</td><td>Voo PRG→BRU 17h15</td><td><a href="#day-2026-12-05">#</a></td></tr>
+            <tr><td>5 dez</td><td>→ Bruxelas</td><td>Tarde Rue Neuve</td><td>Chegada 13h20</td><td><a href="#day-2026-12-05">#</a></td></tr>
             <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruges (bate-volta)</td><td>Dia com prima Iza — <em>sem noite pesada</em></td><td>Regresso BRU ~20h · voo 07h</td><td><a href="#day-2026-12-06">#</a></td></tr>
             <tr><td>7 dez</td><td>Bruxelas</td><td><em>Evitar</em> — embarque 07h00</td><td>Dormir cedo</td><td><a href="#day-2026-12-07">#</a></td></tr>
           </tbody>
@@ -355,31 +310,14 @@
     </section>
     <section id="resumo" class="block app-panel" data-app-panel="inicio">
       <h2>Resumo e noites</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>Cidades e ordem</h3>
-          <p>Munique → Salzburgo → Viena → Bratislava → Budapeste → Berlim → Praga → Bruxelas. <strong>FlixBus + ICE (Omio)</strong> nos trechos terrestres com <strong>horários de referência</strong> na seção <a href="#horarios-bilhetes">Horários Omio</a>; <strong>voos curtos</strong>: <strong>BUD → BER</strong> <strong>30 nov 15h40–17h10</strong> (Ryanair + bagagens, <strong>R$ 734,34</strong>) · <strong>PRG → BRU</strong> <strong>5 dez 17h15–18h45</strong> (Smartwings <strong>Plus</strong> no Omio, total <strong>R$ 835,77</strong> = base + upgrade). Berlim–Praga: <strong>FlixBus Südkreuz → Florenc ~10h20–14h20</strong> (<strong>3 dez</strong>).</p>
-        </div>
-        <div class="card">
-          <h3>Distribuição de noites</h3>
-          <ul>
-            <li><strong>Munique</strong> · 3 noites (19–21 nov)</li>
-            <li><strong>Salzburgo</strong> · 2 noites (22–23 nov)</li>
-            <li><strong>Viena</strong> · 2 noites (24–25 nov)</li>
-            <li><strong>Bratislava</strong> · 1 noite (check-in <strong>26 nov</strong>, saída <strong>27 nov</strong>)</li>
-            <li><strong>Budapeste</strong> · 3 noites (27–29 nov)</li>
-            <li><strong>Berlim</strong> · 3 noites (30 nov–2 dez)</li>
-            <li><strong>Praga</strong> · 2 noites (3–4 dez)</li>
-            <li><strong>Bruxelas</strong> · 2 noites (5–6 dez)</li>
-          </ul>
-          <p><strong>Total:</strong> 18 noites na Europa. O dia <strong>7 dez</strong> é apenas embarque (voo cedo).</p>
-        </div>
+      <div class="card">
+        <p><strong>Munique</strong> (3) → <strong>Salzburgo</strong> (2) → <strong>Viena</strong> (2) → <strong>Bratislava</strong> (1) → <strong>Budapeste</strong> (3) → <strong>Berlim</strong> (3) → <strong>Praga</strong> (2) → <strong>Bruxelas</strong> (2) · <strong>18 noites</strong>. <strong>7 dez</strong> = embarque. <a href="#horarios-bilhetes">Omio</a> · <a href="#voos">Voos</a>.</p>
       </div>
     </section>
 
     <section id="mapa" class="block map-section app-panel" data-app-panel="mapa">
       <h2>Mapa esquemático · trajetos intercidades</h2>
-      <p class="lede">Diagrama <strong>não é carta geográfica à escala</strong>: mostra a <strong>sequência da viagem</strong> e o modo (comboio vs voo). Durações são ordens de grandeza típicas em serviços diretos. <strong>Toque ou use Tab</strong> nos círculos do percurso para ver hotel, estação e sugestões rápidas no painel ao lado (em telas estreitas, abaixo do diagrama).</p>
+      <p class="lede">Sequência da viagem (comboio vs voo). Toque nos nós para hotel e estação.</p>
       <div class="map-schematic-layout">
       <div class="map-svg-wrap">
         <svg viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg" aria-label="Trajetos entre cidades">
@@ -416,7 +354,7 @@
 
           
           <path d="M 384 228 Q 220 80, 112 162" stroke="var(--map-plane)" stroke-width="3" fill="none" stroke-dasharray="10 7" marker-end="url(#arrPlane)" />
-          <text x="220" y="100" text-anchor="middle" font-size="10" fill="var(--map-plane)">voo PRG→BRU · 5 dez · 17h15</text>
+          <text x="220" y="100" text-anchor="middle" font-size="10" fill="var(--map-plane)">voo PRG→BRU · 5 dez · 11h50</text>
 
           
           <g id="node-muc" class="map-node" role="button" tabindex="0" data-city="muc" aria-label="Munique: abrir resumo de hotel e pontos">
@@ -485,7 +423,7 @@
           <div class="map-city-panel-actions">
             <a class="btn-maps" id="mapCityPanelMaps" href="#" target="_blank" rel="noopener noreferrer">Google Maps</a>
             <button type="button" class="btn-copy" id="mapCityPanelCopy" data-copy="" data-label="Copiar morada">Copiar morada</button>
-            <a class="map-city-panel-ficha" id="mapCityPanelFicha" href="#">Ver ficha · Cidades</a>
+            <a class="map-city-panel-ficha" id="mapCityPanelFicha" href="#">Hotéis</a>
           </div>
         </div>
       </aside>
@@ -494,21 +432,20 @@
         <span><span class="lg-train" aria-hidden="true"></span> Comboio (intercidades)</span>
         <span><span class="lg-plane" aria-hidden="true"></span> Voo (Budapeste → Berlim · Praga → Bruxelas)</span>
       </div>
-      <p class="note" style="margin-top:0.75rem;margin-bottom:0;"><strong>Horários e preços Omio</strong> (terrestre+ICE <strong>R$ 708,99</strong> + voos UE <strong>R$ 1.570,11</strong> = <strong>R$ 2.279,10</strong>): tabela completa em <a href="#horarios-bilhetes">Horários Omio</a> · totais em <a href="#cambio">Câmbio</a> · paradas GPS em <a href="#mapas">Mapas dia a dia</a>.</p>
-    </section>
+      <p class="note" style="margin-top:0.75rem;margin-bottom:0;">Omio · <a href="#horarios-bilhetes">horários</a> · <a href="#financas">dinheiro</a>.</p>
 
-    <section id="mapas" class="block mapas-section app-panel" data-app-panel="mapa">
-      <h2>Mapas dia a dia · Google Maps</h2>
-      <p class="lede">Paradas na <strong>ordem do FAST TOURIST</strong>. Em cada dia do roteiro e na tab Mapa vês <strong>como ir</strong> entre pontos (ex.: <em>Metro — U4 Hbf → Odeonsplatz</em>, <em>Trem — ICE Salzburg → Wien Hbf</em>) com link para abrir a rota no Maps.</p>
-
+      <h3 id="mapas" class="mapas-inline-heading">Índice GPS por dia</h3>
+      <p class="lede mapas-inline-lede">Paradas na ordem do FAST — detalhe em cada dia (tab Dias).</p>
       <div id="mapasDiasHost" class="mapas-dias-host" aria-busy="true" aria-live="polite">
         <p class="muted">A carregar paradas…</p>
       </div>
+
     </section>
+
 
     <section id="horarios-bilhetes" class="block app-panel" data-app-panel="mais">
       <h2>Horários Omio · referência dos bilhetes que você passou</h2>
-      <p class="lede">Estes horários são os que apareceram nos <strong>prints Omio</strong> (as datas nos prints eram só de exemplo; aqui estão <strong>encaixados nas datas reais</strong> do roteiro). Na reserva final, escolha no Omio a <strong>mesma partida</strong> ou o horário mais próximo <strong>no dia certo</strong> e confira no <strong>bilhete / app</strong> da operadora.</p>
+      <p class="lede">Horários dos prints Omio, nas <strong>datas reais</strong> do roteiro. Confirme no bilhete.</p>
       <p class="note" style="margin-top:0;"><strong>BUD → BER:</strong> no Omio havia também <strong>Wizz Air 10h05–11h35</strong> (mais cedo e outro preço). O <strong>orçamento deste roteiro</strong> usa <strong>Ryanair 15h40–17h10</strong> com bagagens (<strong>R$ 734,34</strong>) — melhor encaixe com manhã em Budapeste e check-in com folga.</p>
       <div class="table-scroll">
       <table class="data">
@@ -523,94 +460,13 @@
           <tr><td><strong>27 nov</strong></td><td>Bratislava <strong>Mlynské Nivy</strong> → Budapest <strong>Kelenföld</strong></td><td><strong>10:50</strong>→<strong>13:25</strong> (2h35)</td><td>FlixBus</td><td><strong>R$ 103,93</strong>. Chegada em Kelenföld — use metro BKK para o centro / hotel.</td></tr>
           <tr><td><strong>30 nov</strong></td><td>BUD → BER</td><td><strong>15:40</strong>→<strong>17:10</strong> (1h30)</td><td>Ryanair + bagagens</td><td><strong>R$ 734,34</strong> (cotação Omio). Alternativa que apareceu: Wizz 10h05 (outro preço).</td></tr>
           <tr><td><strong>3 dez</strong></td><td>Berlin <strong>Südkreuz</strong> → Praha <strong>ÚAN Florenc</strong></td><td><strong>10:20</strong>→<strong>14:20</strong> (4h)</td><td>FlixBus</td><td><strong>R$ 155,85</strong>. Saia do hotel com tempo para <strong>S-Bahn Alex → Südkreuz</strong> (~15 min).</td></tr>
-          <tr><td><strong>5 dez</strong></td><td>PRG → BRU</td><td><strong>17:15</strong>→<strong>18:45</strong> (1h30)</td><td>Smartwings <strong>Plus</strong></td><td>Total Omio <strong>R$ 835,77</strong> (base + upgrade Plus: item pessoal, cabine 8 kg, despacho 23 kg, escolha de lugar — confira regras no bilhete). Chegada em <strong>Zaventem</strong>: ligação ao centro/hotel mais simples que via CRL.</td></tr>
+          <tr><td><strong>5 dez</strong></td><td>PRG → BRU</td><td><strong>11:50</strong>→<strong>13:20</strong> (1h30)</td><td>Ryanair + bagagens</td><td><strong>R$ 835,77</strong> Omio. Chegada <strong>Zaventem</strong> — tarde livre em Bruxelas.</td></tr>
         </tbody>
       </table>
       </div>
       <p class="note" style="margin-bottom:0;"><strong>Neuschwanstein (21 nov):</strong> o roteiro também descreve o clássico <strong>RE + autocarro 73/78</strong> desde <strong>München Hbf</strong>. Se o bilhete comprado for só FlixBus ZOB, siga a linha <strong>ZOB 08:30</strong> da tabela; se for comboio, ignore a linha Flix desse dia e use o bloco “comboio” no <a href="#dias">dia 21 nov</a>.</p>
     </section>
 
-    <section id="cidades" class="block app-panel" data-app-panel="mapa">
-      <h2>Detalhes por cidade</h2>
-      <p class="lede"><strong>Esta secção</strong> guarda <strong>contexto estável</strong> por cidade: hotel, estação, foco temático e ligações <em>entre</em> cidades. <strong>Horários, ruas e micro-rotas</strong> (manhã/tarde/noite) estão no <a href="#dias">Roteiro dia a dia</a> — trate esse bloco como a <strong>linha do tempo operacional</strong> e este como a <strong>ficha de apoio</strong> ao deslocar-se ou rever âncoras.</p>
-      <p class="note" style="margin-top:0.35rem;">O “mapa dia a dia” dentro de cada cidade é um <strong>resumo em tópicos</strong>; não substitui os detalhes dos <code>details</code> por data em <a href="#dias">#dias</a>.</p>
-
-      <h3 id="cidades-fichas">Fichas por cidade</h3>
-      <p class="lede" style="margin-top:0.35rem;font-size:clamp(0.88rem, 2.2vw, 0.98rem);">Hotel, estação, foco e ligação à cidade seguinte — um bloco por destino. O mapa resumido por dia encaixa-se abaixo em cada ficha.</p>
-
-      <details class="city-block" id="city-muc">
-        <summary><span class="nights">3 noites</span> Munique (DE)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> München <strong>Hbf</strong> (Salzburgo via comboio alternativo, S-Bahn MUC); <strong>ZOB</strong> para FlixBus Füssen / Salzburgo (ver <a href="#horarios-bilhetes">horários Omio</a>).</p>
-          <p><strong>Hotel (Booking):</strong> <strong>B&amp;B Hotel München-Hbf</strong> (19–22 nov).</p>
-          <p><strong>Foco:</strong> centro histórico, Englischer Garten, Viktualienmarkt; <strong>21 nov</strong> Neuschwanstein (dia inteiro).</p>
-          <p><strong>Segue para:</strong> Salzburgo — <strong>FlixBus</strong> do <strong>ZOB ~13h45</strong> no <strong>22 nov</strong> (chegada P+R Süd ~15h45).</p>
-</div>
-      </details>
-      <details class="city-block" id="city-szg">
-        <summary><span class="nights">2 noites</span> Salzburgo (AT)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> Salzburg Hbf.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Atel Hotel Lasserhof</strong> (22–24 nov).</p>
-          <p><strong>Foco:</strong> Altstadt, Festung, rio Salzach.</p>
-          <p><strong>Segue para:</strong> Viena — ÖBB <strong>ICE 10:00</strong> do <strong>Hbf</strong> no <strong>24 nov</strong> (chegada Wien Hbf <strong>12:47</strong>).</p>
-</div>
-      </details>
-      <details class="city-block" id="city-vie">
-        <summary><span class="nights">2 noites</span> Viena (AT)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> Wien Hbf.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Hotel Zipser</strong> (24–26 nov; zona <strong>Josefstadt</strong>, perto de <strong>Rathaus</strong> / <strong>U2</strong>).</p>
-          <p><strong>Foco:</strong> no dia da chegada: <strong>Prater</strong>, <strong>Naschmarkt</strong>, <strong>Donaukanal</strong>; dia seguinte: <strong>Schönbrunn</strong> (jardins), <strong>Stadtpark</strong>, <strong>Stephansdom</strong> (exterior), <strong>Ring</strong> à noite.</p>
-          <p><strong>Segue para:</strong> Bratislava — FlixBus <strong>VIB ~12:35</strong> → <strong>Most SNP ~13:45</strong> no <strong>26 nov</strong>.</p>
-</div>
-      </details>
-      <details class="city-block" id="city-bts">
-        <summary><span class="nights">1 noite</span> Bratislava (SK)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> chegada FlixBus em <strong>Most SNP</strong> (roteiro Omio) <em>ou</em> <strong>hl.st.</strong> se usar REX — confira o bilhete.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Danubia Gate Hotel</strong> (26–27 nov; centro histórico / <strong>Michalská</strong> — elétrico/autocarro desde <strong>Most SNP</strong> ou <strong>hl.st.</strong>).</p>
-          <p><strong>Foco:</strong> castelo, Staré Mesto.</p>
-          <p><strong>Segue para:</strong> Budapeste — FlixBus <strong>Mlynské Nivy ~10:50</strong> → <strong>Kelenföld ~13:25</strong> no <strong>27 nov</strong>.</p>
-</div>
-      </details>
-      <details class="city-block" id="city-bud">
-        <summary><span class="nights">3 noites</span> Budapeste (HU)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> chegada FlixBus em <strong>Kelenföld</strong> (roteiro Omio) <em>ou</em> comboio <strong>Nyugati</strong> / <strong>Keleti</strong>; saída <strong>30 nov</strong> voo <strong>15h40</strong> <strong>BUD</strong> → <strong>BER 17h10</strong>.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Medos Hotel</strong> (27–30 nov). No dia do voo, reserve folga para <strong>centro → BUD</strong> (ex. <strong>100E</strong>).</p>
-          <p><strong>Foco:</strong> Parlamento, margens, basílica, ponte, mercados, Buda ao pôr do sol.</p>
-          <p><strong>Segue para:</strong> Berlim (voo BUD–BER).</p>
-</div>
-      </details>
-      <details class="city-block" id="city-ber">
-        <summary><span class="nights">3 noites</span> Berlim (DE)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> chegada <strong>BER</strong> (voo <strong>30 nov 17:10</strong>) → transporte para hotel (<strong>Alexanderplatz</strong>); saída para Praga <strong>3 dez</strong>: FlixBus <strong>Südkreuz ~10:20</strong> (alternativa <strong>EC</strong> do <strong>Hbf</strong>).</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Premier Inn Berlin Alexanderplatz</strong> (30 nov–3 dez).</p>
-          <p><strong>Foco:</strong> Brandenburg, Memorial, Unter den Linden, East Side Gallery, Mitte — repartidos em <strong>dois dias completos</strong> após a noite de chegada.</p>
-          <p><strong>Segue para:</strong> Praga — <strong>FlixBus Südkreuz ~10:20</strong> (orçamento Omio) <em>ou</em> EC desde <strong>Hbf</strong>.</p>
-</div>
-      </details>
-      <details class="city-block" id="city-prg">
-        <summary><span class="nights">2 noites</span> Praga (CZ)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> chegada típica <strong>ÚAN Florenc</strong> (FlixBus desde Berlim) <em>ou</em> <strong>hl.n.</strong> (EC); aeroporto PRG só para voo a Bruxelas.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Alton</strong> (3–5 dez; <strong>Legerova</strong> / metro <strong>I.P. Pavlova</strong>).</p>
-          <p><strong>Foco:</strong> cidade velha, Ponte Carlos, colina do castelo, Malá Strana.</p>
-          <p><strong>Segue para:</strong> Bruxelas (voo <strong>PRG → BRU</strong> Smartwings).</p>
-</div>
-      </details>
-      <details class="city-block" id="city-bru">
-        <summary><span class="nights">2 noites</span> Bruxelas (BE)</summary>
-        <div class="city-body">
-          <p><strong>Estação:</strong> <strong>Rogier</strong> / <strong>Bruxelles-Nord</strong> (hotel des Colonies); comboios <strong>Brugge</strong> e <strong>BRU airport</strong> via SNCB.</p>
-          <p><strong>Hotel (Booking):</strong> <strong>Hotel des Colonies Brussels by Mercure</strong> (5–7 dez; <strong>Rue des Croisades</strong>, junto ao <strong>Rogier</strong>).</p>
-          <p><strong>Foco:</strong> <strong>5 dez</strong> chegada + Grand Place; <strong>6 dez</strong> bate-volta <strong>Bruges</strong> com prima Iza.</p>
-          <p><strong>Segue para:</strong> Brasil (voo BRU cedo, <strong>7 dez</strong>).</p>
-</div>
-      </details>
-    </section>
 
     <section id="voos" class="block app-panel" data-app-panel="mais">
       <h2>Voos intercontinentais (Iberia)</h2>
@@ -636,7 +492,7 @@
             <td>IB0604 · BRU → MAD</td>
             <td>7 dez · 07h00</td>
             <td>7 dez · 09h25</td>
-            <td>Sair do hotel ~04h30–05h00 para BRU.</td>
+            <td>Alarme <strong>03:00</strong> · sair hotel ~<strong>03:45</strong> para BRU.</td>
           </tr>
           <tr>
             <td>IB0271 · MAD → GRU</td>
@@ -648,35 +504,34 @@
       </table>
       </div>
 
-      <h3>Voos curtos na Europa (reserva separada)</h3>
-      <div class="table-scroll">
-      <table class="data">
-        <thead>
-          <tr><th>Trecho</th><th>Data · partida (roteiro)</th><th>Custo Omio (R$)</th><th>Notas</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Budapeste → Berlim (Ryanair)</td>
-            <td><strong>30 nov · 15:40</strong> · <strong>BUD</strong></td>
-            <td><strong>R$ 734,34</strong></td>
-            <td>Chegada <strong>BER 17:10</strong> (confira no bilhete). Ryanair com <strong>carry-on 10 kg + despacho 23 kg</strong> no preço Omio. No Omio apareceu também <strong>Wizz 10:05–11:35</strong> (outro preço); este roteiro mantém <strong>Ryanair à tarde</strong>. Depois <strong>FEX / S-Bahn</strong> + <strong>U5</strong> até <strong>Alexanderplatz</strong> / hotel.</td>
-          </tr>
-          <tr>
-            <td>Praga → Bruxelas (Smartwings)</td>
-            <td><strong>5 dez · 17:15</strong> · <strong>PRG</strong></td>
-            <td><strong>R$ 835,77</strong></td>
-            <td>Chegada <strong>BRU 18:45</strong> (confira no bilhete). Tarifa <strong>Plus</strong> no Omio (total pago). Item pessoal + cabine 8 kg + despacho 23 kg + escolha de lugar. De <strong>Zaventem</strong>: <strong>comboio direto</strong> para estações centrais (ex. <strong>Bruxelles-Central</strong>) + metro até <strong>Rogier</strong> <em>ou</em> <strong>Bolt/Uber</strong> — bem mais rápido que o antigo plano CRL + Flibco.</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
+      <p class="lede">Voos curtos UE: <a href="#horarios-bilhetes">Horários Omio</a>.</p>
 
-      <p class="note">Berlim–Praga (<strong>3 dez</strong>): <strong>FlixBus Südkreuz 10:20 → Florenc 14:20</strong> (~<strong>R$ 155,85</strong> Omio); alternativa <strong>EC</strong> Berlin Hbf → hl.n. (DB/ČD). Os voos curtos acima são <strong>independentes</strong> dos bilhetes Iberia transcontinentais. O regresso intercontinental no <strong>7 dez</strong> continua em <strong>BRU</strong> (Iberia).</p>
+      <details class="card" id="voos-checklist-curto" style="margin-top:1rem;">
+        <summary>Checklist · voo curto (Ryanair / Schengen)</summary>
+        <ul>
+          <li>Passaporte + <strong>boarding offline</strong> (app/PDF); <strong>terminal</strong> no bilhete</li>
+          <li>Bagagem conforme Omio (carry-on + despacho — confira pesos)</li>
+          <li>Bateria + powerbank; último bilhete urbano validado antes do aeroporto</li>
+          <li>Chegar <strong>~2h antes</strong> da partida; trânsito até o aeroporto com folga</li>
+          <li>Após pouso: rota até hotel no app da cidade (BVG, PID, SNCB/STIB…)</li>
+        </ul>
+      </details>
+      <details class="card" id="voos-checklist-intercontinental">
+        <summary>Checklist · regresso intercontinental (7 dez · BRU)</summary>
+        <ul>
+          <li><strong>Alarme 03:00</strong>; sair hotel <strong>~03:45</strong> (Bolt/táxi madrugada)</li>
+          <li><strong>IB0604 07:00</strong>: meta <strong>05:00</strong> no aeroporto (2h antes)</li>
+          <li>Passaporte, boarding Iberia offline, <strong>seguro</strong> — <a href="#emergencia">Emergência</a></li>
+          <li>Na noite de <strong>6 dez</strong>: Bolt agendado · mala pronta · greves/obras SNCB</li>
+        </ul>
+      </details>
+
+      <p class="note">Voos curtos UE: <a href="#horarios-bilhetes">Omio</a>. Berlim–Praga Flix <strong>3 dez</strong> na mesma tabela.</p>
     </section>
 
     <section id="hoteis" class="block app-panel" data-app-panel="mais">
       <h2>Hotéis confirmados (Booking.com)</h2>
-      <p class="lede">Reservas com <strong>cancelamento grátis</strong> conforme aparecer na tela. Totais em <strong>R$</strong> são os valores indicados na app na data de consulta; impostos e taxas podem estar incluídos ou separados por estadia — confira no resumo de cada reserva.</p>
+      <p class="lede">Booking · cancelamento grátis conforme cada reserva. Totais em R$ na data de consulta.</p>
       <div class="table-scroll">
       <table class="data">
         <thead>
@@ -789,72 +644,41 @@
       </div>
     </section>
 
-    <section id="cambio" class="block app-panel" data-app-panel="mais">
-      <h2>Câmbio e custos (estimativa)</h2>
-      <p class="lede">Estratégia: <strong>converter R$ → EUR na Wise</strong> em parcelas <strong>semanais</strong> até o <strong>início da viagem (18 nov 2026)</strong>. Primeira conversão: <strong>22 abr 2026</strong>. Taxa de exemplo nas contas: <strong>5,90 R$/EUR</strong> (substitua pelo rate Wise real em cada transferência).</p>
+    <section id="financas" class="block app-panel" data-app-panel="mais" aria-labelledby="financas-heading">
+      <span id="cambio" class="visually-hidden" aria-hidden="true"></span>
+      <span id="operacional" class="visually-hidden" aria-hidden="true"></span>
+      <h2 id="financas-heading">Dinheiro & logística</h2>
+      <p class="lede">Wise <strong>26.699,80 R$</strong> → ≈ <strong>4.525 €</strong> (@ 5,90) · bolso <strong>€2.000</strong> · hotéis <a href="#hoteis">~R$ 11.423</a> · Omio <a href="#horarios-bilhetes">R$ 2.279</a>.</p>
 
       <div class="card" style="margin-top:1rem;">
-        <h3>Hotéis confirmados (caixa em R$)</h3>
-        <p style="margin-top:0;">Soma das estadias no <strong>Booking.com</strong> (18 noites, cancelamento grátis conforme cada reserva): <strong>R$ 11.423</strong>. <strong>Pré-pagamento no cartão em real</strong> — não entra no envelope <strong>EUR Wise</strong> abaixo; conta à parte na fatura do cartão.</p>
-        <p class="note" style="margin-bottom:0;">Equivalência só para comparar ordem de grandeza com o envelope em €: <strong>R$ 11.423</strong> ÷ 5,90 ≈ <strong>1.937 €</strong> (taxa ilustrativa; o valor real é o cobrado em BRL).</p>
-      </div>
-
-      <div class="card" style="margin-top:1rem;">
-        <h3>Envelope em real (R$)</h3>
+        <h3 id="financas-wise">Conversão Wise (R$)</h3>
         <ul>
-          <li><strong>Já disponível:</strong> <strong>17.833 R$</strong> → converter <strong>60%</strong> = <strong>10.699,80 R$</strong> para EUR.</li>
-          <li><strong>A partir de 18 set 2026:</strong> entrada <strong>+20.000 R$</strong> → converter <strong>80%</strong> = <strong>16.000 R$</strong> para EUR.</li>
-          <li><strong>Total a converter:</strong> <strong>26.699,80 R$</strong> → ≈ <strong>4.525 EUR</strong> (÷ 5,90).</li>
-          <li><strong>Fica em R$</strong> (colchão, não entra no plano de conversão): <strong>11.133,20 R$</strong> (40% de 17.833 + 20% de 20.000).</li>
+          <li><strong>17.833 R$</strong> disponíveis → converter <strong>60%</strong> = <strong>10.699,80 R$</strong>.</li>
+          <li><strong>18 set 2026:</strong> +<strong>20.000 R$</strong> → converter <strong>80%</strong> = <strong>16.000 R$</strong>.</li>
+          <li><strong>Total Wise:</strong> <strong>26.699,80 R$</strong> (≈ <strong>4.525 €</strong>) · colchão <strong>11.133 R$</strong> fora do plano.</li>
         </ul>
+        <details class="financas-details">
+          <summary>Calendário semanal de conversão</summary>
+          <div class="table-scroll">
+          <table class="data">
+            <thead>
+              <tr><th>Período</th><th>O quê</th><th>Semanas (≈)</th><th>Valor semanal (≈)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>22 abr → 17 set 2026</strong></td><td><strong>10.699,80 R$</strong> (60% do 1.º envelope)</td><td><strong>~21</strong></td><td><strong>~505 R$/sem</strong></td></tr>
+              <tr><td><strong>18 set → 10 nov 2026</strong></td><td><strong>16.000 R$</strong> (80% do 2.º envelope)</td><td><strong>~8</strong></td><td><strong>~2.000 R$/sem</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="note" style="margin-bottom:0;">Termina ~1 semana antes da ida. Na semana de <strong>18 set</strong> alinhe fecho do 1.º montante e arranque do 2.º.</p>
+        </details>
       </div>
 
       <div class="card" style="margin-top:1rem;">
-        <h3>Plano semanal (começa 22 abr 2026)</h3>
-        <div class="table-scroll">
-        <table class="data">
-          <thead>
-            <tr><th>Período</th><th>O quê</th><th>Semanas (≈)</th><th>Valor semanal (≈)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>22 abr → 17 set 2026</strong></td><td>Converter <strong>10.699,80 R$</strong> (60% do 1.º envelope)</td><td><strong>~21</strong></td><td><strong>~505 R$/sem</strong></td></tr>
-            <tr><td><strong>18 set → 10 nov 2026</strong></td><td>Converter <strong>16.000 R$</strong> (80% do 2.º envelope)</td><td><strong>~8</strong></td><td><strong>~2.000 R$/sem</strong></td></tr>
-          </tbody>
-        </table>
-        </div>
-        <p class="note" style="margin-bottom:0;"><strong>Semanas:</strong> 22/04–17/09 ≈ 149 dias ÷ 7. 18/09–10/11 ≈ 54 dias ÷ 7 (termina ~1 semana antes da ida para ajustes). Na semana de <strong>18 set</strong> pode alinhar o fecho do 1.º montante e o arranque do 2.º.</p>
+        <h3 id="financas-sobra">Sobra de bolso (após hotéis e Omio)</h3>
+        <p style="margin-top:0;"><strong>26.699,80</strong> − <strong>11.423</strong> (hotéis) − <strong>2.279,10</strong> (Omio) = <strong>12.997,70 R$</strong> → <strong>~2.203 €</strong>, alinhado ao envelope <strong>€2.000</strong> (margem ~€200 taxa Wise).</p>
+        <p class="note" style="margin-bottom:0;">Voos GRU–MUC / BRU–GRU fora desta conta. PRG→BRU já inclui Zaventem (sem Flibco CRL).</p>
       </div>
-
-      <div class="card" style="margin-top:1rem;">
-        <h3>Transporte intercidades — valores Omio (R$)</h3>
-        <p style="margin-top:0;margin-bottom:0;">Terrestre+ICE <strong>R$ 708,99</strong> + voos UE <strong>R$ 1.570,11</strong> = <strong>R$ 2.279,10</strong>. Horários e estações: <a href="#horarios-bilhetes">Horários Omio</a> (fonte única).</p>
-      </div>
-
-      <div class="card" style="margin-top:1rem;">
-        <h3>Quanto sobra: base <strong>26.699,80 R$</strong> − hotéis − mobilidade Omio</h3>
-        <p style="margin-top:0;">Simulação em <strong>R$</strong>: montante planejado para <strong>Wise</strong> (<strong>26.699,80 R$</strong>), menos <strong>hotéis</strong> e menos <strong>toda a mobilidade Omio</strong> já cotada: terrestre+ICE <strong>708,99</strong> + voos <strong>1.570,11</strong> = <strong>2.279,10 R$</strong>. O trecho PRG→BRU já inclui chegada em <strong>Zaventem</strong> (sem custo extra de Flibco CRL).</p>
-        <p class="note" style="margin-top:0.5rem;"><strong>Voos intercontinentais</strong> (GRU–MUC, BRU–GRU) não entram aqui. Hotéis: <strong>cartão BRL</strong>.</p>
-        <div class="table-scroll">
-        <table class="data">
-          <thead>
-            <tr><th>Rubrica</th><th>Valor</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Base (plano de conversão Wise)</td><td><strong>26.699,80 R$</strong> (≈ <strong>4.525 €</strong> @ 5,90)</td></tr>
-            <tr><td>− Hotéis (Booking, 18 noites)</td><td><strong>−11.423 R$</strong></td></tr>
-            <tr><td>− Omio: terrestre + ICE + BUD→BER + PRG→BRU</td><td><strong>−2.279,10 R$</strong></td></tr>
-            <tr><td><strong>= Sobra em R$</strong></td><td><strong>12.997,70 R$</strong></td></tr>
-            <tr><td><strong>≈ Sobra em EUR</strong> (÷ 5,90; comida, metro, Uber, compras…)</td><td><strong>~2.203 €</strong> — alinhado ao envelope operacional <strong>€2.000</strong> de bolso (margem ~€200 para taxa Wise real)</td></tr>
-          </tbody>
-        </table>
-        </div>
-        <p class="note" style="margin-bottom:0;">Os <strong>11.133 R$</strong> de colchão (fora dos 26.699,80) cobrem imprevistos e <strong>fatura do cartão</strong> (o voo PRG→BRU já não exige shuttle Charleroi).</p>
-      </div>
-    </section>
-
-    <section id="operacional" class="block app-panel" data-app-panel="mais" aria-labelledby="operacional-heading">
-      <h2 id="operacional-heading">Plano operacional · cidade a cidade</h2>
-      <p class="lede">Estratégia de <strong>hub</strong>, ritmo de energia e <strong>orçamento de bolso</strong> para comer, passear, compras e noite. Envelope alvo: <strong>€2.000</strong> (Wise) — <em>fora</em> hotéis, transportes intercidades e voo internacional (já pagos ou em calendário separado). Detalhe hora a hora: <a href="#dias">Roteiro dia a dia</a>.</p>
 
       <div class="card oper-envelope" id="operacional-envelope">
         <h3>Envelope €2.000 · como usar</h3>
@@ -874,29 +698,6 @@
         </table>
         </div>
         <p class="note" style="margin-bottom:0;"><strong>Regra:</strong> dias de <span class="dt dt-flight">voo</span> ou <span class="dt dt-transfer">transferência</span> gastam menos. Dias <span class="dt dt-shop">compras</span> podem passar de €105 — compensar no dia seguinte.</p>
-      </div>
-
-      <div class="card" id="operacional-por-cidade">
-        <h3>Teto por cidade</h3>
-        <div class="table-scroll">
-        <table class="data oper-budget-table">
-          <thead>
-            <tr><th>Cidade</th><th>Datas</th><th>Noites</th><th>Hub</th><th>Teto €</th><th>€/dia</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Munique</strong></td><td>19–22 nov</td><td>3</td><td>Hbf / ZOB</td><td><strong>320</strong></td><td>~80</td></tr>
-            <tr><td><strong>Salzburgo</strong></td><td>22–24 nov</td><td>2</td><td>Centro a pé</td><td><strong>150</strong></td><td>~75</td></tr>
-            <tr><td><strong>Viena</strong></td><td>24–26 nov</td><td>2</td><td>Zipser / Rathaus</td><td><strong>220</strong></td><td>~88</td></tr>
-            <tr><td><strong>Bratislava</strong></td><td>26–27 nov</td><td>1</td><td>Old Town</td><td><strong>60</strong></td><td>~60</td></tr>
-            <tr><td><strong>Budapeste</strong></td><td>27–30 nov</td><td>3</td><td>Medos / centro</td><td><strong>260</strong></td><td>~87</td></tr>
-            <tr><td><strong>Berlim</strong></td><td>30 nov–3 dez</td><td>4</td><td>Alexanderplatz</td><td><strong>340</strong></td><td>~85</td></tr>
-            <tr><td><strong>Praga</strong></td><td>3–5 dez</td><td>2</td><td>Florenc / centro</td><td><strong>240</strong></td><td>~120*</td></tr>
-            <tr><td><strong>Bruxelas</strong></td><td>5–7 dez</td><td>2</td><td>Gare Centrale</td><td><strong>150</strong></td><td>~75</td></tr>
-            <tr><td colspan="4"><em>Buffer distribuído</em></td><td><strong>260</strong></td><td>—</td></tr>
-          </tbody>
-        </table>
-        </div>
-        <p class="muted" style="margin:0.5rem 0 0;font-size:0.88rem;">* Praga: 1 dia curto (chegada) + 1 dia pleno de compras.</p>
       </div>
 
       <h3 id="operacional-dias">Orçamento por dia</h3>
@@ -922,13 +723,14 @@
           <tr><td>2 dez</td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>120</td><td>Compras (hub Alex)</td><td><a href="#day-2026-12-02">#</a></td></tr>
           <tr><td>3 dez</td><td>→ Praga</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>50</td><td>Flix 10h20</td><td><a href="#day-2026-12-03">#</a></td></tr>
           <tr class="row-highlight"><td><strong>4 dez</strong></td><td>Praga</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>130</strong></td><td>Compras + Vinohrady</td><td><a href="#day-2026-12-04">#</a></td></tr>
-          <tr><td>5 dez</td><td>→ Bruxelas</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>60</td><td>Smartwings 17h15</td><td><a href="#day-2026-12-05">#</a></td></tr>
+          <tr><td>5 dez</td><td>→ Bruxelas</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>60</td><td>Ryanair 11h50</td><td><a href="#day-2026-12-05">#</a></td></tr>
           <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruges (bate-volta)</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>75</td><td>Prima Iza · regresso ~20h</td><td><a href="#day-2026-12-06">#</a></td></tr>
           <tr><td>7 dez</td><td>→ Brasil</td><td><span class="oper-energy oper-energy--low">Mínima</span></td><td>20</td><td>Embarque 07h00</td><td><a href="#day-2026-12-07">#</a></td></tr>
         </tbody>
       </table>
       </div>
-</section>
+      <p class="muted" style="margin:0.5rem 0 0;font-size:0.88rem;">* Praga: 1 dia curto (chegada) + 1 dia pleno de compras.</p>
+    </section>
 
     <section id="dias" class="block app-panel" data-app-panel="roteiro" role="region" aria-labelledby="dias-heading">
       <h2 id="dias-heading">Roteiro dia a dia</h2>
@@ -937,7 +739,7 @@
         <button type="button" class="app-dia-voltar" id="appDiaVoltar">Voltar</button>
         <span class="app-dia-breadcrumb" id="appDiaBreadcrumb" aria-live="polite"></span>
       </div>
-      <p class="lede app-dia-lede">Toque num dia — <strong>roteiro do mapa (GPS)</strong> + plano por horário. <a href="#operacional">Orçamento</a> · <a href="#cidades">Cidades</a> · <a href="#compras">Compras</a></p>
+      <p class="lede app-dia-lede">Toque num dia — GPS + plano por horário. <a href="#financas">Dinheiro</a> · <a href="#mapa">Mapa</a> · <a href="#compras">Compras</a></p>
 
       <details class="dia-extra-info card">
         <summary>Legenda dos selos e apps de transporte</summary>
@@ -958,43 +760,11 @@
       </div>
 
       <div id="appDiaListHost" class="app-dia-list-host" aria-live="polite"></div>
-      <div class="card day-index-card" id="indice-dias">
-        <h3>Índice completo (web)</h3>
-        <p class="note" style="margin-top:0;">Na app, use a lista acima. Orçamento por data: <a href="#operacional-tabela-dias">Plano operacional</a>.</p>
-        <div class="table-scroll">
-        <table class="data day-index-table">
-          <thead>
-            <tr><th>Data</th><th>Resumo</th><th>Tipo(s)</th><th>Abrir</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>19 nov</td><td>Munique — chegada</td><td><span class="dt dt-flight">Aéreo</span> <span class="dt dt-base">Base</span></td><td><a href="#day-2026-11-19">#</a></td></tr>
-            <tr><td>20 nov</td><td>Munique — cidade</td><td><span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-11-20">#</a></td></tr>
-            <tr><td>21 nov</td><td>Neuschwanstein</td><td><span class="dt dt-icon">Ícone</span></td><td><a href="#day-2026-11-21">#</a></td></tr>
-            <tr><td>22 nov</td><td>Munique → Salzburgo</td><td><span class="dt dt-transfer">Transferência</span></td><td><a href="#day-2026-11-22">#</a></td></tr>
-            <tr><td>23 nov</td><td>Salzburgo</td><td><span class="dt dt-base">Base</span></td><td><a href="#day-2026-11-23">#</a></td></tr>
-            <tr><td>24 nov</td><td>Salzburgo → Viena</td><td><span class="dt dt-transfer">Transferência</span> <span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-11-24">#</a></td></tr>
-            <tr><td>25 nov</td><td>Viena</td><td><span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-11-25">#</a></td></tr>
-            <tr><td>26 nov</td><td>Viena → Bratislava</td><td><span class="dt dt-transfer">Transferência</span></td><td><a href="#day-2026-11-26">#</a></td></tr>
-            <tr><td>27 nov</td><td>Bratislava → Budapeste</td><td><span class="dt dt-transfer">Transferência</span></td><td><a href="#day-2026-11-27">#</a></td></tr>
-            <tr><td>28 nov</td><td>Budapeste</td><td><span class="dt dt-icon">Ícone</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-11-28">#</a></td></tr>
-            <tr><td>29 nov</td><td>Budapeste</td><td><span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-11-29">#</a></td></tr>
-            <tr><td>30 nov</td><td>Budapeste → Berlim</td><td><span class="dt dt-flight">Aéreo</span> <span class="dt dt-transfer">Transferência</span></td><td><a href="#day-2026-11-30">#</a></td></tr>
-            <tr><td>1 dez</td><td>Berlim</td><td><span class="dt dt-base">Base</span></td><td><a href="#day-2026-12-01">#</a></td></tr>
-            <tr><td>2 dez</td><td>Berlim</td><td><span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-12-02">#</a></td></tr>
-            <tr><td>3 dez</td><td>Berlim → Praga</td><td><span class="dt dt-transfer">Transferência</span></td><td><a href="#day-2026-12-03">#</a></td></tr>
-            <tr><td>4 dez</td><td>Praga</td><td><span class="dt dt-base">Base</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-12-04">#</a></td></tr>
-            <tr><td>5 dez</td><td>Praga → Bruxelas</td><td><span class="dt dt-flight">Aéreo</span> <span class="dt dt-transfer">Transferência</span> <span class="dt dt-shop">Compras</span></td><td><a href="#day-2026-12-05">#</a></td></tr>
-            <tr><td>6 dez</td><td>Bruges (bate-volta)</td><td><span class="dt dt-icon">Ícone</span></td><td><a href="#day-2026-12-06">#</a></td></tr>
-            <tr><td>7 dez</td><td>Bruxelas → Brasil</td><td><span class="dt dt-flight">Aéreo</span></td><td><a href="#day-2026-12-07">#</a></td></tr>
-          </tbody>
-        </table>
-        </div>
-      </div>
 
       <details class="day" id="day-2026-11-19" data-trip-date="2026-11-19" open data-budget-eur="70" data-energy="leve">
         <summary><span class="date-tag">19 nov · qua</span> <span class="city">Munique — chegada</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-base">Base</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-19" data-budget-eur="70" data-energy="leve">
+          <div class="fast-plan" id="fast-day-2026-11-19">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€70</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
@@ -1034,7 +804,7 @@
       <details class="day" id="day-2026-11-20" data-trip-date="2026-11-20" data-budget-eur="110" data-energy="plena">
         <summary><span class="date-tag">20 nov · qui</span> <span class="city">Munique — cidade e Englischer Garten</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-20" data-budget-eur="110" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-11-20">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€110</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1067,16 +837,13 @@
             <span class="warn">Englischer Garten é enorme: defina entrada e saída no Maps para não caminhar em vão.</span>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite sugerida:</strong> <strong>Glockenbach</strong> — <a href="#explorar-muc">Prosecco / Sub</a> · calendário <a href="#explorar-calendario-noite">#explorar-calendario-noite</a>.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-21" data-trip-date="2026-11-21" data-budget-eur="85" data-energy="máxima">
         <summary><span class="date-tag">21 nov · sex</span> <span class="city">Munique — Neuschwanstein (dia inteiro)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-21" data-budget-eur="85" data-energy="máxima">
+          <div class="fast-plan" id="fast-day-2026-11-21">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€85</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--max">máxima</span></span>
@@ -1118,7 +885,7 @@
       <details class="day" id="day-2026-11-22" data-trip-date="2026-11-22" data-budget-eur="55" data-energy="média">
         <summary><span class="date-tag">22 nov · sáb</span> <span class="city">Munique → Salzburgo</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-22" data-budget-eur="55" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-11-22">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€55</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1155,7 +922,7 @@
       <details class="day" id="day-2026-11-23" data-trip-date="2026-11-23" data-budget-eur="75" data-energy="plena">
         <summary><span class="date-tag">23 nov · dom</span> <span class="city">Salzburgo — Festung e ar livre</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-23" data-budget-eur="75" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-11-23">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€75</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1186,16 +953,13 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite (opcional):</strong> cena pequena — <a href="#explorar-szg">Dark Eagle</a> se tiver energia; senão guardar para Viena/Berlim.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-24" data-trip-date="2026-11-24" data-budget-eur="95" data-energy="média">
         <summary><span class="date-tag">24 nov · ter</span> <span class="city">Salzburgo → Viena — Prater, Naschmarkt e chegada</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-24" data-budget-eur="95" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-11-24">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€95</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1231,16 +995,13 @@
             <span class="warn">O Zipser não fica no pátio do Hbf — reserve 10 min extra no primeiro trajeto. Este dia concentra muito percurso: priorize <strong>Prater + Naschmarkt</strong> e encurte o canal se o <strong>ICE</strong> de manhã atrasar.</span>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite:</strong> chegada a Viena — <strong>Donaukanal</strong> (misto) ou <a href="#explorar-vie">Village Bar</a> · <a href="#explorar-calendario-noite">calendário noite</a>.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-25" data-trip-date="2026-11-25" data-budget-eur="95" data-energy="plena">
         <summary><span class="date-tag">25 nov · qua</span> <span class="city">Viena — Schönbrunn e anel</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-25" data-budget-eur="95" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-11-25">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€95</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1273,16 +1034,13 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite sugerida:</strong> <a href="#explorar-vie">Why Not / Village</a> · zona <strong>Naschmarkt</strong> antes do bar.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-26" data-trip-date="2026-11-26" data-budget-eur="35" data-energy="leve">
         <summary><span class="date-tag">26 nov · qui</span> <span class="city">Viena → Bratislava</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-26" data-budget-eur="35" data-energy="leve">
+          <div class="fast-plan" id="fast-day-2026-11-26">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€35</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
@@ -1315,16 +1073,13 @@
             <span class="warn">Se usar <strong>Petržalka</strong> (comboio) em vez de Most SNP, recalcule ligação ao hotel.</span>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite (leve):</strong> chegada Bratislava — <a href="#explorar-bts">Apollon</a> se check-in cedo; senão jantar no centro histórico.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-27" data-trip-date="2026-11-27" data-budget-eur="50" data-energy="média">
         <summary><span class="date-tag">27 nov · sex</span> <span class="city">Bratislava → Budapeste</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-27" data-budget-eur="50" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-11-27">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€50</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1362,7 +1117,7 @@
       <details class="day" id="day-2026-11-28" data-trip-date="2026-11-28" data-budget-eur="95" data-energy="plena">
         <summary><span class="date-tag">28 nov · sáb</span> <span class="city">Budapeste — Pest icónico</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-28" data-budget-eur="95" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-11-28">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€95</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1395,16 +1150,13 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite ⭐ (sáb):</strong> <strong>ruin bars</strong> — <a href="#explorar-bud">Szimpla Kert / Instant</a> · calendário <a href="#explorar-calendario-noite">#explorar-calendario-noite</a>.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-29" data-trip-date="2026-11-29" data-budget-eur="75" data-energy="média">
         <summary><span class="date-tag">29 nov · dom</span> <span class="city">Budapeste — mercados e Danúbio</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-29" data-budget-eur="75" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-11-29">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€75</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1436,16 +1188,13 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite:</strong> <a href="#explorar-bud">AlterEgo / Why Not</a> na margem · evite exagero (voo amanhã).</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-11-30" data-trip-date="2026-11-30" data-budget-eur="40" data-energy="leve">
         <summary><span class="date-tag">30 nov · seg</span> <span class="city">Budapeste → Berlim (voo 15h40–17h10)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-transfer">Transferência</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-11-30" data-budget-eur="40" data-energy="leve">
+          <div class="fast-plan" id="fast-day-2026-11-30">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€40</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
@@ -1466,19 +1215,6 @@
 <p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Zero programa pesado de manhã</p>
           </div>
 
-<div class="flight-day-checklist">
-            <strong>Checklist mínima · voo curto (30 nov · BUD → BER)</strong>
-            <ul>
-              <li>Passaporte e <strong>boarding</strong> Ryanair offline (app / PDF); <strong>terminal</strong> no bilhete</li>
-              <li>Bateria + powerbank; líquidos / bagagem de cabine conforme regras da companhia</li>
-              <li>Plano <strong>100E</strong> (ou alternativa) com folga para voo <strong>15:40</strong> — trânsito BUD pode engarrafar</li>
-              <li>Fechar malas de manhã; <strong>BKK</strong> validado no último trajeto urbano</li>
-              <li>Após pouso em <strong>BER</strong>: <strong>FEX</strong> / S-Bahn / <strong>U5</strong> até hotel (confirmar rota no <strong>BVG</strong> / DB no dia)</li>
-            </ul>
-          </div>
-
-
-
 <p class="note">Confira no bilhete o <strong>terminal</strong> em BUD e a <strong>hora de chegada</strong> em BER para planejar o transporte até o hotel. Se o bilhete ainda estiver em <strong>1 dez</strong>, alinhe a data com esta seção ou ajuste o roteiro.</p>
           <details class="transit-collapse">
             <summary>Autocarro aeroporto + voo + comboio urbano Berlim</summary>
@@ -1497,7 +1233,7 @@
       <details class="day" id="day-2026-12-01" data-trip-date="2026-12-01" data-budget-eur="110" data-energy="plena">
         <summary><span class="date-tag">1 dez · ter</span> <span class="city">Berlim — Mitte clássica</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-01" data-budget-eur="110" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-12-01">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€110</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1529,16 +1265,13 @@
             <span class="warn">Memorial do Holocausto fica junto a Brandenburg; Reichstag (cupula) exige reserva prévia se quiser entrar.</span>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite sugerida:</strong> <a href="#explorar-ber">Schöneberg / Roses (Kreuzberg)</a> · calendário <a href="#explorar-calendario-noite">#explorar-calendario-noite</a>.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-12-02" data-trip-date="2026-12-02" data-budget-eur="120" data-energy="plena">
         <summary><span class="date-tag">2 dez · qua</span> <span class="city">Berlim — East Side Gallery e compras</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-02" data-budget-eur="120" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-12-02">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€120</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1570,16 +1303,13 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite:</strong> <a href="#explorar-ber">Kreuzberg / Oranienstraße</a> — Berghain só se quiser fila longa.</p>
-          </div>
-        </div>
+</div>
       </details>
 
       <details class="day" id="day-2026-12-03" data-trip-date="2026-12-03" data-budget-eur="50" data-energy="média">
         <summary><span class="date-tag">3 dez · qui</span> <span class="city">Berlim → Praga (FlixBus ou EC)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-03" data-budget-eur="50" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-12-03">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€50</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1622,7 +1352,7 @@
       <details class="day" id="day-2026-12-04" data-trip-date="2026-12-04" data-budget-eur="130" data-energy="plena">
         <summary><span class="date-tag">4 dez · sex</span> <span class="city">Praga — castelo e Malá Strana</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-04" data-budget-eur="130" data-energy="plena">
+          <div class="fast-plan" id="fast-day-2026-12-04">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€130</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
@@ -1654,56 +1384,42 @@
             </ul>
             </div>
           </details>
-          <div class="shop-day shop-day--compact explorar-night">
-            <p><strong>Noite sugerida:</strong> <strong>Vinohrady</strong> — <a href="#explorar-prg">Club Termix</a> · calendário <a href="#explorar-calendario-noite">#explorar-calendario-noite</a>.</p>
-          </div>
-        </div>
+</div>
       </details>
 
-      <details class="day" id="day-2026-12-05" data-trip-date="2026-12-05" data-budget-eur="60" data-energy="leve">
-        <summary><span class="date-tag">5 dez · sáb</span> <span class="city">Praga → Bruxelas (Smartwings PRG→BRU)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-transfer">Transferência</span><span class="dt dt-shop">Compras</span></span></summary>
+            <details class="day" id="day-2026-12-05" data-trip-date="2026-12-05" data-budget-eur="60" data-energy="leve">
+        <summary><span class="date-tag">5 dez · sáb</span> <span class="city">Praga → Bruxelas (Ryanair PRG→BRU)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-transfer">Transferência</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-05" data-budget-eur="60" data-energy="leve">
+          <div class="fast-plan" id="fast-day-2026-12-05">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€60</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
-      <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      <span class="fast-plan__mode">Smartwings 17:15</span>
+      <span class="fast-plan__badge fast-plan__badge--style">FAST · voo manhã</span>
+      <span class="fast-plan__mode">Ryanair 11:50</span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td>Check-out · último passeio pé (<strong>Charles Bridge</strong>) ou compra rápida</td></tr>
-              <tr><td class="fast-plan__when">~14:00</td><td><strong>PRG aeroporto</strong> (Smartwings Plus + bagagem)</td></tr>
-              <tr><td class="fast-plan__when">17:15–18:45</td><td>Voo → <strong>BRU Zaventem</strong></td></tr>
-              <tr><td class="fast-plan__when">19:30–21:00</td><td>Trem aeroporto → hotel <strong>Rogier</strong> · jantar perto hotel</td></tr>
+              <tr><td class="fast-plan__when">06:30–07:30</td><td>Acordar · check-out <strong>Alton</strong></td></tr>
+              <tr><td class="fast-plan__when">07:30–08:35</td><td>Metro + autocarro <strong>119</strong> → <strong>PRG</strong></td></tr>
+              <tr><td class="fast-plan__when">08:35–11:20</td><td>Check-in Ryanair · segurança (chegar <strong>~09:30</strong>)</td></tr>
+              <tr><td class="fast-plan__when">11:50–13:20</td><td>Voo → <strong>BRU Zaventem</strong></td></tr>
+              <tr><td class="fast-plan__when">14:00–15:00</td><td>SNCB + STIB → <strong>Rogier</strong> · check-in hotel</td></tr>
+              <tr><td class="fast-plan__when">15:00–18:30</td><td><strong>Grand Place</strong> · <strong>Rue Neuve</strong> · <a href="#compras-matriz-dia">compras</a></td></tr>
+              <tr><td class="fast-plan__when">18:30–21:00</td><td>Jantar · descanso (Bruges amanhã)</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> PRG <strong>~14:00</strong></p>
+<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> PRG <strong>~09:30</strong> — voo <strong>11:50</strong></p>
           </div>
-
-<div class="flight-day-checklist">
-            <strong>Checklist mínima · voo curto (5 dez · PRG → BRU)</strong>
-            <ul>
-              <li>Passaporte e boarding <strong>Smartwings</strong> (app/PDF); <strong>terminal PRG</strong> no bilhete</li>
-              <li>Tarifa <strong>Plus</strong> no Omio: item pessoal + cabine 8 kg + despacho 23 kg + assento — confira pesos no bilhete</li>
-              <li>EUR e bateria; última validação <strong>Lítačka</strong> antes de ir para o aeroporto</li>
-              <li>Chegada em <strong>Zaventem (BRU)</strong>: comboio aeroporto + metro até <strong>Rogier</strong> costuma levar <strong>~40–55 min</strong> (confirme no SNCB / STIB no dia)</li>
-            </ul>
-          </div>
-
-
-
 <details class="transit-collapse">
             <summary>Praga → aeroporto · voo · BRU → centro</summary>
             <div class="transit transit--nested">
 <ul>
-              <li><strong>Centro Praga → PRG:</strong> <strong>autocarro 119</strong> (metro <strong>A</strong> <strong>Nádraží Veleslavín</strong>) <em>ou</em> <strong>AE Airport Express</strong> até <strong>hl.n.</strong> — confira terminal no bilhete.</li>
-              <li><strong>PRG → BRU:</strong> Smartwings <strong>17:15–18:45</strong> (total Omio <strong>R$ 835,77</strong> com Plus).</li>
-              <li><strong>BRU → hotel (Rogier):</strong> comboio aeroporto <strong>SNCB</strong> + <strong>STIB</strong> até <strong>Rogier</strong> <em>ou</em> <strong>Bolt/Uber</strong> — consulte <strong>SNCB</strong> / Google Maps no dia.</li>
-              <li><strong>Rogier → Grand Place:</strong> metro ou a pé (~15–20 min).</li>
+              <li><strong>Alton → PRG:</strong> metro <strong>C/A</strong> → <strong>Veleslavín</strong> + autocarro <strong>119</strong> (alt. AE via hl.n.).</li>
+              <li><strong>PRG → BRU:</strong> Ryanair <strong>11:50–13:20</strong> (Omio <strong>R$ 835,77</strong>).</li>
+              <li><strong>BRU → Rogier:</strong> comboio <strong>SNCB</strong> + <strong>STIB</strong> <em>ou</em> Bolt.</li>
             </ul>
             </div>
           </details>
@@ -1712,7 +1428,7 @@
       <details class="day" id="day-2026-12-06" data-trip-date="2026-12-06" data-budget-eur="75" data-energy="média">
         <summary><span class="date-tag">6 dez · dom</span> <span class="city">Bruges — bate-volta (prima Iza)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-06" data-budget-eur="75" data-energy="média">
+          <div class="fast-plan" id="fast-day-2026-12-06">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€75</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
@@ -1731,7 +1447,7 @@
             </div>
 <p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Parc Cinquantenaire / catedral BRU</p>
 <p class="fast-plan__foot"><strong>Noite:</strong> Sem Saint-Jacques / festa pesada</p>
-<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Regresso ~20h · alarme <strong>04:15</strong></p>
+<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Regresso ~20h · alarme <strong>03:00</strong></p>
           </div>
 
 <p class="note">Voo <strong>7 dez 07h00</strong>: zero turismo na manhã do aeroporto.</p>
@@ -1751,7 +1467,7 @@
       <details class="day" id="day-2026-12-07" data-trip-date="2026-12-07" data-budget-eur="20" data-energy="mínima">
         <summary><span class="date-tag">7 dez · seg</span> <span class="city">Bruxelas → Brasil</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span></span></summary>
         <div class="body">
-          <div class="fast-plan" id="fast-day-2026-12-07" data-budget-eur="20" data-energy="mínima">
+          <div class="fast-plan" id="fast-day-2026-12-07">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€20</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">mínima</span></span>
@@ -1762,24 +1478,16 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">04:30–05:00</td><td>Táxi hotel → <strong>BRU Zaventem</strong></td></tr>
+              <tr><td class="fast-plan__when">03:00</td><td><strong>Alarme</strong></td></tr>
+              <tr><td class="fast-plan__when">03:30–04:30</td><td>Bolt/táxi hotel → <strong>BRU Zaventem</strong></td></tr>
+              <tr><td class="fast-plan__when">05:00–07:00</td><td>Check-in Iberia · <strong>Tax Free</strong></td></tr>
               <tr><td class="fast-plan__when">07:00</td><td>Voo <strong>BRU → MAD → GRU</strong></td></tr>
-              <tr><td class="fast-plan__when">No aeroporto</td><td><strong>Tax Free</strong> + café</td></tr>
-                </tbody>
+                              </tbody>
               </table>
             </div>
 <p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Embarque <strong>07:00</strong> — chegar 2h antes</p>
           </div>
 
-<div class="flight-day-checklist">
-            <strong>Checklist mínima · intercontinental (7 dez · BRU → …)</strong>
-            <ul>
-              <li><strong>~04h15</strong> alarme; <strong>Rogier</strong> → <strong>BRU</strong> (transfer reservado / <strong>IC</strong> / Bolt se comboio madrugada falhar)</li>
-              <li><strong>IB0604 07:00</strong>: chegar <strong>2h antes</strong>; conexão em Madrid conforme bilhete Iberia</li>
-              <li>Passaporte, boarding Iberia offline, <strong>seguro</strong> e SOS em <a href="#emergencia">Emergência</a></li>
-              <li>Na noite de <strong>6 dez</strong>: verificar <strong>greves / obras SNCB</strong> e horário real para BRU</li>
-            </ul>
-          </div>
 <details class="transit-collapse">
             <summary>Aeroporto BRU</summary>
             <div class="transit transit--nested">
@@ -1796,7 +1504,7 @@
 
     <section id="compras" class="block app-panel" data-app-panel="mais">
       <h2>Onde comprar — dias, primário e plano B por cidade</h2>
-      <p class="lede">Use a <strong><a href="#compras-matriz-dia">matriz cidade × janela</a></strong> como vista única (com atalho para cada dia); o <strong><a href="#compras-fallback-tipo">plano B por tipo de produto</a></strong> cobre “se não der nesta cidade”. Nos dias com compras, o <a href="#dias">roteiro dia a dia</a> tem um <strong>bloco compacto</strong> com atalho para esta secção — confira filiais e horários no <strong>Google Maps</strong> (domingos e feriados mudam).</p>
+      <p class="lede"><a href="#compras-matriz-dia">Matriz</a> · <a href="#compras-fallback-tipo">plano B</a> · horários no <a href="#dias">dia</a> e no Maps.</p>
 
       <div class="card" style="margin-top:1rem;">
         <h3 id="compras-matriz-dia">Matriz cidade × janela × plano B</h3>
@@ -1840,25 +1548,6 @@
         <p class="note" style="margin-bottom:0;"><strong>Memória de ordem:</strong> DE <strong>Munique</strong> PARA <strong>Bruxelas</strong> — cada coluna é “a próxima cidade <em>à frente</em> no roteiro onde compensa tentar de novo”, não a ordem de preferência absoluta de loja.</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;">
-        <h3>Onde ir no mapa (âncoras por cidade)</h3>
-        <div class="table-scroll">
-        <table class="data">
-          <thead>
-            <tr><th>Cidade</th><th>Pesquisa Maps</th><th>Na própria cidade, plano B local</th></tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Munique</strong></td><td>Kaufingerstraße · Sendlinger · Marienplatz · Primark PEP/OEZ</td><td>Outro shopping na mesma linha de metro</td></tr>
-            <tr><td><strong>Viena</strong></td><td>Mariahilfer Straße · Kärntner Straße</td><td>Donau Zentrum · Wien Mitte The Mall</td></tr>
-            <tr><td><strong>Budapeste</strong></td><td>WestEnd · Fashion Street · Andrássy</td><td>Aréna Mall</td></tr>
-            <tr><td><strong>Berlim</strong></td><td>Alexanderplatz / Alexa · Tauentzien · Ku’damm</td><td>Mall of Berlin</td></tr>
-            <tr><td><strong>Praga</strong></td><td>Palladium · Na Příkopě</td><td>Primark Letňany (metro C)</td></tr>
-            <tr><td><strong>Bruxelas</strong></td><td>Rue Neuve · City 2</td><td>Docks Bruxsel</td></tr>
-          </tbody>
-        </table>
-        </div>
-      </div>
-
       <div class="card" style="margin-top:1rem;" id="compras-apple-stores">
         <h3>Apple Store (nome no Maps)</h3>
         <p>Modelo alvo: <strong>AirPods Pro 3</strong>. Na loja ou em <strong>apple.com</strong>, o rótulo no expositor pode variar ligeiramente — mostre ao funcionário o produto no celular ou peça pelo nome que aparece no site na sua região.</p>
@@ -1878,12 +1567,11 @@
       <div class="card">
         <h3>Antes de partir</h3>
         <ul>
-          <li>Terrestres Omio: <strong>Berlim–Praga</strong> FlixBus <strong>3 dez 10:20 Südkreuz</strong> (ou EC Hbf); ICE Salzburg–Viena <strong>24 nov 10:00</strong>; restantes em <a href="#horarios-bilhetes">Horários Omio</a>.</li>
-          <li>Hotéis: reservas na app <strong>Booking</strong> offline — B&amp;B Munique, Lasserhof, Zipser, Danubia Gate, Medos, Premier Inn Alex, Alton, Mercure Colonies.</li>
-          <li>Voos na Europa: <strong>BUD → BER</strong> <strong>30 nov 15:40–17:10</strong> (<strong>R$ 734,34</strong> Omio) e <strong>PRG → BRU</strong> Smartwings <strong>5 dez 17:15–18:45</strong> (<strong>R$ 835,77</strong> Omio); regresso <strong>7 dez BRU</strong>. Terrestres: ver <a href="#horarios-bilhetes">Horários Omio</a>.</li>
-          <li>Neuschwanstein: bilhete com <strong>horário</strong> + comboio de ida e volta planejado.</li>
-          <li>Seguro-viagem e confirmações nas apps offline (Iberia, ALL, mapas). Preencher SOS e contactos em <a href="#emergencia">Emergência</a>.</li>
-          <li>Adaptador Schuko; camadas quentes para nov–dez.</li>
+          <li><a href="#horarios-bilhetes">Bilhetes Omio</a> + <a href="#voos">voos</a> offline na app</li>
+          <li><a href="#hoteis">Hotéis Booking</a> offline</li>
+          <li>Neuschwanstein: bilhete com horário + ida/volta</li>
+          <li><a href="#emergencia">Seguro</a> · SOS · Iberia offline</li>
+          <li>Adaptador Schuko · roupa quente nov–dez</li>
         </ul>
       </div>
     </section>
@@ -1898,53 +1586,19 @@
   <nav class="app-tabbar" id="appTabbar" role="tablist" aria-label="Navegação do roteiro">
     <button type="button" class="app-tab" id="appTabInicio" role="tab" data-app-tab="inicio" aria-selected="true" aria-controls="inicio-hero resumo indice-toc"><i data-lucide="home" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Início</span></button>
     <button type="button" class="app-tab" id="appTabRoteiro" role="tab" data-app-tab="roteiro" aria-selected="false" aria-controls="dias"><i data-lucide="calendar" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Dias</span></button>
-    <button type="button" class="app-tab" id="appTabMapa" role="tab" data-app-tab="mapa" aria-selected="false" aria-controls="mapa mapas cidades"><i data-lucide="map" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mapa</span></button>
+    <button type="button" class="app-tab" id="appTabMapa" role="tab" data-app-tab="mapa" aria-selected="false" aria-controls="mapa"><i data-lucide="map" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mapa</span></button>
     <button type="button" class="app-tab" id="appTabExplorar" role="tab" data-app-tab="explorar" aria-selected="false" aria-controls="explorar" aria-label="Explorar restaurantes e vida noturna"><i data-lucide="compass" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Explorar</span></button>
-    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="operacional horarios-bilhetes voos hoteis emergencia cambio compras checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
+    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="financas horarios-bilhetes voos hoteis emergencia compras checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
   </nav>
 
   <div id="appStorageToast" class="app-toast" role="alert" hidden aria-hidden="true">Não foi possível guardar preferências (armazenamento cheio ou bloqueado). Ajustes valem nesta visita.</div>
   <button type="button" class="fab-top" id="fabTop" aria-label="Voltar ao topo"><i data-lucide="arrow-up" class="fab-ico" aria-hidden="true"></i></button>
 
-  <script>(function(){function labelDataTables(){document.querySelectorAll("table.data").forEach(function(table){var headers=Array.prototype.map.call(table.querySelectorAll("thead th"),function(th){return th.textContent.replace(/\s+/g," ").trim();});if(!headers.length)return;table.querySelectorAll("tbody tr").forEach(function(tr){tr.querySelectorAll("td").forEach(function(td,i){if(headers[i])td.setAttribute("data-label",headers[i]);});});});}
-labelDataTables();function showStorageWarning(){var el=document.getElementById("appStorageToast");if(!el)return;el.removeAttribute("hidden");el.setAttribute("aria-hidden","false");if(window.__roteiroStorageT)clearTimeout(window.__roteiroStorageT);window.__roteiroStorageT=setTimeout(function(){el.setAttribute("hidden","");el.setAttribute("aria-hidden","true");},5200);}function refreshLucide(){var ok=false;try{if(typeof lucide!=="undefined"&&lucide.createIcons){lucide.createIcons({attrs:{"stroke-width":1.75}});ok=true;}}catch(e1){}if(ok)return;var m={layers:"\u2261",plane:"\u2708",sun:"\u2600",moon:"\u263d",wallet:"\u20AC","arrow-up":"\u2191",wine:"\ud83c\udf77",compass:"\ud83e\udded",home:"\u2302",calendar:"\u2637",map:"\u29C9",list:"\u2630",search:"\u2315"};m["minimize-2"]="\u2014";document.querySelectorAll("i[data-lucide]").forEach(function(el){if(el.querySelector("svg"))return;var n=el.getAttribute("data-lucide");el.textContent=m[n]||"\u2022";el.classList.add("lucide-ico--fallback");});}
-refreshLucide();function parseRevealStaggerMs(el){var raw=getComputedStyle(el).getPropertyValue("--reveal-stagger").trim();var n=parseFloat(raw);return isNaN(n)?0:n;}
-function runSpringReveal(el){if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){el.classList.add("reveal-motion-done");return;}
-var y=52;var vy=0;var stiffness=350;var damping=20;var last=performance.now();function tick(now){var dt=Math.min(0.045,(now-last)/1000);last=now;var ay=-stiffness*y-damping*vy;vy+=ay*dt;y+=vy*dt;el.style.transform="translate3d(0,"+y.toFixed(3)+"px,0) scale(0.985)";if(Math.abs(y)<0.085&&Math.abs(vy)<0.42){el.style.transform="";el.classList.add("reveal-motion-done");return;}
-requestAnimationFrame(tick);}
-requestAnimationFrame(tick);}
-function initMagneticToolbarIcons(){if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;if(!window.matchMedia("(pointer: fine)").matches)return;if(window.__roteiroMagneticInit)return;window.__roteiroMagneticInit=true;window.addEventListener("pointermove",function(ev){document.querySelectorAll(".toolbar-row-tools button").forEach(function(btn){var svgs=btn.querySelectorAll("svg");if(!svgs.length)return;var r=btn.getBoundingClientRect();var cx=r.left+r.width/2;var cy=r.top+r.height/2;var dx=ev.clientX-cx;var dy=ev.clientY-cy;var dist=Math.hypot(dx,dy);var zone=Math.max(r.width,r.height)*1.4;var pull=dist<zone?Math.pow(1-dist/zone,1.2):0;var mx=Math.max(-11,Math.min(11,dx*0.26*pull));var my=Math.max(-11,Math.min(11,dy*0.26*pull));svgs.forEach(function(svg){svg.style.transform=pull>0.008?"translate3d("+mx.toFixed(2)+"px,"+my.toFixed(2)+"px,0)":"";});});},{passive:true});}
-initMagneticToolbarIcons();function initImmersiveCursor(){if(document.body.classList.contains("has-app-ui"))return;var fine=window.matchMedia("(pointer: fine)").matches;var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(!fine||reduce)return;var root=document.getElementById("cursorRoot");if(!root||window.__roteiroCursorInit)return;window.__roteiroCursorInit=true;document.documentElement.classList.add("cursor-enhanced");var dot=root.querySelector(".cursor-dot");var ring=root.querySelector(".cursor-ring");if(!dot||!ring)return;var targetX=0;var targetY=0;var dotX=0;var dotY=0;var ringX=0;var ringY=0;var cursorSynced=false;window.addEventListener("pointermove",function(e){targetX=e.clientX;targetY=e.clientY;if(!cursorSynced){cursorSynced=true;dotX=ringX=targetX;dotY=ringY=targetY;}
-var under=document.elementFromPoint(e.clientX,e.clientY);var clickable=!!(under&&under.closest("a[href], button, summary, .slot, input, textarea, select, .map-node, .fab-top, .btn-copy, label[for]"));root.classList.toggle("is-pointer",clickable);},{passive:true});window.addEventListener("pointerdown",function(){root.classList.add("is-pressing");},{passive:true});window.addEventListener("pointerup",function(){root.classList.remove("is-pressing");},{passive:true});function loop(){dotX+=(targetX-dotX)*0.55;dotY+=(targetY-dotY)*0.55;ringX+=(targetX-ringX)*0.22;ringY+=(targetY-ringY)*0.22;var press=root.classList.contains("is-pressing")?0.92:1;dot.style.transform="translate3d("+dotX+"px,"+dotY+"px,0) translate(-50%,-50%) scale("+press+")";ring.style.transform="translate3d("+ringX+"px,"+ringY+"px,0) translate(-50%,-50%) scale("+(0.96+press*0.04)+")";requestAnimationFrame(loop);}
-requestAnimationFrame(loop);}
-initImmersiveCursor();var __appM=document.getElementById("appMain");function __getScrollPort(){if(!__appM)return document.scrollingElement||document.documentElement;var cs=getComputedStyle(__appM);if(cs.overflowY==="visible")return document.scrollingElement||document.documentElement;if(__appM.scrollHeight>__appM.clientHeight+2)return __appM;return document.scrollingElement||document.documentElement;}function __getScrollY(){var p=__getScrollPort();return p&&p===__appM?p.scrollTop:window.scrollY||document.documentElement.scrollTop;}function __setScrollTopInstant(y){var p=__getScrollPort();if(p===__appM&&__appM)p.scrollTop=y;else window.scrollTo(0,y);}function scrollToElementHighSpeedDecel(targetEl,done){if(!targetEl){if(done)done();return;}
-if(window.matchMedia("(prefers-reduced-motion: reduce)").matches){targetEl.scrollIntoView({behavior:"auto",block:"start"});if(done)done();return;}
-var OFFSET=76;var start=__getScrollY();var end;var port=__getScrollPort();if(port===__appM&&__appM){var re=__appM.getBoundingClientRect();var te=targetEl.getBoundingClientRect();end=start+(te.top-re.top)-OFFSET;}else{var rect=targetEl.getBoundingClientRect();end=rect.top+start-OFFSET;}var dist=end-start;if(Math.abs(dist)<3){if(done)done();return;}
-var dur=Math.min(1550,Math.max(480,Math.pow(Math.abs(dist),0.72)*1.35));var t0=performance.now();function easeOutQuint(t){return 1-Math.pow(1-t,5);}
-function step(now){var t=Math.min(1,(now-t0)/dur);var p=easeOutQuint(t);__setScrollTopInstant(start+dist*p);if(t<1){requestAnimationFrame(step);}else if(done){done();}}
-requestAnimationFrame(step);}
-function pulseDetailsEl(el){if(!el)return;var ok=el.classList.contains("day")||el.classList.contains("city-block");if(!ok)return;el.classList.remove("target-pulse");void el.offsetWidth;el.classList.add("target-pulse");if(el.classList.contains("day")||el.classList.contains("city-block"))el.open=true;setTimeout(function(){el.classList.remove("target-pulse");},1400);}
-document.addEventListener("click",function(ev){if(ev.button!==0||ev.ctrlKey||ev.metaKey||ev.shiftKey||ev.altKey)return;var a=ev.target.closest('a[href^="#day-"]');if(!a)return;var id=(a.getAttribute("href")||"").replace(/^#/,"");if(!id)return;var day=document.getElementById(id);if(!day||!day.classList.contains("day"))return;ev.preventDefault();day.open=true;try{if(history.pushState)history.pushState(null,"","#"+id);else location.hash="#"+id;}catch(eHash){location.hash="#"+id;}
-scrollToElementHighSpeedDecel(day,function(){pulseDetailsEl(day);});},true);(function initMapCityPanel(){var MAP_CITIES={muc:{title:"Munique",code:"MUC",dates:"19–22 nov · 3 noites",hotel:"B&B Hotel München-Hbf",station:"München Hbf; ZOB para FlixBus (Füssen / Salzburgo)",poi:["Centro: Marienplatz, Viktualienmarkt, Englischer Garten","21 nov: Neuschwanstein (FlixBus ZOB 08:30–19:25 ou RE+Füssen)","Seg.: FlixBus para Salzburgo (22 nov ~13:45 do ZOB)",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=B%26B%20Hotel%20M%C3%BCnchen-Hbf%20Arnulfstra%C3%9Fe%2030%20M%C3%BCnchen",copyAddr:"B&B Hotel München-Hbf, Arnulfstraße 30, 80335 München, Germany",anchor:"#city-muc",},szg:{title:"Salzburgo",code:"SZG",dates:"22–24 nov · 2 noites",hotel:"Atel Hotel Lasserhof",station:"Salzburg Hbf",poi:["Altstadt, Festung Hohensalzburg, rio Salzach","Chegada típica FlixBus P+R Süd (~15:45) no 22 nov","Seg.: ÖBB ICE 10:00 → Wien Hbf (24 nov)",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Atel%20Hotel%20Lasserhof%20Lasserstra%C3%9Fe%2047%20Salzburg",copyAddr:"Atel Hotel Lasserhof, Lasserstraße 47, 5020 Salzburg, Austria",anchor:"#city-szg",},vie:{title:"Viena",code:"VIE",dates:"24–26 nov · 2 noites",hotel:"Hotel Zipser (Josefstadt, perto Rathaus / U2)",station:"Wien Hbf",poi:["Prater, Naschmarkt, Donaukanal; Schönbrunn (jardins), Stephansdom (exterior), Ring","Seg.: FlixBus VIB ~12:35 → Bratislava Most SNP (26 nov)",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Hotel%20Zipser%20Lange%20Gasse%2049%20Wien",copyAddr:"Hotel Zipser, Lange Gasse 49, 1080 Wien, Austria",anchor:"#city-vie",},bts:{title:"Bratislava",code:"BTS",dates:"26–27 nov · 1 noite",hotel:"Danubia Gate Hotel",station:"Most SNP (FlixBus Omio) ou hl.st. — confira o bilhete",poi:["Castelo, Staré Mesto","Seg.: FlixBus Mlynské Nivy ~10:50 → Budapeste Kelenföld (27 nov)"],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Danubia%20Gate%20Hotel%20Dunajsk%C3%A1%2026%20Bratislava",copyAddr:"Danubia Gate Hotel, Dunajská 26, 811 01 Bratislava, Slovakia",anchor:"#city-bts",},bud:{title:"Budapeste",code:"BUD",dates:"27–30 nov · 3 noites",hotel:"Medos Hotel",station:"Chegada típica Kelenföld (FlixBus); voo 30 nov 15:40 BUD → BER",poi:["Parlamento, margens, basílica, Ponte das Correntes, Buda ao pôr do sol","Dia do voo: folga para centro → BUD (ex. 100E)",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Medos%20Hotel%20R%C3%A1k%C3%B3czi%20%C3%BAt%2040%20Budapest",copyAddr:"Medos Hotel, Rákóczi út 40, 1072 Budapest, Hungary",anchor:"#city-bud",},ber:{title:"Berlim",code:"BER",dates:"30 nov–3 dez · 3 noites",hotel:"Premier Inn Berlin Alexanderplatz",station:"Chegada voo BER 30 nov; saída FlixBus Südkreuz ~10:20 (3 dez) ou EC do Hbf",poi:["Brandenburg, Memorial, Unter den Linden, East Side Gallery, Mitte","Noite de chegada: REWE / bairro da estação",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Premier%20Inn%20Berlin%20Alexanderplatz%20Otto-Braun-Stra%C3%9Fe%2069",copyAddr:"Premier Inn Berlin Alexanderplatz, Otto-Braun-Straße 69, 10178 Berlin, Germany",anchor:"#city-ber",},prg:{title:"Praga",code:"PRG",dates:"3–5 dez · 2 noites",hotel:"Alton (Legerova · metro I.P. Pavlova)",station:"ÚAN Florenc (FlixBus) ou hl.n. (EC); PRG só para voo",poi:["Staroměstské náměstí, Karlův most, castelo (vistas), Malá Strana","Seg.: voo PRG → BRU (5 dez 17:15) Smartwings; comboio/metro até centro",],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Alton%20Hotel%20Legerova%2022%20Praha",copyAddr:"Alton Hotel, Legerova 1581/22, 120 00 Praha 2, Czechia",anchor:"#city-prg",},bru:{title:"Bruxelas",code:"BRU",dates:"5–7 dez · 2 noites",hotel:"Hotel des Colonies Brussels by Mercure (Rogier)",station:"Rogier / Bruxelles-Nord; chegada 5 dez via BRU (Zaventem) + SNCB/STIB",poi:["Grand Place (5 dez); 6 dez bate-volta Bruges com prima Iza","Seg.: voo BRU → Brasil (7 dez)"],mapsUrl:"https://www.google.com/maps/search/?api=1&query=Hotel%20des%20Colonies%20Brussels%20Rue%20des%20Croisades%206",copyAddr:"Hotel des Colonies Brussels by Mercure, Rue des Croisades 6, 1210 Saint-Josse-ten-Noode, Belgium",anchor:"#city-bru",},};var panel=document.getElementById("mapCityPanel");var hint=document.getElementById("mapCityPanelHint");var body=document.getElementById("mapCityPanelBody");var titleEl=document.getElementById("mapCityPanelTitle");var codeEl=document.getElementById("mapCityPanelCode");var datesEl=document.getElementById("mapCityPanelDates");var hotelEl=document.getElementById("mapCityPanelHotel");var stationEl=document.getElementById("mapCityPanelStation");var poiUl=document.getElementById("mapCityPanelPoi");var mapsA=document.getElementById("mapCityPanelMaps");var copyBtn=document.getElementById("mapCityPanelCopy");var fichaA=document.getElementById("mapCityPanelFicha");if(!panel||!hint||!body||!titleEl||!poiUl||!mapsA||!copyBtn||!fichaA)return;function scrollPanelIntoView(){var reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;try{panel.scrollIntoView({behavior:reduce?"auto":"smooth",block:"nearest"});}catch(e){panel.scrollIntoView();}}
-function selectMapCity(key){var d=MAP_CITIES[key];if(!d)return;document.querySelectorAll(".map-node.is-selected").forEach(function(g){g.classList.remove("is-selected");});var node=document.querySelector('.map-node[data-city="'+key+'"]');if(node)node.classList.add("is-selected");panel.classList.add("has-selection");hint.hidden=true;body.hidden=false;titleEl.textContent=d.title;codeEl.textContent=d.code;datesEl.textContent=d.dates;hotelEl.textContent=d.hotel;stationEl.textContent=d.station;poiUl.innerHTML="";d.poi.forEach(function(t){var li=document.createElement("li");li.textContent=t;poiUl.appendChild(li);});mapsA.href=d.mapsUrl;copyBtn.setAttribute("data-copy",d.copyAddr);copyBtn.textContent=copyBtn.getAttribute("data-label")||"Copiar morada";copyBtn.classList.remove("is-done");fichaA.href=d.anchor;}
-document.querySelectorAll(".map-node").forEach(function(g){var key=g.getAttribute("data-city");if(!key||!MAP_CITIES[key])return;function activate(){selectMapCity(key);scrollPanelIntoView();}
-g.addEventListener("click",function(){activate();});g.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();activate();}});});})();var LS_OPEN="roteiro-open-state-v1";var days=document.querySelectorAll("details.day");var cities=document.querySelectorAll("details.city-block");var allDetails=document.querySelectorAll("details.day, details.city-block");function persistOpens(){var o={};allDetails.forEach(function(el){if(el.id)o[el.id]=!!el.open;});try{localStorage.setItem(LS_OPEN,JSON.stringify(o));}catch(e){showStorageWarning();}}
-try{var saved=JSON.parse(localStorage.getItem(LS_OPEN)||"{}");if(saved&&typeof saved==="object"){allDetails.forEach(function(el){if(el.id&&Object.prototype.hasOwnProperty.call(saved,el.id)){el.open=!!saved[el.id];}});}}catch(e2){}
-days.forEach(function(d){d.addEventListener("toggle",persistOpens);});cities.forEach(function(c){c.addEventListener("toggle",persistOpens);});function pad2(n){return n<10?"0"+n:String(n);}
-var now=new Date();var todayIso=now.getFullYear()+"-"+pad2(now.getMonth()+1)+"-"+pad2(now.getDate());document.querySelectorAll("details.day[data-trip-date]").forEach(function(d){if(d.getAttribute("data-trip-date")!==todayIso)return;d.classList.add("is-trip-today");var summ=d.querySelector("summary");if(summ&&!summ.querySelector(".badge-hoje")){var b=document.createElement("span");b.className="badge-hoje";b.textContent="Hoje";summ.appendChild(b);}});
-var searchEl=document.getElementById("tripSearch");var searchTimer=null;function clearSearchClasses(){document.body.classList.remove("has-trip-search");document.querySelectorAll(".search-miss").forEach(function(el){el.classList.remove("search-miss");});}
-function runSearch(){var q=(searchEl.value||"").trim().toLowerCase();document.querySelectorAll(".search-miss").forEach(function(el){el.classList.remove("search-miss");});if(!q){clearSearchClasses();return;}
-document.body.classList.add("has-trip-search");document.querySelectorAll("details.day").forEach(function(d){if(!d.textContent.toLowerCase().includes(q))d.classList.add("search-miss");});document.querySelectorAll("section.block").forEach(function(sec){if(sec.id==="dias"){var anyDay=false;sec.querySelectorAll("details.day").forEach(function(d){if(!d.classList.contains("search-miss"))anyDay=true;});var h2=sec.querySelector("h2");var lede=sec.querySelector(".lede");var headMatch=(h2&&h2.textContent.toLowerCase().includes(q))||(lede&&lede.textContent.toLowerCase().includes(q));if(!anyDay&&!headMatch)sec.classList.add("search-miss");}else if(!sec.textContent.toLowerCase().includes(q)){sec.classList.add("search-miss");}});document.querySelectorAll("nav.toc li").forEach(function(li){var a=li.querySelector('a[href^="#"]');if(!a)return;var id=a.getAttribute("href").slice(1);var t=document.getElementById(id);if(t&&t.classList.contains("search-miss"))li.classList.add("search-miss");});}
-searchEl.addEventListener("input",function(){clearTimeout(searchTimer);searchTimer=setTimeout(runSearch,140);});searchEl.addEventListener("search",function(){if(!searchEl.value)clearSearchClasses();});document.body.addEventListener("click",function(ev){var btn=ev.target.closest(".btn-copy");if(!btn)return;var text=btn.getAttribute("data-copy");if(!text)return;var label=btn.getAttribute("data-label")||"Copiar morada";function revert(){btn.classList.remove("is-done");btn.textContent=label;}
-if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(function(){btn.classList.add("is-done");btn.textContent="Copiado!";setTimeout(revert,2200);}).catch(function(){});}});function pulseTargetFromHash(){var id=(location.hash||"").replace(/^#/,"");if(!id)return;var el=document.getElementById(id);if(!el)return;var pulseOk=el.classList.contains("block")||el.classList.contains("day")||el.classList.contains("city-block");if(!pulseOk)return;el.classList.remove("target-pulse");void el.offsetWidth;el.classList.add("target-pulse");if(el.classList.contains("day")||el.classList.contains("city-block"))el.open=true;setTimeout(function(){el.classList.remove("target-pulse");},1400);}
-window.addEventListener("hashchange",pulseTargetFromHash);if(location.hash)pulseTargetFromHash();var root=document.documentElement;var themeKey="roteiro-theme-v1";var themeStored=null;try{themeStored=localStorage.getItem(themeKey);}catch(e0){}if(themeStored==="dark")root.setAttribute("data-theme","dark");document.getElementById("themeToggle").addEventListener("click",function(){var dark=root.getAttribute("data-theme")==="dark";if(dark){root.removeAttribute("data-theme");localStorage.setItem(themeKey,"light");}else{root.setAttribute("data-theme","dark");localStorage.setItem(themeKey,"dark");}
-refreshLucide();});var scrollProgressEl=document.getElementById("scrollProgress");function updateScrollProgress(){if(!scrollProgressEl)return;var p=__getScrollPort();if(!p)return;var sh=p.scrollHeight-p.clientHeight;var st=p===__appM?p.scrollTop:window.scrollY||document.documentElement.scrollTop;var pct=sh<=0?0:Math.min(100,Math.max(0,(st/sh)*100));scrollProgressEl.style.width=pct+"%";scrollProgressEl.setAttribute("aria-valuenow",String(Math.round(pct)));}
-var fab=document.getElementById("fabTop");var onScroll=function(){if(fab)fab.classList.toggle("is-visible",__getScrollY()>420);updateScrollProgress();};if(__appM)__appM.addEventListener("scroll",onScroll,{passive:true});window.addEventListener("scroll",onScroll,{passive:true});window.addEventListener("resize",updateScrollProgress,{passive:true});onScroll();fab.addEventListener("click",function(){var b=window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth";var port=__getScrollPort();if(port===__appM&&__appM){__appM.scrollTo({top:0,behavior:b});}else{window.scrollTo({top:0,behavior:b});}});document.querySelectorAll("details.day, details.city-block, section.block").forEach(function(el){el.classList.add("reveal");});var revealEls=document.querySelectorAll(".reveal");revealEls.forEach(function(el,i){el.style.setProperty("--reveal-stagger",Math.min(i,48)*28+"ms");});var reduceMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduceMotion){revealEls.forEach(function(el){el.classList.add("is-visible","reveal-motion-done");});}else{var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;obs.unobserve(el);el.classList.add("is-visible");var delay=parseRevealStaggerMs(el);setTimeout(function(){runSpringReveal(el);},delay);});},{threshold:0.06,rootMargin:"100px 0px -28px 0px"});revealEls.forEach(function(el){obs.observe(el);});}try{window.scrollToElementHighSpeedDecel=scrollToElementHighSpeedDecel;}catch(eHj){}})();</script>
+  <script src="app-core.js?v=2"></script>
   <script src="app-shell.js"></script>
   <script src="app-search-ui.js"></script>
-  <script src="app-mapas.js?v=34"></script>
+  <script src="app-mapas.js?v=36"></script>
   <script src="app-views.js?v=33"></script>
-  <script>(function(){function pad2(n){return n<10?"0"+n:String(n);}var now=new Date();var todayIso=now.getFullYear()+"-"+pad2(now.getMonth()+1)+"-"+pad2(now.getDate());var box=document.getElementById("hojeDestaque");var line=document.getElementById("hojeDestaqueLine");var btn=document.getElementById("hojeDestaqueBtn");if(!box||!line||!btn)return;var day=document.querySelector('details.day[data-trip-date="'+todayIso+'"]');if(!day)return;box.removeAttribute("hidden");var city=day.querySelector(".city");var label=city?city.textContent.replace(/\s+/g," ").trim():"Dia de hoje";line.textContent=label;btn.addEventListener("click",function(){if(typeof window.roteiroApplyAppTab==="function"){window.roteiroApplyAppTab("roteiro",{skipStore:false,hash:true,scrollTop:false});}day.open=true;if(typeof window.scrollToElementHighSpeedDecel==="function"){window.scrollToElementHighSpeedDecel(day);}else{day.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});}});})();</script>
   <script>if("serviceWorker"in navigator){navigator.serviceWorker.register("sw.js").then(function(r){r.update&&r.update();}).catch(function(){});}</script>
 </body>
 </html>

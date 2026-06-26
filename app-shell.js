@@ -52,14 +52,17 @@
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
     if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
     if (
+      id === "financas" ||
+      id === "financas-wise" ||
+      id === "financas-sobra" ||
       id === "operacional" ||
       id === "operacional-envelope" ||
-      id === "operacional-por-cidade" ||
       id === "operacional-dias" ||
-      id === "operacional-tabela-dias"
+      id === "operacional-tabela-dias" ||
+      id === "cambio"
     )
       return "mais";
-    if (id === "mapa" || id === "mapas" || id === "cidades" || (id && id.indexOf("city-") === 0) || (id && id.indexOf("mapas-") === 0)) return "mapa";
+    if (id === "mapa" || id === "mapas" || (id && id.indexOf("mapas-") === 0)) return "mapa";
     if (
       id === "explorar" ||
       id === "lgbt-bares" ||
@@ -68,7 +71,6 @@
       (id && id.indexOf("lgbt-") === 0)
     )
       return "explorar";
-    if (id === "cambio") return "mais";
     if (
       id === "horarios-bilhetes" ||
       id === "voos" ||
@@ -333,6 +335,10 @@
   }
 
   function refreshTabIcons() {
+    if (typeof window.refreshLucide === "function") {
+      window.refreshLucide();
+      return;
+    }
     try {
       if (typeof lucide !== "undefined" && lucide.createIcons) {
         lucide.createIcons({ attrs: { "stroke-width": 1.75 } });

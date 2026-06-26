@@ -9,6 +9,10 @@
   if (!dlg || !openBtn) return;
 
   function refreshLucide() {
+    if (typeof window.refreshLucide === "function") {
+      window.refreshLucide();
+      return;
+    }
     try {
       if (typeof lucide !== "undefined" && lucide.createIcons) {
         lucide.createIcons({ attrs: { "stroke-width": 1.75 } });

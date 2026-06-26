@@ -23,10 +23,10 @@ const mustHave = [
   "id=\"mapasDiasHost\"",
   "id=\"explorar\"",
   "id=\"explorar-calendario-noite\"",
-  "id=\"cidades\"",
-  "id=\"operacional\"",
+  "id=\"financas\"",
   "id=\"operacional-envelope\"",
   "id=\"cambio\"",
+  "id=\"operacional\"",
   "id=\"compras\"",
   "id=\"tripSearch\"",
   "id=\"tripSearchDialog\"",
@@ -38,6 +38,7 @@ const mustHave = [
   "id=\"hojeDestaque\"",
   "class=\"has-app-ui\"",
   "src=\"app-shell.js\"",
+  'src="app-core.js',
   'src="app-mapas.js',
   'src="app-views.js',
   "src=\"app-search-ui.js\"",
@@ -47,11 +48,14 @@ const mustHave = [
   "data-app-panel=\"mapa\"",
   "data-app-panel=\"roteiro\"",
   "data-app-panel=\"explorar\"",
-  "roteiroApplyAppTab",
 ];
 
 for (const s of mustHave) {
   if (!html.includes(s)) err('falta: "' + s + '" em index.html');
+}
+const shell = readFileSync(join(root, "app-shell.js"), "utf8");
+if (!shell.includes("roteiroApplyAppTab")) {
+  err("falta roteiroApplyAppTab em app-shell.js");
 }
 if (!html.includes('href="app.css') && !html.includes("href='app.css")) {
   err("falta link app.css em index.html");
@@ -104,7 +108,7 @@ console.log(
     " }"
 );
 
-const appFiles = ["styles.css", "app.css", "app-shell.js", "app-mapas.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml"];
+const appFiles = ["styles.css", "app.css", "app-shell.js", "app-core.js", "app-mapas.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml"];
 
 const mymaps = readFileSync(join(root, "data/mapas-my-maps.csv"), "utf8");
 if (!mymaps.includes("Latitude") || !mymaps.includes("Longitude")) {
