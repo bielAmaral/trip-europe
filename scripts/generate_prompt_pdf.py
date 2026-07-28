@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Gera PROMPT-MESTRE-ROTEIRO.pdf a partir de docs/PROMPT-MESTRE-ROTEIRO.txt via Chrome headless."""
+"""Gera PDF a partir de prompts Markdown em docs/ (Chrome headless).
+
+Nomenclatura: roteiro-{destino}-{ano}-prompt-{mestre|atualizacoes}.txt
+"""
 
 from __future__ import annotations
 
@@ -10,9 +13,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / "docs" / "PROMPT-MESTRE-ROTEIRO.txt"
-HTML_OUT = ROOT / "docs" / "PROMPT-MESTRE-ROTEIRO.html"
-PDF_OUT = ROOT / "docs" / "PROMPT-MESTRE-ROTEIRO.pdf"
+DOCS = ROOT / "docs"
+DEFAULT_SRC = DOCS / "roteiro-europa-2026-prompt-mestre.txt"
+PROMPT_ATUALIZACOES = DOCS / "roteiro-europa-2026-prompt-atualizacoes.txt"
 CHROME = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
 PRINT_CSS = """
@@ -217,12 +220,12 @@ def md_to_html(source: str) -> str:
     return "\n".join(out)
 
 
-def build_html(body: str) -> str:
+def build_html(body: str, title: str) -> str:
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>PROMPT MESTRE — Europa Central Nov–Dez 2026</title>
+  <title>{html.escape(title)}</title>
   <style>{PRINT_CSS}</style>
 </head>
 <body>
@@ -248,17 +251,30 @@ def chrome_to_pdf(html_path: Path, pdf_path: Path) -> None:
     subprocess.run(cmd, check=True, capture_output=True, text=True)
 
 
-def main() -> int:
-    if not SRC.is_file():
-        print(f"Ficheiro não encontrado: {SRC}", file=sys.stderr)
-        return 1
-    text = SRC.read_text(encoding="utf-8")
+def generate_pdf(src: Path) -> tuple[Path, Path]:
+    if not src.is_file():
+        raise SystemExit(f"Ficheiro não encontrado: {src}")
+    html_out = src.with_suffix(".html")
+    pdf_out = src.with_suffix(".pdf")
+    text = src.read_text(encoding="utf-8")
+    title_match = re.match(r"^#\s+(.+)$", text, re.MULTILINE)
+    title = title_match.group(1) if title_match else src.stem.replace("-", " ")
     body = md_to_html(text)
-    HTML_OUT.write_text(build_html(body), encoding="utf-8")
-    chrome_to_pdf(HTML_OUT, PDF_OUT)
-    size_kb = PDF_OUT.stat().st_size / 1024
-    print(f"OK: {PDF_OUT.name} ({size_kb:.0f} KB)")
-    print(f"    {HTML_OUT.name} (intermédio)")
+    html_out.write_text(build_html(body, title), encoding="utf-8")
+    chrome_to_pdf(html_out, pdf_out)
+    return html_out, pdf_out
+
+
+def main() -> int:
+    if len(sys.argv) > 1 and sys.argv[1] in ("--all", "-a"):
+        paths = [DEFAULT_SRC, PROMPT_ATUALIZACOES]
+    else:
+        paths = [Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else DEFAULT_SRC]
+    for src in paths:
+        html_out, pdf_out = generate_pdf(src)
+        size_kb = pdf_out.stat().st_size / 1024
+        print(f"OK: {pdf_out.name} ({size_kb:.0f} KB)")
+        print(f"    {html_out.name} (intermédio)")
     return 0
 
 

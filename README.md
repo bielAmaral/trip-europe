@@ -38,14 +38,21 @@ Se existir `roteiro.html` como espelho, pode alinhar a partir de `index.html` co
 python3 sync_roteiro_from_index.py
 ```
 
-## Prompt mestre (PDF para viagem / IAs)
+## Prompts para IAs (PDF offline)
 
-- **PDF:** [docs/PROMPT-MESTRE-ROTEIRO.pdf](docs/PROMPT-MESTRE-ROTEIRO.pdf) — roteiro hora a hora, voos, hotéis, legs (offline no telemóvel).
-- **Fonte editável:** [docs/PROMPT-MESTRE-ROTEIRO.txt](docs/PROMPT-MESTRE-ROTEIRO.txt)
-- **Regenerar após editar o `.txt`:**
+Ver [docs/README.md](docs/README.md) para nomenclatura e uso.
+
+| Documento | PDF |
+|-----------|-----|
+| Plano completo | [roteiro-europa-2026-prompt-mestre.pdf](docs/roteiro-europa-2026-prompt-mestre.pdf) |
+| Só atualizações | [roteiro-europa-2026-prompt-atualizacoes.pdf](docs/roteiro-europa-2026-prompt-atualizacoes.pdf) |
+
+- **Editar:** `docs/roteiro-europa-2026-prompt-mestre.txt` (e `…-atualizacoes.txt` se aplicável)
+- **Regenerar PDF:**
 
 ```bash
 python3 scripts/generate_prompt_pdf.py
+python3 scripts/generate_prompt_pdf.py docs/roteiro-europa-2026-prompt-atualizacoes.txt
 ```
 
 Requer Google Chrome (macOS) para exportação headless.

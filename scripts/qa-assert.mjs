@@ -28,6 +28,7 @@ const mustHave = [
   "id=\"cambio\"",
   "id=\"operacional\"",
   "id=\"compras\"",
+  "id=\"presentes\"",
   "id=\"tripSearch\"",
   "id=\"tripSearchDialog\"",
   "id=\"appTabInicio\"",
@@ -37,7 +38,7 @@ const mustHave = [
   "id=\"mapCityPanel\"",
   "id=\"hojeDestaque\"",
   "class=\"has-app-ui\"",
-  "src=\"app-shell.js\"",
+  'src="app-shell.js',
   'src="app-core.js',
   'src="app-mapas.js',
   'src="app-views.js',
@@ -107,6 +108,14 @@ console.log(
     byTab.mais +
     " }"
 );
+
+/* HTML: secções de topo não podem ficar dentro de #explorar (bug de tags não fechadas). */
+const explorarClose = html.indexOf("</section>", html.indexOf('id="explorar-bru"'));
+const horariosPos = html.indexOf('id="horarios-bilhetes"');
+if (explorarClose < 0 || horariosPos < explorarClose) {
+  err("#horarios-bilhetes deve vir depois do fecho de #explorar (HTML mal aninhado)");
+}
+console.log("QA OK: #explorar fecha antes de #horarios-bilhetes");
 
 const appFiles = ["styles.css", "app.css", "app-shell.js", "app-core.js", "app-mapas.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml"];
 

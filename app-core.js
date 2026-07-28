@@ -600,6 +600,14 @@
       el.classList.add("is-visible", "reveal-motion-done");
     });
   } else {
+    var revealRoot = null;
+    var appMainEl = document.getElementById("appMain");
+    if (appMainEl) {
+      var oy = getComputedStyle(appMainEl).overflowY;
+      if (oy === "auto" || oy === "scroll" || oy === "overlay") {
+        revealRoot = appMainEl;
+      }
+    }
     var obs = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (e) {
@@ -613,10 +621,17 @@
           }, delay);
         });
       },
-      { threshold: 0.06, rootMargin: "100px 0px -28px 0px" }
+      { threshold: 0.06, rootMargin: "100px 0px -28px 0px", root: revealRoot }
     );
     revealEls.forEach(function (el) {
       obs.observe(el);
+    });
+    document.addEventListener("roteiro:panels-shown", function () {
+      if (typeof window.roteiroNudgeRevealIn === "function") {
+        document.querySelectorAll("[data-app-panel]:not([hidden])").forEach(function (p) {
+          window.roteiroNudgeRevealIn(p);
+        });
+      }
     });
   }
 

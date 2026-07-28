@@ -1,9 +1,10 @@
 # PROMPT MESTRE — Europa Central Nov–Dez 2026
 
-> **Uso:** anexar **`PROMPT-MESTRE-ROTEIRO.pdf`** (offline no telemóvel) ou colar o `.txt` em MindTrip, ChatGPT, Claude ou outro planeador.  
-> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py`  
+> **Uso:** anexar **`roteiro-europa-2026-prompt-mestre.pdf`** (offline no telemóvel) ou colar o `.txt` em MindTrip, ChatGPT, Claude ou outro planeador.  
+> **Só alterações recentes:** anexar **`roteiro-europa-2026-prompt-atualizacoes.pdf`** se a IA tiver contexto antigo (Bruges, etc.).  
+> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py` (mestre) ou `… docs/roteiro-europa-2026-prompt-atualizacoes.txt`  
 > **Fonte canónica:** `roteiro-viagem-europa-2025/index.html` + `data/mapas-paradas.csv`  
-> **Versão:** 2026-06-14
+> **Versão:** 2026-06-14 (Bruges removido · compras BRU 5+6 dez · Starbucks/canecas)
 
 ---
 
@@ -145,6 +146,26 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 
 ---
 
+## STARBUCKS — CANECA POR CIDADE
+
+Canecas *You Are Here* / cidade — stock varia; confirmar no balcão. Loja **mais perto do hotel** de cada paragem.
+
+| Cidade | Starbucks | Morada | ~Dist. |
+|--------|-----------|--------|--------|
+| Munique | München Hbf | Bayerstraße 10A | ~5–8 min (B&B Hbf) |
+| Salzburgo | Forum 1 / Hbf | Südtiroler Platz 13 | ~8 min (Lasserhof) |
+| Viena | Neubaugasse 4 | 1070 Wien | ~10 min (Zipser) |
+| Bratislava | Staré Mesto | Sedlárska 12 | ~8 min (Danubia Gate) |
+| Budapeste | Astoria | Rákóczi út 1–3 | ~3 min (Medos) |
+| Berlim | Alexanderhaus | Alexanderplatz 2 | ~2 min (Premier Inn) |
+| Praga | I. P. Pavlova | Jugoslávská 5 | ~3 min (Alton) |
+| Bruxelas | Rogier | Place Charles Rogier 1 | ~2 min (des Colonies) |
+
+**Alternativas:** Viena — Mariahilfer Straße 23–25 (compras) · Berlim — Dircksenstraße 2 (S-Bahn).  
+Encaixar no trajeto existente; **não** desviar dia por caneca se atrasar bilhete/voo.
+
+---
+
 ## CALENDÁRIO NOITE (LGBT / ruin bars)
 
 | Data | Cidade | Sugestão | Evitar se |
@@ -161,7 +182,7 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 | **1–2 dez** | Berlim | Schöneberg / Kreuzberg Roses | — |
 | **4 dez** | Praga | **Vinohrady Termix** | — |
 | 5 dez | Bruxelas | Leve | Chegada 13:20 · tarde Rue Neuve |
-| **6 dez** | Bruxelas | Descanso + prep voo — **sem noite pesada** | Alarme 03:00 |
+| **6 dez** | Bruxelas | Descanso + prep voo + **compras buffer** — **sem noite pesada** | Alarme 03:00 |
 | 7 dez | Bruxelas | Evitar — embarque 07:00 | — |
 
 ---
@@ -810,7 +831,7 @@ Rogier → Toison d'Or | metro | STIB | 17:30 → 17:50 | —
 - Chegada **Zaventem (BRU)** — não CRL
 - Compras Apple/modas: resolver **hoje à tarde** (última tarde livre antes do voo)
 
-**Cortar se atrasar:** Apple Toison d'Or (manter check-in + Grand Place curto)  
+**Cortar se atrasar:** Apple Toison d'Or no 5 dez → tentar **6 dez 15:00–17:00** (última janela)  
 **Crítico:** PRG **~09:30** — voo **11:50**, não 17:15  
 **Noite:** Leve — sem Saint-Jacques / festa pesada (prep voo amanhã)
 
@@ -827,7 +848,7 @@ Rogier → Toison d'Or | metro | STIB | 17:30 → 17:50 | —
 | 10:00–11:00 | Dormir até tarde / café hotel | |
 | 11:00–13:00 | **Grand Place** + **Galeries Royales Saint-Hubert** (exterior) | |
 | 13:00–15:00 | Almoço (Chez Léon / Exki) · **Mont des Arts** (opcional) | |
-| 15:00–17:00 | **Rue Neuve** compras leves OU Parc Cinquantenaire (cortar) | |
+| 15:00–17:00 | **Compras** (<strong>Rue Neuve</strong> moda · <strong>Apple Toison d’Or</strong> / MediaMarkt pendentes) OU Parc Cinquantenaire (cortar) | Fechar compras até **17:00** |
 | 17:00–19:00 | **Tax Free prep** · mala 100% · agendar **Bolt 03:30** | |
 | 19:00–21:00 | Jantar leve · **dormir cedo** | **Alarme 03:00** |
 
@@ -842,6 +863,7 @@ Mont des Arts → hotel | metro | STIB | 17:00 → 17:20 | —
 
 **Noite:** Sem Saint-Jacques / festa pesada / La Demence  
 **Cortar:** Parc Cinquantenaire / segunda volta Grand Place  
+**Compras:** fechar até **17:00** (Rue Neuve · Apple Toison d’Or / MediaMarkt) — depois só Tax Free + mala  
 **Nota:** Voo 7 dez 07:00 — zero turismo na manhã do aeroporto
 
 ---
@@ -902,6 +924,7 @@ Ao processar este prompt, para **cada dia** devolver:
 4. **Horários de bilhete** intocados
 5. Sequência de **POIs na ordem GPS**
 6. **Janela de noite** (se aplicável) com nomes de bares/restaurantes
+7. **Starbucks caneca** (opcional): loja da tabela STARBUCKS — só se couber no trajeto
 
 **Não** reorganizar cidades, **não** trocar hotéis, **não** inventar paragens fora do roteiro.
 

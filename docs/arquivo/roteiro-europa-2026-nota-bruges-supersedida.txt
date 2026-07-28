@@ -1,0 +1,112 @@
+# [Arquivo] Bruxelas — remoção de Bruges (6 dez 2026)
+
+> **Supersedido:** use `docs/roteiro-europa-2026-prompt-atualizacoes.txt` (Bruges + compras + Starbucks).
+
+Atualizei o roteiro Europa 19 nov – 7 dez 2026 (Gabriel Torga).
+Use SOMENTE estas regras para Bruxelas; ignore qualquer versão anterior com Bruges.
+
+---
+
+## DECISÃO
+
+- REMOVIDO: bate-volta a Bruges no dia 6 dez (SNCB, encontro com prima Iza, regresso ~20h).
+- MOTIVO: reduzir risco antes do voo intercontinental 7 dez 07:00 (alarme 03:00, sair hotel ~03:45).
+- MANTIDO: 2 noites em Bruxelas (hotel des Colonies, Rogier); voos e hotéis INALTERADOS.
+
+---
+
+## O QUE NÃO MUDOU (fixo)
+
+- 5 dez: Ryanair PRG→BRU 11:50→13:20 · chegada Zaventem (não Charleroi).
+- 7 dez: IB0604 BRU→MAD 07:00 · alarme 03:00 · Bolt/táxi madrugada hotel→BRU.
+- Base: Hotel des Colonies (Rogier) — 5 e 6 dez pernoite Bruxelas.
+- Ordem cidades: … Praga → [voo 5/dez] → Bruxelas (2 noites) → GRU.
+
+---
+
+## O QUE MUDOU — CALENDÁRIO / ORÇAMENTO
+
+| Data   | Antes                                   | Agora                                       |
+|--------|-----------------------------------------|---------------------------------------------|
+| 5 dez  | Noite leve (Bruges amanhã)              | Noite leve (prep voo amanhã)                |
+| 6 dez  | Bruges bate-volta · média · €75 · Iza   | Bruxelas descanso + prep voo · leve · €60   |
+| Horário fixo removido | ~19:30–20:00 último trem Bruges→Bruxelas | Dormir ~21:00 (alarme 03:00)           |
+
+---
+
+## 5 DEZ (sex) — PRAGA → BRUXELAS (ajuste de texto, plano igual)
+
+- Chegada BRU 13:20 → Rogier → Grand Place · Rue Neuve · compras.
+- Compras Apple/modas: **prioridade 5 dez tarde**; o que faltar → **6 dez 15:00–17:00** (última janela).
+- Noite: leve — sem Saint-Jacques / festa pesada (prep voo no dia seguinte).
+- Crítico: PRG ~09:30 — voo 11:50.
+
+---
+
+## 6 DEZ (dom) — BRUXELAS (descanso + prep voo) — NOVO DIA INTEIRO
+
+Hotel: des Colonies · Teto €60 bolso · Energia leve · Sem SNCB.
+
+| Horário     | Plano |
+|-------------|-------|
+| 10:00–11:00 | Dormir até tarde / café no hotel |
+| 11:00–13:00 | Grand Place + Galeries Royales Saint-Hubert (exterior) |
+| 13:00–15:00 | Almoço (Chez Léon / Exki) · Mont des Arts (opcional) |
+| 15:00–17:00 | **Compras:** Rue Neuve (moda) · Apple Toison d’Or / MediaMarkt pendentes — OU Parc Cinquantenaire (cortar) |
+| 17:00–19:00 | Tax Free prep · mala 100% · agendar Bolt 03:30 |
+| 19:00–21:00 | Jantar leve · dormir cedo | CRÍTICO: alarme 03:00 |
+
+Transporte: só STIB (metro/a pé no centro). Rogier → Grand Place/Bourse; Galeries → Mont des Arts a pé; regresso hotel antes das 19h.
+
+Cortar se atrasar: Parc Cinquantenaire / segunda volta Grand Place.
+**Compras:** fechar até **17:00** — depois só Tax Free + mala (sem loja na manhã de 6 ou 7 dez).
+Noite: sem Saint-Jacques / festa pesada / La Demence.
+Zero turismo na manhã de 7 dez — só aeroporto.
+
+### Legs (referência)
+
+```
+des Colonies → Grand Place | metro+a pé | STIB | 11:00 → 11:30
+Grand Place → Galeries | a pé | 11:30 → 12:00
+Galeries → Mont des Arts | a pé | 13:30 → 13:45
+Mont des Arts → hotel | metro | STIB | 17:00 → 17:20
+```
+
+---
+
+## COMPRAS (Bruxelas — janela 5 + 6 dez)
+
+| Data | Janela | Foco | Se não der no 5 dez… |
+|------|--------|------|----------------------|
+| **5 dez** | tarde (~15:00–18:30) | Rue Neuve · moda · **Apple Toison d’Or** (AirPods Pro 3) | → **6 dez 15:00–17:00** |
+| **6 dez** | tarde (~15:00–17:00) | Buffer: o que faltar (Rue Neuve · Apple · MediaMarkt) | Sem cidade seguinte — fechar até **17:00** |
+
+- **Regra:** nenhuma compra na manhã de **6** ou **7 dez** (prep voo).
+- **Tax Free:** notas com passaporte; preparar na noite de **6 dez** após as compras.
+- Fallback fim de rota (toda a viagem): último recurso **Bruxelas 5–6 dez** antes do voo.
+
+---
+
+- 03:00 alarme · 03:30–04:30 Bolt hotel→BRU · meta 05:00 no aeroporto.
+- IB0604 07:00 BRU→MAD · IB0271 MAD→GRU · chegada GRU ~19:00.
+- Na noite de 6 dez: Bolt agendado · mala pronta · dormir ~21h.
+
+---
+
+## REGRAS PARA IAs / PLANEJADORES
+
+- NÃO inserir Bruges, Ghent bate-volta, nem pernoite fora de Bruxelas no fim da viagem.
+- NÃO mover Ryanair 11:50 PRG nem IB0604 07:00 BRU.
+- NÃO assumir dia 6 com trem SNCB ou regresso noturno de outra cidade.
+- Se sugerir encontro social: apenas em Bruxelas (5 ou 6 dez), sem alterar voos/hotéis.
+
+---
+
+## RESUMO EM UMA FRASE
+
+Troquei o dia 6 de excursão a Bruges por um domingo calmo em Bruxelas (turismo leve + logística de voo), mantendo 2 noites no des Colonies e todos os bilhetes.
+
+---
+
+Documento gerado: 2026-06-14
+Relacionado: `docs/roteiro-europa-2026-prompt-mestre.txt` (secções 5–7 dez)

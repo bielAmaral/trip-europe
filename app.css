@@ -12,6 +12,10 @@ body.has-app-ui {
 html.app-doc {
   height: 100%;
 }
+html[data-dev-local="1"] body.has-app-ui .wrap,
+html[data-dev-local="1"] body.has-app-ui {
+  padding-top: calc(max(var(--r-section), env(safe-area-inset-top, 12px)) + 2rem);
+}
 body.has-app-ui .wrap {
   flex: 1 1 auto;
   min-height: 0;
