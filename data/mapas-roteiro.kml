@@ -145,10 +145,10 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>10 - Wombats WomBAR (noite)</name>
-        <description>Noite — Wombat's City Hostel Munich, Senefelderstraße 1, Munich, Germany — #day-2026-11-20</description>
+        <name>10 - Euro Bar (noite)</name>
+        <description>Noite — Euro Youth Hotel Munich, Bayerstraße 5, Munich, Germany — #day-2026-11-20</description>
         <Point>
-          <coordinates>11.560556,48.139722,0</coordinates>
+          <coordinates>11.558056,48.140722,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
@@ -157,7 +157,7 @@
         <styleUrl>#routeWalk</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>11.559389,48.144472,0 11.579620,48.142883,0 11.577944,48.142487,0 11.586000,48.151000,0 11.601542,48.163972,0 11.592222,48.152222,0 11.587778,48.143611,0 11.569722,48.129722,0 11.570833,48.137222,0 11.560556,48.139722,0</coordinates>
+          <coordinates>11.559389,48.144472,0 11.579620,48.142883,0 11.577944,48.142487,0 11.586000,48.151000,0 11.601542,48.163972,0 11.592222,48.152222,0 11.587778,48.143611,0 11.569722,48.129722,0 11.570833,48.137222,0 11.558056,48.140722,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
@@ -446,10 +446,10 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>08 - Wombats WomBAR Naschmarkt</name>
-        <description>Noite — Wombat's City Hostel Vienna, Rechte Wienzeile 35, Vienna, Austria — #day-2026-11-24</description>
+        <name>08 - a&amp;o Wien Stadthalle bar</name>
+        <description>Noite — a&amp;o Wien Stadthalle, Lerchenfelder Gürtel 9-11, Vienna, Austria — #day-2026-11-24</description>
         <Point>
-          <coordinates>16.361111,48.198889,0</coordinates>
+          <coordinates>16.338889,48.210278,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
@@ -467,7 +467,7 @@
         <styleUrl>#routeWalk2</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>16.372778,48.185000,0 16.347778,48.211389,0 16.395833,48.216111,0 16.366111,48.198611,0 16.378333,48.218889,0 16.361111,48.198889,0</coordinates>
+          <coordinates>16.372778,48.185000,0 16.347778,48.211389,0 16.395833,48.216111,0 16.366111,48.198611,0 16.378333,48.218889,0 16.338889,48.210278,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
@@ -593,10 +593,10 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>08 - Wild Elephants Hostel</name>
-        <description>Noite — Wild Elephants Hostel, Námestie SNP 5, Bratislava, Slovakia — #day-2026-11-26</description>
+        <name>08 - Downtown Backpackers</name>
+        <description>Noite — Downtown Backpackers Hostel, Panenská 31, Bratislava, Slovakia — #day-2026-11-26</description>
         <Point>
-          <coordinates>17.108889,48.144722,0</coordinates>
+          <coordinates>17.115800,48.142800,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
@@ -614,7 +614,7 @@
         <styleUrl>#routeWalk2</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>17.104722,48.138333,0 17.117778,48.141944,0 17.107778,48.143889,0 17.100278,48.142222,0 17.108889,48.144722,0</coordinates>
+          <coordinates>17.104722,48.138333,0 17.117778,48.141944,0 17.107778,48.143889,0 17.100278,48.142222,0 17.115800,48.142800,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
@@ -742,10 +742,10 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>07 - Wombats WomBAR</name>
-        <description>Noite — Wombat's City Hostel Budapest, Király utca 20, Budapest, Hungary — #day-2026-11-28</description>
+        <name>07 - Maverick Soho bar</name>
+        <description>Noite — Maverick City Lodge Budapest, Kazinczy utca 24-26, Budapest, Hungary — #day-2026-11-28</description>
         <Point>
-          <coordinates>19.058333,47.498889,0</coordinates>
+          <coordinates>19.062778,47.497222,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
@@ -768,7 +768,7 @@
         <styleUrl>#routeWalk</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>19.070278,47.498611,0 19.045833,47.507222,0 19.044722,47.503889,0 19.058889,47.486944,0 19.034444,47.502778,0 19.034167,47.502222,0 19.058333,47.498889,0 19.063056,47.496944,0 19.062500,47.497778,0</coordinates>
+          <coordinates>19.070278,47.498611,0 19.045833,47.507222,0 19.044722,47.503889,0 19.058889,47.486944,0 19.034444,47.502778,0 19.034167,47.502222,0 19.062778,47.497222,0 19.063056,47.496944,0 19.062500,47.497778,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>
@@ -1153,10 +1153,10 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>09 - Czech Inn bar (Vinohrady)</name>
-        <description>Noite — Czech Inn, Francouzská 76, Prague, Czechia — #day-2026-12-04</description>
+        <name>09 - Sophies Hostel bar (Vinohrady)</name>
+        <description>Noite — Sophie's Hostel Prague, Melounova 2, Prague, Czechia — #day-2026-12-04</description>
         <Point>
-          <coordinates>14.451389,50.071389,0</coordinates>
+          <coordinates>14.431389,50.075278,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
@@ -1165,7 +1165,7 @@
         <styleUrl>#routeWalk</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>14.430000,50.071111,0 14.411389,50.086389,0 14.403889,50.087778,0 14.401389,50.091111,0 14.408611,50.084722,0 14.426389,50.085556,0 14.428889,50.089444,0 14.421389,50.087500,0 14.451389,50.071389,0</coordinates>
+          <coordinates>14.430000,50.071111,0 14.411389,50.086389,0 14.403889,50.087778,0 14.401389,50.091111,0 14.408611,50.084722,0 14.426389,50.085556,0 14.428889,50.089444,0 14.421389,50.087500,0 14.431389,50.075278,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>

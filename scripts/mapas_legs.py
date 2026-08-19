@@ -39,7 +39,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Eisbach → Chinesischer Turm"),
         ("metro", "U3/U6 → Sendlinger Tor"),
         ("walk", "Kaufingerstraße"),
-        ("walk", "WomBAR → Glockenbach"),
+        ("walk", "Euro Bar → Glockenbach"),
     ],
     "day-2026-11-21": [
         None,
@@ -81,7 +81,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("metro", "U2 → Praterstern"),
         ("metro", "U1 + U4 → Naschmarkt"),
         ("metro", "U4/U2 → Donaukanal"),
-        ("metro", "U4 → Kettenbrückengasse WomBAR"),
+        ("walk", "a&o bar → Donaukanal"),
     ],
     "day-2026-11-25": [
         None,
@@ -101,7 +101,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("tram", "Elétrico 93 / 1 / 3 / 7"),
         ("walk", "Staré Mesto"),
         ("walk", "Subida ao castelo"),
-        ("walk", "Wild Elephants"),
+        ("walk", "Downtown Backpackers"),
     ],
     "day-2026-11-27": [
         None,
@@ -120,7 +120,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("metro", "M4 → Grande Mercado"),
         ("funicular", "Ponte → funicular ou bus 16"),
         ("walk", "Matthias Church"),
-        ("walk", "Wombat's WomBAR"),
+        ("walk", "Maverick Soho bar"),
         ("walk", "Szimpla Kert"),
         ("walk", "Instant-Fogas"),
     ],
@@ -177,7 +177,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Na Příkopě"),
         ("walk", "Palladium"),
         ("walk", "Old Town"),
-        ("walk", "Czech Inn bar"),
+        ("walk", "Sophie's Hostel bar"),
     ],
     "day-2026-12-05": [
         None,

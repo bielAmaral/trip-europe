@@ -81,7 +81,7 @@ PLANS = {
             ("17:00–21:00", "Compras leves <strong>Kaufingerstraße</strong> · jantar rápido · <strong>mala Füssen amanhã</strong>"),
         ],
         cut="Isar",
-        night="<a href=\"#explorar-muc\">Glockenbach</a> — WomBAR → Glockenbach",
+        night="<a href=\"#explorar-muc\">Glockenbach</a> — Euro Bar → Glockenbach",
     ),
     "day-2026-11-21": dict(
         budget=85,
@@ -130,7 +130,7 @@ PLANS = {
             ("17:00–21:00", "<strong>Donaukanal</strong> · jantar <strong>Billa</strong> · compras leves (<a href=\"#compras-matriz-dia\">matriz 24 nov</a>)"),
         ],
         cut="Prater",
-        night="<a href=\"#explorar-vie\">WomBAR Naschmarkt</a> + Donaukanal",
+        night="<a href=\"#explorar-vie\">a&o bar</a> + Donaukanal",
     ),
     "day-2026-11-25": dict(
         budget=95,
@@ -153,7 +153,7 @@ PLANS = {
             ("14:00–21:00", "Hotel → <strong>Staré Mesto</strong> → <strong>Bratislava Castle</strong> (exterior) · jantar Old Town"),
         ],
         cut="Castle (só Old Town)",
-        night="<a href=\"#explorar-bts\">Wild Elephants</a> + Obchodná",
+        night="<a href=\"#explorar-bts\">Downtown Backpackers</a> + Obchodná",
     ),
     "day-2026-11-27": dict(
         budget=50,
@@ -187,7 +187,7 @@ PLANS = {
             ("12:00–17:00", "<strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · buffer descanso"),
             ("17:00–21:00", "Jantar leve · <strong>mala Berlim</strong> · dormir razoável"),
         ],
-        night="Moderada — WomBAR ou ruin bar leve",
+        night="Moderada — Maverick ou ruin bar leve",
         critical="Sem banho térmico longo",
     ),
     "day-2026-11-30": dict(
@@ -243,7 +243,7 @@ PLANS = {
         rows=[
             ("09:00–12:00", "<strong>Charles Bridge</strong> (cedo) → subida <strong>Malá Strana</strong>"),
             ("12:00–17:00", "<strong>Prague Castle</strong> (exterior + pátios) → <strong>Kampa</strong> · compras <strong>Na Příkopě / Palladium</strong>"),
-            ("17:00–21:00", "Old Town revisit · <strong>noite: <a href=\"#explorar-prg\">Czech Inn</a> + Vinohrady</strong>"),
+            ("17:00–21:00", "Old Town revisit · <strong>noite: <a href=\"#explorar-prg\">Sophie's</a> + Vinohrady</strong>"),
         ],
         cut="Kampa",
     ),

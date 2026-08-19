@@ -165,22 +165,22 @@ Canecas *You Are Here* / cidade — stock varia; confirmar no balcão. Loja **ma
 Encaixar no trajeto existente; **não** desviar dia por caneca se atrasar bilhete/voo.
 
 ---
-## HOSTELS ÂNCORA — NOITE SOCIAL (perto do hotel)
+## HOSTELS ÂNCORA — NOITE SOCIAL (mais perto do hotel)
 
-Não são para dormir — são **pontos sociais** (bar + programação). Confirmar eventos em [wombats-hostels.com/events](https://www.wombats-hostels.com/events).
+Não são para dormir — são **pontos sociais** (bar + programação), escolhidos como o hostel social **mais perto do teu hotel** que ainda tenha bar e eventos à noite. Confirmar programação no site ou Instagram de cada hostel.
 
 | Cidade | Hotel | Hostel âncora | ~Dist. | Bar / programação |
 |--------|-------|---------------|--------|-------------------|
-| Munique | B&B Hbf | **Wombat's Hbf** (Senefelderstraße 1) | 8 min pé | WomBAR · quiz · karaoke · WomBEATS |
+| Munique | B&B Hbf | **Euro Youth Hotel** (Bayerstraße 5) | 5 min pé | Euro Bar · happy hour · karaoke · live music |
 | Salzburgo | Lasserhof | **YoHo** (Paracelsusstraße 9) | 4 min pé | Bar 19–00h · happy hour · karaoke |
-| Viena | Zipser | **Wombat's Naschmarkt** (Rechte Wienzeile 35) | 18 min U2/U4 | WomBAR 18–02h · quiz · concertos |
-| Bratislava | Danubia Gate | **Wild Elephants** (SNP 5) | 12 min pé | Pub crawl qua–sáb · rooftop |
-| Budapeste | Medos | **Wombat's** (Király utca 20) | 12 min pé | WomBAR · walking tours |
+| Viena | Zipser | **a&o Wien Stadthalle** (Lerchenfelder Gürtel 9–11) | 8 min pé | Bar 24h · lounge · jogos |
+| Bratislava | Danubia Gate | **Downtown Backpackers** (Panenská 31) | 2 min pé | Bar · jazz ter/qui 20h · terraço |
+| Budapeste | Medos | **Maverick Soho** (Kazinczy 24–26) | 7 min pé | Pub crawl · wine tasting · Fat Mama |
 | Berlim | Premier Inn Alex | **Generator Alex** (Otto-Braun-Str. 65) | 2 min pé | Happy hour 17–19h · pub crawl 21h |
-| Praga | Alton | **Czech Inn** (Francouzská 76) | 15 min pé/tram | Cellar bar · happy hour 18–20h |
+| Praga | Alton | **Sophie's Hostel** (Melounova 2) | 6 min pé | Bar · happy hour 18–20h · game nights |
 | Bruxelas | Colonies | **Sleep Well** (Rue du Damier 23) | 6 min pé | Bar seg–sáb 18–01h |
 
-**Alternativa Bruxelas:** The Legacy by 2GO4 (bar crawl sexta).  
+**Alternativas** (mais programação, um pouco mais longe): Munique Wombat's Hbf · Viena Wombat's Naschmarkt · Bratislava Wild Elephants/Patio · Budapeste Wombat's Király · Praga Czech Inn Vinohrady · Bruxelas 2GO4 (bar crawl sex).  
 **Bairros mistos LGBT-friendly** (sem bares exclusivos): Glockenbach (MUC), Donaukanal (VIE), Obchodná (BTS), Jewish Quarter ruin bars (BUD), Kreuzberg (BER), Vinohrady (PRG), Saint-Géry (BRU).
 
 ---
@@ -190,16 +190,16 @@ Não são para dormir — são **pontos sociais** (bar + programação). Confirm
 | Data | Cidade | Sugestão | Evitar se |
 |------|--------|----------|-----------|
 | 19 nov | Munique | Leve — jet lag | — |
-| **20 nov** | Munique | **WomBAR** → **Glockenbach** (bairro misto) | — |
+| **20 nov** | Munique | **Euro Bar** → **Glockenbach** (bairro misto) | — |
 | 21 nov | Munique | Evitar — Neuschwanstein | Regresso 19:25 |
 | 23 nov | Salzburgo | **YoHo bar** | — |
-| **24–25 nov** | Viena | **WomBAR Naschmarkt** + **Donaukanal** | 24 = chegada |
-| 26 nov | Bratislava | **Wild Elephants** + Obchodná | — |
-| **28 nov** | Budapeste | **WomBAR** → **Szimpla / Instant** (sáb) | — |
-| 29 nov | Budapeste | WomBAR ou ruin bar leve | Voo amanhã |
+| **24–25 nov** | Viena | **a&o bar** + **Donaukanal** | 24 = chegada |
+| 26 nov | Bratislava | **Downtown Backpackers** + Obchodná | — |
+| **28 nov** | Budapeste | **Maverick** → **Szimpla / Instant** (sáb) | — |
+| 29 nov | Budapeste | Maverick ou ruin bar leve | Voo amanhã |
 | 30 nov | Berlim | Evitar — voo 15:40 | — |
 | **1–2 dez** | Berlim | **Generator** → **Kreuzberg** | — |
-| **4 dez** | Praga | **Czech Inn** + **Vinohrady** | — |
+| **4 dez** | Praga | **Sophie's bar** + **Vinohrady** | — |
 | 5 dez | Bruxelas | Leve | Chegada 13:20 · tarde Rue Neuve |
 | **6 dez** | Bruxelas | Descanso + prep voo + **compras buffer** — **sem noite pesada** | Alarme 03:00 |
 | 7 dez | Bruxelas | Evitar — embarque 07:00 | — |
@@ -325,7 +325,7 @@ Karlsplatz → B&B | S-Bahn ou U5 | sentido Hbf | — → — | +5 min
 | 16:00–18:30 | Compras Kaufingerstraße |
 | 18:30–19:30 | Jantar rápido |
 | 19:30–20:30 | **Mala Füssen amanhã** |
-| 21:00–00:00 | **Noite ⭐:** **WomBAR** (Wombat's Hbf) → **Glockenbach** (bairro misto) |
+| 21:00–00:00 | **Noite ⭐:** **Euro Bar** (Euro Youth Hotel) → **Glockenbach** (bairro misto) |
 
 ### Legs
 
@@ -458,7 +458,7 @@ Altstadt loop | a pé | — | — → — | —
 | 16:30–18:00 | Descanso hotel |
 | 18:00–20:00 | **Donaukanal** |
 | 20:00–21:00 | Jantar Billa · compras leves Mariahilfer |
-| 21:00–00:00 | **Noite:** **WomBAR Naschmarkt** + **Donaukanal** |
+| 21:00–00:00 | **Noite:** **a&o bar** + **Donaukanal** |
 
 ### Legs
 
@@ -494,7 +494,7 @@ Donaukanal → Zipser | metro | U2/U1 → Rathaus | 20:30 → 20:45 | +5 min
 | 17:00–18:30 | Volta hotel · descanso |
 | 18:30–19:30 | Jantar (Figlmüller ou Swing Kitchen) |
 | 19:30–20:30 | **Mala Bratislava** |
-| 21:00–00:00 | **Noite:** **WomBAR Naschmarkt** + Donaukanal |
+| 21:00–00:00 | **Noite:** **a&o bar** + Donaukanal |
 
 ### Legs
 
@@ -527,7 +527,7 @@ Volta Zipser | metro | U2 Rathaus | 17:30 → 17:45 | +5 min
 | 14:30–17:00 | Staré Mesto (Hlavné námestie) |
 | 17:00–18:30 | Bratislava Castle (exterior) |
 | 18:30–20:00 | Jantar Old Town (Flag Ship ou Slovak Pub) |
-| 21:00–23:00 | **Wild Elephants** + Obchodná |
+| 21:00–23:00 | **Downtown Backpackers** + Obchodná |
 
 ### Legs
 
@@ -792,7 +792,7 @@ Alton → Old Town | metro | C → Muzeum, A → Staroměstská ou a pé 15–20
 | 15:00–17:00 | Compras Na Příkopě / Palladium |
 | 17:00–18:00 | Old Town revisit |
 | 19:00–20:30 | Jantar **Lokal Dlouhá** |
-| **21:00–01:00** | **Noite ⭐:** **Czech Inn bar** → **Vinohrady** (Krymská / J. z Poděbrad) · Bolt se ficar tarde |
+| **21:00–01:00** | **Noite ⭐:** **Sophie's bar** → **Vinohrady** (Krymská / J. z Poděbrad) · Bolt se ficar tarde |
 
 ### Legs
 

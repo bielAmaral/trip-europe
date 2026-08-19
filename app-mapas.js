@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var CSV_URL = "data/mapas-paradas.csv?v=35";
+  var CSV_URL = "data/mapas-paradas.csv?v=36";
 
   var daysById = {};
 
