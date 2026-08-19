@@ -121,6 +121,47 @@
   function buildList() {
     if (!listHost) return;
     if (listHost.querySelector("ul.app-dia-list")) return;
+
+    var filters = document.createElement("div");
+    filters.className = "app-dia-filters";
+    filters.setAttribute("role", "toolbar");
+    filters.setAttribute("aria-label", "Filtrar dias");
+    var filterDefs = [
+      { id: "all", label: "Todos" },
+      { id: "tour", label: "Tour" },
+      { id: "transfer", label: "Transfer" },
+      { id: "flight", label: "Voo" },
+      { id: "shop", label: "Compras" },
+    ];
+    filterDefs.forEach(function (fd, idx) {
+      var fb = document.createElement("button");
+      fb.type = "button";
+      fb.className = "app-dia-filter" + (idx === 0 ? " is-active" : "");
+      fb.setAttribute("data-filter", fd.id);
+      fb.textContent = fd.label;
+      fb.addEventListener("click", function () {
+        filters.querySelectorAll(".app-dia-filter").forEach(function (b) {
+          b.classList.remove("is-active");
+        });
+        fb.classList.add("is-active");
+        var mode = fd.id;
+        listHost.querySelectorAll(".app-dia-list > li").forEach(function (li) {
+          if (mode === "all") {
+            li.hidden = false;
+            return;
+          }
+          var show =
+            (mode === "tour" && li.getAttribute("data-filter-tour") === "1") ||
+            (mode === "transfer" && li.getAttribute("data-filter-transfer") === "1") ||
+            (mode === "flight" && li.getAttribute("data-filter-flight") === "1") ||
+            (mode === "shop" && li.getAttribute("data-filter-shop") === "1");
+          li.hidden = !show;
+        });
+      });
+      filters.appendChild(fb);
+    });
+    listHost.appendChild(filters);
+
     var ul = document.createElement("ul");
     ul.className = "app-dia-list";
     ul.setAttribute("role", "list");
@@ -130,8 +171,15 @@
       if (!sum) return;
       var tag = d.querySelector(".date-tag");
       var city = d.querySelector(".city");
+      var badgesWrap = d.querySelector(".day-badges");
       var li = document.createElement("li");
       li.setAttribute("role", "listitem");
+      if (badgesWrap) {
+        if (badgesWrap.querySelector(".dt-tour")) li.setAttribute("data-filter-tour", "1");
+        if (badgesWrap.querySelector(".dt-transfer")) li.setAttribute("data-filter-transfer", "1");
+        if (badgesWrap.querySelector(".dt-flight")) li.setAttribute("data-filter-flight", "1");
+        if (badgesWrap.querySelector(".dt-shop")) li.setAttribute("data-filter-shop", "1");
+      }
       var btn = document.createElement("button");
       btn.type = "button";
       btn.className = "app-dia-row";
@@ -146,6 +194,16 @@
       t.className = "app-dia-row__title";
       t.textContent = city ? city.textContent.replace(/\s+/g, " ").trim() : sum.textContent.slice(0, 80);
       mid.appendChild(t);
+      if (badgesWrap) {
+        var brow = document.createElement("div");
+        brow.className = "app-dia-row__badges";
+        badgesWrap.querySelectorAll(".dt").forEach(function (badge) {
+          var clone = badge.cloneNode(true);
+          clone.setAttribute("aria-hidden", "true");
+          brow.appendChild(clone);
+        });
+        mid.appendChild(brow);
+      }
       var energy = d.getAttribute("data-energy");
       if (energy) {
         var espan = document.createElement("span");
