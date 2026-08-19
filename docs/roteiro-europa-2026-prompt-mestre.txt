@@ -1,9 +1,10 @@
 # PROMPT MESTRE — Europa Central Nov–Dez 2026
 
-> **Uso:** anexar **`PROMPT-MESTRE-ROTEIRO.pdf`** (offline no telemóvel) ou colar o `.txt` em MindTrip, ChatGPT, Claude ou outro planeador.  
-> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py`  
+> **Uso:** anexar **`roteiro-europa-2026-prompt-mestre.pdf`** (offline no telemóvel) ou colar o `.txt` em MindTrip, ChatGPT, Claude ou outro planeador.  
+> **Só alterações recentes:** anexar **`roteiro-europa-2026-prompt-atualizacoes.pdf`** se a IA tiver contexto antigo (Bruges, etc.).  
+> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py` (mestre) ou `… docs/roteiro-europa-2026-prompt-atualizacoes.txt`  
 > **Fonte canónica:** `roteiro-viagem-europa-2025/index.html` + `data/mapas-paradas.csv`  
-> **Versão:** 2026-06-14
+> **Versão:** 2026-06-14 (Bruges removido · compras BRU 5+6 dez · Starbucks/canecas)
 
 ---
 
@@ -35,7 +36,7 @@ München Hbf → Marienplatz | S-Bahn | S1 ou S8 | — → — | +2 min
 - **Não** trocar hotéis — só os 8 Booking listados abaixo.
 - **Não** inserir Dresden, Leipzig, Ghent ou outras cidades fora do roteiro.
 - **Não** colocar Budapeste depois de Berlim (ordem: … Budapeste → **voo** Berlim → Praga → **voo** Bruxelas).
-- **Não** pernoitar em Bruges — é **bate-volta 6 dez**; base é Bruxelas (Rogier).
+- **Não** inserir Bruges — **6 dez** é dia calmo só em **Bruxelas** (prep voo 07:00); base Rogier.
 - **Não** usar aeroporto **Charleroi (CRL)** — voo PRG→BRU chega em **Zaventem (BRU)**.
 - **Não** mover horários Omio: Flix 08:30 Füssen, ICE 10:00 Salzburg, Flix 10:20 Südkreuz, Ryanair 15:40 BUD, Ryanair 11:50 PRG, IB0604 07:00 BRU.
 - **Não** assumir cartão único europeu — cada cidade tem app (MVV, ÖBB, BKK, BVG, PID, SNCB).
@@ -46,7 +47,7 @@ München Hbf → Marienplatz | S-Bahn | S1 ou S8 | — → — | +2 min
 
 | Campo | Valor |
 |-------|-------|
-| Viajante | Gabriel Torga (+ prima Iza em Bruges 6/dez) |
+| Viajante | Gabriel Torga |
 | Período Europa | 19 nov – 7 dez 2026 (**18 noites**) |
 | Ida GRU | 18 nov 15:10 (IB0268) |
 | Chegada Munique | 19 nov ~11:30 |
@@ -60,7 +61,7 @@ München Hbf → Marienplatz | S-Bahn | S1 ou S8 | — → — | +2 min
 ```
 Munique → Salzburgo → Viena → Bratislava → Budapeste
   → [voo BUD→BER 30/nov] → Berlim → Praga
-  → [voo PRG→BRU 5/dez] → Bruxelas (+ Bruges bate-volta 6/dez) → GRU
+  → [voo PRG→BRU 5/dez] → Bruxelas (2 noites) → GRU
 ```
 
 ### Noites por cidade
@@ -145,6 +146,26 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 
 ---
 
+## STARBUCKS — CANECA POR CIDADE
+
+Canecas *You Are Here* / cidade — stock varia; confirmar no balcão. Loja **mais perto do hotel** de cada paragem.
+
+| Cidade | Starbucks | Morada | ~Dist. |
+|--------|-----------|--------|--------|
+| Munique | München Hbf | Bayerstraße 10A | ~5–8 min (B&B Hbf) |
+| Salzburgo | Forum 1 / Hbf | Südtiroler Platz 13 | ~8 min (Lasserhof) |
+| Viena | Neubaugasse 4 | 1070 Wien | ~10 min (Zipser) |
+| Bratislava | Staré Mesto | Sedlárska 12 | ~8 min (Danubia Gate) |
+| Budapeste | Astoria | Rákóczi út 1–3 | ~3 min (Medos) |
+| Berlim | Alexanderhaus | Alexanderplatz 2 | ~2 min (Premier Inn) |
+| Praga | I. P. Pavlova | Jugoslávská 5 | ~3 min (Alton) |
+| Bruxelas | Rogier | Place Charles Rogier 1 | ~2 min (des Colonies) |
+
+**Alternativas:** Viena — Mariahilfer Straße 23–25 (compras) · Berlim — Dircksenstraße 2 (S-Bahn).  
+Encaixar no trajeto existente; **não** desviar dia por caneca se atrasar bilhete/voo.
+
+---
+
 ## CALENDÁRIO NOITE (LGBT / ruin bars)
 
 | Data | Cidade | Sugestão | Evitar se |
@@ -161,7 +182,7 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 | **1–2 dez** | Berlim | Schöneberg / Kreuzberg Roses | — |
 | **4 dez** | Praga | **Vinohrady Termix** | — |
 | 5 dez | Bruxelas | Leve | Chegada 13:20 · tarde Rue Neuve |
-| **6 dez** | Bruges | Dia com Iza — **sem noite pesada** | Voo 07:00 |
+| **6 dez** | Bruxelas | Descanso + prep voo + **compras buffer** — **sem noite pesada** | Alarme 03:00 |
 | 7 dez | Bruxelas | Evitar — embarque 07:00 | — |
 
 ---
@@ -187,7 +208,7 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 | 3 dez | → Praga | média | 50 |
 | 4 dez | Praga | plena | 130 |
 | 5 dez | → Bruxelas | leve | 60 |
-| 6 dez | Bruges | média | 75 |
+| 6 dez | Bruxelas | leve | 60 |
 | 7 dez | → Brasil | mínima | 20 |
 
 ---
@@ -206,7 +227,7 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 | 30 nov | 15:40 | Ryanair BUD→BER |
 | 3 dez | **10:20** | Flix Berlim→Praga |
 | 5 dez | **11:50→13:20** | Ryanair PRG→BRU |
-| 6 dez | ~19:30–20:00 | Último trem Bruges→Bruxelas |
+| 6 dez | **21:00** | Dormir cedo (alarme 03:00) |
 | 7 dez | **07:00** | IB0604 BRU→MAD |
 
 ---
@@ -789,7 +810,7 @@ Centro → Vinohrady | metro | A/B | 21:00 → 21:20 | —
 | 16:00–17:30 | **Rue Neuve** — compras moda (fecho rota) | |
 | 17:30–18:30 | **Apple Toison d'Or** / MediaMarkt (se faltar AirPods) | Cortar se atrasar |
 | 18:30–19:30 | Jantar perto hotel (Exki ou Rue Neuve) | |
-| 19:30–21:00 | Descanso · **mala Bruges** · dormir razoável | |
+| 19:30–21:00 | Descanso · **mala** · dormir razoável | |
 
 ### Legs
 
@@ -808,44 +829,41 @@ Rogier → Toison d'Or | metro | STIB | 17:30 → 17:50 | —
 - Bagagem conforme Omio: carry-on + despacho (confira pesos no bilhete)
 - EUR e bateria; última validação **Lítačka** antes do aeroporto
 - Chegada **Zaventem (BRU)** — não CRL
-- Compras Apple/modas: resolver **hoje à tarde** (última cidade da rota antes de Bruges)
+- Compras Apple/modas: resolver **hoje à tarde** (última tarde livre antes do voo)
 
-**Cortar se atrasar:** Apple Toison d'Or (manter check-in + Grand Place curto)  
+**Cortar se atrasar:** Apple Toison d'Or no 5 dez → tentar **6 dez 15:00–17:00** (última janela)  
 **Crítico:** PRG **~09:30** — voo **11:50**, não 17:15  
-**Noite:** Leve — sem Saint-Jacques / festa pesada (Bruges amanhã cedo)
+**Noite:** Leve — sem Saint-Jacques / festa pesada (prep voo amanhã)
 
 ---
 
-## 6 dez (dom) — BRUGES BATE-VOLTA (prima Iza)
+## 6 dez (dom) — BRUXELAS (descanso + prep voo)
 
-**Hotel:** des Colonies (pernoite Bruxelas) · **Teto €75** · **Não pernoitar em Bruges**
+**Hotel:** des Colonies (pernoite Bruxelas) · **Teto €60** · **Energia leve**
 
 ### Cronograma
 
 | Horário | Plano | CRÍTICO |
 |---------|-------|---------|
-| 08:00–09:00 | Café hotel | |
-| 09:00–10:00 | Opcional Grand Place 1h OU direto estação | |
-| 10:00–11:00 | Rogier/Nord/Central → Midi · embarque IC | |
-| 11:00–12:00 | **SNCB IC → Brugge** (~1h) | Horário real SNCB |
-| 12:00–12:15 | Estação Brugge → Markt a pé | |
-| **12:00–18:00** | **Com Iza:** Markt, Belfry (exterior), Rozenhoedkaai, canais · almoço/jantar | |
-| 18:00–19:00 | Caminhada final · preparar volta | |
-| **19:00–20:00** | **IC Brugge → Bruxelas** | Último confortável ~19:30–20:00 |
-| 20:00–21:00 | Chegada Nord/Rogier · **Tax Free prep** · **dormir cedo** | **Alarme 03:00** |
+| 10:00–11:00 | Dormir até tarde / café hotel | |
+| 11:00–13:00 | **Grand Place** + **Galeries Royales Saint-Hubert** (exterior) | |
+| 13:00–15:00 | Almoço (Chez Léon / Exki) · **Mont des Arts** (opcional) | |
+| 15:00–17:00 | **Compras** (<strong>Rue Neuve</strong> moda · <strong>Apple Toison d’Or</strong> / MediaMarkt pendentes) OU Parc Cinquantenaire (cortar) | Fechar compras até **17:00** |
+| 17:00–19:00 | **Tax Free prep** · mala 100% · agendar **Bolt 03:30** | |
+| 19:00–21:00 | Jantar leve · **dormir cedo** | **Alarme 03:00** |
 
 ### Legs
 
 ```
-des Colonies → Midi/Nord | metro | STIB | 09:30 → 09:45 | —
-Midi → Brugge | trem | SNCB IC (~1h) | 11:00 → 12:00 | —
-Brugge estação → Markt | a pé | — | 12:00 → 12:12 | +12 min
-Markt → Rozenhoedkaai | a pé | — | 14:00 → 14:10 | +5 min
-Brugge → Bruxelas | trem | SNCB IC | 19:00 → 20:00 | —
+des Colonies → Grand Place | metro+a pé | STIB | 11:00 → 11:30 | —
+Grand Place → Galeries | a pé | — | 11:30 → 12:00 | —
+Galeries → Mont des Arts | a pé | — | 13:30 → 13:45 | +15 min
+Mont des Arts → hotel | metro | STIB | 17:00 → 17:20 | —
 ```
 
 **Noite:** Sem Saint-Jacques / festa pesada / La Demence  
-**Cortar:** Parc Cinquantenaire / catedral BRU  
+**Cortar:** Parc Cinquantenaire / segunda volta Grand Place  
+**Compras:** fechar até **17:00** (Rue Neuve · Apple Toison d’Or / MediaMarkt) — depois só Tax Free + mala  
 **Nota:** Voo 7 dez 07:00 — zero turismo na manhã do aeroporto
 
 ---
@@ -906,6 +924,7 @@ Ao processar este prompt, para **cada dia** devolver:
 4. **Horários de bilhete** intocados
 5. Sequência de **POIs na ordem GPS**
 6. **Janela de noite** (se aplicável) com nomes de bares/restaurantes
+7. **Starbucks caneca** (opcional): loja da tabela STARBUCKS — só se couber no trajeto
 
 **Não** reorganizar cidades, **não** trocar hotéis, **não** inventar paragens fora do roteiro.
 

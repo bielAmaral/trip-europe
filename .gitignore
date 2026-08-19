@@ -2,3 +2,4 @@ _vendor_minify/
 __pycache__/
 .DS_Store
 *.pyc
+node_modules/

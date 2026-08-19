@@ -1,0 +1,140 @@
+# Atualizações do roteiro Europa — 19 nov – 7 dez 2026
+
+> **Uso:** colar este ficheiro (ou o PDF) numa IA **junto com** `roteiro-europa-2026-prompt-mestre.pdf` quando o planeador ainda tiver contexto antigo (Bruges, dia 6 vazio, etc.).  
+> **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py docs/roteiro-europa-2026-prompt-atualizacoes.txt`  
+> **Fonte canónica:** `roteiro-viagem-europa-2025/index.html` · secção Explorar `#explorar-starbucks`  
+> **Versão:** 2026-06-14
+
+---
+
+## RESUMO DAS ALTERAÇÕES
+
+| # | Alteração | Impacto |
+|---|-----------|---------|
+| 1 | **Removido Bruges** (6 dez) | Dia 6 = Bruxelas calmo + prep voo 07:00 |
+| 2 | **Compras Bruxelas** em 5 dez tarde + **6 dez 15:00–17:00** | Última janela antes do voo; fechar até 17:00 |
+| 3 | **Starbucks** (caneca *You Are Here*) por cidade | Loja mais perto de cada hotel — ver tabela |
+
+**Não mudou:** voos (Ryanair 5/dez, IB0604 7/dez), hotéis, ordem das cidades, bilhetes Omio.
+
+---
+
+## 1. BRUGES REMOVIDO (6 dez)
+
+### Decisão
+
+- **REMOVIDO:** bate-volta a Bruges no dia 6 dez (SNCB, encontro com prima Iza, regresso ~20h).
+- **MOTIVO:** reduzir risco antes do voo intercontinental 7 dez 07:00 (alarme 03:00, sair hotel ~03:45).
+- **MANTIDO:** 2 noites em Bruxelas (Hotel des Colonies, Rogier); voos e hotéis inalterados.
+
+### Calendário / orçamento
+
+| Data | Antes | Agora |
+|------|-------|-------|
+| 5 dez | Noite leve (Bruges amanhã) | Noite leve (prep voo amanhã) |
+| 6 dez | Bruges bate-volta · média · €75 | Bruxelas descanso + prep voo · **leve · €60** |
+| Horário removido | ~19:30–20:00 último trem Bruges→Bruxelas | Dormir ~21:00 (alarme 03:00) |
+
+### 6 dez (dom) — BRUXELAS (descanso + prep voo)
+
+Hotel: des Colonies · Teto **€60** bolso · Energia **leve** · Sem SNCB.
+
+| Horário | Plano |
+|---------|-------|
+| 10:00–11:00 | Dormir até tarde / café no hotel |
+| 11:00–13:00 | Grand Place + Galeries Royales Saint-Hubert (exterior) |
+| 13:00–15:00 | Almoço (Chez Léon / Exki) · Mont des Arts (opcional) |
+| **15:00–17:00** | **Compras buffer** (Rue Neuve · Apple Toison d'Or / MediaMarkt) OU Parc Cinquantenaire (cortar) |
+| 17:00–19:00 | Tax Free prep · mala 100% · agendar Bolt 03:30 |
+| 19:00–21:00 | Jantar leve · dormir cedo | **CRÍTICO: alarme 03:00** |
+
+Transporte: só STIB (metro/a pé). Cortar se atrasar: Cinquantenaire / segunda volta Grand Place.  
+**Noite:** sem Saint-Jacques / festa pesada / La Demence. **Zero turismo** na manhã de 7 dez.
+
+### Regras para IAs
+
+- **NÃO** inserir Bruges, Ghent bate-volta, nem pernoite fora de Bruxelas no fim da viagem.
+- **NÃO** mover Ryanair 11:50 PRG nem IB0604 07:00 BRU.
+- **NÃO** assumir dia 6 com trem SNCB ou regresso noturno de outra cidade.
+
+---
+
+## 2. COMPRAS — BRUXELAS (5 + 6 dez)
+
+| Data | Janela | Foco | Se não der no 5 dez… |
+|------|--------|------|----------------------|
+| **5 dez** | tarde (~15:00–18:30) | Rue Neuve · moda · **Apple Toison d'Or** (AirPods Pro 3) | → **6 dez 15:00–17:00** |
+| **6 dez** | tarde (~15:00–17:00) | Buffer: o que faltar (Rue Neuve · Apple · MediaMarkt) | Sem cidade seguinte — fechar até **17:00** |
+
+- **Regra:** nenhuma compra na manhã de **6** ou **7 dez** (prep voo).
+- **Tax Free:** notas com passaporte; preparar na noite de **6 dez** após as compras.
+- Fallback fim de rota (toda a viagem): último recurso **Bruxelas 5–6 dez** antes do voo.
+
+---
+
+## 3. STARBUCKS — CANECA POR CIDADE
+
+Objetivo: comprar caneca **You Are Here** / cidade em cada paragem. Stock varia — confirmar no balcão.  
+Referência: Starbucks **mais perto do hotel** (distância a pé estimada).
+
+| Cidade | Starbucks | Morada | ~Dist. do hotel | Maps (query) |
+|--------|-----------|--------|-----------------|--------------|
+| Munique | München Hbf | Bayerstraße 10A, 80335 | ~5–8 min | B&B Hbf |
+| Salzburgo | Forum 1 / Hbf | Südtiroler Platz 13, 5020 | ~8 min | Atel Lasserhof |
+| Viena | Neubaugasse | Neubaugasse 4, 1070 | ~10 min | Zipser |
+| Bratislava | Staré Mesto | Sedlárska 12, 811 01 | ~8 min | Danubia Gate |
+| Budapeste | Astoria | Rákóczi út 1–3, 1088 | ~3 min | Medos |
+| Berlim | Alexanderhaus | Alexanderplatz 2, 10178 | ~2 min | Premier Inn Alex. |
+| Praga | I. P. Pavlova | Jugoslávská 5, 120 00 | ~3 min | Alton (metro C) |
+| Bruxelas | Rogier | Place Charles Rogier 1, 1210 | ~2 min | des Colonies |
+
+### Alternativas (opcional)
+
+- **Viena:** Starbucks Mariahilfer Straße 23–25 (eixo de compras do dia 25 nov).
+- **Berlim:** Starbucks Dircksenstraße 2 (S-Bahn Alexanderplatz).
+
+### Como encaixar no dia
+
+- Preferir **passagem a pé** perto do hotel ou no trajeto já planeado (compras, centro).
+- **Não** desviar o dia por caneca — cortar se atrasar bilhete ou voo.
+- Bruxelas: loja Rogier literalmente na zona do hotel (5–6 dez).
+
+---
+
+## 7 DEZ — FIXO (não alterar)
+
+- **03:00** alarme · **03:30–04:30** Bolt hotel→BRU · meta **05:00** no aeroporto.
+- **IB0604** 07:00 BRU→MAD · **IB0271** MAD→GRU · chegada GRU ~19:00.
+- Na noite de **6 dez:** Bolt agendado · mala pronta · dormir ~21h.
+
+---
+
+## O QUE NÃO MUDOU (fixo)
+
+- 5 dez: Ryanair PRG→BRU **11:50→13:20** · chegada **Zaventem (BRU)** — não Charleroi.
+- 7 dez: IB0604 BRU→MAD **07:00** · alarme **03:00**.
+- Base Bruxelas: Hotel des Colonies (Rogier) — 5 e 6 dez pernoite.
+- Ordem: … Praga → [voo 5/dez] → Bruxelas (2 noites) → GRU.
+
+---
+
+## INSTRUÇÃO PARA A IA
+
+Ao aplicar estas alterações:
+
+1. Substituir qualquer menção a **Bruges no 6 dez** pelo plano **Bruxelas descanso + prep voo** acima.
+2. Manter **compras Bruxelas** nas janelas 5 dez tarde e 6 dez 15:00–17:00.
+3. Opcional: sugerir **1 paragem Starbucks** por cidade na tabela (perto do hotel), sem mover bilhetes.
+4. Se o contexto antigo tiver dia 6 vazio — preencher com a tabela da secção 1.
+
+**Não** reorganizar cidades, **não** trocar hotéis, **não** inventar excursões no fim da viagem.
+
+---
+
+## RESUMO EM UMA FRASE
+
+Removi Bruges no dia 6 (domingo calmo em Bruxelas com compras buffer e prep voo), mantive todos os bilhetes, e acrescentei o Starbucks mais perto de cada hotel para canecas locais.
+
+---
+
+*Gabriel Torga · roteiro-viagem-europa-2025 · 2026-06-14*

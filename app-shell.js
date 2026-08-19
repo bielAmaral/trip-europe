@@ -47,6 +47,19 @@
     return document.querySelectorAll("[data-app-panel]");
   }
 
+  /** Tab do painel que contém o id (fallback genérico para novas secções). */
+  function tabForSectionId(id) {
+    if (!id) return null;
+    var mapped = whichTabForSectionId(id);
+    if (mapped) return mapped;
+    var el = document.getElementById(id);
+    if (!el) return null;
+    var panel = el.closest ? el.closest("[data-app-panel]") : null;
+    if (!panel) return null;
+    var t = panel.getAttribute("data-app-panel");
+    return t && TABS.hasOwnProperty(t) ? t : null;
+  }
+
   function whichTabForSectionId(id) {
     if (!id) return null;
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
@@ -77,8 +90,10 @@
       id === "hoteis" ||
       id === "emergencia" ||
       id === "compras" ||
+      id === "presentes" ||
       id === "checklist" ||
-      (id && id.indexOf("compras-") === 0)
+      (id && id.indexOf("compras-") === 0) ||
+      (id && id.indexOf("presentes-") === 0)
     )
       return "mais";
     return null;
@@ -108,7 +123,20 @@
         p.setAttribute("aria-hidden", "true");
       }
     });
+    /* .reveal começa opacity:0; garantir visibilidade após layout (desktop + painéis que estavam hidden). */
+    try {
+      requestAnimationFrame(function () {
+        getPanels().forEach(function (p) {
+          if (!p.hasAttribute("hidden")) nudgeRevealIn(p);
+        });
+      });
+    } catch (eRaf) {}
+    try {
+      document.dispatchEvent(new CustomEvent("roteiro:panels-shown", { detail: { tab: t } }));
+    } catch (eEv) {}
   }
+
+  window.roteiroNudgeRevealIn = nudgeRevealIn;
 
   function setTabUI(t) {
     document.querySelectorAll(".app-tab").forEach(function (btn) {
@@ -214,7 +242,7 @@
       }
     }
     if (h && h.indexOf("!") !== 0) {
-      var tab = whichTabForSectionId(h);
+      var tab = tabForSectionId(h);
       if (tab) {
         _tab = tab;
         document.body.setAttribute("data-app-tab", tab);
@@ -293,7 +321,7 @@
       _tab = readStoredTab();
     }
   } else if (h0) {
-    var t2 = whichTabForSectionId(h0);
+    var t2 = tabForSectionId(h0);
     if (t2) _tab = t2;
     else _tab = readStoredTab();
   } else {

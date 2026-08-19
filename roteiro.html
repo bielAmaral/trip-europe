@@ -13,11 +13,45 @@
   <link rel="icon" type="image/png" href="icons/icon-192.png" />
   <meta name="apple-mobile-web-app-title" content="Roteiro EU" />
   <title>Roteiro · Europa Central · Nov–Dez 2026</title>
+  <script>
+    /* Dev/local: desregistrar SW e limpar cache ANTES de carregar CSS/JS (evita HTML antigo). */
+    (function () {
+      var dev =
+        /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ||
+        location.protocol === "file:" ||
+        location.port === "8888";
+      if (!dev) return;
+      document.documentElement.setAttribute("data-dev-local", "1");
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (r) { r.unregister(); });
+        });
+      }
+      if (window.caches && caches.keys) {
+        caches.keys().then(function (keys) {
+          keys.forEach(function (k) {
+            if (k.indexOf("roteiro-pwa") === 0) caches.delete(k);
+          });
+        });
+      }
+    })();
+  </script>
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="app.css?v=40" />
+  <link rel="stylesheet" href="app.css?v=46" />
 </head>
 <body class="has-app-ui">
+  <div id="devLocalBanner" hidden style="position:fixed;top:0;left:0;right:0;z-index:200;background:#7c3aed;color:#fff;font:600 0.82rem/1.3 system-ui,sans-serif;padding:0.45rem 0.75rem;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.15);">
+    Modo local · HTML v47 · Se a página estiver em branco, usa <strong>http://127.0.0.1:8888/</strong> (não abras file://)
+  </div>
+  <script>
+    (function () {
+      if (document.documentElement.getAttribute("data-dev-local") === "1" || location.protocol === "file:") {
+        var b = document.getElementById("devLocalBanner");
+        if (b) b.removeAttribute("hidden");
+      }
+    })();
+  </script>
   <a class="skip-link" href="#resumo">Saltar para o conteúdo</a>
   <div class="scroll-progress" id="scrollProgress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Progresso de leitura do roteiro"></div>
 <div class="bg-mesh-extra" aria-hidden="true"></div>
@@ -63,14 +97,35 @@
       <ul class="toc-compact">
         <li><a href="#dias">Dias</a> · <a href="#mapa">Mapa</a> · <a href="#mapas">GPS</a> · <a href="#explorar">Explorar</a></li>
         <li><a href="#horarios-bilhetes">Omio</a> · <a href="#voos">Voos</a> · <a href="#hoteis">Hotéis</a> · <a href="#emergencia">SOS</a></li>
-        <li><a href="#financas">Dinheiro</a> · <a href="#compras">Compras</a> · <a href="#checklist">Checklist</a></li>
+        <li><a href="#financas">Dinheiro</a> · <a href="#compras">Compras</a> · <a href="#presentes">Presentes</a> · <a href="#checklist">Checklist</a></li>
       </ul>
     </nav>
 
     <section id="explorar" class="block app-panel" data-app-panel="explorar" aria-labelledby="explorar-heading">
       <span id="lgbt-bares" class="visually-hidden" aria-hidden="true"></span>
       <h2 id="explorar-heading">Explorar · comer, beber, noite</h2>
-      <p class="lede">Restaurantes, LGBT+ e <a href="#explorar-calendario-noite">calendário de noites</a>. Hostels = zona social, não alojamento.</p>
+      <p class="lede">Restaurantes, LGBT+ e <a href="#explorar-calendario-noite">calendário de noites</a>. Hostels = zona social, não alojamento. <a href="#explorar-starbucks">Canecas Starbucks</a> por cidade.</p>
+
+      <div class="card" id="explorar-starbucks">
+        <h3 id="explorar-starbucks-heading">Starbucks — caneca por cidade</h3>
+        <p class="muted" style="margin-top:0;">Modelo <em>You Are Here</em> / cidade — stock varia; peça no balcão. Distância a pé a partir do <a href="#hoteis">hotel confirmado</a>.</p>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Cidade</th><th>Starbucks (mais perto do hotel)</th><th>~Dist.</th><th>Maps</th></tr></thead>
+          <tbody>
+            <tr><td>Munique</td><td><strong>München Hbf</strong> · Bayerstraße 10A</td><td>~5–8 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Bayerstra%C3%9Fe%2010A%20M%C3%BCnchen" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Salzburgo</td><td><strong>Forum 1 / Hbf</strong> · Südtiroler Platz 13</td><td>~8 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20S%C3%BCdtiroler%20Platz%2013%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Viena</td><td><strong>Neubaugasse 4</strong> (1070)</td><td>~10 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Neubaugasse%204%20Wien" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Bratislava</td><td><strong>Staré Mesto</strong> · Sedlárska 12</td><td>~8 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Sedlarska%2012%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Budapeste</td><td><strong>Astoria</strong> · Rákóczi út 1–3</td><td>~3 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Astoria%20R%C3%A1k%C3%B3ci%20%C3%BAt%201-3%20Budapest" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Berlim</td><td><strong>Alexanderhaus</strong> · Alexanderplatz 2</td><td>~2 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Alexanderplatz%202%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Praga</td><td><strong>I. P. Pavlova</strong> · Jugoslávská 5</td><td>~3 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Jugoslavska%205%20Prague" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Bruxelas</td><td><strong>Rogier</strong> · Place Charles Rogier 1</td><td>~2 min</td><td><a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Place%20Charles%20Rogier%201%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Dica:</strong> em Viena, alternativa no eixo de compras: Starbucks Mariahilfer Straße 23–25 (<a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Mariahilfer%20Stra%C3%9Fe%2023%20Wien" target="_blank" rel="noopener noreferrer">Maps</a>). Em Berlim, há outro no S-Bahn Alexanderplatz (Dircksenstraße 2).</p>
+      </div>
 
       <div class="card" id="explorar-calendario-noite">
         <h3>Calendário · melhores noites LGBT / ruin bar / social</h3>
@@ -95,8 +150,8 @@
             <tr class="row-highlight"><td><strong>1–2 dez</strong></td><td>Berlim</td><td><strong>Schöneberg / Kreuzberg</strong></td><td>Roses, Oranienstr.; Berghain opcional</td><td><a href="#day-2026-12-01">#</a> · <a href="#day-2026-12-02">#</a></td></tr>
             <tr><td>3 dez</td><td>→ Praga</td><td>Transferência</td><td>FlixBus ~4h</td><td><a href="#day-2026-12-03">#</a></td></tr>
             <tr class="row-highlight"><td><strong>4 dez</strong></td><td>Praga</td><td><strong>Vinohrady</strong> — Termix</td><td>Melhor noite CZ</td><td><a href="#day-2026-12-04">#</a></td></tr>
-            <tr><td>5 dez</td><td>→ Bruxelas</td><td>Tarde Rue Neuve</td><td>Chegada 13h20</td><td><a href="#day-2026-12-05">#</a></td></tr>
-            <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruges (bate-volta)</td><td>Dia com prima Iza — <em>sem noite pesada</em></td><td>Regresso BRU ~20h · voo 07h</td><td><a href="#day-2026-12-06">#</a></td></tr>
+            <tr><td>5 dez</td><td>→ Bruxelas</td><td>Tarde Rue Neuve</td><td>CRL 14h · Midi ~16h</td><td><a href="#day-2026-12-05">#</a></td></tr>
+            <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruxelas</td><td>Descanso + prep voo — <em>sem noite pesada</em></td><td><span class="dt dt-shop">Compras</span> Rue Neuve / Apple · Tax Free · alarme 03:00</td><td><a href="#day-2026-12-06">#</a></td></tr>
             <tr><td>7 dez</td><td>Bruxelas</td><td><em>Evitar</em> — embarque 07h00</td><td>Dormir cedo</td><td><a href="#day-2026-12-07">#</a></td></tr>
           </tbody>
         </table>
@@ -125,6 +180,8 @@
           </ul>
           <h4>Zona hostel / vida noturna</h4>
           <p><strong>Glockenbachviertel</strong> (queer) · <strong>Sendlinger Tor / Gärtnerplatz</strong> (misto) · Hostel social: <strong>Wombat's City Hostel Munich</strong> (pertinho do Hauptbahnhof) — bar no rés-do-chão, ambiente jovem. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Wombat%27s%20City%20Hostel%20Munich" target="_blank" rel="noopener noreferrer">Maps</a></p>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>München Hbf</strong> · Bayerstraße 10A — ~5–8 min do <a href="#hoteis">B&amp;B Hbf</a>. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Bayerstra%C3%9Fe%2010A%20M%C3%BCnchen" target="_blank" rel="noopener noreferrer">Maps</a> · <a href="#explorar-starbucks">Todas as cidades</a></p>
         </div>
       </details>
 
@@ -148,6 +205,8 @@
           </ul>
           <h4>Zona social</h4>
           <p><strong>Altstadt</strong> fecha cedo; cena gay concentrada no Dark Eagle. Hostel referência: <strong>Yoho International Youth Hostel</strong> (vida social no bar). <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Yoho%20Hostel%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></p>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Forum 1 / Hbf</strong> · Südtiroler Platz 13 — ~8 min do <a href="#hoteis">Atel Lasserhof</a>. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20S%C3%BCdtiroler%20Platz%2013%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -174,6 +233,8 @@
           <p class="muted"><strong>Donaukanal</strong> (roteiro) — bars mistos à beira-rio, não LGBT-only. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Donaukanal%20Wien%20bars" target="_blank" rel="noopener noreferrer">Maps</a></p>
           <h4>Zona social</h4>
           <p><strong>Neubau / MuseumsQuartier</strong> · Hostel: <strong>Wombat's City Hostel Vienna Naschmarkt</strong> — rooftop bar. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Wombat%27s%20City%20Hostel%20Vienna%20Naschmarkt" target="_blank" rel="noopener noreferrer">Maps</a></p>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Neubaugasse 4</strong> (1070) — ~10 min do <a href="#hoteis">Zipser</a> · alternativa compras: Mariahilfer Straße 23–25. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Neubaugasse%204%20Wien" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -194,6 +255,8 @@
           <ul><li><strong>Apollon</strong> — Panenská · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Apollon%20Gay%20Club%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></li></ul>
           <h4>Zona social</h4>
           <p><strong>Staré Mesto</strong> (centro histórico) — bares pequenos; <strong>Obchodná ulica</strong> para drinks. Hostel: <strong>Wild Elephants Hostel</strong>. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Wild%20Elephants%20Hostel%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></p>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Staré Mesto</strong> · Sedlárska 12 — ~8 min do <a href="#hoteis">Danubia Gate</a>. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Sedlarska%2012%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -224,6 +287,8 @@
             <summary>Rota pronta · 28 nov (sáb)</summary>
             <p style="margin:0.5rem 0 0;">Tarde: Central Market → Danubio/Pest. Noite: <strong>Szimpla</strong> (21h) → <strong>Instant</strong> se quiser dançar → gay: <strong>AlterEgo</strong> (confirme horário). Metro M2/M3; táxi Bolt de volta ao Medos.</p>
           </details>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Astoria</strong> · Rákóczi út 1–3 — ~3 min do <a href="#hoteis">Medos</a> (mesma avenida). <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Astoria%20R%C3%A1k%C3%B3ci%20%C3%BAt%201-3%20Budapest" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -253,6 +318,8 @@
             <summary>Rota pronta · 1–2 dez</summary>
             <p style="margin:0.5rem 0 0;"><strong>1 dez:</strong> tarde Mitte → noite <strong>Schöneberg</strong> (Roses + bares da Motzstraße). <strong>2 dez:</strong> Markthalle Neun almoço → noite <strong>Kreuzberg</strong> (Oranienstraße). U-Bahn U1/U7; regresso U2 para Alexanderplatz.</p>
           </details>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Alexanderhaus</strong> · Alexanderplatz 2 — ~2 min do <a href="#hoteis">Premier Inn Alexanderplatz</a>. <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Alexanderplatz%202%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -281,6 +348,8 @@
             <summary>Rota pronta · 4 dez</summary>
             <p style="margin:0.5rem 0 0;">Tarde: centro histórico leve. Jantar <strong>Lokal</strong>. Noite: <strong>Termix</strong> → <strong>Friends</strong> (Vinohrady). Metro A/B para Florenc; último metro ~ meia-noite — Bolt se ficar tarde.</p>
           </details>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>I. P. Pavlova</strong> · Jugoslávská 5 — ~3 min do <a href="#hoteis">Alton</a> (mesma paragem metro C). <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Jugoslavska%205%20Prague" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
 
@@ -305,9 +374,12 @@
           </ul>
           <h4>Zona social</h4>
           <p><strong>Saint-Jacques / Ilot Sacré</strong> concentra bares queer. Hostel referência: <strong>2GO4 Hostel</strong> (centro). <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=2GO4%20Hostel%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></p>
+          <h4>Starbucks · caneca</h4>
+          <p><strong>Rogier</strong> · Place Charles Rogier 1 — ~2 min do <a href="#hoteis">Hotel des Colonies</a> (Rogier / Rue Neuve). <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Place%20Charles%20Rogier%201%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></p>
         </div>
       </details>
     </section>
+
     <section id="resumo" class="block app-panel" data-app-panel="inicio">
       <h2>Resumo e noites</h2>
       <div class="card">
@@ -354,7 +426,7 @@
 
           
           <path d="M 384 228 Q 220 80, 112 162" stroke="var(--map-plane)" stroke-width="3" fill="none" stroke-dasharray="10 7" marker-end="url(#arrPlane)" />
-          <text x="220" y="100" text-anchor="middle" font-size="10" fill="var(--map-plane)">voo PRG→BRU · 5 dez · 11h50</text>
+          <text x="220" y="100" text-anchor="middle" font-size="10" fill="var(--map-plane)">voo PRG→CRL · 5 dez · 12h30</text>
 
           
           <g id="node-muc" class="map-node" role="button" tabindex="0" data-city="muc" aria-label="Munique: abrir resumo de hotel e pontos">
@@ -445,8 +517,8 @@
 
     <section id="horarios-bilhetes" class="block app-panel" data-app-panel="mais">
       <h2>Horários Omio · referência dos bilhetes que você passou</h2>
-      <p class="lede">Horários dos prints Omio, nas <strong>datas reais</strong> do roteiro. Confirme no bilhete.</p>
-      <p class="note" style="margin-top:0;"><strong>BUD → BER:</strong> no Omio havia também <strong>Wizz Air 10h05–11h35</strong> (mais cedo e outro preço). O <strong>orçamento deste roteiro</strong> usa <strong>Ryanair 15h40–17h10</strong> com bagagens (<strong>R$ 734,34</strong>) — melhor encaixe com manhã em Budapeste e check-in com folga.</p>
+      <p class="lede">Horários dos prints Omio, nas <strong>datas reais</strong> do roteiro. Confirme no bilhete. <span class="dt dt-paid">Pago</span> = bilhete quitado (cartão/parcela).</p>
+      <p class="note" style="margin-top:0;"><strong>Voos pagos:</strong> BUD→BER <strong>R$ 734,34</strong> + PRG→CRL <strong>R$ 773,64</strong> = <strong>R$ 1.507,98</strong> · <strong>Pendente Omio</strong> (trem/ônibus): ~<strong>R$ 709</strong>.</p>
       <div class="table-scroll">
       <table class="data">
         <thead>
@@ -458,9 +530,9 @@
           <tr><td><strong>24 nov</strong></td><td>Salzburg <strong>Hbf</strong> → Wien <strong>Hbf</strong></td><td><strong>10:00</strong>→<strong>12:47</strong> (2h47)</td><td>ÖBB ICE</td><td>Sparschiene <strong>R$ 176,37</strong>. Tarifa presa a este comboio.</td></tr>
           <tr><td><strong>26 nov</strong></td><td>Viena <strong>VIB</strong> → Bratislava <strong>Most SNP</strong></td><td><strong>12:35</strong>→<strong>13:45</strong> (1h10)</td><td>FlixBus</td><td><strong>R$ 46,18</strong>. Tarde útil em Bratislava após check-out em Viena.</td></tr>
           <tr><td><strong>27 nov</strong></td><td>Bratislava <strong>Mlynské Nivy</strong> → Budapest <strong>Kelenföld</strong></td><td><strong>10:50</strong>→<strong>13:25</strong> (2h35)</td><td>FlixBus</td><td><strong>R$ 103,93</strong>. Chegada em Kelenföld — use metro BKK para o centro / hotel.</td></tr>
-          <tr><td><strong>30 nov</strong></td><td>BUD → BER</td><td><strong>15:40</strong>→<strong>17:10</strong> (1h30)</td><td>Ryanair + bagagens</td><td><strong>R$ 734,34</strong> (cotação Omio). Alternativa que apareceu: Wizz 10h05 (outro preço).</td></tr>
+          <tr class="omio-paid"><td><strong>30 nov</strong></td><td>BUD → BER</td><td><strong>15:40</strong>→<strong>17:10</strong> (1h30)</td><td>Ryanair + bagagens</td><td><span class="dt dt-paid">Pago</span> <strong>R$ 734,34</strong> Omio · bagagens incl.</td></tr>
           <tr><td><strong>3 dez</strong></td><td>Berlin <strong>Südkreuz</strong> → Praha <strong>ÚAN Florenc</strong></td><td><strong>10:20</strong>→<strong>14:20</strong> (4h)</td><td>FlixBus</td><td><strong>R$ 155,85</strong>. Saia do hotel com tempo para <strong>S-Bahn Alex → Südkreuz</strong> (~15 min).</td></tr>
-          <tr><td><strong>5 dez</strong></td><td>PRG → BRU</td><td><strong>11:50</strong>→<strong>13:20</strong> (1h30)</td><td>Ryanair + bagagens</td><td><strong>R$ 835,77</strong> Omio. Chegada <strong>Zaventem</strong> — tarde livre em Bruxelas.</td></tr>
+          <tr class="omio-paid"><td><strong>5 dez</strong></td><td>PRG → CRL</td><td><strong>12:30</strong>→<strong>14:00</strong> (1h30)</td><td>Ryanair FR 69 + bagagens</td><td><span class="dt dt-paid">Pago</span> <strong>R$ 773,64</strong> Omio · 10+23 kg · <strong>Flibco</strong> → Midi · encontro prima</td></tr>
         </tbody>
       </table>
       </div>
@@ -522,7 +594,7 @@
           <li><strong>Alarme 03:00</strong>; sair hotel <strong>~03:45</strong> (Bolt/táxi madrugada)</li>
           <li><strong>IB0604 07:00</strong>: meta <strong>05:00</strong> no aeroporto (2h antes)</li>
           <li>Passaporte, boarding Iberia offline, <strong>seguro</strong> — <a href="#emergencia">Emergência</a></li>
-          <li>Na noite de <strong>6 dez</strong>: Bolt agendado · mala pronta · greves/obras SNCB</li>
+          <li>Na noite de <strong>6 dez</strong>: Bolt agendado · mala pronta · dormir ~21h</li>
         </ul>
       </details>
 
@@ -612,7 +684,7 @@
             <td>Bruxelas</td><td>5 → 7 dez</td>
             <td><strong>Hotel des Colonies Brussels by Mercure</strong></td>
             <td>R$ 1.665</td>
-            <td><strong>Rogier</strong> / <strong>Bruxelles-Nord</strong>; Rue Neuve; chegada <strong>5 dez via BRU</strong> (Zaventem); voo <strong>7 dez BRU</strong>.</td>
+            <td><strong>Rogier</strong> / <strong>Bruxelles-Nord</strong>; Rue Neuve; chegada <strong>5 dez via CRL</strong> (Flibco → Midi); voo <strong>7 dez BRU</strong>.</td>
             <td class="hotel-tools">
               <button type="button" class="btn-copy" data-label="Copiar morada" data-copy="Hotel des Colonies Brussels by Mercure, Rue des Croisades 6, 1210 Saint-Josse-ten-Noode, Belgium">Copiar morada</button>
               <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20des%20Colonies%20Brussels%20Rue%20des%20Croisades%206" target="_blank" rel="noopener noreferrer">Maps</a>
@@ -648,7 +720,7 @@
       <span id="cambio" class="visually-hidden" aria-hidden="true"></span>
       <span id="operacional" class="visually-hidden" aria-hidden="true"></span>
       <h2 id="financas-heading">Dinheiro & logística</h2>
-      <p class="lede">Wise <strong>26.699,80 R$</strong> → ≈ <strong>4.525 €</strong> (@ 5,90) · bolso <strong>€2.000</strong> · hotéis <a href="#hoteis">~R$ 11.423</a> · Omio <a href="#horarios-bilhetes">R$ 2.279</a>.</p>
+      <p class="lede">Wise <strong>26.699,80 R$</strong> → ≈ <strong>4.525 €</strong> (@ 5,90) · bolso <strong>€2.000</strong> · hotéis <a href="#hoteis">~R$ 11.423</a> · Omio <a href="#horarios-bilhetes">R$ 2.217</a> (<strong>R$ 1.508</strong> voos pagos · ~<strong>R$ 709</strong> pendente).</p>
 
       <div class="card" style="margin-top:1rem;">
         <h3 id="financas-wise">Conversão Wise (R$)</h3>
@@ -676,8 +748,8 @@
 
       <div class="card" style="margin-top:1rem;">
         <h3 id="financas-sobra">Sobra de bolso (após hotéis e Omio)</h3>
-        <p style="margin-top:0;"><strong>26.699,80</strong> − <strong>11.423</strong> (hotéis) − <strong>2.279,10</strong> (Omio) = <strong>12.997,70 R$</strong> → <strong>~2.203 €</strong>, alinhado ao envelope <strong>€2.000</strong> (margem ~€200 taxa Wise).</p>
-        <p class="note" style="margin-bottom:0;">Voos GRU–MUC / BRU–GRU fora desta conta. PRG→BRU já inclui Zaventem (sem Flibco CRL).</p>
+        <p style="margin-top:0;"><strong>26.699,80</strong> − <strong>11.423</strong> (hotéis) − <strong>2.216,97</strong> (Omio) = <strong>13.059,83 R$</strong> → <strong>~2.214 €</strong>, alinhado ao envelope <strong>€2.000</strong> (margem ~€200 taxa Wise).</p>
+        <p class="note" style="margin-bottom:0;">Voos GRU–MUC / BRU–GRU fora desta conta. PRG→CRL (5 dez) — reservar <strong>Flibco</strong> Charleroi → Midi (~€15–20).</p>
       </div>
 
       <div class="card oper-envelope" id="operacional-envelope">
@@ -718,13 +790,13 @@
           <tr><td>27 nov</td><td>→ Budapeste</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>50</td><td>Flix manhã</td><td><a href="#day-2026-11-27">#</a></td></tr>
           <tr class="row-highlight"><td><strong>28 nov</strong></td><td>Budapeste</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>95</strong></td><td>Ruin bars (sáb) + compras</td><td><a href="#day-2026-11-28">#</a></td></tr>
           <tr><td>29 nov</td><td>Budapeste</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>75</td><td>Urbano · poupar p/ voo</td><td><a href="#day-2026-11-29">#</a></td></tr>
-          <tr><td>30 nov</td><td>→ Berlim</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>40</td><td>Ryanair 15h40</td><td><a href="#day-2026-11-30">#</a></td></tr>
+          <tr><td>30 nov</td><td>→ Berlim</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>40</td><td><span class="dt dt-paid">Pago</span> Ryanair 15h40</td><td><a href="#day-2026-11-30">#</a></td></tr>
           <tr class="row-highlight"><td><strong>1 dez</strong></td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>110</strong></td><td>LGBT + mercados</td><td><a href="#day-2026-12-01">#</a></td></tr>
           <tr><td>2 dez</td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>120</td><td>Compras (hub Alex)</td><td><a href="#day-2026-12-02">#</a></td></tr>
           <tr><td>3 dez</td><td>→ Praga</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>50</td><td>Flix 10h20</td><td><a href="#day-2026-12-03">#</a></td></tr>
           <tr class="row-highlight"><td><strong>4 dez</strong></td><td>Praga</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>130</strong></td><td>Compras + Vinohrady</td><td><a href="#day-2026-12-04">#</a></td></tr>
-          <tr><td>5 dez</td><td>→ Bruxelas</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>60</td><td>Ryanair 11h50</td><td><a href="#day-2026-12-05">#</a></td></tr>
-          <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruges (bate-volta)</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>75</td><td>Prima Iza · regresso ~20h</td><td><a href="#day-2026-12-06">#</a></td></tr>
+          <tr><td>5 dez</td><td>→ Bruxelas</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>60</td><td><span class="dt dt-paid">Pago</span> Ryanair 12h30 CRL</td><td><a href="#day-2026-12-05">#</a></td></tr>
+          <tr class="row-highlight"><td><strong>6 dez</strong></td><td>Bruxelas</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>60</td><td>Compras buffer · Tax Free · Bolt madrugada</td><td><a href="#day-2026-12-06">#</a></td></tr>
           <tr><td>7 dez</td><td>→ Brasil</td><td><span class="oper-energy oper-energy--low">Mínima</span></td><td>20</td><td>Embarque 07h00</td><td><a href="#day-2026-12-07">#</a></td></tr>
         </tbody>
       </table>
@@ -750,6 +822,7 @@
           <li><span class="dt dt-icon" aria-hidden="true">Ícone</span> Dia intenso ou excursão.</li>
           <li><span class="dt dt-flight" aria-hidden="true">Aéreo</span> Voo relevante no dia.</li>
           <li><span class="dt dt-shop" aria-hidden="true">Compras</span> Janela de compras (<a href="#compras">onde comprar</a>).</li>
+          <li><span class="dt dt-paid" aria-hidden="true">Pago</span> Bilhete Omio quitado (voos).</li>
         </ul>
       </details>
 
@@ -1199,7 +1272,7 @@
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€40</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      <span class="fast-plan__mode">Ryanair 15:40</span>
+      <span class="fast-plan__mode">Ryanair 15:40 · <span class="dt dt-paid">Pago</span></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
@@ -1388,76 +1461,82 @@
       </details>
 
             <details class="day" id="day-2026-12-05" data-trip-date="2026-12-05" data-budget-eur="60" data-energy="leve">
-        <summary><span class="date-tag">5 dez · sáb</span> <span class="city">Praga → Bruxelas (Ryanair PRG→BRU)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-transfer">Transferência</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">5 dez · sáb</span> <span class="city">Praga → Bruxelas (Ryanair PRG→CRL)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-flight">Aéreo</span><span class="dt dt-transfer">Transferência</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-05">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€60</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · voo manhã</span>
-      <span class="fast-plan__mode">Ryanair 11:50</span>
+      <span class="fast-plan__mode">Ryanair 12:30 · FR 69 · <span class="dt dt-paid">Pago</span></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">06:30–07:30</td><td>Acordar · check-out <strong>Alton</strong></td></tr>
-              <tr><td class="fast-plan__when">07:30–08:35</td><td>Metro + autocarro <strong>119</strong> → <strong>PRG</strong></td></tr>
-              <tr><td class="fast-plan__when">08:35–11:20</td><td>Check-in Ryanair · segurança (chegar <strong>~09:30</strong>)</td></tr>
-              <tr><td class="fast-plan__when">11:50–13:20</td><td>Voo → <strong>BRU Zaventem</strong></td></tr>
-              <tr><td class="fast-plan__when">14:00–15:00</td><td>SNCB + STIB → <strong>Rogier</strong> · check-in hotel</td></tr>
-              <tr><td class="fast-plan__when">15:00–18:30</td><td><strong>Grand Place</strong> · <strong>Rue Neuve</strong> · <a href="#compras-matriz-dia">compras</a></td></tr>
-              <tr><td class="fast-plan__when">18:30–21:00</td><td>Jantar · descanso (Bruges amanhã)</td></tr>
+              <tr><td class="fast-plan__when">08:00–08:30</td><td>Acordar · check-out <strong>Alton</strong></td></tr>
+              <tr><td class="fast-plan__when">09:00–10:15</td><td>Metro + autocarro <strong>119</strong> → <strong>PRG</strong></td></tr>
+              <tr><td class="fast-plan__when">10:30–12:15</td><td>Check-in Ryanair · segurança (chegar <strong>~10:30</strong>)</td></tr>
+              <tr><td class="fast-plan__when">12:30–14:00</td><td>Voo <strong>FR 69</strong> → <strong>CRL Charleroi</strong></td></tr>
+              <tr><td class="fast-plan__when">14:00–15:45</td><td><strong>Flibco</strong> CRL → <strong>Bruxelles-Midi</strong> · encontro prima</td></tr>
+              <tr><td class="fast-plan__when">15:45–16:45</td><td>Midi → <strong>Rogier</strong> (metro 2/6) · check-in hotel</td></tr>
+              <tr><td class="fast-plan__when">17:00–19:00</td><td><strong>Grand Place</strong> · <strong>Rue Neuve</strong> · <a href="#compras-matriz-dia">compras</a></td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td>Jantar · descanso (prep voo amanhã)</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> PRG <strong>~09:30</strong> — voo <strong>11:50</strong></p>
+<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> PRG <strong>~10:30</strong> — voo <strong>12:30</strong> · reservar <strong>Flibco</strong> CRL→Midi</p>
           </div>
 <details class="transit-collapse">
-            <summary>Praga → aeroporto · voo · BRU → centro</summary>
+            <summary>Praga → aeroporto · voo · CRL → Midi → Rogier</summary>
             <div class="transit transit--nested">
 <ul>
               <li><strong>Alton → PRG:</strong> metro <strong>C/A</strong> → <strong>Veleslavín</strong> + autocarro <strong>119</strong> (alt. AE via hl.n.).</li>
-              <li><strong>PRG → BRU:</strong> Ryanair <strong>11:50–13:20</strong> (Omio <strong>R$ 835,77</strong>).</li>
-              <li><strong>BRU → Rogier:</strong> comboio <strong>SNCB</strong> + <strong>STIB</strong> <em>ou</em> Bolt.</li>
+              <li><strong>PRG → CRL:</strong> Ryanair <strong>12:30–14:00</strong> (Omio <strong>R$ 773,64</strong> · FR 69 · bagagens 10+23 kg).</li>
+              <li><strong>CRL → Bruxelles-Midi:</strong> ônibus <strong>Flibco</strong> (~1h · comprar antecipado ou no aeroporto).</li>
+              <li><strong>Midi → Rogier:</strong> metro <strong>2/6</strong> <em>ou</em> comboio até Nord + pé.</li>
             </ul>
             </div>
           </details>
         </div>
       </details>
-      <details class="day" id="day-2026-12-06" data-trip-date="2026-12-06" data-budget-eur="75" data-energy="média">
-        <summary><span class="date-tag">6 dez · dom</span> <span class="city">Bruges — bate-volta (prima Iza)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span></span></summary>
+      <details class="day" id="day-2026-12-06" data-trip-date="2026-12-06" data-budget-eur="60" data-energy="leve">
+        <summary><span class="date-tag">6 dez · dom</span> <span class="city">Bruxelas — descanso + prep voo</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-06">
 <div class="fast-plan__meta" aria-label="Meta do dia">
-      <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€75</strong></span>
-      <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
-      <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      <span class="fast-plan__mode">Bruges com prima Iza</span>
+      <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€60</strong></span>
+      <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
+      <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 10:00–21:00</span>
+      <span class="fast-plan__mode">Sem SNCB · voo 07:00</span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td>(Opcional 1h) <strong>Grand Place</strong> — OU direto <strong>Midi/Nord → Brugge</strong> (~1h)</td></tr>
-              <tr><td class="fast-plan__when">12:00–18:00</td><td><strong>Bruges com Iza:</strong> Markt, canais, centro medieval (exterior) · almoço/jantar com ela</td></tr>
-              <tr><td class="fast-plan__when">18:00–21:00</td><td>Trem volta Bruxelas (~20h) · <strong>Tax Free prep</strong> · <strong>dormir cedo</strong></td></tr>
+              <tr><td class="fast-plan__when">10:00–11:00</td><td>Dormir até tarde / café no hotel</td></tr>
+              <tr><td class="fast-plan__when">11:00–13:00</td><td><strong>Grand Place</strong> + <strong>Galeries Royales Saint-Hubert</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">13:00–15:00</td><td>Almoço (Chez Léon / Exki) · <strong>Mont des Arts</strong> (opcional)</td></tr>
+              <tr><td class="fast-plan__when">15:00–17:00</td><td><strong><a href="#compras-matriz-dia">Compras</a>:</strong> <strong>Rue Neuve</strong> (moda) · pendências <strong>Apple Toison d’Or</strong> / MediaMarkt — <em>ou</em> Parc Cinquantenaire (cortar)</td></tr>
+              <tr><td class="fast-plan__when">17:00–19:00</td><td><strong>Tax Free prep</strong> · mala 100% · agendar <strong>Bolt 03:30</strong></td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td>Jantar leve · <strong>dormir cedo</strong> (alarme <strong>03:00</strong>)</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Parc Cinquantenaire / catedral BRU</p>
+<p class="fast-plan__foot"><strong>Compras:</strong> fechar até <strong>17:00</strong> — ver <a href="#compras-matriz-dia">matriz Bruxelas 5–6 dez</a></p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Parc Cinquantenaire / segunda volta Grand Place</p>
 <p class="fast-plan__foot"><strong>Noite:</strong> Sem Saint-Jacques / festa pesada</p>
-<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Regresso ~20h · alarme <strong>03:00</strong></p>
+<p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Alarme <strong>03:00</strong> · Bolt madrugada · zero turismo na manhã do aeroporto</p>
           </div>
 
 <p class="note">Voo <strong>7 dez 07h00</strong>: zero turismo na manhã do aeroporto.</p>
           <details class="transit-collapse">
-            <summary>SNCB</summary>
+            <summary>STIB (centro)</summary>
             <div class="transit transit--nested">
 <ul>
-              <li><strong>Rogier / Nord / Central</strong> → <strong>Brugge:</strong> comboio <strong>IC</strong> (~1h; horário no dia na <strong>SNCB</strong>).</li>
-              <li><strong>Brugge centro:</strong> a pé da estação (~12 min) até <strong>Markt</strong>.</li>
-              <li><strong>Regresso:</strong> último comboio confortável ~<strong>19h30–20h00</strong> → <strong>Nord</strong> / <strong>Rogier</strong>.</li>
+              <li><strong>Rogier</strong> → <strong>Grand Place / Bourse:</strong> metro <strong>1/5</strong> ou a pé (~15 min).</li>
+              <li><strong>Galeries Saint-Hubert</strong> → <strong>Mont des Arts:</strong> a pé (~10 min).</li>
+              <li><strong>Regresso hotel:</strong> metro <strong>1/5</strong> até <strong>Rogier</strong> antes das 19h.</li>
             </ul>
             </div>
           </details>
@@ -1504,7 +1583,7 @@
 
     <section id="compras" class="block app-panel" data-app-panel="mais">
       <h2>Onde comprar — dias, primário e plano B por cidade</h2>
-      <p class="lede"><a href="#compras-matriz-dia">Matriz</a> · <a href="#compras-fallback-tipo">plano B</a> · horários no <a href="#dias">dia</a> e no Maps.</p>
+      <p class="lede"><a href="#compras-matriz-dia">Matriz</a> · <a href="#compras-fallback-tipo">plano B</a> · <a href="#presentes">Presentes</a> · horários no <a href="#dias">dia</a> e no Maps.</p>
 
       <div class="card" style="margin-top:1rem;">
         <h3 id="compras-matriz-dia">Matriz cidade × janela × plano B</h3>
@@ -1522,7 +1601,8 @@
             <tr><td>Budapeste</td><td><strong>29 nov</strong> · tarde</td><td>WestEnd / Aréna · confirme abertura ao domingo</td><td>Berlim (2 dez) → Praga → Bruxelas</td><td><a href="#day-2026-11-29">Abrir 29 nov</a></td></tr>
             <tr><td>Berlim</td><td><strong>2 dez</strong> · tarde</td><td><strong>Primark</strong> + Inditex + <strong>Apple</strong> (eixo forte)</td><td>Praga (4 dez) → Bruxelas (5 dez)</td><td><a href="#day-2026-12-02">Abrir 2 dez</a></td></tr>
             <tr><td>Praga</td><td><strong>4 dez</strong> · meio-dia / tarde</td><td>Palladium · Na Příkopě · Primark periferia só se faltar</td><td>Bruxelas <strong>5 dez</strong> (última cidade da rota)</td><td><a href="#day-2026-12-04">Abrir 4 dez</a></td></tr>
-            <tr><td>Bruxelas</td><td><strong>5 dez</strong> · tarde</td><td>Rue Neuve · fecho moda + <strong>Apple</strong> Toison d’Or</td><td>Sem “próxima cidade” na rota — resolver antes do voo</td><td><a href="#day-2026-12-05">Abrir 5 dez</a></td></tr>
+            <tr><td>Bruxelas</td><td><strong>5 dez</strong> · tarde</td><td>Rue Neuve · fecho moda + <strong>Apple</strong> Toison d’Or</td><td><strong>6 dez</strong> 15:00–17:00 (última janela antes do voo)</td><td><a href="#day-2026-12-05">Abrir 5 dez</a></td></tr>
+            <tr><td>Bruxelas</td><td><strong>6 dez</strong> · tarde (~2 h)</td><td>Buffer: <strong>Rue Neuve</strong> · <strong>Apple</strong> / MediaMarkt · o que faltar do 5 dez</td><td>Sem cidade seguinte — fechar até <strong>17:00</strong> (Tax Free + mala)</td><td><a href="#day-2026-12-06">Abrir 6 dez</a></td></tr>
           </tbody>
         </table>
         </div>
@@ -1537,11 +1617,11 @@
             <tr><th>Tipo</th><th>1.º (mais cedo na rota)</th><th>2.º</th><th>3.º</th><th>Último recurso (fim de rota)</th></tr>
           </thead>
           <tbody>
-            <tr><td><strong>Primark</strong></td><td><strong>Munique</strong> (20 nov · shopping tipo PEP/OEZ, Maps)</td><td><strong>Viena</strong> (24 nov · noite)</td><td><strong>Berlim</strong> (2 dez · várias lojas)</td><td><strong>Bruxelas</strong> (5 dez) <em>ou</em>, se só faltar Primark antes de sair de CZ: <strong>Praga</strong> periferia (4 dez · ex. Letňany)</td></tr>
-            <tr><td><strong>Zara / Bershka / Pull &amp; Bear / H&amp;M</strong></td><td><strong>Munique</strong> (20 nov)</td><td><strong>Viena</strong> (24–25 nov)</td><td><strong>Budapeste</strong> (28–29 nov)</td><td><strong>Berlim</strong> (2 dez) → <strong>Praga</strong> (4 dez) → <strong>Bruxelas</strong> (5 dez): use a próxima cidade onde ainda estiver com tempo</td></tr>
-            <tr><td><strong>Lefties</strong></td><td><strong>Munique</strong> (ver Maps)</td><td><strong>Viena</strong></td><td><strong>Berlim</strong></td><td><strong>Bruxelas</strong> · se em lado nenhum: <strong>Zara / Bershka / Pull &amp; Bear</strong> na mesma cidade</td></tr>
-            <tr><td><strong>Kiko Milano</strong></td><td><strong>Munique</strong></td><td><strong>Viena</strong></td><td><strong>Budapeste</strong> / <strong>Berlim</strong> (conforme dia)</td><td><strong>Praga</strong> ou <strong>Bruxelas</strong> (últimas oportunidades antes do voo)</td></tr>
-            <tr><td><strong>Apple</strong> (<strong>AirPods Pro 3</strong>)</td><td><strong>Munique</strong> (20 nov · Rosenstraße)</td><td><strong>Viena</strong> (24 nov noite / 25 nov · Kärntner)</td><td><strong>Berlim</strong> (2 dez · Ku’damm / Mall of Berlin)</td><td><strong>Bruxelas</strong> (5 dez · Toison d’Or) · <strong>MediaMarkt / Saturn</strong> na mesma cidade onde estiver</td></tr>
+            <tr><td><strong>Primark</strong></td><td><strong>Munique</strong> (20 nov · shopping tipo PEP/OEZ, Maps)</td><td><strong>Viena</strong> (24 nov · noite)</td><td><strong>Berlim</strong> (2 dez · várias lojas)</td><td><strong>Bruxelas</strong> (5–6 dez) <em>ou</em>, se só faltar Primark antes de sair de CZ: <strong>Praga</strong> periferia (4 dez · ex. Letňany)</td></tr>
+            <tr><td><strong>Zara / Bershka / Pull &amp; Bear / H&amp;M</strong></td><td><strong>Munique</strong> (20 nov)</td><td><strong>Viena</strong> (24–25 nov)</td><td><strong>Budapeste</strong> (28–29 nov)</td><td><strong>Berlim</strong> (2 dez) → <strong>Praga</strong> (4 dez) → <strong>Bruxelas</strong> (5–6 dez): use a próxima cidade onde ainda estiver com tempo</td></tr>
+            <tr><td><strong>Lefties</strong></td><td><strong>Munique</strong> (ver Maps)</td><td><strong>Viena</strong></td><td><strong>Berlim</strong></td><td><strong>Bruxelas</strong> (5–6 dez) · se em lado nenhum: <strong>Zara / Bershka / Pull &amp; Bear</strong> na mesma cidade</td></tr>
+            <tr><td><strong>Kiko Milano</strong></td><td><strong>Munique</strong></td><td><strong>Viena</strong></td><td><strong>Budapeste</strong> / <strong>Berlim</strong> (conforme dia)</td><td><strong>Praga</strong> ou <strong>Bruxelas</strong> (5–6 dez · últimas oportunidades antes do voo)</td></tr>
+            <tr><td><strong>Apple</strong> (<strong>AirPods Pro 3</strong>)</td><td><strong>Munique</strong> (20 nov · Rosenstraße)</td><td><strong>Viena</strong> (24 nov noite / 25 nov · Kärntner)</td><td><strong>Berlim</strong> (2 dez · Ku’damm / Mall of Berlin)</td><td><strong>Bruxelas</strong> (5 dez tarde ou <strong>6 dez</strong> 15:00–17:00 · Toison d’Or) · <strong>MediaMarkt / Saturn</strong> na mesma cidade</td></tr>
           </tbody>
         </table>
         </div>
@@ -1557,8 +1637,135 @@
           <li><strong>Berlim:</strong> Apple Kurfürstendamm ou Apple Mall of Berlin</li>
           <li><strong>Bruxelas:</strong> Apple Avenue de la Toison d’Or</li>
           <li><strong>IVA / tax-free:</strong> pergunte na loja; guarde a <strong>nota fiscal</strong> com dados do passaporte.</li>
-          <li><strong>Não compres só na manhã de 7 dez</strong> — voo cedo.</li>
+          <li><strong>Não compres na manhã de 6 ou 7 dez</strong> — fechar compras até <strong>17:00 do dia 6</strong>; voo cedo no dia 7.</li>
         </ul>
+      </div>
+    </section>
+
+    <section id="presentes" class="block app-panel" data-app-panel="mais">
+      <h2>Presentes — quem, o quê, onde e quando</h2>
+      <p class="lede"><a href="#presentes-mala">Mala</a> · <a href="#presentes-colecao">Canecas + ímans</a> · <a href="#presentes-por-pessoa">Por pessoa</a> · <a href="#presentes-drey">Drey</a> · <a href="#presentes-calendario">Calendário</a> · <a href="#presentes-checklist">Checklist</a> · <a href="#compras">Compras moda</a> · <a href="#explorar-starbucks">Starbucks</a></p>
+      <p class="note" style="margin-top:0.5rem;"><strong>Regra:</strong> <strong>1 presente por pessoa</strong> (exceto <strong>Drey</strong> — kit viagem a escolher; ver <a href="#presentes-drey">opções</a>). <strong>Coleções</strong> à parte: 8 canecas (mãe) + 8 ímans (tu). <strong>Endereços verificados (jul/2026):</strong> link Maps nas lojas fixas. <strong>Ímans</strong> = souvenir no percurso do dia. <strong>Canecas You Are Here</strong> = pedir no balcão Starbucks.</p>
+
+      <div class="card" id="presentes-mala">
+        <h3>Tamanho na mala</h3>
+        <p style="margin-top:0;">8 canecas (mãe) + ímans + comida/beleza — planeia espaço desde o início.</p>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Código</th><th>Tamanho</th><th>Exemplos</th><th>Quando comprar</th></tr></thead>
+          <tbody>
+            <tr><td>🟢 <strong>P</strong></td><td>Cabe na palma</td><td>Kiko, íman, Manner, Mozartkugel, Lebkuchen, Ampelmann</td><td>Desde a 1.ª semana</td></tr>
+            <tr><td>🟡 <strong>M</strong></td><td>Caixa média</td><td>Chocolate 250&nbsp;g, Horizont 4-pack, speculoos, Neuhaus 250&nbsp;g</td><td>Semana 2 ou Bruxelas (5 dez)</td></tr>
+            <tr><td>🔴 <strong>G</strong></td><td>Pesado / frágil</td><td><strong>Caneca Starbucks</strong>, Becherovka 0,7&nbsp;L (Drey)</td><td>No dia da cidade; Praga/Bruxelas no carry-on</td></tr>
+            <tr><td>⛔ <strong>XL</strong></td><td>Evitar</td><td>6× garrafas cerveja, Haribo gigante</td><td>—</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Canecas (8×):</strong> ~3–3,5&nbsp;kg + volume de 2 sapatos — centro da mala, embrulhadas em roupa; últimas 2 preferir <strong>mão</strong>. <strong>6 dez:</strong> só embalar / Tax Free — sem compras novas. Fechar tudo até <strong>17:00 do dia 6</strong>.</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem;" id="presentes-colecao">
+        <h3>Coleção — 1 caneca (mãe) + 1 íman (tu) por cidade</h3>
+        <p style="margin-top:0;">Caneca modelo <em>You Are Here</em> — stock varia; pedir no balcão. Íman em loja turística no mesmo percurso do dia. Ver também <a href="#explorar-starbucks">tabela Starbucks</a>.</p>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Cidade</th><th>Dia</th><th>Caneca mãe · Starbucks</th><th>Íman tu · onde</th><th>Dia roteiro</th></tr></thead>
+          <tbody>
+            <tr><td>Munique</td><td><strong>20 nov</strong></td><td>Hbf · Bayerstraße 10A · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Bayerstra%C3%9Fe%2010A%20M%C3%BCnchen" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Marienplatz / Viktualienmarkt</td><td><a href="#day-2026-11-20">#</a></td></tr>
+            <tr><td>Salzburgo</td><td><strong>23 nov</strong></td><td>Forum 1 · Südtiroler Platz 13 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20S%C3%BCdtiroler%20Platz%2013%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Getreidegasse (loop tarde)</td><td><a href="#day-2026-11-23">#</a></td></tr>
+            <tr><td>Viena</td><td><strong>24–25 nov</strong></td><td>Neubaugasse 4 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Neubaugasse%204%20Wien" target="_blank" rel="noopener noreferrer">Maps</a> (alt. Mariahilfer 23–25)</td><td>Stephansplatz / Graben</td><td><a href="#day-2026-11-24">#</a> · <a href="#day-2026-11-25">#</a></td></tr>
+            <tr><td>Bratislava</td><td><strong>26 nov</strong></td><td>Sedlárska 12 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Sedlarska%2012%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Hlavné námestie / Michael’s Gate</td><td><a href="#day-2026-11-26">#</a></td></tr>
+            <tr><td>Budapeste</td><td><strong>28–29 nov</strong></td><td>Astoria · Rákóczi út 1–3 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Astoria%20Budapest" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Great Market Hall (29 nov)</td><td><a href="#day-2026-11-28">#</a> · <a href="#day-2026-11-29">#</a></td></tr>
+            <tr><td>Berlim</td><td><strong>2 dez</strong></td><td>Alexanderplatz 2 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Alexanderplatz%202%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td><td>East Side Gallery / Ampelmann</td><td><a href="#day-2026-12-02">#</a></td></tr>
+            <tr><td>Praga</td><td><strong>4 dez</strong></td><td>I. P. Pavlova · Jugoslávská 5 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Jugoslavska%205%20Prague" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Havelské tržiště / Old Town Sq.</td><td><a href="#day-2026-12-04">#</a></td></tr>
+            <tr><td>Bruxelas</td><td><strong>5 dez</strong></td><td>Rogier · Place Charles Rogier 1 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Place%20Charles%20Rogier%201%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Grand Place / Galeries Saint-Hubert</td><td><a href="#day-2026-12-05">#</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Neuschwanstein (21 nov):</strong> íman extra opcional na loja do castelo — não há cidade extra no roteiro; caneca de Munique cobre a Baviera.</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem;" id="presentes-por-pessoa">
+        <h3>Lista por pessoa — 1 presente cada (exceto Drey)</h3>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Grupo</th><th>Pessoa</th><th>Presente (1×)</th><th>Tam.</th><th>Dia</th><th>Onde comprar</th></tr></thead>
+          <tbody>
+            <tr><td rowspan="4">Amigos</td><td>Amanda</td><td>Fürst Mozartkugel <strong>9 peças</strong> (original)</td><td>🟢</td><td>23 nov</td><td><a href="https://www.original-mozartkugel.com/en/locations/getreidegasse" target="_blank" rel="noopener noreferrer">Fürst</a> · Getreidegasse 47 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Fuerst+Getreidegasse+47+Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Ana Borges</td><td>Manner <strong>8er Geschenkpackung</strong> 600&nbsp;g</td><td>🟢</td><td>24–25 nov</td><td><a href="https://shop.manner.com/schnitten-und-mehr" target="_blank" rel="noopener noreferrer">Manner Shop</a> · Kärntner Str. 53–55 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Manner%20Shop%20Kaerntner%20Strasse%2053-55%20Vienna" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Laura</td><td>Horizont <strong>Taste 4-pack</strong> (cerveja craft)</td><td>🟡</td><td>29 nov</td><td><a href="https://www.horizontbrewing.com/taste-of-horizont-diszdobozban" target="_blank" rel="noopener noreferrer">Horizont</a> ou <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Beerselection+Jozsef+korut+22+Budapest" target="_blank" rel="noopener noreferrer">Beerselection</a></td></tr>
+            <tr><td>Raia</td><td><strong>Studentská pečeť</strong> (chocolate)</td><td>🟢</td><td>4 dez</td><td>Albert / Billa · Praga</td></tr>
+            <tr><td>Namorado</td><td>Drey</td><td><strong>Kit viagem (3 peças) — a escolher</strong></td><td>🟡</td><td>2 + 4 + 5 dez</td><td><a href="#presentes-drey">Ver opções A / B</a></td></tr>
+            <tr><td rowspan="4">Família Drey</td><td>Sogra</td><td>Neuhaus <strong>Amusettes 250&nbsp;g</strong></td><td>🟡</td><td>5 dez</td><td><a href="https://www.neuhauschocolates.com/en_BE/shop/amusettes-sharing-box/5026393.html" target="_blank" rel="noopener noreferrer">Neuhaus</a> · Galerie de la Reine 25–27 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Neuhaus+Galerie+de+la+Reine+25+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Sogro</td><td>Lebkuchen Schmidt <strong>lata Elisen</strong></td><td>🟡</td><td>20 nov</td><td><a href="https://www.lebkuchen-schmidt.com/de/home/" target="_blank" rel="noopener noreferrer">Lebkuchen Schmidt</a> · Westenriederstr. 6 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Lebkuchen+Schmidt+Westenriederstrasse+6+Munich" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Cunhado</td><td>Chaveiro <strong>fragmento do Muro</strong></td><td>🟢</td><td>2 dez</td><td>Loja East Side Gallery · Berlim</td></tr>
+            <tr><td>Esp. cunhado</td><td>Dandoy <strong>lata Speculoos</strong></td><td>🟢</td><td>5 dez</td><td><a href="https://maisondandoy.com/speculoos" target="_blank" rel="noopener noreferrer">Maison Dandoy</a> · Rue au Beurre 31 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Maison+Dandoy+Rue+au+Beurre+31+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td rowspan="4">Minha família</td><td>Mãe</td><td>Marcolini <strong>Plumier</strong> (~12 trufas) · <em>+ coleção</em> <a href="#presentes-colecao">8 canecas</a></td><td>🟡</td><td>5 dez</td><td><a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a> · Galeries de la Reine 21 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Pierre+Marcolini+Galeries+de+la+Reine+21+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Pai</td><td>Livro postais <strong>«Ost-Berlin»</strong> (DDR Museum)</td><td>🟢</td><td>2 dez</td><td><a href="https://onlineshop.ddr-museum.de/en/products/postcard-book-ost-berlin-1" target="_blank" rel="noopener noreferrer">DDR Museum shop</a> · Berlim</td></tr>
+            <tr><td>Irmão</td><td>Camiseta Ampelmann <strong>PRACHTKERL</strong></td><td>🟢</td><td>2 dez</td><td><a href="https://www.ampelmannshop.com/home/alte/t-shirts" target="_blank" rel="noopener noreferrer">AMPELMANN</a> · Unter den Linden 35 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=AMPELMANN%20Unter%20den%20Linden%2035%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Cunhada</td><td>Kiko <strong>Unlimited Blush</strong> (paleta)</td><td>🟢</td><td>2 dez</td><td><a href="https://www.kikocosmetics.com/en-us/c/best-seller/best-seller-makeup/" target="_blank" rel="noopener noreferrer">Kiko</a> · Alexa Grunerstr. 20 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Kiko%20Milano%20Grunerstrasse%2020%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Amigos</td><td>Cau</td><td>Kiko <strong>3D Hydra Lipgloss</strong> (1 cor)</td><td>🟢</td><td>2 dez</td><td>Mesma ida Kiko · Berlim</td></tr>
+            <tr><td>Casal</td><td>Tay + Grossi</td><td>Leonidas ballotin <strong>~250&nbsp;g</strong> (1 caixa)</td><td>🟡</td><td>5 dez</td><td><a href="https://www.leonidas.com/en/shops/bruxelles-brussel/leonidas-barriere-de-st-gilles" target="_blank" rel="noopener noreferrer">Leonidas</a> · Waterloo 153 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Leonidas%20Chaussee%20de%20Waterloo%20153%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
+            <tr><td>Casal</td><td>Padilha + Lins</td><td>Leonidas ballotin <strong>~250&nbsp;g</strong> (2.ª caixa)</td><td>🟡</td><td>5 dez</td><td>Leonidas · Chaussée de Waterloo 153 · Bruxelas</td></tr>
+            <tr><td>Tu</td><td>Gabriel</td><td><strong>Coleção 8 ímans</strong> (1 por cidade)</td><td>🟢</td><td>Cada cidade</td><td>Ver <a href="#presentes-colecao">coleção ímans</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Kiko (2 dez):</strong> cunhada = paleta · Cau = gloss (produtos diferentes). <strong>Orçamento presentes:</strong> ~€280–520 (fora moda/Apple · Drey depende da opção).</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem;" id="presentes-drey">
+        <h3>Drey — kit viagem <span class="muted" style="font-weight:normal;">(a escolher)</span></h3>
+        <p style="margin-top:0;">Única exceção à regra «1 presente por pessoa»: <strong>3 peças</strong> compradas em 3 cidades, com história da viagem. Escolhe <strong>A</strong> ou <strong>B</strong> antes de fechar a mala em Bruxelas.</p>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Peça</th><th>Dia</th><th>Cidade</th><th>Produto</th><th>Link</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1</strong> (fixa)</td><td>2 dez</td><td>Berlim</td><td>Pedacinho do Muro em acrílico (oficial visitBerlin)</td><td><a href="https://shop.visitberlin.de/en/souvenirs/berlin-wall/berliner-mauer-im-acrylbogen.html" target="_blank" rel="noopener noreferrer">visitBerlin</a></td></tr>
+            <tr><td><strong>2</strong> (fixa)</td><td>4 dez</td><td>Praga</td><td>Becherovka Original <strong>0,7&nbsp;L</strong> (Albert/Billa)</td><td><a href="https://bestpragueguide.com/en/blog/prague-souvenirs-what-to-buy" target="_blank" rel="noopener noreferrer">Onde comprar</a></td></tr>
+            <tr><td><strong>3A</strong></td><td>5 dez</td><td>Bruxelas</td><td>Marcolini <strong>Malline</strong> (36 trufas)</td><td><a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a></td></tr>
+            <tr><td><strong>3B</strong></td><td>5 dez</td><td>Bruxelas</td><td>Pack <strong>5 Trappist</strong> belgas (Chimay, Orval, Rochefort, Westmalle, Westvleteren)</td><td><a href="https://www.beerguild.co.uk/news/belgian-trappist-pack-available-at-brussels-airport-brussels-south-charleroi-airport-and-the-brusse" target="_blank" rel="noopener noreferrer">Info pack</a></td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Opção A</strong> = história + drink + chocolate premium. <strong>Opção B</strong> = história + drink + cerveja belga (se ele curte mais cerveja que chocolate). Peças 1 e 2 são iguais nas duas.</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem;" id="presentes-calendario">
+        <h3>Calendário de compras por dia</h3>
+        <div class="table-scroll">
+        <table class="data">
+          <thead><tr><th>Dia</th><th>Cidade</th><th>Comprar neste dia</th><th>Zona / lojas</th></tr></thead>
+          <tbody>
+            <tr><td><strong>20 nov</strong></td><td>Munique</td><td>Sogro · caneca mãe · íman tu</td><td>Lebkuchen Schmidt · Viktualienmarkt · Starbucks Hbf</td></tr>
+            <tr><td>23 nov</td><td>Salzburgo</td><td>Amanda · caneca · íman</td><td>Getreidegasse · Fürst · Starbucks Forum 1</td></tr>
+            <tr><td>24–25 nov</td><td>Viena</td><td>Ana Borges · caneca · íman</td><td>Manner Kärntner 53–55 · Graben · Starbucks Neubaugasse</td></tr>
+            <tr><td>26 nov</td><td>Bratislava</td><td>Caneca · íman</td><td>Staré Mesto · Sedlárska · Hlavné námestie</td></tr>
+            <tr><td>29 nov</td><td>Budapeste</td><td>Laura (Horizont 4-pack) · caneca · íman</td><td>Beerselection / Horizont · Starbucks Astoria</td></tr>
+            <tr class="row-highlight"><td><strong>2 dez</strong></td><td>Berlim</td><td>Pai · Irmão · Cunhado · Cunhada · Cau · Drey (peça 1) · caneca · íman</td><td>DDR Museum · East Side · Kiko Alexa · visitBerlin (Muro)</td></tr>
+            <tr><td>4 dez</td><td>Praga</td><td>Raia · Drey (peça 2) · caneca · íman</td><td>Albert/Billa · Havelské · Starbucks Pavlova · <em>carry-on</em></td></tr>
+            <tr class="row-highlight"><td><strong>5 dez</strong></td><td>Bruxelas</td><td>Mãe · Sogra · Esp. cunhado · 2 casais · Drey (peça 3 A ou B) · caneca · íman</td><td>Galeries · Dandoy · Leonidas 153 · Marcolini · Starbucks Rogier</td></tr>
+            <tr><td>6 dez</td><td>Bruxelas</td><td><em>Só pendências</em> 15:00–17:00 · embalar · Tax Free</td><td>Rue Neuve se faltou algo no dia 5</td></tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="note" style="margin-bottom:0;"><strong>Semana 1:</strong> só 🟢 + canecas no dia. <strong>Chocolates belgas:</strong> concentrar no <strong>5 dez</strong> (mala de mão). <strong>Nada 🔴</strong> antes de 4 dez exceto canecas.</p>
+      </div>
+
+      <div class="card" style="margin-top:1rem;" id="presentes-checklist">
+        <h3>Checklist na viagem</h3>
+        <ul class="checklist-presentes">
+          <li><label><input type="checkbox" disabled /> 20/11 Munique — Sogro · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 23/11 Salzburgo — Amanda · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 24–25/11 Viena — Ana Borges · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 26/11 Bratislava — caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 29/11 Budapeste — Laura (cerveja) · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 02/12 Berlim — Pai · Irmão · Cunhado · Cunhada · Cau · Drey (1/3) · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 04/12 Praga — Raia · Drey (2/3) · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 05/12 Bruxelas — Mãe · Sogra · Esp. cunhado · casais · Drey (3/3 A ou B) · caneca · íman</label></li>
+          <li><label><input type="checkbox" disabled /> 06/12 Bruxelas — fechar até 17:00 · Tax Free · mala</label></li>
+        </ul>
+        <p class="muted" style="margin:0.75rem 0 0;font-size:0.88rem;">Marca no telefone ou imprime — os checkboxes aqui são referência visual (desativados no HTML estático).</p>
       </div>
     </section>
 
@@ -1570,6 +1777,7 @@
           <li><a href="#horarios-bilhetes">Bilhetes Omio</a> + <a href="#voos">voos</a> offline na app</li>
           <li><a href="#hoteis">Hotéis Booking</a> offline</li>
           <li>Neuschwanstein: bilhete com horário + ida/volta</li>
+          <li><a href="#presentes">Presentes</a> — lista e calendário por dia</li>
           <li><a href="#emergencia">Seguro</a> · SOS · Iberia offline</li>
           <li>Adaptador Schuko · roupa quente nov–dez</li>
         </ul>
@@ -1588,17 +1796,30 @@
     <button type="button" class="app-tab" id="appTabRoteiro" role="tab" data-app-tab="roteiro" aria-selected="false" aria-controls="dias"><i data-lucide="calendar" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Dias</span></button>
     <button type="button" class="app-tab" id="appTabMapa" role="tab" data-app-tab="mapa" aria-selected="false" aria-controls="mapa"><i data-lucide="map" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mapa</span></button>
     <button type="button" class="app-tab" id="appTabExplorar" role="tab" data-app-tab="explorar" aria-selected="false" aria-controls="explorar" aria-label="Explorar restaurantes e vida noturna"><i data-lucide="compass" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Explorar</span></button>
-    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="financas horarios-bilhetes voos hoteis emergencia compras checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
+    <button type="button" class="app-tab" id="appTabMais" role="tab" data-app-tab="mais" aria-selected="false" aria-controls="financas horarios-bilhetes voos hoteis emergencia compras presentes checklist"><i data-lucide="list" class="lucide-ico app-tab-ico" aria-hidden="true"></i><span class="app-tab-label">Mais</span></button>
   </nav>
 
   <div id="appStorageToast" class="app-toast" role="alert" hidden aria-hidden="true">Não foi possível guardar preferências (armazenamento cheio ou bloqueado). Ajustes valem nesta visita.</div>
   <button type="button" class="fab-top" id="fabTop" aria-label="Voltar ao topo"><i data-lucide="arrow-up" class="fab-ico" aria-hidden="true"></i></button>
 
-  <script src="app-core.js?v=2"></script>
-  <script src="app-shell.js"></script>
+  <script src="app-core.js?v=3"></script>
+  <script src="app-shell.js?v=3"></script>
   <script src="app-search-ui.js"></script>
   <script src="app-mapas.js?v=36"></script>
   <script src="app-views.js?v=33"></script>
-  <script>if("serviceWorker"in navigator){navigator.serviceWorker.register("sw.js").then(function(r){r.update&&r.update();}).catch(function(){});}</script>
+  <script>
+    (function () {
+      var dev =
+        /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ||
+        location.protocol === "file:" ||
+        location.port === "8888";
+      if (dev) return;
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js").then(function (r) {
+          if (r.update) r.update();
+        }).catch(function () {});
+      }
+    })();
+  </script>
 </body>
 </html>

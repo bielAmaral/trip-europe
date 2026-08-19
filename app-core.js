@@ -304,7 +304,7 @@
         station: "ÚAN Florenc (FlixBus) ou hl.n. (EC); PRG só para voo",
         poi: [
           "Staroměstské náměstí, Karlův most, castelo (vistas), Malá Strana",
-          "Seg.: voo PRG → BRU (5 dez 11:50) Ryanair; comboio/metro até centro",
+          "Seg.: voo PRG → CRL (5 dez 12:30) Ryanair FR 69; Flibco → Midi",
         ],
         mapsUrl: "https://www.google.com/maps/search/?api=1&query=Alton%20Hotel%20Legerova%2022%20Praha",
         copyAddr: "Alton Hotel, Legerova 1581/22, 120 00 Praha 2, Czechia",
@@ -315,9 +315,9 @@
         code: "BRU",
         dates: "5–7 dez · 2 noites",
         hotel: "Hotel des Colonies Brussels by Mercure (Rogier)",
-        station: "Rogier / Bruxelles-Nord; chegada 5 dez via BRU (Zaventem) + SNCB/STIB",
+        station: "Rogier / Bruxelles-Nord; chegada 5 dez via CRL (Flibco → Midi); voo 7 dez BRU",
         poi: [
-          "Grand Place (5 dez); 6 dez bate-volta Bruges com prima Iza",
+          "Grand Place (5 dez); 6 dez descanso + prep voo em Bruxelas",
           "Seg.: voo BRU → Brasil (7 dez)",
         ],
         mapsUrl:
@@ -600,6 +600,14 @@
       el.classList.add("is-visible", "reveal-motion-done");
     });
   } else {
+    var revealRoot = null;
+    var appMainEl = document.getElementById("appMain");
+    if (appMainEl) {
+      var oy = getComputedStyle(appMainEl).overflowY;
+      if (oy === "auto" || oy === "scroll" || oy === "overlay") {
+        revealRoot = appMainEl;
+      }
+    }
     var obs = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (e) {
@@ -613,10 +621,17 @@
           }, delay);
         });
       },
-      { threshold: 0.06, rootMargin: "100px 0px -28px 0px" }
+      { threshold: 0.06, rootMargin: "100px 0px -28px 0px", root: revealRoot }
     );
     revealEls.forEach(function (el) {
       obs.observe(el);
+    });
+    document.addEventListener("roteiro:panels-shown", function () {
+      if (typeof window.roteiroNudgeRevealIn === "function") {
+        document.querySelectorAll("[data-app-panel]:not([hidden])").forEach(function (p) {
+          window.roteiroNudgeRevealIn(p);
+        });
+      }
     });
   }
 
