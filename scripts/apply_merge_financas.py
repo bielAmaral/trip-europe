@@ -53,7 +53,7 @@ FINANCAS = """    <section id="financas" class="block app-panel" data-app-panel=
             <tr><td>Comidas + cafés + padarias</td><td><strong>~700</strong></td><td>€35–40/dia médio; dias leves menos</td></tr>
             <tr><td>Passeios + entradas + metro</td><td><strong>~250</strong></td><td>Castelo, Festung, museus pontuais</td></tr>
             <tr><td>Compras (moda, Kiko)</td><td><strong>~550</strong></td><td>Pico Berlim + Praga; evitar Budapeste</td></tr>
-            <tr><td>Noite LGBT / ruin bars</td><td><strong>~240</strong></td><td>Ver <a href="#explorar-calendario-noite">calendário noite</a></td></tr>
+            <tr><td>Noite · hostels / ruin bars</td><td><strong>~240</strong></td><td>Ver <a href="#explorar-calendario-noite">calendário noite</a></td></tr>
             <tr><td>Buffer / imprevistos</td><td><strong>~260</strong></td><td>Uber, chuva, extra num jantar</td></tr>
             <tr><td><strong>Total</strong></td><td><strong>2.000</strong></td><td>≈ <strong>€105/dia</strong> em 19 dias de viagem</td></tr>
           </tbody>
@@ -81,7 +81,7 @@ FINANCAS = """    <section id="financas" class="block app-panel" data-app-panel=
           <tr class="row-highlight"><td><strong>28 nov</strong></td><td>Budapeste</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>95</strong></td><td>Ruin bars (sáb) + compras</td><td><a href="#day-2026-11-28">#</a></td></tr>
           <tr><td>29 nov</td><td>Budapeste</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>75</td><td>Urbano · poupar p/ voo</td><td><a href="#day-2026-11-29">#</a></td></tr>
           <tr><td>30 nov</td><td>→ Berlim</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>40</td><td>Ryanair 15h40</td><td><a href="#day-2026-11-30">#</a></td></tr>
-          <tr class="row-highlight"><td><strong>1 dez</strong></td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>110</strong></td><td>LGBT + mercados</td><td><a href="#day-2026-12-01">#</a></td></tr>
+          <tr class="row-highlight"><td><strong>1 dez</strong></td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>110</strong></td><td>Generator + mercados</td><td><a href="#day-2026-12-01">#</a></td></tr>
           <tr><td>2 dez</td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>120</td><td>Compras (hub Alex)</td><td><a href="#day-2026-12-02">#</a></td></tr>
           <tr><td>3 dez</td><td>→ Praga</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>50</td><td>Flix 10h20</td><td><a href="#day-2026-12-03">#</a></td></tr>
           <tr class="row-highlight"><td><strong>4 dez</strong></td><td>Praga</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>130</strong></td><td>Compras + Vinohrady</td><td><a href="#day-2026-12-04">#</a></td></tr>

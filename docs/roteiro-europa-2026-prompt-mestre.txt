@@ -4,7 +4,7 @@
 > **Só alterações recentes:** anexar **`roteiro-europa-2026-prompt-atualizacoes.pdf`** se a IA tiver contexto antigo (Bruges, etc.).  
 > **Regenerar PDF:** `python3 scripts/generate_prompt_pdf.py` (mestre) ou `… docs/roteiro-europa-2026-prompt-atualizacoes.txt`  
 > **Fonte canónica:** `roteiro-viagem-europa-2025/index.html` + `data/mapas-paradas.csv`  
-> **Versão:** 2026-06-14 (Bruges removido · compras BRU 5+6 dez · Starbucks/canecas)
+> **Versão:** 2026-06-14 (Bruges removido · hostels noite · Starbucks/canecas)
 
 ---
 
@@ -15,7 +15,7 @@
 1. Respeitar **horários de bilhete** (não mover Flix/ICE/voos).
 2. Devolver deslocações no formato **leg-a-leg** (ver abaixo).
 3. Manter **exterior-first** (fachadas, jardins, mercados) salvo entrada explícita no roteiro.
-4. Alinhar **noites LGBT/ruin bars** ao calendário — sem festa pesada em dias de voo/jet lag.
+4. Alinhar **noites (hostels sociais + bairros mistos / ruin bars)** ao calendário — sem festa pesada em dias de voo/jet lag.
 5. Quando sugerires alterações, explicar **impacto no bilhete** e **no hotel**.
 
 ### Formato obrigatório de deslocação (leg)
@@ -165,27 +165,47 @@ Canecas *You Are Here* / cidade — stock varia; confirmar no balcão. Loja **ma
 Encaixar no trajeto existente; **não** desviar dia por caneca se atrasar bilhete/voo.
 
 ---
+## HOSTELS ÂNCORA — NOITE SOCIAL (perto do hotel)
 
-## CALENDÁRIO NOITE (LGBT / ruin bars)
+Não são para dormir — são **pontos sociais** (bar + programação). Confirmar eventos em [wombats-hostels.com/events](https://www.wombats-hostels.com/events).
+
+| Cidade | Hotel | Hostel âncora | ~Dist. | Bar / programação |
+|--------|-------|---------------|--------|-------------------|
+| Munique | B&B Hbf | **Wombat's Hbf** (Senefelderstraße 1) | 8 min pé | WomBAR · quiz · karaoke · WomBEATS |
+| Salzburgo | Lasserhof | **YoHo** (Paracelsusstraße 9) | 4 min pé | Bar 19–00h · happy hour · karaoke |
+| Viena | Zipser | **Wombat's Naschmarkt** (Rechte Wienzeile 35) | 18 min U2/U4 | WomBAR 18–02h · quiz · concertos |
+| Bratislava | Danubia Gate | **Wild Elephants** (SNP 5) | 12 min pé | Pub crawl qua–sáb · rooftop |
+| Budapeste | Medos | **Wombat's** (Király utca 20) | 12 min pé | WomBAR · walking tours |
+| Berlim | Premier Inn Alex | **Generator Alex** (Otto-Braun-Str. 65) | 2 min pé | Happy hour 17–19h · pub crawl 21h |
+| Praga | Alton | **Czech Inn** (Francouzská 76) | 15 min pé/tram | Cellar bar · happy hour 18–20h |
+| Bruxelas | Colonies | **Sleep Well** (Rue du Damier 23) | 6 min pé | Bar seg–sáb 18–01h |
+
+**Alternativa Bruxelas:** The Legacy by 2GO4 (bar crawl sexta).  
+**Bairros mistos LGBT-friendly** (sem bares exclusivos): Glockenbach (MUC), Donaukanal (VIE), Obchodná (BTS), Jewish Quarter ruin bars (BUD), Kreuzberg (BER), Vinohrady (PRG), Saint-Géry (BRU).
+
+---
+
+## CALENDÁRIO NOITE (hostels + bairros mistos / ruin bars)
 
 | Data | Cidade | Sugestão | Evitar se |
 |------|--------|----------|-----------|
 | 19 nov | Munique | Leve — jet lag | — |
-| **20 nov** | Munique | **Glockenbach** Prosecco / Sub | — |
+| **20 nov** | Munique | **WomBAR** → **Glockenbach** (bairro misto) | — |
 | 21 nov | Munique | Evitar — Neuschwanstein | Regresso 19:25 |
-| 23 nov | Salzburgo | Dark Eagle (opcional) | — |
-| **24–25 nov** | Viena | Donaukanal + Village / Why Not | 24 = chegada |
-| 26 nov | Bratislava | Apollon (se cedo) | — |
-| **28 nov** | Budapeste | **Szimpla / Instant** (sáb) | — |
-| 29 nov | Budapeste | AlterEgo (moderado) | Voo amanhã |
+| 23 nov | Salzburgo | **YoHo bar** | — |
+| **24–25 nov** | Viena | **WomBAR Naschmarkt** + **Donaukanal** | 24 = chegada |
+| 26 nov | Bratislava | **Wild Elephants** + Obchodná | — |
+| **28 nov** | Budapeste | **WomBAR** → **Szimpla / Instant** (sáb) | — |
+| 29 nov | Budapeste | WomBAR ou ruin bar leve | Voo amanhã |
 | 30 nov | Berlim | Evitar — voo 15:40 | — |
-| **1–2 dez** | Berlim | Schöneberg / Kreuzberg Roses | — |
-| **4 dez** | Praga | **Vinohrady Termix** | — |
+| **1–2 dez** | Berlim | **Generator** → **Kreuzberg** | — |
+| **4 dez** | Praga | **Czech Inn** + **Vinohrady** | — |
 | 5 dez | Bruxelas | Leve | Chegada 13:20 · tarde Rue Neuve |
 | **6 dez** | Bruxelas | Descanso + prep voo + **compras buffer** — **sem noite pesada** | Alarme 03:00 |
 | 7 dez | Bruxelas | Evitar — embarque 07:00 | — |
 
 ---
+
 
 ## ORÇAMENTO DIÁRIO (teto € bolso)
 
@@ -305,7 +325,7 @@ Karlsplatz → B&B | S-Bahn ou U5 | sentido Hbf | — → — | +5 min
 | 16:00–18:30 | Compras Kaufingerstraße |
 | 18:30–19:30 | Jantar rápido |
 | 19:30–20:30 | **Mala Füssen amanhã** |
-| 21:00–00:00 | **Noite ⭐ Glockenbach:** Prosecco (Thekastraße) ou Sub (Müllerstraße 14) |
+| 21:00–00:00 | **Noite ⭐:** **WomBAR** (Wombat's Hbf) → **Glockenbach** (bairro misto) |
 
 ### Legs
 
@@ -407,7 +427,7 @@ Mirabell → Altstadt | a pé | Staatsbrücke | — → — | +15 min
 | 13:30–16:00 | Loop Altstadt: Getreidegasse, Mozartplatz |
 | 16:00–17:00 | Salzach / Makartsteg |
 | 17:00–19:00 | Jantar · **mala + dormir cedo** |
-| 21:00–23:00 | Opcional: **Dark Eagle** (Paracelsusstraße 11) |
+| 21:00–23:00 | **YoHo bar** (4 min do Lasserhof) |
 
 ### Legs
 
@@ -438,7 +458,7 @@ Altstadt loop | a pé | — | — → — | —
 | 16:30–18:00 | Descanso hotel |
 | 18:00–20:00 | **Donaukanal** |
 | 20:00–21:00 | Jantar Billa · compras leves Mariahilfer |
-| 21:00–00:00 | **Noite:** Donaukanal OU Village Bar / Why Not |
+| 21:00–00:00 | **Noite:** **WomBAR Naschmarkt** + **Donaukanal** |
 
 ### Legs
 
@@ -474,7 +494,7 @@ Donaukanal → Zipser | metro | U2/U1 → Rathaus | 20:30 → 20:45 | +5 min
 | 17:00–18:30 | Volta hotel · descanso |
 | 18:30–19:30 | Jantar (Figlmüller ou Swing Kitchen) |
 | 19:30–20:30 | **Mala Bratislava** |
-| 21:00–00:00 | **Noite:** Why Not / Village · Naschmarkt antes |
+| 21:00–00:00 | **Noite:** **WomBAR Naschmarkt** + Donaukanal |
 
 ### Legs
 
@@ -507,7 +527,7 @@ Volta Zipser | metro | U2 Rathaus | 17:30 → 17:45 | +5 min
 | 14:30–17:00 | Staré Mesto (Hlavné námestie) |
 | 17:00–18:30 | Bratislava Castle (exterior) |
 | 18:30–20:00 | Jantar Old Town (Flag Ship ou Slovak Pub) |
-| 21:00–23:00 | Opcional: **Apollon** (Panenská) |
+| 21:00–23:00 | **Wild Elephants** + Obchodná |
 
 ### Legs
 
@@ -575,7 +595,7 @@ Pest → Buda vistas | a pé | Chain Bridge | 17:00 → 17:15 | —
 | 16:30–17:30 | Volta Pest · descanso |
 | 17:30–19:00 | Compras moderadas (opcional) |
 | 19:00–20:30 | Jantar (Menza ou Retro Langos) |
-| **21:00–01:00** | **Noite ⭐:** Szimpla Kert (21h) → Instant-Fogas → AlterEgo · **Bolt** volta Medos |
+| **21:00–01:00** | **Noite ⭐:** **WomBAR** (19h) → **Szimpla** (21h) → **Instant** · **Bolt** volta Medos |
 
 ### Legs
 
@@ -605,7 +625,7 @@ Medos → Jewish Quarter | metro/táxi | M2/M3 Deák, Kazinczy utca | 21:00 → 
 | 14:00–17:00 | Buffer descanso · compras WestEnd/Aréna (confirmar domingo) | |
 | 17:00–19:00 | Jantar leve | |
 | 19:00–21:00 | **Mala Berlim** · dormir razoável | |
-| 21:00–23:00 | Noite moderada: AlterEgo / Why Not (opcional) | **Sem banho térmico longo** |
+| 21:00–23:00 | Noite moderada: WomBAR ou ruin bar leve | **Sem banho térmico longo** |
 
 ### Legs
 
@@ -675,7 +695,7 @@ BER → Alex | trem+metro | FEX ou S9 → Hbf, U5 → Alexanderplatz | 17:30 →
 | 14:30–16:30 | East Side Gallery (trecho principal) |
 | 16:30–17:30 | Volta Alexanderplatz |
 | 18:00–21:00 | Jantar · descanso |
-| **21:00–02:00** | **Noite ⭐:** Schöneberg — **Roses** (Oranienstraße 187) · Berghain só se fila ok |
+| **21:00–02:00** | **Noite ⭐:** **Generator** (happy hour/pub crawl) → **Kreuzberg** (Oranienstraße) |
 
 ### Legs
 
@@ -684,7 +704,7 @@ Premier Inn → Brandenburger Tor | metro | U5 Alex → Brandenburger Tor | 09:0
 Brandenburger → Memorial | a pé | — | 11:30 → 11:40 | +5 min
 Memorial → East Side Gallery | S-Bahn | Brandenburger Tor → Ostbahnhof (S3/S5/S7/S9) ou U1 Warschauer | 14:00 → 14:30 | +10 min
 East Side → Alex | S-Bahn/U5/U8 | Ostbahnhof → Alexanderplatz | 16:30 → 17:00 | —
-Alex → Schöneberg | U-Bahn | U1/U7 | 21:00 → 21:30 | —
+Premier Inn → Generator | a pé | mesma rua | 21:00 → 21:05 | —
 ```
 
 **Cortar se atrasar:** Metade East Side Gallery  
@@ -772,7 +792,7 @@ Alton → Old Town | metro | C → Muzeum, A → Staroměstská ou a pé 15–20
 | 15:00–17:00 | Compras Na Příkopě / Palladium |
 | 17:00–18:00 | Old Town revisit |
 | 19:00–20:30 | Jantar **Lokal Dlouhá** |
-| **21:00–01:00** | **Noite ⭐ Vinohrady:** Club **Termix** → Friends Bar · Bolt se ficar tarde |
+| **21:00–01:00** | **Noite ⭐:** **Czech Inn bar** → **Vinohrady** (Krymská / J. z Poděbrad) · Bolt se ficar tarde |
 
 ### Legs
 
@@ -833,7 +853,7 @@ Rogier → Toison d'Or | metro | STIB | 17:30 → 17:50 | —
 
 **Cortar se atrasar:** Apple Toison d'Or no 5 dez → tentar **6 dez 15:00–17:00** (última janela)  
 **Crítico:** PRG **~09:30** — voo **11:50**, não 17:15  
-**Noite:** Leve — sem Saint-Jacques / festa pesada (prep voo amanhã)
+**Noite:** Descanso — sem noite pesada (prep voo 07h)
 
 ---
 
@@ -861,7 +881,7 @@ Galeries → Mont des Arts | a pé | — | 13:30 → 13:45 | +15 min
 Mont des Arts → hotel | metro | STIB | 17:00 → 17:20 | —
 ```
 
-**Noite:** Sem Saint-Jacques / festa pesada / La Demence  
+**Noite:** Descanso — sem noite pesada (voo 07h)  
 **Cortar:** Parc Cinquantenaire / segunda volta Grand Place  
 **Compras:** fechar até **17:00** (Rue Neuve · Apple Toison d’Or / MediaMarkt) — depois só Tax Free + mala  
 **Nota:** Voo 7 dez 07:00 — zero turismo na manhã do aeroporto

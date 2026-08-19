@@ -39,7 +39,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Eisbach → Chinesischer Turm"),
         ("metro", "U3/U6 → Sendlinger Tor"),
         ("walk", "Kaufingerstraße"),
-        ("walk", "Glockenbach"),
+        ("walk", "WomBAR → Glockenbach"),
     ],
     "day-2026-11-21": [
         None,
@@ -71,7 +71,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Getreidegasse"),
         ("walk", "Mozartplatz"),
         ("walk", "Makartsteg"),
-        ("walk", "Dark Eagle"),
+        ("walk", "YoHo bar"),
     ],
     "day-2026-11-24": [
         None,
@@ -81,7 +81,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("metro", "U2 → Praterstern"),
         ("metro", "U1 + U4 → Naschmarkt"),
         ("metro", "U4/U2 → Donaukanal"),
-        ("walk", "Noite no canal"),
+        ("metro", "U4 → Kettenbrückengasse WomBAR"),
     ],
     "day-2026-11-25": [
         None,
@@ -101,7 +101,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("tram", "Elétrico 93 / 1 / 3 / 7"),
         ("walk", "Staré Mesto"),
         ("walk", "Subida ao castelo"),
-        ("walk", "Apollon"),
+        ("walk", "Wild Elephants"),
     ],
     "day-2026-11-27": [
         None,
@@ -120,6 +120,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("metro", "M4 → Grande Mercado"),
         ("funicular", "Ponte → funicular ou bus 16"),
         ("walk", "Matthias Church"),
+        ("walk", "Wombat's WomBAR"),
         ("walk", "Szimpla Kert"),
         ("walk", "Instant-Fogas"),
     ],
@@ -147,6 +148,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Memorial"),
         ("metro", "U1/S → East Side Gallery"),
         ("metro", "U5 volta"),
+        ("walk", "Generator — mesma rua"),
     ],
     "day-2026-12-02": [
         None,
@@ -175,7 +177,7 @@ LEG_DETAILS: dict[str, list[tuple[str, str] | None]] = {
         ("walk", "Na Příkopě"),
         ("walk", "Palladium"),
         ("walk", "Old Town"),
-        ("walk", "Termix"),
+        ("walk", "Czech Inn bar"),
     ],
     "day-2026-12-05": [
         None,

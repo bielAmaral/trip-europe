@@ -75,10 +75,10 @@ code {
 <blockquote><p><strong>Uso:</strong> colar este ficheiro (ou o PDF) numa IA <strong>junto com</strong> <code>roteiro-europa-2026-prompt-mestre.pdf</code> quando o planeador ainda tiver contexto antigo (Bruges, dia 6 vazio, etc.).</p></blockquote>
 <blockquote><p><strong>Regenerar PDF:</strong> <code>python3 scripts/generate_prompt_pdf.py docs/roteiro-europa-2026-prompt-atualizacoes.txt</code></p></blockquote>
 <blockquote><p><strong>Fonte canónica:</strong> <code>roteiro-viagem-europa-2025/index.html</code> · secção Explorar <code>#explorar-starbucks</code></p></blockquote>
-<blockquote><p><strong>Versão:</strong> 2026-06-14</p></blockquote>
+<blockquote><p><strong>Versão:</strong> 2026-06-14 (hostels noite)</p></blockquote>
 <hr>
 <h2>RESUMO DAS ALTERAÇÕES</h2>
-<table><thead><tr><th>#</th><th>Alteração</th><th>Impacto</th></tr></thead><tbody><tr><td>1</td><td><strong>Removido Bruges</strong> (6 dez)</td><td>Dia 6 = Bruxelas calmo + prep voo 07:00</td></tr><tr><td>2</td><td><strong>Compras Bruxelas</strong> em 5 dez tarde + <strong>6 dez 15:00–17:00</strong></td><td>Última janela antes do voo; fechar até 17:00</td></tr><tr><td>3</td><td><strong>Starbucks</strong> (caneca *You Are Here*) por cidade</td><td>Loja mais perto de cada hotel — ver tabela</td></tr></tbody></table>
+<table><thead><tr><th>#</th><th>Alteração</th><th>Impacto</th></tr></thead><tbody><tr><td>1</td><td><strong>Removido Bruges</strong> (6 dez)</td><td>Dia 6 = Bruxelas calmo + prep voo 07:00</td></tr><tr><td>2</td><td><strong>Compras Bruxelas</strong> em 5 dez tarde + <strong>6 dez 15:00–17:00</strong></td><td>Última janela antes do voo; fechar até 17:00</td></tr><tr><td>3</td><td><strong>Starbucks</strong> (caneca *You Are Here*) por cidade</td><td>Loja mais perto de cada hotel — ver tabela</td></tr><tr><td>4</td><td><strong>Noite = hostels sociais</strong></td><td>Wombat&#x27;s / YoHo / Generator / Czech Inn — ver secção HOSTELS no prompt mestre</td></tr></tbody></table>
 <p><strong>Não mudou:</strong> voos (Ryanair 5/dez, IB0604 7/dez), hotéis, ordem das cidades, bilhetes Omio.</p>
 <hr>
 <h2>1. BRUGES REMOVIDO (6 dez)</h2>
@@ -90,7 +90,7 @@ code {
 <p>Hotel: des Colonies · Teto <strong>€60</strong> bolso · Energia <strong>leve</strong> · Sem SNCB.</p>
 <table><thead><tr><th>Horário</th><th>Plano</th></tr></thead><tbody><tr><td>10:00–11:00</td><td>Dormir até tarde / café no hotel</td></tr><tr><td>11:00–13:00</td><td>Grand Place + Galeries Royales Saint-Hubert (exterior)</td></tr><tr><td>13:00–15:00</td><td>Almoço (Chez Léon / Exki) · Mont des Arts (opcional)</td></tr><tr><td><strong>15:00–17:00</strong></td><td><strong>Compras buffer</strong> (Rue Neuve · Apple Toison d&#x27;Or / MediaMarkt) OU Parc Cinquantenaire (cortar)</td></tr><tr><td>17:00–19:00</td><td>Tax Free prep · mala 100% · agendar Bolt 03:30</td></tr><tr><td>19:00–21:00</td><td>Jantar leve · dormir cedo</td><td><strong>CRÍTICO: alarme 03:00</strong></td></tr></tbody></table>
 <p>Transporte: só STIB (metro/a pé). Cortar se atrasar: Cinquantenaire / segunda volta Grand Place.  </p>
-<p><strong>Noite:</strong> sem Saint-Jacques / festa pesada / La Demence. <strong>Zero turismo</strong> na manhã de 7 dez.</p>
+<p><strong>Noite:</strong> descanso — sem noite pesada (voo 07h). <strong>Zero turismo</strong> na manhã de 7 dez.</p>
 <h3>Regras para IAs</h3>
 <ul><li><strong>NÃO</strong> inserir Bruges, Ghent bate-volta, nem pernoite fora de Bruxelas no fim da viagem.</li><li><strong>NÃO</strong> mover Ryanair 11:50 PRG nem IB0604 07:00 BRU.</li><li><strong>NÃO</strong> assumir dia 6 com trem SNCB ou regresso noturno de outra cidade.</li></ul>
 <hr>

@@ -81,7 +81,7 @@ PLANS = {
             ("17:00–21:00", "Compras leves <strong>Kaufingerstraße</strong> · jantar rápido · <strong>mala Füssen amanhã</strong>"),
         ],
         cut="Isar",
-        night="<a href=\"#explorar-muc\">Glockenbach</a> — Prosecco/Sub",
+        night="<a href=\"#explorar-muc\">Glockenbach</a> — WomBAR → Glockenbach",
     ),
     "day-2026-11-21": dict(
         budget=85,
@@ -118,7 +118,7 @@ PLANS = {
             ("17:00–21:00", "Jantar barato · <strong>mala + dormir cedo</strong> (ICE <strong>10:00</strong> amanhã)"),
         ],
         cut="Makartsteg",
-        night="Dark Eagle (opcional)",
+        night="<a href=\"#explorar-szg\">YoHo bar</a> (4 min do hotel)",
     ),
     "day-2026-11-24": dict(
         budget=95,
@@ -130,7 +130,7 @@ PLANS = {
             ("17:00–21:00", "<strong>Donaukanal</strong> · jantar <strong>Billa</strong> · compras leves (<a href=\"#compras-matriz-dia\">matriz 24 nov</a>)"),
         ],
         cut="Prater",
-        night="Donaukanal + Village/Why Not",
+        night="<a href=\"#explorar-vie\">WomBAR Naschmarkt</a> + Donaukanal",
     ),
     "day-2026-11-25": dict(
         budget=95,
@@ -153,7 +153,7 @@ PLANS = {
             ("14:00–21:00", "Hotel → <strong>Staré Mesto</strong> → <strong>Bratislava Castle</strong> (exterior) · jantar Old Town"),
         ],
         cut="Castle (só Old Town)",
-        night="Apollon se cedo — senão dormir",
+        night="<a href=\"#explorar-bts\">Wild Elephants</a> + Obchodná",
     ),
     "day-2026-11-27": dict(
         budget=50,
@@ -187,7 +187,7 @@ PLANS = {
             ("12:00–17:00", "<strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · buffer descanso"),
             ("17:00–21:00", "Jantar leve · <strong>mala Berlim</strong> · dormir razoável"),
         ],
-        night="Moderada (AlterEgo opcional)",
+        night="Moderada — WomBAR ou ruin bar leve",
         critical="Sem banho térmico longo",
     ),
     "day-2026-11-30": dict(
@@ -211,7 +211,7 @@ PLANS = {
             ("17:00–21:00", "Volta Alex · jantar rápido"),
         ],
         cut="Metade East Side",
-        night="Schöneberg/Kreuzberg — Berghain só se fila ok",
+        night="<a href=\"#explorar-ber\">Generator</a> (pub crawl 21h) ou Kreuzberg",
     ),
     "day-2026-12-02": dict(
         budget=120,
@@ -243,7 +243,7 @@ PLANS = {
         rows=[
             ("09:00–12:00", "<strong>Charles Bridge</strong> (cedo) → subida <strong>Malá Strana</strong>"),
             ("12:00–17:00", "<strong>Prague Castle</strong> (exterior + pátios) → <strong>Kampa</strong> · compras <strong>Na Příkopě / Palladium</strong>"),
-            ("17:00–21:00", "Old Town revisit · <strong>noite: Vinohrady — Termix</strong>"),
+            ("17:00–21:00", "Old Town revisit · <strong>noite: <a href=\"#explorar-prg\">Czech Inn</a> + Vinohrady</strong>"),
         ],
         cut="Kampa",
     ),
@@ -262,15 +262,16 @@ PLANS = {
     "day-2026-12-06": dict(
         budget=75,
         energy="média",
-        mode="Bruges com prima Iza",
+        mode="Descanso + prep voo",
         rows=[
-            ("09:00–12:00", "(Opcional 1h) <strong>Grand Place</strong> — OU direto <strong>Midi/Nord → Brugge</strong> (~1h)"),
-            ("12:00–18:00", "<strong>Bruges com Iza:</strong> Markt, canais, centro medieval (exterior) · almoço/jantar com ela"),
-            ("18:00–21:00", "Trem volta Bruxelas (~20h) · <strong>Tax Free prep</strong> · <strong>dormir cedo</strong>"),
+            ("10:00–13:00", "<strong>Grand Place</strong> + <strong>Galeries Saint-Hubert</strong> (exterior)"),
+            ("13:00–15:00", "Almoço (Chez Léon / Exki) · <strong>Mont des Arts</strong> (opcional)"),
+            ("15:00–17:00", "<strong>Compras buffer</strong> Rue Neuve / Apple · Tax Free prep"),
+            ("17:00–21:00", "Mala 100% · jantar leve · <strong>dormir cedo</strong>"),
         ],
-        cut="Parc Cinquantenaire / catedral BRU",
-        night="Sem Saint-Jacques / festa pesada",
-        critical="Regresso ~20h · alarme <strong>04:15</strong>",
+        cut="Parc Cinquantenaire",
+        night="Descanso — sem noite pesada (voo 07h)",
+        critical="Alarme <strong>03:00</strong> · Bolt ~03:30",
     ),
     "day-2026-12-07": dict(
         budget=20,

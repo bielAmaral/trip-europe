@@ -49,7 +49,7 @@ DAYS = [
             (7, "sight", "Eisbachwelle", "Eisbachwelle, Munich, Germany"),
             (8, "sight", "Isar (Gärtnerplatz)", "Gärtnerplatz, Munich, Germany"),
             (9, "sight", "Kaufingerstraße", "Kaufingerstraße, Munich, Germany"),
-            (10, "night", "Glockenbachviertel (noite)", "Glockenbachviertel, Munich, Germany"),
+            (10, "night", "Wombat's WomBAR (noite)", "Wombat's City Hostel Munich, Senefelderstraße 1, Munich, Germany"),
         ],
     },
     {
@@ -95,7 +95,7 @@ DAYS = [
             (5, "sight", "Getreidegasse", "Getreidegasse, Salzburg, Austria"),
             (6, "sight", "Mozartplatz", "Mozartplatz, Salzburg, Austria"),
             (7, "sight", "Makartsteg", "Makartsteg, Salzburg, Austria"),
-            (8, "night", "Dark Eagle (opcional)", "Dark Eagle, Paracelsusstraße 11, Salzburg, Austria"),
+            (8, "night", "YoHo Hostel bar", "YoHo International Youth Hostel, Paracelsusstraße 9, Salzburg, Austria"),
         ],
     },
     {
@@ -110,7 +110,7 @@ DAYS = [
             (5, "sight", "Prater", "Prater, Vienna, Austria"),
             (6, "sight", "Naschmarkt", "Naschmarkt, Vienna, Austria"),
             (7, "sight", "Donaukanal", "Donaukanal, 1020 Vienna, Austria"),
-            (8, "night", "Donaukanal / Village (noite)", "Donaukanal, 1020 Vienna, Austria"),
+            (8, "night", "Wombat's WomBAR Naschmarkt", "Wombat's City Hostel Vienna, Rechte Wienzeile 35, Vienna, Austria"),
         ],
     },
     {
@@ -140,7 +140,7 @@ DAYS = [
             (5, "hotel", "Danubia Gate Hotel", "Danubia Gate Hotel, Dunajská 26, Bratislava, Slovakia"),
             (6, "sight", "Staré Mesto", "Hlavné námestie, Bratislava, Slovakia"),
             (7, "sight", "Bratislava Castle", "Bratislava Castle, Slovakia"),
-            (8, "night", "Apollon (opcional)", "Apollon Gay Club, Panenská, Bratislava, Slovakia"),
+            (8, "night", "Wild Elephants Hostel", "Wild Elephants Hostel, Námestie SNP 5, Bratislava, Slovakia"),
         ],
     },
     {
@@ -169,8 +169,9 @@ DAYS = [
             (4, "sight", "Great Market Hall", "Great Market Hall, Budapest, Hungary"),
             (5, "sight", "Fisherman's Bastion", "Fisherman's Bastion, Budapest, Hungary"),
             (6, "sight", "Matthias Church", "Matthias Church, Budapest, Hungary"),
-            (7, "night", "Szimpla Kert", "Szimpla Kert, Budapest, Hungary"),
-            (8, "night", "Instant-Fogas", "Instant-Fogas, Budapest, Hungary"),
+            (7, "night", "Wombat's WomBAR", "Wombat's City Hostel Budapest, Király utca 20, Budapest, Hungary"),
+            (8, "night", "Szimpla Kert", "Szimpla Kert, Budapest, Hungary"),
+            (9, "night", "Instant-Fogas", "Instant-Fogas, Budapest, Hungary"),
         ],
     },
     {
@@ -211,6 +212,7 @@ DAYS = [
             (6, "sight", "Potsdamer Platz", "Potsdamer Platz, Berlin, Germany"),
             (7, "sight", "East Side Gallery", "East Side Gallery, Berlin, Germany"),
             (8, "sight", "Alexanderplatz (volta)", "Alexanderplatz 1, 10178 Berlin, Germany"),
+            (9, "night", "Generator Berlin (noite)", "Generator Berlin Alexanderplatz, Otto-Braun-Straße 65, Berlin, Germany"),
         ],
     },
     {
@@ -254,7 +256,7 @@ DAYS = [
             (6, "sight", "Na Příkopě", "Na Příkopě, Prague, Czechia"),
             (7, "sight", "Palladium", "Palladium Prague, Czechia"),
             (8, "sight", "Old Town Square (revisit)", "Old Town Square, Prague, Czechia"),
-            (9, "night", "Termix (Vinohrady)", "Termix Club, Prague, Czechia"),
+            (9, "night", "Czech Inn bar (Vinohrady)", "Czech Inn, Francouzská 76, Prague, Czechia"),
         ],
     },
     {

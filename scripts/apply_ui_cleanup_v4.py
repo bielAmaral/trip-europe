@@ -42,7 +42,7 @@ TOC_OLD = """    <nav class="toc reveal app-panel" data-app-panel="inicio" aria-
           <ul class="toc-group-list" aria-labelledby="toc-lbl-explorar">
             <li><a href="#explorar">Explorar · restaurantes e vida noturna</a></li>
             <li><a href="#explorar-calendario-noite">Calendário · melhores noites</a></li>
-            <li><a href="#lgbt-bares">LGBT+ · bares (atalho)</a></li>
+            <li><a href="#lgbt-bares">Noite social (atalho)</a></li>
           </ul>
         </div>
         <div class="toc-group">
@@ -166,7 +166,7 @@ HOTEIS_LEDE_OLD = '<p class="lede">Reservas com <strong>cancelamento grátis</st
 HOTEIS_LEDE_NEW = '<p class="lede">Booking · cancelamento grátis conforme cada reserva. Totais em R$ na data de consulta.</p>'
 
 EXPLORAR_LEDE_OLD = '<p class="lede">Restaurantes, bares LGBT+, zonas de hostel/vida noturna e um <strong>calendário de melhores noites</strong> alinhado ao roteiro (comboios, voos, dias pesados). Você fica em <strong>hotel</strong> — hostels listados são <strong>pontos sociais</strong> e bairros, não alojamento.</p>\n      <p class="note" style="margin-top:0;"><strong>Confirme horários</strong> no Google Maps ou site oficial perto da data. <strong>La Demence</strong> (Bruxelas) é festa mensal — <a href="https://lademence.com/" rel="noopener noreferrer">lademence.com</a>. <strong>Connection</strong> (Berlim) pode estar em obras.</p>'
-EXPLORAR_LEDE_NEW = '<p class="lede">Restaurantes, LGBT+ e <a href="#explorar-calendario-noite">calendário de noites</a>. Hostels = zona social, não alojamento.</p>'
+EXPLORAR_LEDE_NEW = '<p class="lede">Restaurantes, hostels sociais e <a href="#explorar-calendario-noite">calendário de noites</a>. Hostels = zona social, não alojamento.</p>'
 
 MAP_LEDE_OLD = '<p class="lede">Diagrama <strong>não é carta geográfica à escala</strong>: mostra a <strong>sequência da viagem</strong> e o modo (comboio vs voo). Durações são ordens de grandeza típicas em serviços diretos. <strong>Toque ou use Tab</strong> nos círculos do percurso para ver hotel, estação e sugestões rápidas no painel ao lado (em telas estreitas, abaixo do diagrama).</p>'
 MAP_LEDE_NEW = '<p class="lede">Sequência da viagem (comboio vs voo). Toque nos nós para hotel e estação.</p>'
