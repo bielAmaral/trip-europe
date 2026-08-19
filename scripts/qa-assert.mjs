@@ -22,7 +22,7 @@ const mustHave = [
   "id=\"mapas\"",
   "id=\"mapasDiasHost\"",
   "id=\"explorar\"",
-  "id=\"explorar-calendario-noite\"",
+  "id=\"explorar-hostels-ancora\"",
   "id=\"financas\"",
   "id=\"operacional-envelope\"",
   "id=\"cambio\"",
@@ -111,7 +111,7 @@ console.log(
 );
 
 /* HTML: secções de topo não podem ficar dentro de #explorar (bug de tags não fechadas). */
-const explorarClose = html.indexOf("</section>", html.indexOf('id="explorar-bru"'));
+const explorarClose = html.indexOf("</section>", html.indexOf('id="explorar-comida-pratica"'));
 const horariosPos = html.indexOf('id="horarios-bilhetes"');
 if (explorarClose < 0 || horariosPos < explorarClose) {
   err("#horarios-bilhetes deve vir depois do fecho de #explorar (HTML mal aninhado)");

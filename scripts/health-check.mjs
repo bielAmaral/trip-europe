@@ -66,7 +66,7 @@ const nesting = {};
 for (const id of ids) {
   const pos = html.indexOf(`id="${id}"`);
   const explorarStart = html.indexOf('id="explorar"');
-  const explorarEnd = html.indexOf("</section>", html.indexOf('id="explorar-bru"'));
+  const explorarEnd = html.indexOf("</section>", html.indexOf('id="explorar-comida-pratica"'));
   nesting[id] = { pos, insideExplorar: pos > explorarStart && pos < explorarEnd };
 }
 
