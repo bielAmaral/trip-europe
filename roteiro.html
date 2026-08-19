@@ -38,11 +38,11 @@
   </script>
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="app.css?v=46" />
+  <link rel="stylesheet" href="app.css?v=51" />
 </head>
 <body class="has-app-ui">
   <div id="devLocalBanner" hidden style="position:fixed;top:0;left:0;right:0;z-index:200;background:#7c3aed;color:#fff;font:600 0.82rem/1.3 system-ui,sans-serif;padding:0.45rem 0.75rem;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.15);">
-    Modo local · HTML v47 · Se a página estiver em branco, usa <strong>http://127.0.0.1:8888/</strong> (não abras file://)
+    Modo local · HTML v51 · Se a página estiver em branco, usa <strong>http://127.0.0.1:8888/</strong> (não abras file://)
   </div>
   <script>
     (function () {
@@ -92,13 +92,46 @@
       </div>
     </div>
 
-    <nav class="toc reveal app-panel" data-app-panel="inicio" aria-label="Índice" id="indice-toc">
-      <h2>Índice</h2>
-      <ul class="toc-compact">
-        <li><a href="#dias">Dias</a> · <a href="#mapa">Mapa</a> · <a href="#mapas">GPS</a> · <a href="#explorar">Explorar</a></li>
-        <li><a href="#horarios-bilhetes">Omio</a> · <a href="#voos">Voos</a> · <a href="#hoteis">Hotéis</a> · <a href="#emergencia">SOS</a></li>
-        <li><a href="#financas">Dinheiro</a> · <a href="#compras">Compras</a> · <a href="#presentes">Presentes</a> · <a href="#checklist">Checklist</a></li>
-      </ul>
+    <nav class="toc reveal app-panel toc-visual" data-app-panel="inicio" aria-label="Índice" id="indice-toc">
+      <h2>Navegação rápida</h2>
+      <p class="toc-visual__hint">Toque num atalho — o separador certo abre sozinho.</p>
+      <div class="toc-visual__groups">
+        <div class="toc-visual__group toc-visual__group--roteiro">
+          <h3 class="toc-visual__label">Roteiro</h3>
+          <div class="toc-chip-grid">
+            <a class="toc-chip" href="#dias">Dias <span class="toc-chip__sub">19 dias</span></a>
+            <a class="toc-chip toc-chip--tour" href="#guruwalk">GuruWalk <span class="toc-chip__sub">16 tours</span></a>
+            <a class="toc-chip" href="#mapa">Mapa</a>
+            <a class="toc-chip" href="#mapas">GPS</a>
+          </div>
+        </div>
+        <div class="toc-visual__group toc-visual__group--explorar">
+          <h3 class="toc-visual__label">Explorar</h3>
+          <div class="toc-chip-grid">
+            <a class="toc-chip" href="#explorar">Comer &amp; noite</a>
+            <a class="toc-chip" href="#explorar-calendario-noite">Calendário LGBT</a>
+            <a class="toc-chip" href="#explorar-starbucks">Starbucks</a>
+          </div>
+        </div>
+        <div class="toc-visual__group toc-visual__group--logistica">
+          <h3 class="toc-visual__label">Logística</h3>
+          <div class="toc-chip-grid">
+            <a class="toc-chip" href="#horarios-bilhetes">Omio</a>
+            <a class="toc-chip" href="#voos">Voos</a>
+            <a class="toc-chip" href="#hoteis">Hotéis</a>
+            <a class="toc-chip toc-chip--sos" href="#emergencia">SOS</a>
+          </div>
+        </div>
+        <div class="toc-visual__group toc-visual__group--mais">
+          <h3 class="toc-visual__label">Planeamento</h3>
+          <div class="toc-chip-grid">
+            <a class="toc-chip" href="#financas">Dinheiro</a>
+            <a class="toc-chip" href="#compras">Compras</a>
+            <a class="toc-chip" href="#presentes">Presentes</a>
+            <a class="toc-chip" href="#checklist">Checklist</a>
+          </div>
+        </div>
+      </div>
     </nav>
 
     <section id="explorar" class="block app-panel" data-app-panel="explorar" aria-labelledby="explorar-heading">
@@ -517,6 +550,15 @@
 
     <section id="horarios-bilhetes" class="block app-panel" data-app-panel="mais">
       <h2>Horários Omio · referência dos bilhetes que você passou</h2>
+      <nav class="mais-hub" aria-label="Atalhos logística e planeamento">
+        <a class="mais-hub__chip" href="#voos">Voos</a>
+        <a class="mais-hub__chip" href="#hoteis">Hotéis</a>
+        <a class="mais-hub__chip mais-hub__chip--sos" href="#emergencia">SOS</a>
+        <a class="mais-hub__chip" href="#financas">Dinheiro</a>
+        <a class="mais-hub__chip" href="#compras">Compras</a>
+        <a class="mais-hub__chip" href="#presentes">Presentes</a>
+        <a class="mais-hub__chip" href="#checklist">Checklist</a>
+      </nav>
       <p class="lede">Horários dos prints Omio, nas <strong>datas reais</strong> do roteiro. Confirme no bilhete. <span class="dt dt-paid">Pago</span> = bilhete quitado (cartão/parcela).</p>
       <p class="note" style="margin-top:0;"><strong>Voos pagos:</strong> BUD→BER <strong>R$ 734,34</strong> + PRG→CRL <strong>R$ 773,64</strong> = <strong>R$ 1.507,98</strong> · <strong>Pendente Omio</strong> (trem/ônibus): ~<strong>R$ 709</strong>.</p>
       <div class="table-scroll">
@@ -780,7 +822,7 @@
         </thead>
         <tbody>
           <tr><td>19 nov</td><td>Munique</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>70</td><td>Chegada · jet lag</td><td><a href="#day-2026-11-19">#</a></td></tr>
-          <tr><td>20 nov</td><td>Munique</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>110</td><td>Cidade + compras + Glockenbach</td><td><a href="#day-2026-11-20">#</a></td></tr>
+          <tr><td>20 nov</td><td>Munique</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>110</td><td>GuruWalk 10h15 + tarde livre + Glockenbach</td><td><a href="#day-2026-11-20">#</a></td></tr>
           <tr><td>21 nov</td><td>Füssen</td><td><span class="oper-energy oper-energy--max">Máxima</span></td><td>85</td><td>Castelo · sem noite</td><td><a href="#day-2026-11-21">#</a></td></tr>
           <tr><td>22 nov</td><td>→ Salzburgo</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>55</td><td>Flix 13h45</td><td><a href="#day-2026-11-22">#</a></td></tr>
           <tr><td>23 nov</td><td>Salzburgo</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>75</td><td>Altstadt + Festung</td><td><a href="#day-2026-11-23">#</a></td></tr>
@@ -788,7 +830,7 @@
           <tr><td>25 nov</td><td>Viena</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td>95</td><td>Schönbrunn + compras</td><td><a href="#day-2026-11-25">#</a></td></tr>
           <tr><td>26 nov</td><td>→ Bratislava</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>35</td><td>Flix tarde</td><td><a href="#day-2026-11-26">#</a></td></tr>
           <tr><td>27 nov</td><td>→ Budapeste</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>50</td><td>Flix manhã</td><td><a href="#day-2026-11-27">#</a></td></tr>
-          <tr class="row-highlight"><td><strong>28 nov</strong></td><td>Budapeste</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>95</strong></td><td>Ruin bars (sáb) + compras</td><td><a href="#day-2026-11-28">#</a></td></tr>
+          <tr class="row-highlight"><td><strong>28 nov</strong></td><td>Budapeste</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>95</strong></td><td>2× GuruWalk + ruin bars (sáb)</td><td><a href="#day-2026-11-28">#</a></td></tr>
           <tr><td>29 nov</td><td>Budapeste</td><td><span class="oper-energy oper-energy--mid">Média</span></td><td>75</td><td>Urbano · poupar p/ voo</td><td><a href="#day-2026-11-29">#</a></td></tr>
           <tr><td>30 nov</td><td>→ Berlim</td><td><span class="oper-energy oper-energy--low">Leve</span></td><td>40</td><td><span class="dt dt-paid">Pago</span> Ryanair 15h40</td><td><a href="#day-2026-11-30">#</a></td></tr>
           <tr class="row-highlight"><td><strong>1 dez</strong></td><td>Berlim</td><td><span class="oper-energy oper-energy--high">Pleno</span></td><td><strong>110</strong></td><td>LGBT + mercados</td><td><a href="#day-2026-12-01">#</a></td></tr>
@@ -811,7 +853,7 @@
         <button type="button" class="app-dia-voltar" id="appDiaVoltar">Voltar</button>
         <span class="app-dia-breadcrumb" id="appDiaBreadcrumb" aria-live="polite"></span>
       </div>
-      <p class="lede app-dia-lede">Toque num dia — GPS + plano por horário. <a href="#financas">Dinheiro</a> · <a href="#mapa">Mapa</a> · <a href="#compras">Compras</a></p>
+      <p class="lede app-dia-lede">Toque num dia — GPS + plano por horário. <a href="#guruwalk">GuruWalk</a> · <a href="#financas">Dinheiro</a> · <a href="#mapa">Mapa</a> · <a href="#compras">Compras</a></p>
 
       <details class="dia-extra-info card">
         <summary>Legenda dos selos e apps de transporte</summary>
@@ -822,6 +864,7 @@
           <li><span class="dt dt-icon" aria-hidden="true">Ícone</span> Dia intenso ou excursão.</li>
           <li><span class="dt dt-flight" aria-hidden="true">Aéreo</span> Voo relevante no dia.</li>
           <li><span class="dt dt-shop" aria-hidden="true">Compras</span> Janela de compras (<a href="#compras">onde comprar</a>).</li>
+          <li><span class="dt dt-tour" aria-hidden="true">Tour</span> GuruWalk reservado (<a href="#guruwalk">horários</a>).</li>
           <li><span class="dt dt-paid" aria-hidden="true">Pago</span> Bilhete Omio quitado (voos).</li>
         </ul>
       </details>
@@ -875,7 +918,7 @@
       </details>
 
       <details class="day" id="day-2026-11-20" data-trip-date="2026-11-20" data-budget-eur="110" data-energy="plena">
-        <summary><span class="date-tag">20 nov · qui</span> <span class="city">Munique — cidade e Englischer Garten</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">20 nov · qui</span> <span class="city">Munique — GuruWalk + tarde livre</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-11-20">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -883,14 +926,17 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Janela compras</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Hofgarten</strong> → <strong>Odeonsplatz</strong> → <strong>Ludwigstraße</strong> / Siegestor (foto)</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Englischer Garten</strong> (Eisbach, Chinesischer Turm) → margem <strong>Isar</strong> · almoço padaria/quiosque</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Compras leves <strong>Kaufingerstraße</strong> · jantar rápido · <strong>mala Füssen amanhã</strong></td></tr>
+              <tr><td class="fast-plan__when">09:30–09:45</td><td>Café to-go · caminho ao ponto de encontro</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">10:15–~13:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/62314" target="_blank" rel="noopener noreferrer"><strong>Explore Munich</strong></a> (Patrick) — <a href="#guruwalk">reserva</a></td></tr>
+              <tr><td class="fast-plan__when">13:00–17:00</td><td><strong>Englischer Garten</strong> (Eisbach, Chinesischer Turm) → margem <strong>Isar</strong> · almoço padaria/quiosque · <em>sem</em> segundo tour à tarde</td></tr>
+              <tr><td class="fast-plan__when">17:00–19:00</td><td>Compras <strong>Kaufingerstraße</strong> / Sendlinger · <a href="#compras-matriz-dia">matriz 20 nov</a></td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td>Jantar rápido · <strong>mala Füssen amanhã</strong> · noite <a href="#explorar-muc">Glockenbach</a> (Prosecco / Sub)</td></tr>
                 </tbody>
               </table>
             </div>
@@ -993,22 +1039,23 @@
       </details>
 
       <details class="day" id="day-2026-11-23" data-trip-date="2026-11-23" data-budget-eur="75" data-energy="plena">
-        <summary><span class="date-tag">23 nov · dom</span> <span class="city">Salzburgo — Festung e ar livre</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span></span></summary>
+        <summary><span class="date-tag">23 nov · dom</span> <span class="city">Salzburgo — 2× GuruWalk</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-11-23">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€75</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Festung Hohensalzburg</strong> (vistas exterior) → <strong>Dom</strong> / Residenzplatz</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td>Loop <strong>Altstadt</strong>: Getreidegasse, Mozartplatz, <strong>Salzach</strong> / Makartsteg</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Jantar barato · <strong>mala + dormir cedo</strong> (ICE <strong>10:00</strong> amanhã)</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">11:00–~13:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/61281" target="_blank" rel="noopener noreferrer"><strong>Salzburg Highlights</strong></a></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">14:00–~16:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/47069" target="_blank" rel="noopener noreferrer"><strong>Sound of Music / cidade</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:00–18:00</td><td><strong>Mirabellgarten</strong> / <strong>Salzach</strong> (exterior) se faltar</td></tr>
+              <tr><td class="fast-plan__when">18:00–21:00</td><td>Jantar barato · <strong>mala + dormir cedo</strong> (ICE <strong>10:00</strong> amanhã)</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1072,7 +1119,7 @@
       </details>
 
       <details class="day" id="day-2026-11-25" data-trip-date="2026-11-25" data-budget-eur="95" data-energy="plena">
-        <summary><span class="date-tag">25 nov · qua</span> <span class="city">Viena — Schönbrunn e anel</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">25 nov · qua</span> <span class="city">Viena — 2× GuruWalk + Schönbrunn</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-11-25">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -1080,14 +1127,16 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Compras</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Schönbrunn</strong> (fachada + jardins, exterior)</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Stadtpark</strong> → <strong>Stephansdom</strong> (exterior) → <strong>Graben</strong> → <strong>Hofburg</strong> (pátios exterior)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td><strong>Rathaus + Parlament</strong> (exterior, luzes) · jantar rápido · mala Bratislava</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">10:15–~12:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/36416" target="_blank" rel="noopener noreferrer"><strong>Vienna Old Town</strong></a></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">14:15–~16:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/55482" target="_blank" rel="noopener noreferrer"><strong>Vienna Imperial</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:30–19:00</td><td><strong>Schönbrunn</strong> (só exterior/jardins) <em>ou</em> compras <strong>Mariahilfer</strong> — cortar o que atrasar</td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td><strong>Rathaus + Parlament</strong> (luzes) · jantar rápido · mala Bratislava</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1131,7 +1180,7 @@
               </table>
             </div>
 <p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Castle (só Old Town)</p>
-<p class="fast-plan__foot"><strong>Noite:</strong> Apollon se cedo — senão dormir</p>
+<p class="fast-plan__foot"><strong>Noite:</strong> Tour opcional <a href="https://www.guruwalk.com/walks/49487" target="_blank" rel="noopener noreferrer">~17:30 Vienna by Night</a> só se sair cedo de Viena · senão dormir</p>
           </div>
 
 <p class="note"><strong>Alternativa:</strong> comboio <strong>Wien Hbf → hl.st.</strong> (REX) se não usar o FlixBus — ajuste hotel/percurso ao ponto de chegada.</p>
@@ -1188,7 +1237,7 @@
       </details>
 
       <details class="day" id="day-2026-11-28" data-trip-date="2026-11-28" data-budget-eur="95" data-energy="plena">
-        <summary><span class="date-tag">28 nov · sáb</span> <span class="city">Budapeste — Pest icónico</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">28 nov · sáb</span> <span class="city">Budapeste — Essential + Mysteries</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-icon">Ícone</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-11-28">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -1196,18 +1245,20 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Sábado ruin bars</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Parlamento</strong> (exterior) → <strong>Shoes on the Danube</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Great Market Hall</strong> (snack) → <strong>Fisherman's Bastion</strong> + <strong>Matthias</strong> (exterior)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Buffer · compras moderadas · <strong>noite: Szimpla / Instant</strong></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">10:00–~12:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/40704" target="_blank" rel="noopener noreferrer"><strong>Free Essential Budapest</strong></a> — Pest icónico</td></tr>
+              <tr><td class="fast-plan__when">12:30–16:30</td><td>Almoço <strong>Great Market Hall</strong> · compras moderadas · vista <strong>Parlamento</strong> / <strong>Shoes on the Danube</strong> (DIY se não couber no tour)</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">~17:00–~19:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/42809" target="_blank" rel="noopener noreferrer"><strong>Mysteries of the Danube</strong></a> — confirmar horário e mín. 6 pessoas · vista <strong>Batthyány</strong> ao pôr do sol (opcional)</td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td><strong>Szimpla Kert</strong> / <strong>Instant</strong> (sábado) · ver <a href="#explorar-calendario-noite">noite LGBT</a></td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Bastion (manter Parlamento + ruin bar)</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Mercado (manter 2 tours + 1 ruin bar)</p>
 <p class="fast-plan__foot"><strong>Plano B chuva:</strong> Váci utca comercial</p>
           </div>
 
@@ -1227,7 +1278,7 @@
       </details>
 
       <details class="day" id="day-2026-11-29" data-trip-date="2026-11-29" data-budget-eur="75" data-energy="média">
-        <summary><span class="date-tag">29 nov · dom</span> <span class="city">Budapeste — mercados e Danúbio</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">29 nov · dom</span> <span class="city">Budapeste — Jewish Quarter tour</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-11-29">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -1235,13 +1286,14 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Voo amanhã 15:40</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td>Completar pendências OU <strong>Jewish Quarter</strong> (exterior)</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · buffer descanso</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">11:00–~13:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/32765" target="_blank" rel="noopener noreferrer"><strong>Jewish Quarter</strong></a></td></tr>
+              <tr><td class="fast-plan__when">13:00–17:00</td><td><strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · compras leves · buffer descanso</td></tr>
               <tr><td class="fast-plan__when">17:00–21:00</td><td>Jantar leve · <strong>mala Berlim</strong> · dormir razoável</td></tr>
                 </tbody>
               </table>
@@ -1304,22 +1356,22 @@
       </details>
 
       <details class="day" id="day-2026-12-01" data-trip-date="2026-12-01" data-budget-eur="110" data-energy="plena">
-        <summary><span class="date-tag">1 dez · ter</span> <span class="city">Berlim — Mitte clássica</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span></span></summary>
+        <summary><span class="date-tag">1 dez · ter</span> <span class="city">Berlim — 2× GuruWalk Mitte</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-01">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€110</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Brandenburg Gate</strong> → <strong>Reichstag</strong> (exterior) → <strong>Tiergarten</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Holocaust Memorial</strong> → <strong>Potsdamer Platz</strong> → <strong>East Side Gallery</strong> (trecho)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Volta Alex · jantar rápido</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">10:00–~12:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/36662" target="_blank" rel="noopener noreferrer"><strong>Berlin Highlights</strong></a></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">14:30–~17:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/47158" target="_blank" rel="noopener noreferrer"><strong>Berlin Wall &amp; Cold War</strong></a></td></tr>
+              <tr><td class="fast-plan__when">17:00–21:00</td><td>Volta Alex · jantar rápido · noite Schöneberg/Kreuzberg</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1342,7 +1394,7 @@
       </details>
 
       <details class="day" id="day-2026-12-02" data-trip-date="2026-12-02" data-budget-eur="120" data-energy="plena">
-        <summary><span class="date-tag">2 dez · qua</span> <span class="city">Berlim — East Side Gallery e compras</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">2 dez · qua</span> <span class="city">Berlim — 2× GuruWalk + compras</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-02">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -1350,14 +1402,15 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Compras hub</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Unter den Linden</strong> → <strong>Berliner Dom</strong> (exterior) → <strong>Lustgarten</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Museum Island</strong> (só fachadas) → <strong>Gendarmenmarkt</strong> → compras <strong>Alex / Ku’damm / Primark</strong></td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Mercados de Natal · jantar · <strong>mala Praga</strong></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">10:00–~12:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/52050" target="_blank" rel="noopener noreferrer"><strong>Berlin Alternative</strong></a></td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">14:00–~16:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/46449" target="_blank" rel="noopener noreferrer"><strong>Museum Island (exterior)</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:30–21:00</td><td>Compras <strong>Alex / Ku’damm / Primark</strong> · mercados de Natal · <strong>mala Praga</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -1380,14 +1433,14 @@
       </details>
 
       <details class="day" id="day-2026-12-03" data-trip-date="2026-12-03" data-budget-eur="50" data-energy="média">
-        <summary><span class="date-tag">3 dez · qui</span> <span class="city">Berlim → Praga (FlixBus ou EC)</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span></span></summary>
+        <summary><span class="date-tag">3 dez · qui</span> <span class="city">Berlim → Praga + tour noite</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-transfer">Transferência</span><span class="dt dt-tour">Tour</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-03">
 <div class="fast-plan__meta" aria-label="Meta do dia">
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€50</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--mid">média</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
@@ -1395,7 +1448,9 @@
                 <tbody>
               <tr><td class="fast-plan__when">08:00–08:45</td><td>Check-out · S-Bahn <strong>Alex → Südkreuz</strong></td></tr>
               <tr><td class="fast-plan__when">10:20–14:20</td><td>Flix <strong>Südkreuz → Florenc</strong></td></tr>
-              <tr><td class="fast-plan__when">14:30–21:00</td><td>Hotel Alton → <strong>Wenceslas Square</strong> → <strong>Old Town Square</strong> + <strong>Relógio</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">14:30–17:30</td><td>Hotel Alton → <strong>Wenceslas Square</strong> → <strong>Old Town Square</strong> + <strong>Relógio</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">17:30–18:00</td><td>Pausa / jantar leve antes do tour</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">18:00–~20:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/57909" target="_blank" rel="noopener noreferrer"><strong>Legends &amp; Beer</strong></a> — encontro <strong>nám. J. Palacha</strong> / Rudolfinum</td></tr>
                 </tbody>
               </table>
             </div>
@@ -1423,7 +1478,7 @@
       </details>
 
       <details class="day" id="day-2026-12-04" data-trip-date="2026-12-04" data-budget-eur="130" data-energy="plena">
-        <summary><span class="date-tag">4 dez · sex</span> <span class="city">Praga — castelo e Malá Strana</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-shop">Compras</span></span></summary>
+        <summary><span class="date-tag">4 dez · sex</span> <span class="city">Praga — 2× GuruWalk castelo + centro</span><span class="day-badges" aria-label="Tipos de dia"><span class="dt dt-base">Base</span><span class="dt dt-tour">Tour</span><span class="dt dt-shop">Compras</span></span></summary>
         <div class="body">
           <div class="fast-plan" id="fast-day-2026-12-04">
 <div class="fast-plan__meta" aria-label="Meta do dia">
@@ -1431,14 +1486,17 @@
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--high">plena</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
       <span class="fast-plan__mode">Compras + noite CZ</span>
+      <span class="fast-plan__badge fast-plan__badge--guruwalk"><a href="#guruwalk">GuruWalk</a></span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Charles Bridge</strong> (cedo) → subida <strong>Malá Strana</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Prague Castle</strong> (exterior + pátios) → <strong>Kampa</strong> · compras <strong>Na Příkopě / Palladium</strong></td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Old Town revisit · <strong>noite: Vinohrady — Termix</strong></td></tr>
+              <tr><td class="fast-plan__when">09:00–10:30</td><td><strong>Charles Bridge</strong> (cedo) → caminho <strong>Klárov 1</strong> (Malostranská)</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">11:00–~13:30</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/39714" target="_blank" rel="noopener noreferrer"><strong>Prague Castle</strong></a> — guarda-chuva vermelho «100»</td></tr>
+              <tr><td class="fast-plan__when">13:30–14:45</td><td>Almoço · caminho <strong>Powder Tower</strong> (Na Příkopě)</td></tr>
+              <tr class="fast-plan__row--guruwalk"><td class="fast-plan__when">15:00–~17:00</td><td><span class="dt dt-tour">GuruWalk</span> <a href="https://www.guruwalk.com/walks/36530" target="_blank" rel="noopener noreferrer"><strong>Old Town &amp; Jewish Quarter</strong></a></td></tr>
+              <tr><td class="fast-plan__when">17:00–21:00</td><td>Compras <strong>Na Příkopě / Palladium</strong> · <strong>noite: Vinohrady — Termix</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -1579,6 +1637,48 @@
           </details>
         </div>
       </details>
+    </section>
+
+    <section id="guruwalk" class="block app-panel" data-app-panel="roteiro" role="region" aria-labelledby="guruwalk-heading">
+      <h2 id="guruwalk-heading">Tours GuruWalk — reservas e horários</h2>
+      <p class="lede">Walking tours gratuitos (gorjeta ao guia). Confirme horário e ponto de encontro na reserva — chegue <strong>10 min antes</strong>. Ver também o plano hora a hora em cada <a href="#dias">dia</a>.</p>
+
+      <div class="card guruwalk-tips">
+        <h3>Dicas rápidas</h3>
+        <ul>
+          <li><strong>Gorjeta:</strong> €10–20 por pessoa (não é obrigatório, mas é a norma).</li>
+          <li><strong>Grupo:</strong> muitos tours limitam a <strong>6 adultos</strong> — reserve cedo.</li>
+          <li><strong>Chuva:</strong> tours costumam correr na mesma; leve capa.</li>
+          <li><strong>Cancelado?</strong> Plano B = roteiro DIY do dia (sem tour).</li>
+        </ul>
+      </div>
+
+      <div class="table-scroll" style="margin-top:1rem;">
+        <table class="data guruwalk-table">
+          <thead>
+            <tr><th>Data</th><th>Hora</th><th>Tour</th><th>Encontro / notas</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="#day-2026-11-20">20 nov</a> · Munique</td><td><strong>10:15</strong></td><td><a href="https://www.guruwalk.com/walks/62314" target="_blank" rel="noopener noreferrer"><strong>Explore Munich</strong></a> · Patrick</td><td>Marienplatz / centro — tarde livre Englischer Garten + compras</td></tr>
+            <tr><td><a href="#day-2026-11-23">23 nov</a> · Salzburgo</td><td><strong>11:00</strong></td><td><a href="https://www.guruwalk.com/walks/61281" target="_blank" rel="noopener noreferrer"><strong>Salzburg Highlights</strong></a></td><td>Altstadt</td></tr>
+            <tr><td>23 nov · Salzburgo</td><td><strong>14:00</strong></td><td><a href="https://www.guruwalk.com/walks/47069" target="_blank" rel="noopener noreferrer"><strong>Sound of Music / cidade</strong></a></td><td>Tarde — dormir cedo (ICE amanhã)</td></tr>
+            <tr><td><a href="#day-2026-11-25">25 nov</a> · Viena</td><td><strong>10:15</strong></td><td><a href="https://www.guruwalk.com/walks/36416" target="_blank" rel="noopener noreferrer"><strong>Vienna Old Town</strong></a></td><td>Manhã</td></tr>
+            <tr><td>25 nov · Viena</td><td><strong>14:15</strong></td><td><a href="https://www.guruwalk.com/walks/55482" target="_blank" rel="noopener noreferrer"><strong>Vienna Imperial</strong></a></td><td>Tarde — Schönbrunn DIY se sobrar tempo</td></tr>
+            <tr><td><a href="#day-2026-11-26">26 nov</a> · Viena</td><td><em>~17:30</em></td><td><a href="https://www.guruwalk.com/walks/49487" target="_blank" rel="noopener noreferrer"><strong>Vienna by Night (opcional)</strong></a></td><td>Só se Flix não atrasar · senão pular</td></tr>
+            <tr><td><a href="#day-2026-11-28">28 nov</a> · Budapeste</td><td><strong>10:00</strong></td><td><a href="https://www.guruwalk.com/walks/40704" target="_blank" rel="noopener noreferrer"><strong>Free Essential Budapest</strong></a></td><td>Pest — manhã</td></tr>
+            <tr><td>28 nov · Budapeste</td><td><em>~17:00</em></td><td><a href="https://www.guruwalk.com/walks/42809" target="_blank" rel="noopener noreferrer"><strong>Mysteries of the Danube</strong></a></td><td>Confirmar horário · mín. 6 pessoas · noite <strong>Szimpla / Instant</strong></td></tr>
+            <tr><td><a href="#day-2026-11-29">29 nov</a> · Budapeste</td><td><strong>11:00</strong></td><td><a href="https://www.guruwalk.com/walks/32765" target="_blank" rel="noopener noreferrer"><strong>Jewish Quarter</strong></a></td><td>Domingo — voo Berlim amanhã</td></tr>
+            <tr><td><a href="#day-2026-12-01">1 dez</a> · Berlim</td><td><strong>10:00</strong></td><td><a href="https://www.guruwalk.com/walks/36662" target="_blank" rel="noopener noreferrer"><strong>Berlin Highlights</strong></a></td><td>Mitte</td></tr>
+            <tr><td>1 dez · Berlim</td><td><strong>14:30</strong></td><td><a href="https://www.guruwalk.com/walks/47158" target="_blank" rel="noopener noreferrer"><strong>Berlin Wall &amp; Cold War</strong></a></td><td>Tarde</td></tr>
+            <tr><td><a href="#day-2026-12-02">2 dez</a> · Berlim</td><td><strong>10:00</strong></td><td><a href="https://www.guruwalk.com/walks/52050" target="_blank" rel="noopener noreferrer"><strong>Berlin Alternative</strong></a></td><td>Manhã</td></tr>
+            <tr><td>2 dez · Berlim</td><td><strong>14:00</strong></td><td><a href="https://www.guruwalk.com/walks/46449" target="_blank" rel="noopener noreferrer"><strong>Museum Island (exterior)</strong></a></td><td>Tarde + compras</td></tr>
+            <tr><td><a href="#day-2026-12-03">3 dez</a> · Praga</td><td><strong>18:00</strong></td><td><a href="https://www.guruwalk.com/walks/57909" target="_blank" rel="noopener noreferrer"><strong>Legends &amp; Beer</strong></a></td><td><strong>nám. J. Palacha</strong> / Rudolfinum — guarda-chuvas branco e azul claro</td></tr>
+            <tr><td><a href="#day-2026-12-04">4 dez</a> · Praga</td><td><strong>11:00</strong></td><td><a href="https://www.guruwalk.com/walks/39714" target="_blank" rel="noopener noreferrer"><strong>Prague Castle</strong></a></td><td><strong>Klárov 1</strong> (saída Malostranská) — guarda-chuva vermelho «100»</td></tr>
+            <tr><td>4 dez · Praga</td><td><strong>15:00</strong></td><td><a href="https://www.guruwalk.com/walks/36530" target="_blank" rel="noopener noreferrer"><strong>Old Town &amp; Jewish Quarter</strong></a></td><td><strong>Powder Tower</strong>, Na Příkopě — guarda-chuva vermelho «100»</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note" style="margin-top:1rem;">Bruxelas (6 dez): dia de prep voo — <strong>sem tours</strong> planeados. Links: <a href="https://www.guruwalk.com/brussels" target="_blank" rel="noopener noreferrer">GuruWalk Bruxelas</a> (só se sobrar tempo improvável).</p>
     </section>
 
     <section id="compras" class="block app-panel" data-app-panel="mais">

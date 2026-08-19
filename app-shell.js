@@ -63,7 +63,7 @@
   function whichTabForSectionId(id) {
     if (!id) return null;
     if (id === "resumo" || id === "inicio-hero" || id === "indice-toc") return "inicio";
-    if (id === "dias" || id === "indice-dias" || id.indexOf("day-") === 0) return "roteiro";
+    if (id === "dias" || id === "indice-dias" || id === "guruwalk" || id.indexOf("day-") === 0) return "roteiro";
     if (
       id === "financas" ||
       id === "financas-wise" ||

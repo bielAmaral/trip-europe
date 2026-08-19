@@ -27,6 +27,7 @@ const mustHave = [
   "id=\"operacional-envelope\"",
   "id=\"cambio\"",
   "id=\"operacional\"",
+  "id=\"guruwalk\"",
   "id=\"compras\"",
   "id=\"presentes\"",
   "id=\"tripSearch\"",
