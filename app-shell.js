@@ -79,6 +79,7 @@
     if (
       id === "explorar" ||
       id === "lgbt-bares" ||
+      id === "noite-social" ||
       id === "explorar-calendario-noite" ||
       (id && id.indexOf("explorar-") === 0) ||
       (id && id.indexOf("lgbt-") === 0)
