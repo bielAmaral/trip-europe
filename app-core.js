@@ -635,6 +635,33 @@
     });
   }
 
+  (function initPresentesChecklist() {
+    var root = document.getElementById("presentesChecklist");
+    if (!root) return;
+    var LS = "roteiro-presentes-checklist-v1";
+    var saved = {};
+    try {
+      saved = JSON.parse(localStorage.getItem(LS) || "{}");
+    } catch (e) {
+      saved = {};
+    }
+    root.querySelectorAll('input[type="checkbox"][data-presentes-key]').forEach(function (cb) {
+      var key = cb.getAttribute("data-presentes-key");
+      if (saved[key]) cb.checked = true;
+      cb.addEventListener("change", function () {
+        if (cb.checked) saved[key] = true;
+        else delete saved[key];
+        try {
+          localStorage.setItem(LS, JSON.stringify(saved));
+        } catch (e2) {}
+        var li = cb.closest("li");
+        if (li) li.classList.toggle("is-done", cb.checked);
+      });
+      var li0 = cb.closest("li");
+      if (li0 && cb.checked) li0.classList.add("is-done");
+    });
+  })();
+
   (function initHojeDestaque() {
     var box = document.getElementById("hojeDestaque");
     var line = document.getElementById("hojeDestaqueLine");

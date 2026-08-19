@@ -38,7 +38,7 @@
   </script>
   <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="app.css?v=51" />
+  <link rel="stylesheet" href="app.css?v=52" />
 </head>
 <body class="has-app-ui">
   <div id="devLocalBanner" hidden style="position:fixed;top:0;left:0;right:0;z-index:200;background:#7c3aed;color:#fff;font:600 0.82rem/1.3 system-ui,sans-serif;padding:0.45rem 0.75rem;text-align:center;box-shadow:0 2px 12px rgba(0,0,0,.15);">
@@ -1742,130 +1742,463 @@
       </div>
     </section>
 
-    <section id="presentes" class="block app-panel" data-app-panel="mais">
-      <h2>Presentes — quem, o quê, onde e quando</h2>
-      <p class="lede"><a href="#presentes-mala">Mala</a> · <a href="#presentes-colecao">Canecas + ímans</a> · <a href="#presentes-por-pessoa">Por pessoa</a> · <a href="#presentes-drey">Drey</a> · <a href="#presentes-calendario">Calendário</a> · <a href="#presentes-checklist">Checklist</a> · <a href="#compras">Compras moda</a> · <a href="#explorar-starbucks">Starbucks</a></p>
-      <p class="note" style="margin-top:0.5rem;"><strong>Regra:</strong> <strong>1 presente por pessoa</strong> (exceto <strong>Drey</strong> — kit viagem a escolher; ver <a href="#presentes-drey">opções</a>). <strong>Coleções</strong> à parte: 8 canecas (mãe) + 8 ímans (tu). <strong>Endereços verificados (jul/2026):</strong> link Maps nas lojas fixas. <strong>Ímans</strong> = souvenir no percurso do dia. <strong>Canecas You Are Here</strong> = pedir no balcão Starbucks.</p>
+    <section id="presentes" class="block app-panel presentes-block" data-app-panel="mais">
+      <h2>Presentes  quem, o quê, onde e quando</h2>
 
-      <div class="card" id="presentes-mala">
+      <nav class="presentes-nav" aria-label="Secções de presentes">
+        <a class="presentes-nav__chip" href="#presentes-mala">Mala</a>
+        <a class="presentes-nav__chip" href="#presentes-colecao">Canecas + ímans</a>
+        <a class="presentes-nav__chip" href="#presentes-por-pessoa">Por pessoa</a>
+        <a class="presentes-nav__chip" href="#presentes-drey">Drey</a>
+        <a class="presentes-nav__chip" href="#presentes-calendario">Calendário</a>
+        <a class="presentes-nav__chip" href="#presentes-checklist">Checklist</a>
+        <a class="presentes-nav__chip presentes-nav__chip--alt" href="#compras">Compras moda</a>
+        <a class="presentes-nav__chip presentes-nav__chip--alt" href="#explorar-starbucks">Starbucks</a>
+      </nav>
+
+      <div class="presentes-hero card">
+        <div class="presentes-hero__stats">
+          <div class="presentes-stat">
+            <span class="presentes-stat__value">1×</span>
+            <span class="presentes-stat__label">por pessoa</span>
+          </div>
+          <div class="presentes-stat">
+            <span class="presentes-stat__value">8+8</span>
+            <span class="presentes-stat__label">canecas + ímans</span>
+          </div>
+          <div class="presentes-stat">
+            <span class="presentes-stat__value">~280520</span>
+            <span class="presentes-stat__label">orçamento</span>
+          </div>
+          <div class="presentes-stat presentes-stat--accent">
+            <span class="presentes-stat__value">6 dez</span>
+            <span class="presentes-stat__label">fechar até 17:00</span>
+          </div>
+        </div>
+        <p class="presentes-hero__rule note"><strong>Regra:</strong> 1 presente por pessoa (exceto <strong>Drey</strong>  <a href="#presentes-drey">kit 3 peças</a>). Coleções à parte: 8 canecas (mãe) + 8 ímans (tu). Canecas <em>You Are Here</em> no balcão Starbucks; ímans no percurso do dia. Endereços com Maps verificados (jul/2026).</p>
+      </div>
+
+      <div class="card presentes-card" id="presentes-mala">
         <h3>Tamanho na mala</h3>
-        <p style="margin-top:0;">8 canecas (mãe) + ímans + comida/beleza — planeia espaço desde o início.</p>
-        <div class="table-scroll">
-        <table class="data">
-          <thead><tr><th>Código</th><th>Tamanho</th><th>Exemplos</th><th>Quando comprar</th></tr></thead>
-          <tbody>
-            <tr><td>🟢 <strong>P</strong></td><td>Cabe na palma</td><td>Kiko, íman, Manner, Mozartkugel, Lebkuchen, Ampelmann</td><td>Desde a 1.ª semana</td></tr>
-            <tr><td>🟡 <strong>M</strong></td><td>Caixa média</td><td>Chocolate 250&nbsp;g, Horizont 4-pack, speculoos, Neuhaus 250&nbsp;g</td><td>Semana 2 ou Bruxelas (5 dez)</td></tr>
-            <tr><td>🔴 <strong>G</strong></td><td>Pesado / frágil</td><td><strong>Caneca Starbucks</strong>, Becherovka 0,7&nbsp;L (Drey)</td><td>No dia da cidade; Praga/Bruxelas no carry-on</td></tr>
-            <tr><td>⛔ <strong>XL</strong></td><td>Evitar</td><td>6× garrafas cerveja, Haribo gigante</td><td>—</td></tr>
-          </tbody>
-        </table>
+        <p class="presentes-lead">8 canecas (mãe) + ímans + comida/beleza  planeia espaço desde o início.</p>
+        <div class="presentes-size-legend" role="list">
+          <div class="presentes-size-chip presentes-size-chip--p" role="listitem">
+            <span class="presentes-size-chip__code">P</span>
+            <div>
+              <strong>Cabe na palma</strong>
+              <p>Kiko, íman, Manner, Mozartkugel, Lebkuchen, Ampelmann</p>
+              <span class="presentes-size-chip__when">Desde a 1.ª semana</span>
+            </div>
+          </div>
+          <div class="presentes-size-chip presentes-size-chip--m" role="listitem">
+            <span class="presentes-size-chip__code">M</span>
+            <div>
+              <strong>Caixa média</strong>
+              <p>Chocolate 250&nbsp;g, Horizont 4-pack, speculoos, Neuhaus 250&nbsp;g</p>
+              <span class="presentes-size-chip__when">Semana 2 ou Bruxelas (5 dez)</span>
+            </div>
+          </div>
+          <div class="presentes-size-chip presentes-size-chip--g" role="listitem">
+            <span class="presentes-size-chip__code">G</span>
+            <div>
+              <strong>Pesado / frágil</strong>
+              <p><strong>Caneca Starbucks</strong>, Becherovka 0,7&nbsp;L (Drey)</p>
+              <span class="presentes-size-chip__when">No dia da cidade; Praga/Bruxelas no carry-on</span>
+            </div>
+          </div>
+          <div class="presentes-size-chip presentes-size-chip--xl" role="listitem">
+            <span class="presentes-size-chip__code">XL</span>
+            <div>
+              <strong>Evitar</strong>
+              <p>6× garrafas cerveja, Haribo gigante</p>
+            </div>
+          </div>
         </div>
-        <p class="note" style="margin-bottom:0;"><strong>Canecas (8×):</strong> ~3–3,5&nbsp;kg + volume de 2 sapatos — centro da mala, embrulhadas em roupa; últimas 2 preferir <strong>mão</strong>. <strong>6 dez:</strong> só embalar / Tax Free — sem compras novas. Fechar tudo até <strong>17:00 do dia 6</strong>.</p>
+        <p class="note presentes-note-end"><strong>Canecas (8×):</strong> ~33,5&nbsp;kg + volume de 2 sapatos  centro da mala, embrulhadas em roupa; últimas 2 preferir <strong>mão</strong>. <strong>6 dez:</strong> só embalar / Tax Free  sem compras novas.</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;" id="presentes-colecao">
-        <h3>Coleção — 1 caneca (mãe) + 1 íman (tu) por cidade</h3>
-        <p style="margin-top:0;">Caneca modelo <em>You Are Here</em> — stock varia; pedir no balcão. Íman em loja turística no mesmo percurso do dia. Ver também <a href="#explorar-starbucks">tabela Starbucks</a>.</p>
-        <div class="table-scroll">
-        <table class="data">
-          <thead><tr><th>Cidade</th><th>Dia</th><th>Caneca mãe · Starbucks</th><th>Íman tu · onde</th><th>Dia roteiro</th></tr></thead>
-          <tbody>
-            <tr><td>Munique</td><td><strong>20 nov</strong></td><td>Hbf · Bayerstraße 10A · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Bayerstra%C3%9Fe%2010A%20M%C3%BCnchen" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Marienplatz / Viktualienmarkt</td><td><a href="#day-2026-11-20">#</a></td></tr>
-            <tr><td>Salzburgo</td><td><strong>23 nov</strong></td><td>Forum 1 · Südtiroler Platz 13 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20S%C3%BCdtiroler%20Platz%2013%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Getreidegasse (loop tarde)</td><td><a href="#day-2026-11-23">#</a></td></tr>
-            <tr><td>Viena</td><td><strong>24–25 nov</strong></td><td>Neubaugasse 4 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Neubaugasse%204%20Wien" target="_blank" rel="noopener noreferrer">Maps</a> (alt. Mariahilfer 23–25)</td><td>Stephansplatz / Graben</td><td><a href="#day-2026-11-24">#</a> · <a href="#day-2026-11-25">#</a></td></tr>
-            <tr><td>Bratislava</td><td><strong>26 nov</strong></td><td>Sedlárska 12 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Sedlarska%2012%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Hlavné námestie / Michael’s Gate</td><td><a href="#day-2026-11-26">#</a></td></tr>
-            <tr><td>Budapeste</td><td><strong>28–29 nov</strong></td><td>Astoria · Rákóczi út 1–3 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Astoria%20Budapest" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Great Market Hall (29 nov)</td><td><a href="#day-2026-11-28">#</a> · <a href="#day-2026-11-29">#</a></td></tr>
-            <tr><td>Berlim</td><td><strong>2 dez</strong></td><td>Alexanderplatz 2 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Alexanderplatz%202%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td><td>East Side Gallery / Ampelmann</td><td><a href="#day-2026-12-02">#</a></td></tr>
-            <tr><td>Praga</td><td><strong>4 dez</strong></td><td>I. P. Pavlova · Jugoslávská 5 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Jugoslavska%205%20Prague" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Havelské tržiště / Old Town Sq.</td><td><a href="#day-2026-12-04">#</a></td></tr>
-            <tr><td>Bruxelas</td><td><strong>5 dez</strong></td><td>Rogier · Place Charles Rogier 1 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Place%20Charles%20Rogier%201%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td><td>Grand Place / Galeries Saint-Hubert</td><td><a href="#day-2026-12-05">#</a></td></tr>
-          </tbody>
-        </table>
+      <div class="card presentes-card" id="presentes-colecao">
+        <h3>Coleção  1 caneca (mãe) + 1 íman (tu) por cidade</h3>
+        <p class="presentes-lead">Caneca modelo <em>You Are Here</em>  stock varia; pedir no balcão. Íman em loja turística no mesmo percurso. Ver também <a href="#explorar-starbucks">tabela Starbucks</a>.</p>
+        <div class="presentes-city-grid">
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Munique</h4>
+              <time datetime="2026-11-20">20 nov</time>
+              <a class="presentes-city-card__day" href="#day-2026-11-20">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Hbf · Bayerstraße 10A · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Bayerstra%C3%9Fe%2010A%20M%C3%BCnchen" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Marienplatz / Viktualienmarkt</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Salzburgo</h4>
+              <time datetime="2026-11-23">23 nov</time>
+              <a class="presentes-city-card__day" href="#day-2026-11-23">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Forum 1 · Südtiroler Platz 13 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20S%C3%BCdtiroler%20Platz%2013%20Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Getreidegasse (loop tarde)</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Viena</h4>
+              <time datetime="2026-11-24">2425 nov</time>
+              <a class="presentes-city-card__day" href="#day-2026-11-24">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Neubaugasse 4 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Neubaugasse%204%20Wien" target="_blank" rel="noopener noreferrer">Maps</a> (alt. Mariahilfer 2325)</p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Stephansplatz / Graben</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Bratislava</h4>
+              <time datetime="2026-11-26">26 nov</time>
+              <a class="presentes-city-card__day" href="#day-2026-11-26">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Sedlárska 12 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Sedlarska%2012%20Bratislava" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Hlavné námestie / Michaels Gate</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Budapeste</h4>
+              <time datetime="2026-11-28">2829 nov</time>
+              <a class="presentes-city-card__day" href="#day-2026-11-28">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Astoria · Rákóczi út 13 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Astoria%20Budapest" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Great Market Hall (29 nov)</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Berlim</h4>
+              <time datetime="2026-12-02">2 dez</time>
+              <a class="presentes-city-card__day" href="#day-2026-12-02">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Alexanderplatz 2 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Alexanderplatz%202%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>East Side Gallery / Ampelmann</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Praga</h4>
+              <time datetime="2026-12-04">4 dez</time>
+              <a class="presentes-city-card__day" href="#day-2026-12-04">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>I. P. Pavlova · Jugoslávská 5 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Jugoslavska%205%20Prague" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Havelské trit? / Old Town Sq.</p>
+            </div>
+          </article>
+          <article class="presentes-city-card">
+            <header class="presentes-city-card__head">
+              <h4>Bruxelas</h4>
+              <time datetime="2026-12-05">5 dez</time>
+              <a class="presentes-city-card__day" href="#day-2026-12-05">Dia</a>
+            </header>
+            <div class="presentes-city-card__item presentes-city-card__item--mug">
+              <span class="presentes-city-card__label">Caneca mãe</span>
+              <p>Rogier · Place Charles Rogier 1 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Starbucks%20Place%20Charles%20Rogier%201%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></p>
+            </div>
+            <div class="presentes-city-card__item presentes-city-card__item--magnet">
+              <span class="presentes-city-card__label">Íman tu</span>
+              <p>Grand Place / Galeries Saint-Hubert</p>
+            </div>
+          </article>
         </div>
-        <p class="note" style="margin-bottom:0;"><strong>Neuschwanstein (21 nov):</strong> íman extra opcional na loja do castelo — não há cidade extra no roteiro; caneca de Munique cobre a Baviera.</p>
+        <p class="note presentes-note-end"><strong>Neuschwanstein (21 nov):</strong> íman extra opcional na loja do castelo  caneca de Munique cobre a Baviera.</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;" id="presentes-por-pessoa">
-        <h3>Lista por pessoa — 1 presente cada (exceto Drey)</h3>
-        <div class="table-scroll">
-        <table class="data">
-          <thead><tr><th>Grupo</th><th>Pessoa</th><th>Presente (1×)</th><th>Tam.</th><th>Dia</th><th>Onde comprar</th></tr></thead>
-          <tbody>
-            <tr><td rowspan="4">Amigos</td><td>Amanda</td><td>Fürst Mozartkugel <strong>9 peças</strong> (original)</td><td>🟢</td><td>23 nov</td><td><a href="https://www.original-mozartkugel.com/en/locations/getreidegasse" target="_blank" rel="noopener noreferrer">Fürst</a> · Getreidegasse 47 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Fuerst+Getreidegasse+47+Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Ana Borges</td><td>Manner <strong>8er Geschenkpackung</strong> 600&nbsp;g</td><td>🟢</td><td>24–25 nov</td><td><a href="https://shop.manner.com/schnitten-und-mehr" target="_blank" rel="noopener noreferrer">Manner Shop</a> · Kärntner Str. 53–55 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Manner%20Shop%20Kaerntner%20Strasse%2053-55%20Vienna" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Laura</td><td>Horizont <strong>Taste 4-pack</strong> (cerveja craft)</td><td>🟡</td><td>29 nov</td><td><a href="https://www.horizontbrewing.com/taste-of-horizont-diszdobozban" target="_blank" rel="noopener noreferrer">Horizont</a> ou <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Beerselection+Jozsef+korut+22+Budapest" target="_blank" rel="noopener noreferrer">Beerselection</a></td></tr>
-            <tr><td>Raia</td><td><strong>Studentská pečeť</strong> (chocolate)</td><td>🟢</td><td>4 dez</td><td>Albert / Billa · Praga</td></tr>
-            <tr><td>Namorado</td><td>Drey</td><td><strong>Kit viagem (3 peças) — a escolher</strong></td><td>🟡</td><td>2 + 4 + 5 dez</td><td><a href="#presentes-drey">Ver opções A / B</a></td></tr>
-            <tr><td rowspan="4">Família Drey</td><td>Sogra</td><td>Neuhaus <strong>Amusettes 250&nbsp;g</strong></td><td>🟡</td><td>5 dez</td><td><a href="https://www.neuhauschocolates.com/en_BE/shop/amusettes-sharing-box/5026393.html" target="_blank" rel="noopener noreferrer">Neuhaus</a> · Galerie de la Reine 25–27 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Neuhaus+Galerie+de+la+Reine+25+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Sogro</td><td>Lebkuchen Schmidt <strong>lata Elisen</strong></td><td>🟡</td><td>20 nov</td><td><a href="https://www.lebkuchen-schmidt.com/de/home/" target="_blank" rel="noopener noreferrer">Lebkuchen Schmidt</a> · Westenriederstr. 6 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Lebkuchen+Schmidt+Westenriederstrasse+6+Munich" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Cunhado</td><td>Chaveiro <strong>fragmento do Muro</strong></td><td>🟢</td><td>2 dez</td><td>Loja East Side Gallery · Berlim</td></tr>
-            <tr><td>Esp. cunhado</td><td>Dandoy <strong>lata Speculoos</strong></td><td>🟢</td><td>5 dez</td><td><a href="https://maisondandoy.com/speculoos" target="_blank" rel="noopener noreferrer">Maison Dandoy</a> · Rue au Beurre 31 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Maison+Dandoy+Rue+au+Beurre+31+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td rowspan="4">Minha família</td><td>Mãe</td><td>Marcolini <strong>Plumier</strong> (~12 trufas) · <em>+ coleção</em> <a href="#presentes-colecao">8 canecas</a></td><td>🟡</td><td>5 dez</td><td><a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a> · Galeries de la Reine 21 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Pierre+Marcolini+Galeries+de+la+Reine+21+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Pai</td><td>Livro postais <strong>«Ost-Berlin»</strong> (DDR Museum)</td><td>🟢</td><td>2 dez</td><td><a href="https://onlineshop.ddr-museum.de/en/products/postcard-book-ost-berlin-1" target="_blank" rel="noopener noreferrer">DDR Museum shop</a> · Berlim</td></tr>
-            <tr><td>Irmão</td><td>Camiseta Ampelmann <strong>PRACHTKERL</strong></td><td>🟢</td><td>2 dez</td><td><a href="https://www.ampelmannshop.com/home/alte/t-shirts" target="_blank" rel="noopener noreferrer">AMPELMANN</a> · Unter den Linden 35 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=AMPELMANN%20Unter%20den%20Linden%2035%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Cunhada</td><td>Kiko <strong>Unlimited Blush</strong> (paleta)</td><td>🟢</td><td>2 dez</td><td><a href="https://www.kikocosmetics.com/en-us/c/best-seller/best-seller-makeup/" target="_blank" rel="noopener noreferrer">Kiko</a> · Alexa Grunerstr. 20 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Kiko%20Milano%20Grunerstrasse%2020%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Amigos</td><td>Cau</td><td>Kiko <strong>3D Hydra Lipgloss</strong> (1 cor)</td><td>🟢</td><td>2 dez</td><td>Mesma ida Kiko · Berlim</td></tr>
-            <tr><td>Casal</td><td>Tay + Grossi</td><td>Leonidas ballotin <strong>~250&nbsp;g</strong> (1 caixa)</td><td>🟡</td><td>5 dez</td><td><a href="https://www.leonidas.com/en/shops/bruxelles-brussel/leonidas-barriere-de-st-gilles" target="_blank" rel="noopener noreferrer">Leonidas</a> · Waterloo 153 · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Leonidas%20Chaussee%20de%20Waterloo%20153%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></td></tr>
-            <tr><td>Casal</td><td>Padilha + Lins</td><td>Leonidas ballotin <strong>~250&nbsp;g</strong> (2.ª caixa)</td><td>🟡</td><td>5 dez</td><td>Leonidas · Chaussée de Waterloo 153 · Bruxelas</td></tr>
-            <tr><td>Tu</td><td>Gabriel</td><td><strong>Coleção 8 ímans</strong> (1 por cidade)</td><td>🟢</td><td>Cada cidade</td><td>Ver <a href="#presentes-colecao">coleção ímans</a></td></tr>
-          </tbody>
-        </table>
+      <div class="card presentes-card" id="presentes-por-pessoa">
+        <h3>Lista por pessoa  1 presente cada (exceto Drey)</h3>
+        <div class="presentes-groups">
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Amigos</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Amanda</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Fürst Mozartkugel <strong>9 peças</strong> (original)</p>
+                <footer class="presentes-person-card__foot"><span>23 nov</span><span><a href="https://www.original-mozartkugel.com/en/locations/getreidegasse" target="_blank" rel="noopener noreferrer">Fürst</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Fuerst+Getreidegasse+47+Salzburg" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Ana Borges</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Manner <strong>8er Geschenkpackung</strong> 600&nbsp;g</p>
+                <footer class="presentes-person-card__foot"><span>2425 nov</span><span><a href="https://shop.manner.com/schnitten-und-mehr" target="_blank" rel="noopener noreferrer">Manner</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Manner%20Shop%20Kaerntner%20Strasse%2053-55%20Vienna" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Laura</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Horizont <strong>Taste 4-pack</strong> (cerveja craft)</p>
+                <footer class="presentes-person-card__foot"><span>29 nov</span><span><a href="https://www.horizontbrewing.com/taste-of-horizont-diszdobozban" target="_blank" rel="noopener noreferrer">Horizont</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Beerselection+Jozsef+korut+22+Budapest" target="_blank" rel="noopener noreferrer">Beerselection</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Raia</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift"><strong>Studentská pe?e?</strong> (chocolate)</p>
+                <footer class="presentes-person-card__foot"><span>4 dez</span><span>Albert / Billa · Praga</span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Cau</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Kiko <strong>3D Hydra Lipgloss</strong> (1 cor)</p>
+                <footer class="presentes-person-card__foot"><span>2 dez</span><span>Mesma ida Kiko · Berlim</span></footer>
+              </div>
+            </div>
+          </article>
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Namorado</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card presentes-person-card--highlight" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Drey</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift"><strong>Kit viagem (3 peças)  a escolher</strong></p>
+                <footer class="presentes-person-card__foot"><span>2 + 4 + 5 dez</span><span><a href="#presentes-drey">Opções A / B</a></span></footer>
+              </div>
+            </div>
+          </article>
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Família Drey</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Sogra</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Neuhaus <strong>Amusettes 250&nbsp;g</strong></p>
+                <footer class="presentes-person-card__foot"><span>5 dez</span><span><a href="https://www.neuhauschocolates.com/en_BE/shop/amusettes-sharing-box/5026393.html" target="_blank" rel="noopener noreferrer">Neuhaus</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Neuhaus+Galerie+de+la+Reine+25+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Sogro</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Lebkuchen Schmidt <strong>lata Elisen</strong></p>
+                <footer class="presentes-person-card__foot"><span>20 nov</span><span><a href="https://www.lebkuchen-schmidt.com/de/home/" target="_blank" rel="noopener noreferrer">Lebkuchen</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Lebkuchen+Schmidt+Westenriederstrasse+6+Munich" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Cunhado</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Chaveiro <strong>fragmento do Muro</strong></p>
+                <footer class="presentes-person-card__foot"><span>2 dez</span><span>East Side Gallery · Berlim</span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Esp. cunhado</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Dandoy <strong>lata Speculoos</strong></p>
+                <footer class="presentes-person-card__foot"><span>5 dez</span><span><a href="https://maisondandoy.com/speculoos" target="_blank" rel="noopener noreferrer">Dandoy</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Maison+Dandoy+Rue+au+Beurre+31+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+            </div>
+          </article>
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Minha família</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card presentes-person-card--highlight" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Mãe</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Marcolini <strong>Plumier</strong> (~12 trufas) · <em>+</em> <a href="#presentes-colecao">8 canecas</a></p>
+                <footer class="presentes-person-card__foot"><span>5 dez</span><span><a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Pierre+Marcolini+Galeries+de+la+Reine+21+Brussels" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Pai</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Livro postais <strong>«Ost-Berlin»</strong> (DDR Museum)</p>
+                <footer class="presentes-person-card__foot"><span>2 dez</span><span><a href="https://onlineshop.ddr-museum.de/en/products/postcard-book-ost-berlin-1" target="_blank" rel="noopener noreferrer">DDR shop</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Irmão</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Camiseta Ampelmann <strong>PRACHTKERL</strong></p>
+                <footer class="presentes-person-card__foot"><span>2 dez</span><span><a href="https://www.ampelmannshop.com/home/alte/t-shirts" target="_blank" rel="noopener noreferrer">AMPELMANN</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=AMPELMANN%20Unter%20den%20Linden%2035%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Cunhada</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift">Kiko <strong>Unlimited Blush</strong> (paleta)</p>
+                <footer class="presentes-person-card__foot"><span>2 dez</span><span><a href="https://www.kikocosmetics.com/en-us/c/best-seller/best-seller-makeup/" target="_blank" rel="noopener noreferrer">Kiko</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Kiko%20Milano%20Grunerstrasse%2020%20Berlin" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+            </div>
+          </article>
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Casais</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Tay + Grossi</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Leonidas ballotin <strong>~250&nbsp;g</strong> (1 caixa)</p>
+                <footer class="presentes-person-card__foot"><span>5 dez</span><span><a href="https://www.leonidas.com/en/shops/bruxelles-brussel/leonidas-barriere-de-st-gilles" target="_blank" rel="noopener noreferrer">Leonidas</a> · <a class="btn-maps" href="https://www.google.com/maps/search/?api=1&amp;query=Leonidas%20Chaussee%20de%20Waterloo%20153%20Brussels" target="_blank" rel="noopener noreferrer">Maps</a></span></footer>
+              </div>
+              <div class="presentes-person-card" data-size="m">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Padilha + Lins</span><span class="presentes-badge presentes-badge--m" title="Tamanho M">M</span></header>
+                <p class="presentes-person-card__gift">Leonidas ballotin <strong>~250&nbsp;g</strong> (2.ª caixa)</p>
+                <footer class="presentes-person-card__foot"><span>5 dez</span><span>Leonidas · Waterloo 153</span></footer>
+              </div>
+            </div>
+          </article>
+          <article class="presentes-group">
+            <h4 class="presentes-group__title">Tu</h4>
+            <div class="presentes-person-grid">
+              <div class="presentes-person-card" data-size="p">
+                <header class="presentes-person-card__head"><span class="presentes-person-card__name">Gabriel</span><span class="presentes-badge presentes-badge--p" title="Tamanho P">P</span></header>
+                <p class="presentes-person-card__gift"><strong>Coleção 8 ímans</strong> (1 por cidade)</p>
+                <footer class="presentes-person-card__foot"><span>Cada cidade</span><span><a href="#presentes-colecao">Ver coleção</a></span></footer>
+              </div>
+            </div>
+          </article>
         </div>
-        <p class="note" style="margin-bottom:0;"><strong>Kiko (2 dez):</strong> cunhada = paleta · Cau = gloss (produtos diferentes). <strong>Orçamento presentes:</strong> ~€280–520 (fora moda/Apple · Drey depende da opção).</p>
+        <p class="note presentes-note-end"><strong>Kiko (2 dez):</strong> cunhada = paleta · Cau = gloss (produtos diferentes).</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;" id="presentes-drey">
-        <h3>Drey — kit viagem <span class="muted" style="font-weight:normal;">(a escolher)</span></h3>
-        <p style="margin-top:0;">Única exceção à regra «1 presente por pessoa»: <strong>3 peças</strong> compradas em 3 cidades, com história da viagem. Escolhe <strong>A</strong> ou <strong>B</strong> antes de fechar a mala em Bruxelas.</p>
-        <div class="table-scroll">
-        <table class="data">
-          <thead><tr><th>Peça</th><th>Dia</th><th>Cidade</th><th>Produto</th><th>Link</th></tr></thead>
-          <tbody>
-            <tr><td><strong>1</strong> (fixa)</td><td>2 dez</td><td>Berlim</td><td>Pedacinho do Muro em acrílico (oficial visitBerlin)</td><td><a href="https://shop.visitberlin.de/en/souvenirs/berlin-wall/berliner-mauer-im-acrylbogen.html" target="_blank" rel="noopener noreferrer">visitBerlin</a></td></tr>
-            <tr><td><strong>2</strong> (fixa)</td><td>4 dez</td><td>Praga</td><td>Becherovka Original <strong>0,7&nbsp;L</strong> (Albert/Billa)</td><td><a href="https://bestpragueguide.com/en/blog/prague-souvenirs-what-to-buy" target="_blank" rel="noopener noreferrer">Onde comprar</a></td></tr>
-            <tr><td><strong>3A</strong></td><td>5 dez</td><td>Bruxelas</td><td>Marcolini <strong>Malline</strong> (36 trufas)</td><td><a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a></td></tr>
-            <tr><td><strong>3B</strong></td><td>5 dez</td><td>Bruxelas</td><td>Pack <strong>5 Trappist</strong> belgas (Chimay, Orval, Rochefort, Westmalle, Westvleteren)</td><td><a href="https://www.beerguild.co.uk/news/belgian-trappist-pack-available-at-brussels-airport-brussels-south-charleroi-airport-and-the-brusse" target="_blank" rel="noopener noreferrer">Info pack</a></td></tr>
-          </tbody>
-        </table>
+      <div class="card presentes-card" id="presentes-drey">
+        <h3>Drey  kit viagem <span class="muted presentes-subtitle">(a escolher)</span></h3>
+        <p class="presentes-lead">Única exceção à regra «1 presente por pessoa»: <strong>3 peças</strong> em 3 cidades. Escolhe <strong>A</strong> ou <strong>B</strong> antes de fechar a mala em Bruxelas.</p>
+        <div class="presentes-drey-fixed">
+          <div class="presentes-drey-piece">
+            <span class="presentes-drey-piece__num">1</span>
+            <div>
+              <strong>Berlim · 2 dez</strong>
+              <p>Pedacinho do Muro em acrílico (visitBerlin)</p>
+              <a href="https://shop.visitberlin.de/en/souvenirs/berlin-wall/berliner-mauer-im-acrylbogen.html" target="_blank" rel="noopener noreferrer">visitBerlin</a>
+            </div>
+          </div>
+          <div class="presentes-drey-piece">
+            <span class="presentes-drey-piece__num">2</span>
+            <div>
+              <strong>Praga · 4 dez</strong>
+              <p>Becherovka Original <strong>0,7&nbsp;L</strong> (Albert/Billa)</p>
+              <a href="https://bestpragueguide.com/en/blog/prague-souvenirs-what-to-buy" target="_blank" rel="noopener noreferrer">Onde comprar</a>
+            </div>
+          </div>
         </div>
-        <p class="note" style="margin-bottom:0;"><strong>Opção A</strong> = história + drink + chocolate premium. <strong>Opção B</strong> = história + drink + cerveja belga (se ele curte mais cerveja que chocolate). Peças 1 e 2 são iguais nas duas.</p>
+        <p class="presentes-drey-choice-label">Peça 3  escolhe uma:</p>
+        <div class="presentes-drey-options">
+          <article class="presentes-drey-option">
+            <span class="presentes-drey-option__tag">Opção A</span>
+            <h4>Marcolini Malline</h4>
+            <p>36 trufas · Bruxelas · 5 dez</p>
+            <a href="https://eu.marcolini.com/en/chocolates/chocolate-truffles.html" target="_blank" rel="noopener noreferrer">Marcolini</a>
+          </article>
+          <article class="presentes-drey-option">
+            <span class="presentes-drey-option__tag">Opção B</span>
+            <h4>Pack 5 Trappist</h4>
+            <p>Chimay, Orval, Rochefort, Westmalle, Westvleteren</p>
+            <a href="https://www.beerguild.co.uk/news/belgian-trappist-pack-available-at-brussels-airport-brussels-south-charleroi-airport-and-the-brusse" target="_blank" rel="noopener noreferrer">Info pack</a>
+          </article>
+        </div>
+        <p class="note presentes-note-end"><strong>A</strong> = história + drink + chocolate premium. <strong>B</strong> = história + drink + cerveja belga.</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;" id="presentes-calendario">
+      <div class="card presentes-card" id="presentes-calendario">
         <h3>Calendário de compras por dia</h3>
-        <div class="table-scroll">
-        <table class="data">
-          <thead><tr><th>Dia</th><th>Cidade</th><th>Comprar neste dia</th><th>Zona / lojas</th></tr></thead>
-          <tbody>
-            <tr><td><strong>20 nov</strong></td><td>Munique</td><td>Sogro · caneca mãe · íman tu</td><td>Lebkuchen Schmidt · Viktualienmarkt · Starbucks Hbf</td></tr>
-            <tr><td>23 nov</td><td>Salzburgo</td><td>Amanda · caneca · íman</td><td>Getreidegasse · Fürst · Starbucks Forum 1</td></tr>
-            <tr><td>24–25 nov</td><td>Viena</td><td>Ana Borges · caneca · íman</td><td>Manner Kärntner 53–55 · Graben · Starbucks Neubaugasse</td></tr>
-            <tr><td>26 nov</td><td>Bratislava</td><td>Caneca · íman</td><td>Staré Mesto · Sedlárska · Hlavné námestie</td></tr>
-            <tr><td>29 nov</td><td>Budapeste</td><td>Laura (Horizont 4-pack) · caneca · íman</td><td>Beerselection / Horizont · Starbucks Astoria</td></tr>
-            <tr class="row-highlight"><td><strong>2 dez</strong></td><td>Berlim</td><td>Pai · Irmão · Cunhado · Cunhada · Cau · Drey (peça 1) · caneca · íman</td><td>DDR Museum · East Side · Kiko Alexa · visitBerlin (Muro)</td></tr>
-            <tr><td>4 dez</td><td>Praga</td><td>Raia · Drey (peça 2) · caneca · íman</td><td>Albert/Billa · Havelské · Starbucks Pavlova · <em>carry-on</em></td></tr>
-            <tr class="row-highlight"><td><strong>5 dez</strong></td><td>Bruxelas</td><td>Mãe · Sogra · Esp. cunhado · 2 casais · Drey (peça 3 A ou B) · caneca · íman</td><td>Galeries · Dandoy · Leonidas 153 · Marcolini · Starbucks Rogier</td></tr>
-            <tr><td>6 dez</td><td>Bruxelas</td><td><em>Só pendências</em> 15:00–17:00 · embalar · Tax Free</td><td>Rue Neuve se faltou algo no dia 5</td></tr>
-          </tbody>
-        </table>
-        </div>
-        <p class="note" style="margin-bottom:0;"><strong>Semana 1:</strong> só 🟢 + canecas no dia. <strong>Chocolates belgas:</strong> concentrar no <strong>5 dez</strong> (mala de mão). <strong>Nada 🔴</strong> antes de 4 dez exceto canecas.</p>
+        <ol class="presentes-timeline">
+          <li class="presentes-timeline__item">
+            <time datetime="2026-11-20"><strong>20 nov</strong></time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Munique</span>
+              <p class="presentes-timeline__buy">Sogro · caneca mãe · íman tu</p>
+              <p class="presentes-timeline__where">Lebkuchen Schmidt · Viktualienmarkt · Starbucks Hbf</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item">
+            <time datetime="2026-11-23">23 nov</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Salzburgo</span>
+              <p class="presentes-timeline__buy">Amanda · caneca · íman</p>
+              <p class="presentes-timeline__where">Getreidegasse · Fürst · Starbucks Forum 1</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item">
+            <time datetime="2026-11-24">2425 nov</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Viena</span>
+              <p class="presentes-timeline__buy">Ana Borges · caneca · íman</p>
+              <p class="presentes-timeline__where">Manner Kärntner 5355 · Graben · Starbucks Neubaugasse</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item">
+            <time datetime="2026-11-26">26 nov</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Bratislava</span>
+              <p class="presentes-timeline__buy">Caneca · íman</p>
+              <p class="presentes-timeline__where">Staré Mesto · Sedlárska · Hlavné námestie</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item">
+            <time datetime="2026-11-29">29 nov</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Budapeste</span>
+              <p class="presentes-timeline__buy">Laura (Horizont 4-pack) · caneca · íman</p>
+              <p class="presentes-timeline__where">Beerselection / Horizont · Starbucks Astoria</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item presentes-timeline__item--heavy">
+            <time datetime="2026-12-02"><strong>2 dez</strong></time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Berlim</span>
+              <p class="presentes-timeline__buy">Pai · Irmão · Cunhado · Cunhada · Cau · Drey (1/3) · caneca · íman</p>
+              <p class="presentes-timeline__where">DDR Museum · East Side · Kiko Alexa · visitBerlin</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item">
+            <time datetime="2026-12-04">4 dez</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Praga</span>
+              <p class="presentes-timeline__buy">Raia · Drey (2/3) · caneca · íman</p>
+              <p class="presentes-timeline__where">Albert/Billa · Havelské · Starbucks Pavlova · <em>carry-on</em></p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item presentes-timeline__item--heavy">
+            <time datetime="2026-12-05"><strong>5 dez</strong></time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Bruxelas</span>
+              <p class="presentes-timeline__buy">Mãe · Sogra · Esp. cunhado · 2 casais · Drey (3/3) · caneca · íman</p>
+              <p class="presentes-timeline__where">Galeries · Dandoy · Leonidas 153 · Marcolini · Starbucks Rogier</p>
+            </div>
+          </li>
+          <li class="presentes-timeline__item presentes-timeline__item--pack">
+            <time datetime="2026-12-06">6 dez</time>
+            <div class="presentes-timeline__body">
+              <span class="presentes-timeline__city">Bruxelas</span>
+              <p class="presentes-timeline__buy"><em>Só pendências</em> 15:0017:00 · embalar · Tax Free</p>
+              <p class="presentes-timeline__where">Rue Neuve se faltou algo no dia 5</p>
+            </div>
+          </li>
+        </ol>
+        <p class="note presentes-note-end"><strong>Semana 1:</strong> só P + canecas no dia. <strong>Chocolates belgas:</strong> concentrar no <strong>5 dez</strong> (mala de mão).</p>
       </div>
 
-      <div class="card" style="margin-top:1rem;" id="presentes-checklist">
+      <div class="card presentes-card" id="presentes-checklist">
         <h3>Checklist na viagem</h3>
-        <ul class="checklist-presentes">
-          <li><label><input type="checkbox" disabled /> 20/11 Munique — Sogro · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 23/11 Salzburgo — Amanda · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 24–25/11 Viena — Ana Borges · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 26/11 Bratislava — caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 29/11 Budapeste — Laura (cerveja) · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 02/12 Berlim — Pai · Irmão · Cunhado · Cunhada · Cau · Drey (1/3) · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 04/12 Praga — Raia · Drey (2/3) · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 05/12 Bruxelas — Mãe · Sogra · Esp. cunhado · casais · Drey (3/3 A ou B) · caneca · íman</label></li>
-          <li><label><input type="checkbox" disabled /> 06/12 Bruxelas — fechar até 17:00 · Tax Free · mala</label></li>
+        <ul class="checklist-presentes" id="presentesChecklist">
+          <li><label><input type="checkbox" data-presentes-key="2026-11-20" /> <span>20/11 Munique  Sogro · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-11-23" /> <span>23/11 Salzburgo  Amanda · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-11-24" /> <span>2425/11 Viena  Ana Borges · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-11-26" /> <span>26/11 Bratislava  caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-11-29" /> <span>29/11 Budapeste  Laura (cerveja) · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-12-02" /> <span>02/12 Berlim  Pai · Irmão · Cunhado · Cunhada · Cau · Drey (1/3) · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-12-04" /> <span>04/12 Praga  Raia · Drey (2/3) · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-12-05" /> <span>05/12 Bruxelas  Mãe · Sogra · Esp. cunhado · casais · Drey (3/3) · caneca · íman</span></label></li>
+          <li><label><input type="checkbox" data-presentes-key="2026-12-06" /> <span>06/12 Bruxelas  fechar até 17:00 · Tax Free · mala</span></label></li>
         </ul>
-        <p class="muted" style="margin:0.75rem 0 0;font-size:0.88rem;">Marca no telefone ou imprime — os checkboxes aqui são referência visual (desativados no HTML estático).</p>
+        <p class="muted presentes-checklist-hint">Marca aqui  o estado fica guardado neste browser.</p>
       </div>
     </section>
 
