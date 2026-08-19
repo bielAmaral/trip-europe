@@ -197,6 +197,11 @@
     if (!id || id.indexOf("!") === 0) return;
     var el = document.getElementById(id);
     if (!el) return;
+    var node = el.parentElement;
+    while (node) {
+      if (node.tagName === "DETAILS") node.open = true;
+      node = node.parentElement;
+    }
     el.classList.remove("target-pulse");
     void el.offsetWidth;
     el.classList.add("target-pulse");
