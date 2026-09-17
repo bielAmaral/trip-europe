@@ -179,49 +179,56 @@
         </Point>
       </Placemark>
       <Placemark>
-        <name>03 - Füssen Pulverturm (FlixBus)</name>
-        <description>Transporte — Pulverturmstraße 1, 87629 Füssen, Germany — #day-2026-11-21</description>
+        <name>03 - Füssen Kemptener Str. (Flix ida)</name>
+        <description>Transporte — Kemptener Straße, 87629 Füssen, Germany — #day-2026-11-21</description>
         <Point>
-          <coordinates>10.701389,47.568889,0</coordinates>
+          <coordinates>10.696389,47.569722,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>04 - Schloss Hohenschwangau</name>
+        <name>04 - GuruWalk Füssen (Tourist Info)</name>
+        <description>Tour — Tourist Information Füssen, Kaiser-Max-Straße 1 — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.700556,47.569444,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>05 - Füssen Bahnhof (bus 73/78)</name>
+        <description>Transporte — Füssen station, Bahnhofstraße — #day-2026-11-21</description>
+        <Point>
+          <coordinates>10.686944,47.566944,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>06 - Schloss Hohenschwangau</name>
         <description>Ponto turístico — Schloss Hohenschwangau, Schwangau, Germany — #day-2026-11-21</description>
         <Point>
           <coordinates>10.736111,47.555556,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>05 - Neuschwanstein Castle</name>
+        <name>07 - Neuschwanstein Castle</name>
         <description>Ponto turístico — Neuschwanstein Castle, Schwangau, Germany — #day-2026-11-21</description>
         <Point>
           <coordinates>10.749800,47.557574,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>06 - Marienbrücke</name>
+        <name>08 - Marienbrücke</name>
         <description>Ponto turístico — Marienbrücke, Schwangau, Germany — #day-2026-11-21</description>
         <Point>
           <coordinates>10.741500,47.559000,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>07 - Alpsee (opcional)</name>
-        <description>Ponto turístico — Alpsee, 87645 Schwangau, Germany — #day-2026-11-21</description>
-        <Point>
-          <coordinates>10.736111,47.548611,0</coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>08 - Füssen Pulverturm (volta)</name>
+        <name>09 - Füssen Pulverturm (Flix volta)</name>
         <description>Transporte — Pulverturmstraße 1, 87629 Füssen, Germany — #day-2026-11-21</description>
         <Point>
           <coordinates>10.701389,47.568889,0</coordinates>
         </Point>
       </Placemark>
       <Placemark>
-        <name>09 - München ZOB</name>
+        <name>10 - München ZOB</name>
         <description>Transporte — München ZOB, Munich, Germany — #day-2026-11-21</description>
         <Point>
           <coordinates>11.549617,48.142067,0</coordinates>
@@ -242,7 +249,7 @@
         <styleUrl>#routeWalk2</styleUrl>
         <LineString>
           <tessellate>1</tessellate>
-          <coordinates>10.701389,47.568889,0 10.736111,47.555556,0 10.749800,47.557574,0 10.741500,47.559000,0 10.736111,47.548611,0 10.701389,47.568889,0</coordinates>
+          <coordinates>10.696389,47.569722,0 10.700556,47.569444,0 10.686944,47.566944,0 10.736111,47.555556,0 10.749800,47.557574,0 10.741500,47.559000,0 10.701389,47.568889,0</coordinates>
         </LineString>
       </Placemark>
     </Folder>

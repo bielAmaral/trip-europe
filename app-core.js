@@ -270,15 +270,15 @@
         title: "Budapeste",
         code: "BUD",
         dates: "27–30 nov · 3 noites",
-        hotel: "Medos Hotel",
-        station: "Chegada típica Kelenföld (FlixBus); voo 30 nov 15:40 BUD → BER",
+        hotel: "Budapest Panorama Central",
+        station: "Chegada típica Kelenföld (FlixBus); Astoria ~150 m; voo 30 nov 15:40 BUD → BER",
         poi: [
           "Parlamento, margens, basílica, Ponte das Correntes, Buda ao pôr do sol",
-          "Dia do voo: folga para centro → BUD (ex. 100E)",
+          "Maverick Soho ~6 min; dia do voo: Spar Astoria + 100E → BUD",
         ],
         mapsUrl:
-          "https://www.google.com/maps/search/?api=1&query=Medos%20Hotel%20R%C3%A1k%C3%B3czi%20%C3%BAt%2040%20Budapest",
-        copyAddr: "Medos Hotel, Rákóczi út 40, 1072 Budapest, Hungary",
+          "https://www.google.com/maps/search/?api=1&query=Budapest%20Panorama%20Central%20K%C3%A1roly%20k%C3%B6r%C3%BAt%2010%20Budapest",
+        copyAddr: "Budapest Panorama Central, Károly körút 10, 1052 Budapest, Hungary",
         anchor: "#city-bud",
       },
       ber: {
