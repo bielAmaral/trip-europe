@@ -46,7 +46,8 @@
   function scrollToFastPlan(target) {
     if (!target) return;
     var anchor =
-      target.querySelector(".fast-plan__badge--maps") ||
+      target.querySelector(".fast-plan__schedule-label") ||
+      target.querySelector(".fast-plan-table") ||
       target.querySelector(".fast-plan");
     var main = document.getElementById("appMain");
     var reduce =
@@ -101,7 +102,9 @@
       } else if (window.roteiroRefreshDayTransport) {
         window.roteiroRefreshDayTransport(target.id);
       }
-      target.querySelectorAll("details.transit-collapse").forEach(function (tc) {
+      target.querySelectorAll(
+        "details.transit-collapse:not(.fast-plan__mapa-detail)"
+      ).forEach(function (tc) {
         tc.open = true;
       });
     }

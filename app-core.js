@@ -213,11 +213,11 @@
         code: "MUC",
         dates: "19–22 nov · 3 noites",
         hotel: "B&B Hotel München-Hbf",
-        station: "München Hbf; ZOB para FlixBus (Füssen / Salzburgo)",
+        station: "München Hbf; ZOB para FlixBus (Füssen 21 nov)",
         poi: [
           "Centro: Marienplatz, Viktualienmarkt, Englischer Garten",
-          "21 nov: Neuschwanstein (FlixBus ZOB 08:30–19:25 ou RE+Füssen)",
-          "Seg.: FlixBus para Salzburgo (22 nov ~13:45 do ZOB)",
+          "21 nov: Neuschwanstein (Flix ZOB 08:00/16:00 · €21,14 Wise)",
+          "22 nov: DB ICE 12:09 Hbf → Salzburg Hbf (XP)",
         ],
         mapsUrl:
           "https://www.google.com/maps/search/?api=1&query=B%26B%20Hotel%20M%C3%BCnchen-Hbf%20Arnulfstra%C3%9Fe%2030%20M%C3%BCnchen",
@@ -232,8 +232,8 @@
         station: "Salzburg Hbf",
         poi: [
           "Altstadt, Festung Hohensalzburg, rio Salzach",
-          "Chegada típica FlixBus P+R Süd (~15:45) no 22 nov",
-          "Seg.: ÖBB ICE 10:00 → Wien Hbf (24 nov)",
+          "Chegada DB ICE ~14:10 no Hbf (22 nov 12:09)",
+          "24 nov: ÖBB RJX 63 11:07 → Wien Hbf (Wise)",
         ],
         mapsUrl:
           "https://www.google.com/maps/search/?api=1&query=Atel%20Hotel%20Lasserhof%20Lasserstra%C3%9Fe%2047%20Salzburg",
@@ -260,7 +260,7 @@
         dates: "26–27 nov · 1 noite",
         hotel: "Danubia Gate Hotel",
         station: "Most SNP (FlixBus Omio) ou hl.st. — confira o bilhete",
-        poi: ["Castelo, Staré Mesto", "Seg.: FlixBus Mlynské Nivy ~10:50 → Budapeste Kelenföld (27 nov)"],
+        poi: ["Castelo, Staré Mesto", "27 nov: Flix Nivy → Kelenföld ~10:50 (Wise €21,23)"],
         mapsUrl:
           "https://www.google.com/maps/search/?api=1&query=Danubia%20Gate%20Hotel%20Dunajsk%C3%A1%2026%20Bratislava",
         copyAddr: "Danubia Gate Hotel, Dunajská 26, 811 01 Bratislava, Slovakia",
@@ -271,7 +271,7 @@
         code: "BUD",
         dates: "27–30 nov · 3 noites",
         hotel: "Budapest Panorama Central",
-        station: "Chegada típica Kelenföld (FlixBus); Astoria ~150 m; voo 30 nov 15:40 BUD → BER",
+        station: "Chegada Kelenföld (Flix 27 nov); Astoria ~150 m; voo 30 nov 11:25 BUD → BER",
         poi: [
           "Parlamento, margens, basílica, Ponte das Correntes, Buda ao pôr do sol",
           "Maverick Soho ~6 min; dia do voo: Spar Astoria + 100E → BUD",
@@ -314,15 +314,15 @@
         title: "Bruxelas",
         code: "BRU",
         dates: "5–7 dez · 2 noites",
-        hotel: "Hotel des Colonies Brussels by Mercure (Rogier)",
+        hotel: "Mercure Brussels Centre Rogier",
         station: "Rogier / Bruxelles-Nord; chegada 5 dez via CRL (Flibco → Midi); voo 7 dez BRU",
         poi: [
           "Grand Place (5 dez); 6 dez descanso + prep voo em Bruxelas",
           "Seg.: voo BRU → Brasil (7 dez)",
         ],
         mapsUrl:
-          "https://www.google.com/maps/search/?api=1&query=Hotel%20des%20Colonies%20Brussels%20Rue%20des%20Croisades%206",
-        copyAddr: "Hotel des Colonies Brussels by Mercure, Rue des Croisades 6, 1210 Saint-Josse-ten-Noode, Belgium",
+          "https://www.google.com/maps/search/?api=1&query=Mercure%20Brussels%20Centre%20Rogier",
+        copyAddr: "Mercure Brussels Centre Rogier, Rue des Croisades 6, 1210 Saint-Josse-ten-Noode, Belgium",
         anchor: "#city-bru",
       },
     };

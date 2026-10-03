@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var CSV_URL = "data/mapas-paradas.csv?v=36";
+  var CSV_URL = "data/mapas-paradas.csv?v=37";
 
   var daysById = {};
 
@@ -128,6 +128,119 @@
     return "mapas-stop--" + (cat || "sight");
   }
 
+  var CAT_DO_FALLBACK = {
+    airport: "Aeroporto: imigração, bagagem e seguir para o transporte do dia.",
+    hotel: "Hotel: check-in ou check-out, deixar mala, banho rápido se precisar.",
+    transport: "Deslocação — confira horário no bilhete / app Omio.",
+    sight: "Passear e fotos; detalhe no plano por horário acima.",
+    food: "Comer ou comprar algo para o kit / jantar.",
+    night: "Bar ou zona de noite — 1 drink e dormir se amanhã tiver trem cedo.",
+    tour: "Tour / visita — gorjeta em cash se for gratuito.",
+  };
+
+  function extractFastPlanContext(plan) {
+    if (!plan) return { mode: "", rows: [], feet: [] };
+    var modeEl = plan.querySelector(".fast-plan__mode");
+    var rows = [];
+    plan.querySelectorAll(".fast-plan-table tbody tr").forEach(function (tr) {
+      var when = tr.querySelector(".fast-plan__when");
+      var cells = tr.querySelectorAll("td");
+      var whatCell = cells.length > 1 ? cells[cells.length - 1] : null;
+      if (when && whatCell) {
+        rows.push({
+          when: when.textContent.trim(),
+          what: whatCell.textContent.trim(),
+        });
+      }
+    });
+    var feet = [];
+    plan.querySelectorAll(".fast-plan__foot").forEach(function (p) {
+      feet.push(p.textContent.trim());
+    });
+    return {
+      mode: modeEl ? modeEl.textContent.trim() : "",
+      rows: rows,
+      feet: feet,
+    };
+  }
+
+  function stopKeywords(namePt) {
+    var base = String(namePt || "")
+      .split("(")[0]
+      .split("—")[0]
+      .trim()
+      .toLowerCase();
+    var parts = base.split(/[\s,/·]+/).filter(function (w) {
+      return w.length > 3;
+    });
+    return [base].concat(parts);
+  }
+
+  function matchStopActivity(stop, fastRows) {
+    if (stop.do_here_pt) return stop.do_here_pt;
+    var keys = stopKeywords(stop.name_pt);
+    var i;
+    for (i = 0; i < fastRows.length; i++) {
+      var whatLow = fastRows[i].what.toLowerCase();
+      var j;
+      for (j = 0; j < keys.length; j++) {
+        if (keys[j].length >= 4 && whatLow.indexOf(keys[j]) >= 0) {
+          return fastRows[i].when + " — " + fastRows[i].what;
+        }
+      }
+    }
+    if (stop.category === "transport" && stop.leg_hint) {
+      return "Ir para " + stop.name_pt + ": " + stop.leg_hint;
+    }
+    return CAT_DO_FALLBACK[stop.category] || "";
+  }
+
+  function buildMapasDayIntro(fastCtx) {
+    var wrap = document.createElement("div");
+    wrap.className = "mapas-day-intro";
+
+    if (fastCtx.mode) {
+      var obj = document.createElement("p");
+      obj.className = "mapas-day-intro__objective";
+      obj.innerHTML =
+        "<strong>Hoje:</strong> " + escapeHtml(fastCtx.mode);
+      wrap.appendChild(obj);
+    }
+
+    if (fastCtx.rows.length) {
+      var title = document.createElement("p");
+      title.className = "mapas-day-intro__label";
+      title.textContent = "Plano por horário (resumo)";
+      wrap.appendChild(title);
+
+      var ol = document.createElement("ol");
+      ol.className = "mapas-day-intro__schedule";
+      fastCtx.rows.forEach(function (r) {
+        var li = document.createElement("li");
+        li.innerHTML =
+          "<span class=\"mapas-day-intro__when\">" +
+          escapeHtml(r.when) +
+          "</span> " +
+          escapeHtml(r.what);
+        ol.appendChild(li);
+      });
+      wrap.appendChild(ol);
+    }
+
+    if (fastCtx.feet.length) {
+      var feet = document.createElement("ul");
+      feet.className = "mapas-day-intro__feet";
+      fastCtx.feet.forEach(function (t) {
+        var li = document.createElement("li");
+        li.textContent = t;
+        feet.appendChild(li);
+      });
+      wrap.appendChild(feet);
+    }
+
+    return wrap;
+  }
+
   function legDetailText(leg, fromName, toName) {
     if (!leg || !leg.leg_mode) return "";
     var mode = leg.leg_mode_pt || leg.leg_mode;
@@ -183,7 +296,7 @@
     return li;
   }
 
-  function renderStop(s, compact) {
+  function renderStop(s, compact, activityText) {
     var li = document.createElement("li");
     li.className =
       "mapas-stop " + catClass(s.category) + (compact ? " mapas-stop--compact" : "");
@@ -205,6 +318,13 @@
     name.textContent = s.name_pt;
     li.appendChild(name);
 
+    if (activityText) {
+      var doHere = document.createElement("span");
+      doHere.className = "mapas-stop__do";
+      doHere.textContent = activityText;
+      li.appendChild(doHere);
+    }
+
     var link = document.createElement("a");
     link.className = compact ? "mapas-inline-link" : "mapas-stop__maps btn-maps";
     link.href = s.maps_search_url;
@@ -217,7 +337,7 @@
     return li;
   }
 
-  function buildStopListOl(day, listClass) {
+  function buildStopListOl(day, listClass, fastRows) {
     var compact = listClass && listClass.indexOf("--dia") >= 0;
     var ol = document.createElement("ol");
     ol.className = listClass || "mapas-stop-list";
@@ -228,7 +348,8 @@
         var legEl = renderLeg(s, prev, s, compact);
         if (legEl) ol.appendChild(legEl);
       }
-      ol.appendChild(renderStop(s, compact));
+      var activity = compact ? matchStopActivity(s, fastRows || []) : "";
+      ol.appendChild(renderStop(s, compact, activity));
       prev = s;
     });
 
@@ -268,16 +389,27 @@
     return routeA;
   }
 
-  function buildFastPlanMapDetails(day) {
+  function buildFastPlanMapDetails(day, plan) {
+    var fastCtx = extractFastPlanContext(plan);
     var det = document.createElement("details");
     det.className = "transit-collapse fast-plan__mapa-detail";
     det.id = "mapa-paradas-" + day.day_id;
     var sum = document.createElement("summary");
-    sum.textContent = "Paradas no Maps (" + day.stops.length + ")";
+    sum.textContent =
+      "Passo a passo no mapa — o que fazer em cada lugar (" +
+      day.stops.length +
+      ")";
     det.appendChild(sum);
     var inner = document.createElement("div");
     inner.className = "transit transit--nested fast-plan__mapa-detail-body";
-    inner.appendChild(buildStopListOl(day, "mapas-stop-list mapas-stop-list--dia"));
+    inner.appendChild(buildMapasDayIntro(fastCtx));
+    var stepsLabel = document.createElement("p");
+    stepsLabel.className = "mapas-day-intro__label mapas-day-intro__label--steps";
+    stepsLabel.textContent = "Ordem das paradas (como chegar entre elas)";
+    inner.appendChild(stepsLabel);
+    inner.appendChild(
+      buildStopListOl(day, "mapas-stop-list mapas-stop-list--dia", fastCtx.rows)
+    );
     det.appendChild(inner);
     return det;
   }
@@ -288,7 +420,7 @@
     if (!tableWrap) return;
     var schedLabel = document.createElement("p");
     schedLabel.className = "fast-plan__schedule-label";
-    schedLabel.textContent = "Resumo por horário";
+    schedLabel.textContent = "Plano do dia — comece por aqui (horários)";
     tableWrap.insertAdjacentElement("beforebegin", schedLabel);
   }
 
@@ -303,22 +435,25 @@
 
     var meta = plan.querySelector(".fast-plan__meta");
     var mapLink = buildFastPlanMapLink(day);
-    var details = buildFastPlanMapDetails(day);
+    var details = buildFastPlanMapDetails(day, plan);
 
     if (meta && mapLink) {
       meta.appendChild(mapLink);
     }
 
-    var body = dayEl.querySelector(".body");
-    var transit =
-      body && body.querySelector("details.transit-collapse:not(.fast-plan__mapa-detail)");
-    if (transit && transit.parentNode) {
-      transit.parentNode.insertBefore(details, transit);
-    } else {
-      plan.appendChild(details);
-    }
-
     ensureScheduleLabel(plan);
+
+    var foot = plan.querySelector(".fast-plan__foot");
+    if (foot && foot.parentNode) {
+      foot.parentNode.insertBefore(details, foot);
+    } else {
+      var tableWrap = plan.querySelector(".fast-plan__table-wrap");
+      if (tableWrap && tableWrap.nextSibling) {
+        tableWrap.parentNode.insertBefore(details, tableWrap.nextSibling);
+      } else {
+        plan.appendChild(details);
+      }
+    }
   }
 
   function renderMapasSection(days) {
