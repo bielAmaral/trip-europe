@@ -78,8 +78,8 @@
         <h1>Europa Central · 18 noites</h1>
         <p class="sub">Exploração urbana, caminhadas, mercados e gastronomia acessível. <strong>Hotéis confirmados no Booking.com</strong> em cada cidade (ver seção <a href="#hoteis">Hotéis confirmados</a>).</p>
         <div class="meta-row">
-          <span class="pill">Ida · 18 nov 2026 (GRU)</span>
-          <span class="pill">Chegada Munique · 19 nov ~11h30</span>
+          <span class="pill">Ida · 18 nov 2026 (JFK)</span>
+          <span class="pill">Chegada Munique · 19 nov ~13h30</span>
           <span class="pill">Regresso · 7 dez 2026 · BRU 07h00</span>
         </div>
       </div>
@@ -336,7 +336,7 @@
             <text x="100" y="132" text-anchor="middle" font-size="10" fill="var(--map-muted)">Bruxelas</text>
           </g>
 
-          <text x="460" y="478" text-anchor="middle" font-size="10" fill="var(--map-muted)">GRU→MUC, BUD→BER (detalhe no texto) e BRU→GRU: longos cursos / voos fora da escala deste desenho.</text>
+          <text x="460" y="478" text-anchor="middle" font-size="10" fill="var(--map-muted)">JFK→MUC, BUD→BER (detalhe no texto) e BRU→GRU: longos cursos / voos fora da escala deste desenho.</text>
         </svg>
       </div>
       <aside class="map-city-panel" id="mapCityPanel" aria-live="polite">
@@ -408,24 +408,18 @@
 
 
     <section id="voos" class="block app-panel" data-app-panel="mais">
-      <h2>Voos intercontinentais (Iberia)</h2>
+      <h2>Voos intercontinentais (ida KLM · volta Iberia)</h2>
       <div class="table-scroll">
       <table class="data">
         <thead>
           <tr><th>Trecho</th><th>Partida</th><th>Chegada</th><th>Notas</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>IB0268 · GRU → MAD</td>
-            <td>18 nov · 15h10</td>
-            <td>19 nov · 05h30</td>
-            <td>Conexão em Madrid até o voo seguinte.</td>
-          </tr>
-          <tr>
-            <td>IB1309 · MAD → MUC</td>
-            <td>19 nov · 08h50</td>
-            <td>19 nov · 11h30</td>
-            <td>Operado por YW. Primeiro contacto com Munique à tarde.</td>
+          <tr class="omio-paid">
+            <td><strong>KL 644</strong> · JFK → AMS · <strong>KL 1853</strong> · AMS → MUC</td>
+            <td>18 nov · <strong>21h20</strong></td>
+            <td>19 nov · <strong>13h30</strong></td>
+            <td><span class="dt dt-paid">Reservado</span> FLEX · loc. <strong>EQZEWL</strong> · <strong>R$ 4.359,12</strong> (ARGO) · conexão AMS ~1h35 · mão + despacho.</td>
           </tr>
           <tr>
             <td>IB0604 · BRU → MAD</td>
@@ -453,6 +447,15 @@
           <li>Bateria + powerbank; último bilhete urbano validado antes do aeroporto</li>
           <li>Chegar <strong>~2h antes</strong> da partida; trânsito até o aeroporto com folga</li>
           <li>Após pouso: rota até hotel no app da cidade (BVG, PID, SNCB/STIB…)</li>
+        </ul>
+      </details>
+      <details class="card" id="voos-checklist-ida">
+        <summary>Checklist · ida intercontinental (18 nov · JFK)</summary>
+        <ul>
+          <li><strong>18 nov:</strong> chegar <strong>JFK</strong> com folga (meta ~2h antes) · terminal no bilhete KLM</li>
+          <li>App <strong>KLM</strong> + boarding offline · loc. <strong>EQZEWL</strong></li>
+          <li><strong>AMS:</strong> mesma reserva · ~1h35 entre pernas · seguir placas <em>Transfers</em></li>
+          <li><strong>19 nov ~13h30 MUC:</strong> S-Bahn → Hbf → hotel (ver <a href="#day-2026-11-19">dia 19</a>)</li>
         </ul>
       </details>
       <details class="card" id="voos-checklist-intercontinental">
@@ -577,7 +580,8 @@
         </ul>
         <h3 style="margin-top:1rem;">Companhias aéreas</h3>
         <ul>
-          <li><strong>Iberia</strong> — telefone e chat no site / app na sua reserva (trechos GRU–MUC e BRU–GRU).</li>
+          <li><strong>KLM</strong> — ida <strong>JFK → MUC</strong> (loc. <strong>EQZEWL</strong>) · app + chat no site.</li>
+          <li><strong>Iberia</strong> — volta <strong>BRU → GRU</strong> (7 dez) · app + boarding offline.</li>
           <li><strong>Ryanair / Wizz</strong> — gestão de reserva e suporte sobretudo pela <strong>app</strong> ou site da companhia.</li>
         </ul>
       </div>
@@ -660,15 +664,15 @@
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€70</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      <span class="fast-plan__mode">Chegada ~11h30 · sem saída 09:00</span>
+      <span class="fast-plan__mode">Chegada ~13h30 (KLM) · sem saída 09:00</span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
           <tbody>
-              <tr><td class="fast-plan__when">11:30–14:00</td><td>MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem</td></tr>
-              <tr><td class="fast-plan__when">14:00–17:00</td><td><strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)</td></tr>
+              <tr><td class="fast-plan__when">13:30–16:00</td><td>MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem</td></tr>
+              <tr><td class="fast-plan__when">16:00–18:30</td><td><strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)</td></tr>
+              <tr><td class="fast-plan__when">18:30–21:00</td><td>Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)</td></tr>
           </tbody>
         </table>
         </div>
@@ -1964,7 +1968,7 @@
           <li><a href="#hoteis">Hotéis Booking</a> offline</li>
           <li>Neuschwanstein: bilhete castelo (slot ~13h) · Flix Omio 08:00/16:00 · <a href="#guruwalk">GuruWalk Füssen</a> + cash gorjeta</li>
           <li><a href="#presentes">Presentes</a> — lista e calendário por dia</li>
-          <li><a href="#emergencia">Seguro</a> · SOS · Iberia offline</li>
+          <li><a href="#emergencia">Seguro</a> · SOS · KLM + Iberia offline</li>
           <li>Adaptador Schuko · roupa quente nov–dez</li>
         </ul>
       </div>

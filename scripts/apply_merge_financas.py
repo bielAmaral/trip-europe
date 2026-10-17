@@ -39,7 +39,7 @@ FINANCAS = """    <section id="financas" class="block app-panel" data-app-panel=
       <div class="card" style="margin-top:1rem;">
         <h3 id="financas-sobra">Sobra de bolso (após hotéis e Omio)</h3>
         <p style="margin-top:0;"><strong>26.699,80</strong> − <strong>11.423</strong> (hotéis) − <strong>2.279,10</strong> (Omio) = <strong>12.997,70 R$</strong> → <strong>~2.203 €</strong>, alinhado ao envelope <strong>€2.000</strong> (margem ~€200 taxa Wise).</p>
-        <p class="note" style="margin-bottom:0;">Voos GRU–MUC / BRU–GRU fora desta conta. PRG→BRU já inclui Zaventem (sem Flibco CRL).</p>
+        <p class="note" style="margin-bottom:0;">Voos JFK–MUC / BRU–GRU fora desta conta. PRG→BRU já inclui Zaventem (sem Flibco CRL).</p>
       </div>
 
       <div class="card oper-envelope" id="operacional-envelope">

@@ -61,11 +61,11 @@ PLANS = {
     "day-2026-11-19": dict(
         budget=70,
         energy="leve",
-        mode="Chegada ~11h30 · sem saída 09:00",
+        mode="Chegada ~13h30 (KLM) · sem saída 09:00",
         rows=[
-            ("11:30–14:00", "MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem"),
-            ("14:00–17:00", "<strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)"),
-            ("17:00–21:00", "Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)"),
+            ("13:30–16:00", "MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem"),
+            ("16:00–18:30", "<strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)"),
+            ("18:30–21:00", "Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)"),
         ],
         cut="Karlsplatz",
         night="Evitar — jet lag",

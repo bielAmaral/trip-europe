@@ -31,3 +31,11 @@ Gera `.pdf` + `.html` (intermédio) ao lado do `.txt`. Requer Google Chrome (mac
 | IA ainda menciona Bruges ou dia 6 vazio | mestre + `roteiro-europa-2026-prompt-atualizacoes.pdf` |
 
 Fonte canónica do site: `../index.html`.
+
+## Mindtrip (export para IA)
+
+```bash
+python3 scripts/generate_mindtrip_from_index.py
+```
+
+Gera `mindtrip-complete.{md,html,pdf}` (+ part1/part2). Exportações antigas `mindtrip-full` / `mindtrip-part1` estão em `arquivo/` (desatualizadas).

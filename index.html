@@ -78,8 +78,8 @@
         <h1>Europa Central · 18 noites</h1>
         <p class="sub">Exploração urbana, caminhadas, mercados e gastronomia acessível. <strong>Hotéis confirmados no Booking.com</strong> em cada cidade (ver seção <a href="#hoteis">Hotéis confirmados</a>).</p>
         <div class="meta-row">
-          <span class="pill">Ida · 18 nov 2026 (GRU)</span>
-          <span class="pill">Chegada Munique · 19 nov ~11h30</span>
+          <span class="pill">Ida · 18 nov 2026 (JFK)</span>
+          <span class="pill">Chegada Munique · 19 nov ~13h30</span>
           <span class="pill">Regresso · 7 dez 2026 · BRU 07h00</span>
         </div>
       </div>
@@ -100,7 +100,7 @@
           <h3 class="toc-visual__label">Roteiro</h3>
           <div class="toc-chip-grid">
             <a class="toc-chip" href="#dias">Dias <span class="toc-chip__sub">19 dias</span></a>
-            <a class="toc-chip toc-chip--tour" href="#guruwalk">GuruWalk <span class="toc-chip__sub">17 tours</span></a>
+            <a class="toc-chip toc-chip--tour" href="#guruwalk">GuruWalk <span class="toc-chip__sub">16 ativos</span></a>
             <a class="toc-chip" href="#mapa">Mapa</a>
             <a class="toc-chip" href="#mapas">GPS</a>
         </div>
@@ -336,7 +336,7 @@
             <text x="100" y="132" text-anchor="middle" font-size="10" fill="var(--map-muted)">Bruxelas</text>
           </g>
 
-          <text x="460" y="478" text-anchor="middle" font-size="10" fill="var(--map-muted)">GRU→MUC, BUD→BER (detalhe no texto) e BRU→GRU: longos cursos / voos fora da escala deste desenho.</text>
+          <text x="460" y="478" text-anchor="middle" font-size="10" fill="var(--map-muted)">JFK→MUC, BUD→BER (detalhe no texto) e BRU→GRU: longos cursos / voos fora da escala deste desenho.</text>
         </svg>
       </div>
       <aside class="map-city-panel" id="mapCityPanel" aria-live="polite">
@@ -408,24 +408,18 @@
 
 
     <section id="voos" class="block app-panel" data-app-panel="mais">
-      <h2>Voos intercontinentais (Iberia)</h2>
+      <h2>Voos intercontinentais (ida KLM · volta Iberia)</h2>
       <div class="table-scroll">
       <table class="data">
         <thead>
           <tr><th>Trecho</th><th>Partida</th><th>Chegada</th><th>Notas</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>IB0268 · GRU → MAD</td>
-            <td>18 nov · 15h10</td>
-            <td>19 nov · 05h30</td>
-            <td>Conexão em Madrid até o voo seguinte.</td>
-          </tr>
-          <tr>
-            <td>IB1309 · MAD → MUC</td>
-            <td>19 nov · 08h50</td>
-            <td>19 nov · 11h30</td>
-            <td>Operado por YW. Primeiro contacto com Munique à tarde.</td>
+          <tr class="omio-paid">
+            <td><strong>KL 644</strong> · JFK → AMS · <strong>KL 1853</strong> · AMS → MUC</td>
+            <td>18 nov · <strong>21h20</strong></td>
+            <td>19 nov · <strong>13h30</strong></td>
+            <td><span class="dt dt-paid">Reservado</span> FLEX · loc. <strong>EQZEWL</strong> · <strong>R$ 4.359,12</strong> (ARGO) · conexão AMS ~1h35 · mão + despacho.</td>
           </tr>
           <tr>
             <td>IB0604 · BRU → MAD</td>
@@ -453,6 +447,15 @@
           <li>Bateria + powerbank; último bilhete urbano validado antes do aeroporto</li>
           <li>Chegar <strong>~2h antes</strong> da partida; trânsito até o aeroporto com folga</li>
           <li>Após pouso: rota até hotel no app da cidade (BVG, PID, SNCB/STIB…)</li>
+        </ul>
+      </details>
+      <details class="card" id="voos-checklist-ida">
+        <summary>Checklist · ida intercontinental (18 nov · JFK)</summary>
+        <ul>
+          <li><strong>18 nov:</strong> chegar <strong>JFK</strong> com folga (meta ~2h antes) · terminal no bilhete KLM</li>
+          <li>App <strong>KLM</strong> + boarding offline · loc. <strong>EQZEWL</strong></li>
+          <li><strong>AMS:</strong> mesma reserva · ~1h35 entre pernas · seguir placas <em>Transfers</em></li>
+          <li><strong>19 nov ~13h30 MUC:</strong> S-Bahn → Hbf → hotel (ver <a href="#day-2026-11-19">dia 19</a>)</li>
         </ul>
       </details>
       <details class="card" id="voos-checklist-intercontinental">
@@ -577,7 +580,8 @@
         </ul>
         <h3 style="margin-top:1rem;">Companhias aéreas</h3>
         <ul>
-          <li><strong>Iberia</strong> — telefone e chat no site / app na sua reserva (trechos GRU–MUC e BRU–GRU).</li>
+          <li><strong>KLM</strong> — ida <strong>JFK → MUC</strong> (loc. <strong>EQZEWL</strong>) · app + chat no site.</li>
+          <li><strong>Iberia</strong> — volta <strong>BRU → GRU</strong> (7 dez) · app + boarding offline.</li>
           <li><strong>Ryanair / Wizz</strong> — gestão de reserva e suporte sobretudo pela <strong>app</strong> ou site da companhia.</li>
         </ul>
       </div>
@@ -660,15 +664,15 @@
       <span class="fast-plan__badge fast-plan__badge--budget">Teto <strong>€70</strong></span>
       <span class="fast-plan__badge fast-plan__badge--energy"><span class="oper-energy oper-energy--low">leve</span></span>
       <span class="fast-plan__badge fast-plan__badge--style">FAST · exterior · 09:00–21:00</span>
-      <span class="fast-plan__mode">Chegada ~11h30 · sem saída 09:00</span>
+      <span class="fast-plan__mode">Chegada ~13h30 (KLM) · sem saída 09:00</span>
     </div>
             <div class="table-scroll fast-plan__table-wrap">
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
           <tbody>
-              <tr><td class="fast-plan__when">11:30–14:00</td><td>MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem</td></tr>
-              <tr><td class="fast-plan__when">14:00–17:00</td><td><strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)</td></tr>
+              <tr><td class="fast-plan__when">13:30–16:00</td><td>MUC → <strong>S8/S1 → Hbf</strong> (~40 min) → hotel check-in / bagagem</td></tr>
+              <tr><td class="fast-plan__when">16:00–18:30</td><td><strong>Marienplatz</strong> → <strong>Neues Rathaus</strong> (fachada) → <strong>Frauenkirche</strong> (exterior) → <strong>Viktualienmarkt</strong> (snack)</td></tr>
+              <tr><td class="fast-plan__when">18:30–21:00</td><td>Pé <strong>Karlsplatz</strong> ou volta hotel · jantar <strong>REWE/McDonald’s Hbf</strong> · <strong>dormir cedo</strong> (jet lag)</td></tr>
           </tbody>
         </table>
         </div>
@@ -828,14 +832,16 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Festung Hohensalzburg</strong> (vistas exterior) → <strong>Dom</strong> / Residenzplatz</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td>Loop <strong>Altstadt</strong>: Getreidegasse, Mozartplatz, <strong>Salzach</strong> / Makartsteg</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Jantar barato · <strong>mala + dormir cedo</strong> (RJX <strong>11:07</strong> amanhã)</td></tr>
+              <tr><td class="fast-plan__when">08:30–10:30</td><td><strong>Festung Hohensalzburg</strong> (exterior / funicular) — <strong>cortar</strong> se atrasar para o tour</td></tr>
+              <tr><td class="fast-plan__when">11:00–12:30</td><td><a href="https://www.guruwalk.com/walks/61281" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Salzburg Highlights</strong></a> — Altstadt</td></tr>
+              <tr><td class="fast-plan__when">12:30–14:00</td><td>Almoço · <strong>Spar Getreidegasse 33</strong> no caminho</td></tr>
+              <tr><td class="fast-plan__when">14:00–16:00</td><td><a href="https://www.guruwalk.com/walks/47069" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Sound of Music / cidade</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:00–21:00</td><td><strong>Makartsteg</strong> / Salzach se faltou · jantar · <strong>mala + dormir cedo</strong> (RJX <strong>11:07</strong> amanhã)</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Makartsteg</p>
-<p class="fast-plan__foot"><strong>Noite:</strong> <a href="#explorar-hostels-ancora">YoHo bar</a> (4 min do hotel)</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Festung (manter os 2 GuruWalks)</p>
+<p class="fast-plan__foot"><strong>Noite:</strong> <a href="#explorar-hostels-ancora">YoHo bar</a> (4 min do hotel) — leve</p>
           </div>
 
 <details class="transit-collapse">
@@ -907,24 +913,25 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Schönbrunn</strong> (fachada + jardins, exterior)</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Stadtpark</strong> → <strong>Stephansdom</strong> (exterior) → <strong>Graben</strong> → <strong>Hofburg</strong> (pátios exterior)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td><strong>Rathaus + Parlament</strong> (exterior, luzes) · jantar rápido · mala Bratislava</td></tr>
+              <tr><td class="fast-plan__when">07:30–09:30</td><td><strong>Schönbrunn</strong> (fachada + jardins, <strong>só exterior</strong>) — <strong>cortar</strong> se precisar dormir mais</td></tr>
+              <tr><td class="fast-plan__when">10:15–12:00</td><td><a href="https://www.guruwalk.com/walks/36416" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Vienna Old Town</strong></a></td></tr>
+              <tr><td class="fast-plan__when">12:00–14:00</td><td>Almoço <strong>Anker Brot</strong> / <strong>Billa</strong> (Kärntner Str.)</td></tr>
+              <tr><td class="fast-plan__when">14:15–16:00</td><td><a href="https://www.guruwalk.com/walks/55482" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Vienna Imperial</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:00–21:00</td><td>Compras leves · <strong>Ring</strong> (luzes) · jantar · <strong>mala Bratislava</strong></td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Hofburg</p>
-<p class="fast-plan__foot"><strong>Noite:</strong> Ring / Donaukanal se faltou dia 6</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Schönbrunn (manter os 2 GuruWalks)</p>
+<p class="fast-plan__foot"><strong>Noite:</strong> Ring iluminado (DIY) — substitui o tour noturno cancelado do dia 26</p>
           </div>
 
 <details class="transit-collapse">
             <summary>U-Bahn / tram</summary>
             <div class="transit transit--nested">
             <ul>
-              <li><strong>Hotel → Schönbrunn:</strong> <strong>U2</strong> desde <strong>Rathaus</strong> (ou <strong>Schottentor</strong>) até <strong>Karlsplatz</strong> → <strong>U4</strong> direção <strong>Hütteldorf</strong> até <strong>Schönbrunn</strong>.</li>
-              <li><strong>Schönbrunn → Stadtpark:</strong> <strong>U4</strong> <strong>Schönbrunn → Stadtpark</strong> (direto).</li>
-              <li><strong>Stadtpark → Stephansplatz:</strong> <strong>U4</strong> <strong>Stadtpark → Stephansplatz</strong> (1 paragem) ou a pé (~12 min).</li>
-              <li><strong>Ring à noite (fachadas):</strong> a pé a partir de Stephansplatz <em>ou</em> elétricos <strong>1 / 2 / D</strong> ao longo do Ring (paragens <strong>Parlament</strong>, <strong>Rathausplatz</strong>, etc.).</li>
+              <li><strong>Hotel → Schönbrunn (cedo):</strong> <strong>U2</strong> desde <strong>Rathaus</strong> (ou <strong>Schottentor</strong>) até <strong>Karlsplatz</strong> → <strong>U4</strong> até <strong>Schönbrunn</strong> — sair ~07:30.</li>
+              <li><strong>Schönbrunn → centro (tour 10:15):</strong> <strong>U4</strong> <strong>Schönbrunn → Stephansplatz</strong> (ou Karlsplatz + a pé).</li>
+              <li><strong>Ring à noite (fachadas):</strong> a pé a partir de Stephansplatz <em>ou</em> elétricos <strong>1 / 2 / D</strong> (paragens <strong>Parlament</strong>, <strong>Rathausplatz</strong>, etc.).</li>
               <li><strong>Volta:</strong> <strong>U4</strong> + <strong>U2</strong> para <strong>Rathaus</strong> / hotel (Josefstadt).</li>
             </ul>
           </div>
@@ -953,7 +960,8 @@
               </table>
             </div>
 <p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Castle (só Old Town)</p>
-<p class="fast-plan__foot"><strong>Noite:</strong> <a href="#explorar-hostels-ancora">Downtown Backpackers</a> + Obchodná</p>
+<p class="fast-plan__foot fast-plan__foot--warn"><strong>Tours:</strong> sem GuruWalk em Viena hoje — Flix <strong>12:35</strong> (ver <a href="#guruwalk">lista</a>: Vienna by Night <strong>cancelado</strong>)</p>
+<p class="fast-plan__foot"><strong>Noite:</strong> <a href="#explorar-hostels-ancora">Downtown Backpackers</a> + Obchodná · centro <strong>DIY</strong> (sem tour extra)</p>
           </div>
 
 <details class="transit-collapse">
@@ -1022,13 +1030,15 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Parlamento</strong> (exterior) → <strong>Shoes on the Danube</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Great Market Hall</strong> (snack) → <strong>Fisherman's Bastion</strong> + <strong>Matthias</strong> (exterior)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Buffer · compras moderadas · <strong>noite: Szimpla / Instant</strong></td></tr>
+              <tr><td class="fast-plan__when">09:00–10:00</td><td>Café leve · caminho ao ponto do tour (Pest)</td></tr>
+              <tr><td class="fast-plan__when">10:00–12:30</td><td><a href="https://www.guruwalk.com/walks/40704" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Free Essential Budapest</strong></a></td></tr>
+              <tr><td class="fast-plan__when">12:30–16:30</td><td><strong>Great Market Hall</strong> (snack) → <strong>Parlamento</strong> / <strong>Shoes on the Danube</strong> (exterior) → <strong>Fisherman's Bastion</strong> + <strong>Matthias</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">~17:00–19:00</td><td><a href="https://www.guruwalk.com/walks/42809" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Mysteries of the Danube</strong></a> — confirmar horário na reserva</td></tr>
+              <tr><td class="fast-plan__when">19:00–21:00</td><td><strong>Szimpla / Instant</strong> (ruin bars)</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Bastion (manter Parlamento + ruin bar)</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Bastion (manter os 2 GuruWalks + ruin bar)</p>
 <p class="fast-plan__foot"><strong>Plano B chuva:</strong> Váci utca comercial</p>
           </div>
 
@@ -1061,8 +1071,9 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td>Completar pendências OU <strong>Jewish Quarter</strong> (exterior)</td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · buffer descanso</td></tr>
+              <tr><td class="fast-plan__when">09:00–10:45</td><td>Café · <strong>Tesco Kazinczy 16</strong> · caminho ao tour</td></tr>
+              <tr><td class="fast-plan__when">11:00–13:00</td><td><a href="https://www.guruwalk.com/walks/32765" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Jewish Quarter</strong></a></td></tr>
+              <tr><td class="fast-plan__when">13:00–17:00</td><td><strong>Margaret Bridge</strong> / <strong>Margitsziget</strong> (exterior) · buffer descanso</td></tr>
               <tr><td class="fast-plan__when">17:00–21:00</td><td>Jantar leve · <strong>mala Berlim</strong> · dormir razoável</td></tr>
                 </tbody>
               </table>
@@ -1137,13 +1148,15 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Brandenburg Gate</strong> → <strong>Reichstag</strong> (exterior) → <strong>Tiergarten</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Holocaust Memorial</strong> → <strong>Potsdamer Platz</strong> → <strong>East Side Gallery</strong> (trecho)</td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Volta Alex · jantar rápido</td></tr>
+              <tr><td class="fast-plan__when">09:00–09:45</td><td>Café · <strong>Rewe To Go Friedrichstraße</strong> · caminho ao encontro (Mitte)</td></tr>
+              <tr><td class="fast-plan__when">10:00–12:30</td><td><a href="https://www.guruwalk.com/walks/36662" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Berlin Highlights</strong></a> — Brandenburg, Reichstag, Memorial (eixo do tour)</td></tr>
+              <tr><td class="fast-plan__when">12:30–14:15</td><td>Almoço · deslocação ao ponto da tarde</td></tr>
+              <tr><td class="fast-plan__when">14:30–17:00</td><td><a href="https://www.guruwalk.com/walks/47158" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Berlin Wall &amp; Cold War</strong></a></td></tr>
+              <tr><td class="fast-plan__when">17:00–21:00</td><td><strong>East Side Gallery</strong> (trecho curto) se faltou · volta Alex · jantar</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Metade East Side</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> East Side Gallery (manter os 2 GuruWalks)</p>
 <p class="fast-plan__foot"><strong>Noite:</strong> <a href="#explorar-hostels-ancora">Generator</a> (pub crawl 21h) ou Kreuzberg</p>
           </div>
 
@@ -1151,9 +1164,9 @@
             <summary>U-Bahn / S-Bahn</summary>
             <div class="transit transit--nested">
             <ul>
-              <li><strong>Hotel (Alexanderplatz) → Brandenburg / Reichstag / Memorial:</strong> <strong>U5</strong> <strong>Alexanderplatz → Brandenburger Tor</strong> (2 paragens) — Memorial e Reichstag a pé.</li>
-              <li><strong>Unter den Linden:</strong> a pé a partir de <strong>Brandenburger Tor</strong> em direção a <strong>Museumsinsel</strong> / <strong>Lustgarten</strong>.</li>
-              <li><strong>Volta:</strong> <strong>U2/U5/S-Bahn</strong> para <strong>Hauptbahnhof</strong>.</li>
+              <li><strong>Hotel (Alexanderplatz) → tours Mitte:</strong> <strong>U5</strong> <strong>Alexanderplatz → Brandenburger Tor</strong> — encontros dos 2 GuruWalks costumam ser neste eixo.</li>
+              <li><strong>Tarde (Muro / Cold War):</strong> seguir guia — normalmente <strong>S-Bahn</strong> / <strong>U-Bahn</strong> até trechos do Muro ou <strong>Ostbahnhof</strong>.</li>
+              <li><strong>East Side Gallery (opcional):</strong> <strong>S-Bahn</strong> <strong>Ostbahnhof</strong> ou <strong>U1 Warschauer Straße</strong>.</li>
             </ul>
             <span class="warn">Memorial do Holocausto fica junto a Brandenburg; Reichstag (cupula) exige reserva prévia se quiser entrar.</span>
           </div>
@@ -1175,9 +1188,11 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Unter den Linden</strong> → <strong>Berliner Dom</strong> (exterior) → <strong>Lustgarten</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Museum Island</strong> (só fachadas) → <strong>Gendarmenmarkt</strong> → compras <strong>Alex / Ku’damm / Primark</strong></td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Mercados de Natal · jantar · <strong>mala Praga</strong></td></tr>
+              <tr><td class="fast-plan__when">09:00–09:45</td><td>Café · caminho ao encontro (eixo alternativo / Kreuzberg)</td></tr>
+              <tr><td class="fast-plan__when">10:00–12:30</td><td><a href="https://www.guruwalk.com/walks/52050" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Berlin Alternative</strong></a></td></tr>
+              <tr><td class="fast-plan__when">12:30–14:00</td><td>Almoço · deslocação à <strong>Museum Island</strong></td></tr>
+              <tr><td class="fast-plan__when">14:00–16:00</td><td><a href="https://www.guruwalk.com/walks/46449" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Museum Island (exterior)</strong></a></td></tr>
+              <tr><td class="fast-plan__when">16:00–21:00</td><td>Compras <strong>Alex / Ku’damm / Primark</strong> · mercados de Natal · <strong>mala Praga</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -1215,11 +1230,13 @@
                 <tbody>
               <tr><td class="fast-plan__when">08:00–08:45</td><td>Check-out · S-Bahn <strong>Alex → Südkreuz</strong></td></tr>
               <tr><td class="fast-plan__when">10:20–14:20</td><td>Flix <strong>Südkreuz → Florenc</strong></td></tr>
-              <tr><td class="fast-plan__when">14:30–21:00</td><td>Hotel Alton → <strong>Wenceslas Square</strong> → <strong>Old Town Square</strong> + <strong>Relógio</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">14:30–17:30</td><td>Hotel Alton → <strong>Wenceslas Square</strong> → <strong>Old Town Square</strong> + <strong>Relógio</strong> (exterior)</td></tr>
+              <tr><td class="fast-plan__when">18:00–20:00</td><td><a href="https://www.guruwalk.com/walks/57909" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Legends &amp; Beer</strong></a> — <strong>nám. J. Palacha</strong> / Rudolfinum</td></tr>
+              <tr><td class="fast-plan__when">20:00–21:00</td><td>Jantar leve · dormir</td></tr>
                 </tbody>
               </table>
             </div>
-<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Wenceslas</p>
+<p class="fast-plan__foot"><strong>Cortar se atrasar:</strong> Old Town (manter tour 18h)</p>
 <p class="fast-plan__foot fast-plan__foot--warn"><strong>Crítico:</strong> Hotel <strong>08:45</strong> · Flix <strong>10:20</strong></p>
           </div>
 
@@ -1255,9 +1272,11 @@
               <table class="data fast-plan-table">
                 <thead><tr><th>Horário</th><th>Plano executável</th></tr></thead>
                 <tbody>
-              <tr><td class="fast-plan__when">09:00–12:00</td><td><strong>Charles Bridge</strong> (cedo) → subida <strong>Malá Strana</strong></td></tr>
-              <tr><td class="fast-plan__when">12:00–17:00</td><td><strong>Prague Castle</strong> (exterior + pátios) → <strong>Kampa</strong> · compras <strong>Na Příkopě / Palladium</strong></td></tr>
-              <tr><td class="fast-plan__when">17:00–21:00</td><td>Old Town revisit · <strong>noite: <a href="#explorar-hostels-ancora">Sophie's</a> + Vinohrady</strong></td></tr>
+              <tr><td class="fast-plan__when">09:00–10:30</td><td><strong>Charles Bridge</strong> (cedo) → <strong>Klárov 1</strong> (encontro castelo)</td></tr>
+              <tr><td class="fast-plan__when">11:00–13:00</td><td><a href="https://www.guruwalk.com/walks/39714" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Prague Castle</strong></a> — guarda-chuva vermelho «100»</td></tr>
+              <tr><td class="fast-plan__when">13:00–14:45</td><td>Almoço · <strong>Billa Malostranské nám.</strong> · caminho ao <strong>Powder Tower</strong></td></tr>
+              <tr><td class="fast-plan__when">15:00–17:00</td><td><a href="https://www.guruwalk.com/walks/36530" target="_blank" rel="noopener noreferrer"><strong>GuruWalk Old Town &amp; Jewish Quarter</strong></a></td></tr>
+              <tr><td class="fast-plan__when">17:00–21:00</td><td>Compras <strong>Na Příkopě / Palladium</strong> · <strong>noite: <a href="#explorar-hostels-ancora">Sophie's</a> + Vinohrady</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -1420,8 +1439,8 @@
             <tr><td><a href="#day-2026-11-23">23 nov</a> · Salzburgo</td><td><strong>11:00</strong></td><td><a href="https://www.guruwalk.com/walks/61281" target="_blank" rel="noopener noreferrer"><strong>Salzburg Highlights</strong></a></td><td>Altstadt</td></tr>
             <tr><td>23 nov · Salzburgo</td><td><strong>14:00</strong></td><td><a href="https://www.guruwalk.com/walks/47069" target="_blank" rel="noopener noreferrer"><strong>Sound of Music / cidade</strong></a></td><td>Tarde — dormir cedo (RJX 11:07 amanhã)</td></tr>
             <tr><td><a href="#day-2026-11-25">25 nov</a> · Viena</td><td><strong>10:15</strong></td><td><a href="https://www.guruwalk.com/walks/36416" target="_blank" rel="noopener noreferrer"><strong>Vienna Old Town</strong></a></td><td>Manhã</td></tr>
-            <tr><td>25 nov · Viena</td><td><strong>14:15</strong></td><td><a href="https://www.guruwalk.com/walks/55482" target="_blank" rel="noopener noreferrer"><strong>Vienna Imperial</strong></a></td><td>Tarde — Schönbrunn DIY se sobrar tempo</td></tr>
-            <tr><td><a href="#day-2026-11-26">26 nov</a> · Viena</td><td><em>~17:30</em></td><td><a href="https://www.guruwalk.com/walks/49487" target="_blank" rel="noopener noreferrer"><strong>Vienna by Night (opcional)</strong></a></td><td>Só se Flix não atrasar · senão pular</td></tr>
+            <tr><td>25 nov · Viena</td><td><strong>14:15</strong></td><td><a href="https://www.guruwalk.com/walks/55482" target="_blank" rel="noopener noreferrer"><strong>Vienna Imperial</strong></a></td><td>Tarde — Schönbrunn <strong>cedo</strong> (07:30) no <a href="#day-2026-11-25">plano do dia</a></td></tr>
+            <tr class="row-muted"><td>26 nov · Viena</td><td><em>—</em></td><td><strong>Vienna by Night</strong> <span class="muted">(cancelado)</span></td><td>Dia de <strong>Flix 12:35</strong> → Bratislava — Ring DIY na <a href="#day-2026-11-25">noite de 25 nov</a> se quiser</td></tr>
             <tr><td><a href="#day-2026-11-28">28 nov</a> · Budapeste</td><td><strong>10:00</strong></td><td><a href="https://www.guruwalk.com/walks/40704" target="_blank" rel="noopener noreferrer"><strong>Free Essential Budapest</strong></a></td><td>Pest — manhã</td></tr>
             <tr><td>28 nov · Budapeste</td><td><em>~17:00</em></td><td><a href="https://www.guruwalk.com/walks/42809" target="_blank" rel="noopener noreferrer"><strong>Mysteries of the Danube</strong></a></td><td>Confirmar horário · mín. 6 pessoas · noite <strong>Szimpla / Instant</strong></td></tr>
             <tr><td><a href="#day-2026-11-29">29 nov</a> · Budapeste</td><td><strong>11:00</strong></td><td><a href="https://www.guruwalk.com/walks/32765" target="_blank" rel="noopener noreferrer"><strong>Jewish Quarter</strong></a></td><td>Domingo — voo Berlim amanhã</td></tr>
@@ -1967,7 +1986,7 @@
           <li><a href="#hoteis">Hotéis Booking</a> offline</li>
           <li>Neuschwanstein: bilhete castelo (slot ~13h) · Flix Omio 08:00/16:00 · <a href="#guruwalk">GuruWalk Füssen</a> + cash gorjeta</li>
           <li><a href="#presentes">Presentes</a> — lista e calendário por dia</li>
-          <li><a href="#emergencia">Seguro</a> · SOS · Iberia offline</li>
+          <li><a href="#emergencia">Seguro</a> · SOS · KLM + Iberia offline</li>
           <li>Adaptador Schuko · roupa quente nov–dez</li>
         </ul>
       </div>

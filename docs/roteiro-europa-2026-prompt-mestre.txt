@@ -49,11 +49,11 @@ München Hbf → Marienplatz | S-Bahn | S1 ou S8 | — → — | +2 min
 |-------|-------|
 | Viajante | Gabriel Torga |
 | Período Europa | 19 nov – 7 dez 2026 (**18 noites**) |
-| Ida GRU | 18 nov 15:10 (IB0268) |
-| Chegada Munique | 19 nov ~11:30 |
+| Ida JFK | 18 nov 21:20 (KLM KL644+1853 · loc. **EQZEWL**) |
+| Chegada Munique | 19 nov ~13:30 |
 | Regresso | 7 dez 07:00 BRU (IB0604) |
 | Estilo | FAST · exterior · 09:00–21:00 (exceto chegadas/voos) |
-| Envelope bolso | **€2.000** Wise (fora hotéis + Omio + Iberia) |
+| Envelope bolso | **€2.000** Wise (fora hotéis + Omio + voos intercontinentais) |
 | Hotéis total | ~**R$ 11.423** (cartão BRL, Booking) |
 
 ### Ordem das cidades (FIXA)
@@ -81,12 +81,11 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 
 ## VOOS
 
-### Intercontinentais (Iberia)
+### Intercontinentais (ida KLM · volta Iberia)
 
 | Trecho | Partida | Chegada | Notas |
 |--------|---------|---------|-------|
-| IB0268 GRU→MAD | 18 nov 15:10 | 19 nov 05:30 | Conexão Madrid |
-| IB1309 MAD→MUC | 19 nov 08:50 | 19 nov 11:30 | Operado YW |
+| KL644 JFK→AMS · KL1853 AMS→MUC | 18 nov 21:20 | 19 nov 13:30 | **Reservado** FLEX · EQZEWL · **R$ 4.359,12** (ARGO) |
 | IB0604 BRU→MAD | 7 dez 07:00 | 7 dez 09:25 | Sair hotel ~**03:45** · alarme **03:00** |
 | IB0271 MAD→GRU | 7 dez 11:50 | 7 dez 19:00 | Conexão ~2h25 |
 
@@ -237,8 +236,8 @@ Não são para dormir — são **pontos sociais** (bar + programação), escolhi
 
 | Data | Horário | Evento |
 |------|---------|--------|
-| 18 nov | 15:10 | IB0268 GRU→MAD |
-| 19 nov | 08:50 / 11:30 | IB1309 MAD→MUC |
+| 18 nov | 21:20 | KL644 JFK→AMS |
+| 19 nov | 12:05 / 13:30 | KL1853 AMS→MUC |
 | 21 nov | 08:30 / 17:25 | Flix Neuschwanstein |
 | 22 nov | 13:45 | Flix Munique→Salzburgo |
 | 24 nov | **10:00** | **ICE Salzburg→Viena** |
@@ -256,44 +255,43 @@ Não são para dormir — são **pontos sociais** (bar + programação), escolhi
 
 ---
 
-## 18 nov (ter) — Saída Brasil
+## 18 nov (ter) — Saída Nova York (JFK)
 
 | Horário | Ação |
 |---------|------|
-| ~12:00 | Chegar GRU com folga |
-| 15:10 | **IB0268** GRU → MAD |
-| Noite | Voo noturno |
+| ~19:00 | Chegar **JFK** com folga (~2h antes) |
+| 21:20 | **KL 644** JFK → AMS |
+| Noite | Voo · conexão **AMS** no dia seguinte |
 
 ---
 
 ## 19 nov (qua) — Munique — CHEGADA
 
 **Hotel:** B&B München-Hbf · **Teto €70** · **Energia leve** · Tipos: Aéreo + Base  
-**Modo:** Chegada ~11h30 — sem bloco 09:00
+**Modo:** Chegada ~13h30 (KLM) — sem bloco 09:00
 
 ### Cronograma
 
 | Horário | Plano |
 |---------|-------|
-| 05:30 | Pouso MAD |
-| 08:50 | Embarque IB1309 |
-| 11:30 | Pouso MUC |
-| 11:30–12:15 | Imigração + bagagem |
-| 12:15–13:00 | MUC → Hbf (S8/S1 ~40 min) |
-| 13:00–14:00 | Check-in B&B · bagagem |
-| 14:00–14:20 | Hbf → Marienplatz |
-| 14:20–15:00 | Marienplatz + Neues Rathaus (fachada) |
-| 15:00–15:30 | Frauenkirche (exterior) |
-| 15:30–16:15 | Viktualienmarkt (snack) |
-| 16:15–17:00 | Pé → Karlsplatz |
-| 17:00–18:30 | Karlsplatz ou volta hotel |
+| 10:30 | Pouso AMS (conexão) |
+| 12:05 | **KL 1853** AMS → MUC |
+| 13:30 | Pouso MUC |
+| 13:30–14:15 | Imigração + bagagem |
+| 14:15–15:00 | MUC → Hbf (S8/S1 ~40 min) |
+| 15:00–16:00 | Check-in B&B · bagagem |
+| 16:00–16:20 | Hbf → Marienplatz |
+| 16:20–17:00 | Marienplatz + Neues Rathaus (fachada) |
+| 17:00–17:30 | Frauenkirche (exterior) |
+| 17:30–18:15 | Viktualienmarkt (snack) |
+| 18:15–18:30 | Pé → Karlsplatz (cortar se atrasar) |
 | 18:30–20:00 | Jantar REWE / McDonald's Hbf |
 | 20:00–21:00 | **Dormir cedo** (jet lag) |
 
 ### Legs
 
 ```
-MUC → München Hbf | S-Bahn | S1 ou S8 Flughafen München → Hauptbahnhof | 12:15 → 13:00 | —
+MUC → München Hbf | S-Bahn | S1 ou S8 Flughafen München → Hauptbahnhof | 14:15 → 15:00 | —
 Hbf → B&B | a pé | Arnulfstraße 30 | — → — | +5 min
 B&B → Marienplatz | S-Bahn ou U5 | S1–S8 Marienplatz OU U5 Hbf → Karlsplatz → Marienplatz | — → — | +2 min
 Marienplatz → Viktualienmarkt | a pé | — | — → — | +2 min
