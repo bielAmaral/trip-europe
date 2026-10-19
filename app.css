@@ -656,6 +656,22 @@ html[data-theme="dark"] .fast-plan__badge--guruwalk {
   margin: 0.35rem 0 0;
   padding-left: 1.15rem;
 }
+.walk-route {
+  margin-top: 0.75rem;
+}
+.walk-route summary {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.25rem 0;
+}
+.walk-route__stops {
+  margin: 0.75rem 0 0.25rem 1.25rem;
+  padding: 0;
+  line-height: 1.45;
+}
+.walk-route__stops li {
+  margin-bottom: 0.65rem;
+}
 .guruwalk-table a {
   font-weight: 700;
 }

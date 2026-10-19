@@ -30,7 +30,7 @@ DESCRIPTION:Check-in 19 nov\, check-out 22 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-22@eurotrip2026
@@ -39,7 +39,7 @@ DESCRIPTION:Check-in 22 nov\, check-out 24 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-24@eurotrip2026
@@ -48,7 +48,7 @@ DESCRIPTION:Check-in 24 nov\, check-out 26 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261126
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-26@eurotrip2026
@@ -57,7 +57,7 @@ DESCRIPTION:Check-in 26 nov\, check-out 28 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261128
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-28@eurotrip2026
@@ -66,7 +66,7 @@ DESCRIPTION:Check-in 28 nov\, check-out 30 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-30@eurotrip2026
@@ -75,7 +75,7 @@ DESCRIPTION:Check-in 30 nov\, check-out 3 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261203
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-12-03@eurotrip2026
@@ -84,7 +84,7 @@ DESCRIPTION:Check-in 3 dez\, check-out 5 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-12-05@eurotrip2026
@@ -93,7 +93,7 @@ DESCRIPTION:Mercure Rogier\, check-out 7 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:transport-2026-11-22-1209@eurotrip2026
@@ -103,7 +103,7 @@ LOCATION:Muenchen Hbf
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261122T120900
 DTEND;TZID=Europe/Berlin:20261122T141000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT60M
@@ -118,7 +118,7 @@ LOCATION:Salzburg Hbf
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261124T110700
 DTEND;TZID=Europe/Berlin:20261124T133200
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -133,7 +133,7 @@ LOCATION:Vienna Erdberg
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261126T123500
 DTEND;TZID=Europe/Berlin:20261126T163500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -148,7 +148,7 @@ LOCATION:Bratislava
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261127T105000
 DTEND;TZID=Europe/Berlin:20261127T132000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -163,7 +163,7 @@ LOCATION:BUD
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261130T112500
 DTEND;TZID=Europe/Berlin:20261130T124000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT120M
@@ -178,7 +178,7 @@ LOCATION:Berlin Suedkreuz
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261203T102000
 DTEND;TZID=Europe/Berlin:20261203T152000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -193,7 +193,7 @@ LOCATION:PRG
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261205T123000
 DTEND;TZID=Europe/Berlin:20261205T141500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT120M
@@ -208,7 +208,7 @@ LOCATION:BRU
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261207T070000
 DTEND;TZID=Europe/Berlin:20261207T115000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT180M
@@ -224,7 +224,7 @@ LOCATION:JFK
 CATEGORIES:Voo
 DTSTART;TZID=America/New_York:20261118T212000
 DTEND;TZID=Europe/Berlin:20261119T133000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT180M
@@ -234,13 +234,13 @@ END:VEVENT
 BEGIN:VEVENT
 UID:guruwalk-2026-11-20-1015@eurotrip2026
 SUMMARY:GuruWalk: Explore Munich · Patrick
-DESCRIPTION:Marienplatz / centro — tarde livre Englischer Garten + compras\\nChegue 1
- 0 min antes.
-LOCATION:Marienplatz / centro — tarde livre Englischer Garten + compras
+DESCRIPTION:Odeonsplatz / Viscardigasse — tarde Englischer Garten + compras\\nChegue 
+ 10 min antes.
+LOCATION:Odeonsplatz / Viscardigasse — tarde Englischer Garten + compras
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261120T101500
 DTEND;TZID=Europe/Berlin:20261120T121500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -257,7 +257,7 @@ LOCATION:Tourist Info · cash gorjeta · mín. 3 pessoas · castelo depois (Flix
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261121T101500
 DTEND;TZID=Europe/Berlin:20261121T121500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -267,12 +267,12 @@ END:VEVENT
 BEGIN:VEVENT
 UID:guruwalk-2026-11-23-1100@eurotrip2026
 SUMMARY:GuruWalk: Salzburg Highlights
-DESCRIPTION:Altstadt\\nChegue 10 min antes.
-LOCATION:Altstadt
+DESCRIPTION:Altstadt · tarde livre (RJX 11:07 amanhã)\\nChegue 10 min antes.
+LOCATION:Altstadt · tarde livre (RJX 11:07 amanhã)
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261123T110000
 DTEND;TZID=Europe/Berlin:20261123T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -280,29 +280,14 @@ DESCRIPTION:GuruWalk: Salzburg Highlights
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:guruwalk-2026-11-23-1400@eurotrip2026
-SUMMARY:GuruWalk: Sound of Music / cidade
-DESCRIPTION:Tarde — dormir cedo (RJX 11:07 amanhã)\\nChegue 10 min antes.
-LOCATION:Tarde — dormir cedo (RJX 11:07 amanhã)
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261123T140000
-DTEND;TZID=Europe/Berlin:20261123T160000
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Sound of Music / cidade
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:guruwalk-2026-11-25-1015@eurotrip2026
 SUMMARY:GuruWalk: Vienna Old Town
-DESCRIPTION:Manhã\\nChegue 10 min antes.
-LOCATION:Manhã
+DESCRIPTION:Manhã · Schönbrunn 07:30 no plano do dia\\nChegue 10 min antes.
+LOCATION:Manhã · Schönbrunn 07:30 no plano do dia
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261125T101500
 DTEND;TZID=Europe/Berlin:20261125T121500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -310,49 +295,19 @@ DESCRIPTION:GuruWalk: Vienna Old Town
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:guruwalk-2026-11-25-1415@eurotrip2026
-SUMMARY:GuruWalk: Vienna Imperial
-DESCRIPTION:Tarde — Schönbrunn cedo (07:30) no plano do dia\\nChegue 10 min antes.
-LOCATION:Tarde — Schönbrunn cedo (07:30) no plano do dia
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261125T141500
-DTEND;TZID=Europe/Berlin:20261125T161500
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Vienna Imperial
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:guruwalk-2026-11-28-1000@eurotrip2026
 SUMMARY:GuruWalk: Free Essential Budapest
-DESCRIPTION:Pest — manhã\\nChegue 10 min antes.
-LOCATION:Pest — manhã
+DESCRIPTION:Pest — manhã · tarde Buda DIY · noite Szimpla / Instant\\nChegue 10 min a
+ ntes.
+LOCATION:Pest — manhã · tarde Buda DIY · noite Szimpla / Instant
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261128T100000
 DTEND;TZID=Europe/Berlin:20261128T120000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
 DESCRIPTION:GuruWalk: Free Essential Budapest
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:guruwalk-2026-11-28-1700@eurotrip2026
-SUMMARY:GuruWalk: Mysteries of the Danube
-DESCRIPTION:Confirmar horário · mín. 6 pessoas · noite Szimpla / Instant\\nChegue 10 
- min antes.
-LOCATION:Confirmar horário · mín. 6 pessoas · noite Szimpla / Instant
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261128T170000
-DTEND;TZID=Europe/Berlin:20261128T190000
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Mysteries of the Danube
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -363,7 +318,7 @@ LOCATION:Domingo — voo Berlim amanhã
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261129T110000
 DTEND;TZID=Europe/Berlin:20261129T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -371,29 +326,15 @@ DESCRIPTION:GuruWalk: Jewish Quarter
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:guruwalk-2026-12-01-1000@eurotrip2026
-SUMMARY:GuruWalk: Berlin Highlights
-DESCRIPTION:Mitte\\nChegue 10 min antes.
-LOCATION:Mitte
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261201T100000
-DTEND;TZID=Europe/Berlin:20261201T120000
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Berlin Highlights
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:guruwalk-2026-12-01-1430@eurotrip2026
 SUMMARY:GuruWalk: Berlin Wall & Cold War
-DESCRIPTION:Tarde\\nChegue 10 min antes.
-LOCATION:Tarde
+DESCRIPTION:Tarde (~3 h) · manhã DIY Memorial / Brandenburg / Reichstag\\nChegue 10 m
+ in antes.
+LOCATION:Tarde (~3 h) · manhã DIY Memorial / Brandenburg / Reichstag
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261201T143000
 DTEND;TZID=Europe/Berlin:20261201T163000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -402,48 +343,17 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:guruwalk-2026-12-02-1000@eurotrip2026
-SUMMARY:GuruWalk: Berlin Alternative
-DESCRIPTION:Manhã\\nChegue 10 min antes.
-LOCATION:Manhã
+SUMMARY:GuruWalk: Kreuzberg — Heart of Berlin
+DESCRIPTION:Manhã · tarde compras\\nChegue 10 min antes.
+LOCATION:Manhã · tarde compras
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261202T100000
 DTEND;TZID=Europe/Berlin:20261202T120000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Berlin Alternative
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:guruwalk-2026-12-02-1400@eurotrip2026
-SUMMARY:GuruWalk: Museum Island (exterior)
-DESCRIPTION:Tarde + compras\\nChegue 10 min antes.
-LOCATION:Tarde + compras
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261202T140000
-DTEND;TZID=Europe/Berlin:20261202T160000
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Museum Island (exterior)
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:guruwalk-2026-12-03-1800@eurotrip2026
-SUMMARY:GuruWalk: Legends & Beer
-DESCRIPTION:nám. J. Palacha / Rudolfinum — guarda-chuvas branco e azul claro\\nChegue
-  10 min antes.
-LOCATION:nám. J. Palacha / Rudolfinum — guarda-chuvas branco e azul claro
-CATEGORIES:Tour
-DTSTART;TZID=Europe/Berlin:20261203T180000
-DTEND;TZID=Europe/Berlin:20261203T200000
-DTSTAMP:20261016T152049Z
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT30M
-DESCRIPTION:GuruWalk: Legends & Beer
+DESCRIPTION:GuruWalk: Kreuzberg — Heart of Berlin
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -455,7 +365,7 @@ LOCATION:Klárov 1 (saída Malostranská) — guarda-chuva vermelho «100»
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261204T110000
 DTEND;TZID=Europe/Berlin:20261204T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -471,7 +381,7 @@ LOCATION:Powder Tower \, Na Příkopě — guarda-chuva vermelho «100»
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261204T150000
 DTEND;TZID=Europe/Berlin:20261204T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -490,7 +400,7 @@ LOCATION:Munique — chegada
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-0@eurotrip2026
@@ -500,7 +410,7 @@ LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T133000
 DTEND;TZID=Europe/Berlin:20261119T160000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-1@eurotrip2026
@@ -512,7 +422,7 @@ LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T160000
 DTEND;TZID=Europe/Berlin:20261119T183000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-2@eurotrip2026
@@ -524,52 +434,63 @@ LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T183000
 DTEND;TZID=Europe/Berlin:20261119T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-20@eurotrip2026
 SUMMARY:Munique — GuruWalk + tarde livre - EuroTrip 2026
-DESCRIPTION:Janela compras\\n09:00–12:00 - Hofgarten → Odeonsplatz → Ludwigstraße / S
- iegestor (foto)\\n12:00–17:00 - Englischer Garten (Eisbach\, Chinesische
- r Turm) → margem Isar · almoço padaria/quiosque\\n17:00–21:00 - Compras 
- leves Kaufingerstraße · jantar rápido · mala Füssen amanhã
+DESCRIPTION:Janela compras\\n09:00–10:00 - Café to-go · deslocação → Odeonsplatz / Vi
+ scardigasse (encontro)\\n10:15–12:15 - GuruWalk Explore Munich · Patrick
+ \\n12:15–17:00 - Englischer Garten (Eisbach\, Chinesischer Turm) → marge
+ m Isar · almoço padaria/quiosque\\n17:00–21:00 - Compras leves Kaufinger
+ straße · jantar rápido · mala Füssen amanhã
 LOCATION:Munique — GuruWalk + tarde livre
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-0@eurotrip2026
-SUMMARY:Hofgarten → Odeonsplatz → Ludwigstraße / Siegestor (foto)
-DESCRIPTION:Hofgarten → Odeonsplatz → Ludwigstraße / Siegestor (foto)
+SUMMARY:Café to-go · deslocação → Odeonsplatz / Viscardigasse (encontro)
+DESCRIPTION:Café to-go · deslocação → Odeonsplatz / Viscardigasse (encontro)
 LOCATION:Munique — GuruWalk + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T090000
-DTEND;TZID=Europe/Berlin:20261120T120000
-DTSTAMP:20261016T152049Z
+DTEND;TZID=Europe/Berlin:20261120T100000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-1@eurotrip2026
+SUMMARY:GuruWalk Explore Munich · Patrick
+DESCRIPTION:GuruWalk Explore Munich · Patrick
+LOCATION:Munique — GuruWalk + tarde livre
+CATEGORIES:Plano
+DTSTART;TZID=Europe/Berlin:20261120T101500
+DTEND;TZID=Europe/Berlin:20261120T121500
+DTSTAMP:20261019T004629Z
+END:VEVENT
+BEGIN:VEVENT
+UID:fast-2026-11-20-2@eurotrip2026
 SUMMARY:Englischer Garten (Eisbach\, Chinesischer Turm) → margem Isar · almoço pa
  dar
 DESCRIPTION:Englischer Garten (Eisbach\, Chinesischer Turm) → margem Isar · almoço pa
  daria/quiosque
 LOCATION:Munique — GuruWalk + tarde livre
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261120T120000
+DTSTART;TZID=Europe/Berlin:20261120T121500
 DTEND;TZID=Europe/Berlin:20261120T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
-UID:fast-2026-11-20-2@eurotrip2026
+UID:fast-2026-11-20-3@eurotrip2026
 SUMMARY:Compras leves Kaufingerstraße · jantar rápido · mala Füssen amanhã
 DESCRIPTION:Compras leves Kaufingerstraße · jantar rápido · mala Füssen amanhã
 LOCATION:Munique — GuruWalk + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T170000
 DTEND;TZID=Europe/Berlin:20261120T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-21@eurotrip2026
@@ -587,7 +508,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-0@eurotrip2026
@@ -597,7 +518,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T073000
 DTEND;TZID=Europe/Berlin:20261121T074500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-1@eurotrip2026
@@ -607,7 +528,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T074500
 DTEND;TZID=Europe/Berlin:20261121T091500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-2@eurotrip2026
@@ -617,7 +538,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T080000
 DTEND;TZID=Europe/Berlin:20261121T101500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-3@eurotrip2026
@@ -627,7 +548,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T101500
 DTEND;TZID=Europe/Berlin:20261121T114500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-4@eurotrip2026
@@ -637,7 +558,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T114500
 DTEND;TZID=Europe/Berlin:20261121T121500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-5@eurotrip2026
@@ -649,7 +570,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T121500
 DTEND;TZID=Europe/Berlin:20261121T150000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-6@eurotrip2026
@@ -659,7 +580,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T150000
 DTEND;TZID=Europe/Berlin:20261121T154500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-7@eurotrip2026
@@ -669,7 +590,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T160000
 DTEND;TZID=Europe/Berlin:20261121T180000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-8@eurotrip2026
@@ -679,7 +600,7 @@ LOCATION:Munique — GuruWalk Füssen + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T180000
 DTEND;TZID=Europe/Berlin:20261121T193000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-22@eurotrip2026
@@ -691,7 +612,7 @@ LOCATION:Munique → Salzburgo
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-22-0@eurotrip2026
@@ -701,7 +622,7 @@ LOCATION:Munique → Salzburgo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261122T090000
 DTEND;TZID=Europe/Berlin:20261122T113000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-22-2@eurotrip2026
@@ -713,21 +634,21 @@ LOCATION:Munique → Salzburgo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261122T143000
 DTEND;TZID=Europe/Berlin:20261122T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-23@eurotrip2026
-SUMMARY:Salzburgo — 2× GuruWalk - EuroTrip 2026
+SUMMARY:Salzburgo — Festung + GuruWalk - EuroTrip 2026
 DESCRIPTION:08:30–10:30 - Festung Hohensalzburg (exterior / funicular) — cortar se at
  rasar para o tour\\n11:00–12:30 - GuruWalk Salzburg Highlights — Altstad
- t\\n12:30–14:00 - Almoço · Spar Getreidegasse 33 no caminho\\n14:00–16:0
- 0 - GuruWalk Sound of Music / cidade\\n16:00–21:00 - Makartsteg / Salzac
- h se faltou · jantar · mala + dormir cedo (RJX 11:07 amanhã)
-LOCATION:Salzburgo — 2× GuruWalk
+ t\\n12:30–14:00 - Almoço · Spar Getreidegasse 33 no caminho\\n14:00–21:0
+ 0 - Makartsteg / Salzach · jantar leve · mala + dormir cedo (RJX 11:07 a
+ manhã)
+LOCATION:Salzburgo — Festung + GuruWalk
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-0@eurotrip2026
@@ -735,53 +656,43 @@ SUMMARY:Festung Hohensalzburg (exterior / funicular) — cortar se atrasar para 
  ou
 DESCRIPTION:Festung Hohensalzburg (exterior / funicular) — cortar se atrasar para o t
  our
-LOCATION:Salzburgo — 2× GuruWalk
+LOCATION:Salzburgo — Festung + GuruWalk
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T083000
 DTEND;TZID=Europe/Berlin:20261123T103000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-1@eurotrip2026
 SUMMARY:GuruWalk Salzburg Highlights — Altstadt
 DESCRIPTION:GuruWalk Salzburg Highlights — Altstadt
-LOCATION:Salzburgo — 2× GuruWalk
+LOCATION:Salzburgo — Festung + GuruWalk
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T110000
 DTEND;TZID=Europe/Berlin:20261123T123000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-2@eurotrip2026
 SUMMARY:Almoço · Spar Getreidegasse 33 no caminho
 DESCRIPTION:Almoço · Spar Getreidegasse 33 no caminho
-LOCATION:Salzburgo — 2× GuruWalk
+LOCATION:Salzburgo — Festung + GuruWalk
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T123000
 DTEND;TZID=Europe/Berlin:20261123T140000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-3@eurotrip2026
-SUMMARY:GuruWalk Sound of Music / cidade
-DESCRIPTION:GuruWalk Sound of Music / cidade
-LOCATION:Salzburgo — 2× GuruWalk
+SUMMARY:Makartsteg / Salzach · jantar leve · mala + dormir cedo (RJX 11:07 amanhã
+ )
+DESCRIPTION:Makartsteg / Salzach · jantar leve · mala + dormir cedo (RJX 11:07 amanhã
+ )
+LOCATION:Salzburgo — Festung + GuruWalk
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T140000
-DTEND;TZID=Europe/Berlin:20261123T160000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-11-23-4@eurotrip2026
-SUMMARY:Makartsteg / Salzach se faltou · jantar · mala + dormir cedo (RJX 11:07 a
- ma
-DESCRIPTION:Makartsteg / Salzach se faltou · jantar · mala + dormir cedo (RJX 11:07 a
- manhã)
-LOCATION:Salzburgo — 2× GuruWalk
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261123T160000
 DTEND;TZID=Europe/Berlin:20261123T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-24@eurotrip2026
@@ -794,7 +705,7 @@ LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-0@eurotrip2026
@@ -804,7 +715,7 @@ LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261124T090000
 DTEND;TZID=Europe/Berlin:20261124T104500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-2@eurotrip2026
@@ -814,7 +725,7 @@ LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261124T140000
 DTEND;TZID=Europe/Berlin:20261124T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-3@eurotrip2026
@@ -824,21 +735,20 @@ LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261124T170000
 DTEND;TZID=Europe/Berlin:20261124T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-25@eurotrip2026
-SUMMARY:Viena — 2× GuruWalk + Schönbrunn - EuroTrip 2026
+SUMMARY:Viena — GuruWalk + Schönbrunn - EuroTrip 2026
 DESCRIPTION:Compras\\n07:30–09:30 - Schönbrunn (fachada + jardins\, só exterior ) — c
  ortar se precisar dormir mais\\n10:15–12:00 - GuruWalk Vienna Old Town\\
- n12:00–14:00 - Almoço Anker Brot / Billa (Kärntner Str.)\\n14:15–16:00 -
-  GuruWalk Vienna Imperial\\n16:00–21:00 - Compras leves · Ring (luzes) ·
-  jantar · mala Bratislava
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
+ n12:00–21:00 - Almoço Anker Brot / Billa · compras leves · Ring (fachada
+ s\, luzes) · jantar · mala Bratislava
+LOCATION:Viena — GuruWalk + Schönbrunn
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-0@eurotrip2026
@@ -846,51 +756,33 @@ SUMMARY:Schönbrunn (fachada + jardins\, só exterior ) — cortar se precisar d
   ma
 DESCRIPTION:Schönbrunn (fachada + jardins\, só exterior ) — cortar se precisar dormir
   mais
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
+LOCATION:Viena — GuruWalk + Schönbrunn
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261125T073000
 DTEND;TZID=Europe/Berlin:20261125T093000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-1@eurotrip2026
 SUMMARY:GuruWalk Vienna Old Town
 DESCRIPTION:GuruWalk Vienna Old Town
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
+LOCATION:Viena — GuruWalk + Schönbrunn
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261125T101500
 DTEND;TZID=Europe/Berlin:20261125T120000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-2@eurotrip2026
-SUMMARY:Almoço Anker Brot / Billa (Kärntner Str.)
-DESCRIPTION:Almoço Anker Brot / Billa (Kärntner Str.)
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
+SUMMARY:Almoço Anker Brot / Billa · compras leves · Ring (fachadas\, luzes) · jan
+ tar
+DESCRIPTION:Almoço Anker Brot / Billa · compras leves · Ring (fachadas\, luzes) · jan
+ tar · mala Bratislava
+LOCATION:Viena — GuruWalk + Schönbrunn
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261125T120000
-DTEND;TZID=Europe/Berlin:20261125T140000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-11-25-3@eurotrip2026
-SUMMARY:GuruWalk Vienna Imperial
-DESCRIPTION:GuruWalk Vienna Imperial
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261125T141500
-DTEND;TZID=Europe/Berlin:20261125T160000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-11-25-4@eurotrip2026
-SUMMARY:Compras leves · Ring (luzes) · jantar · mala Bratislava
-DESCRIPTION:Compras leves · Ring (luzes) · jantar · mala Bratislava
-LOCATION:Viena — 2× GuruWalk + Schönbrunn
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261125T160000
 DTEND;TZID=Europe/Berlin:20261125T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-26@eurotrip2026
@@ -902,7 +794,7 @@ LOCATION:Viena → Bratislava
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-26-0@eurotrip2026
@@ -912,7 +804,7 @@ LOCATION:Viena → Bratislava
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261126T090000
 DTEND;TZID=Europe/Berlin:20261126T120000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-26-2@eurotrip2026
@@ -922,7 +814,7 @@ LOCATION:Viena → Bratislava
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261126T140000
 DTEND;TZID=Europe/Berlin:20261126T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-27@eurotrip2026
@@ -935,7 +827,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-0@eurotrip2026
@@ -945,7 +837,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T083000
 DTEND;TZID=Europe/Berlin:20261127T102000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-1@eurotrip2026
@@ -955,7 +847,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T105000
 DTEND;TZID=Europe/Berlin:20261127T132500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-2@eurotrip2026
@@ -965,7 +857,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T140000
 DTEND;TZID=Europe/Berlin:20261127T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-3@eurotrip2026
@@ -975,74 +867,63 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T170000
 DTEND;TZID=Europe/Berlin:20261127T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-28@eurotrip2026
-SUMMARY:Budapeste — Essential + Mysteries - EuroTrip 2026
+SUMMARY:Budapeste — GuruWalk Essential + Buda - EuroTrip 2026
 DESCRIPTION:Sábado ruin bars\\n09:00–10:00 - Café leve · caminho ao ponto do tour (Pe
- st)\\n10:00–12:30 - GuruWalk Free Essential Budapest\\n12:30–16:30 - Gre
- at Market Hall (snack) → Parlamento / Shoes on the Danube (exterior) → F
- isherman's Bastion + Matthias (exterior)\\n~17:00–19:00 - GuruWalk Myste
- ries of the Danube — confirmar horário na reserva\\n19:00–21:00 - Szimpl
- a / Instant (ruin bars)
-LOCATION:Budapeste — Essential + Mysteries
+ st)\\n10:00–12:30 - GuruWalk Free Essential Budapest\\n12:30–17:00 - Sna
+ ck Great Market Hall (opcional) → Chain Bridge → Fisherman's Bastion + M
+ atthias (exterior) — tour da manhã já cobre Pest\\n17:00–21:00 - Szimpla
+  / Instant (ruin bars)
+LOCATION:Budapeste — GuruWalk Essential + Buda
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-0@eurotrip2026
 SUMMARY:Café leve · caminho ao ponto do tour (Pest)
 DESCRIPTION:Café leve · caminho ao ponto do tour (Pest)
-LOCATION:Budapeste — Essential + Mysteries
+LOCATION:Budapeste — GuruWalk Essential + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T090000
 DTEND;TZID=Europe/Berlin:20261128T100000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-1@eurotrip2026
 SUMMARY:GuruWalk Free Essential Budapest
 DESCRIPTION:GuruWalk Free Essential Budapest
-LOCATION:Budapeste — Essential + Mysteries
+LOCATION:Budapeste — GuruWalk Essential + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T100000
 DTEND;TZID=Europe/Berlin:20261128T123000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-2@eurotrip2026
-SUMMARY:Great Market Hall (snack) → Parlamento / Shoes on the Danube (exterior) →
-  F
-DESCRIPTION:Great Market Hall (snack) → Parlamento / Shoes on the Danube (exterior) →
-  Fisherman's Bastion + Matthias (exterior)
-LOCATION:Budapeste — Essential + Mysteries
+SUMMARY:Snack Great Market Hall (opcional) → Chain Bridge → Fisherman's Bastion +
+  M
+DESCRIPTION:Snack Great Market Hall (opcional) → Chain Bridge → Fisherman's Bastion +
+  Matthias (exterior) — tour da manhã já cobre Pest
+LOCATION:Budapeste — GuruWalk Essential + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T123000
-DTEND;TZID=Europe/Berlin:20261128T163000
-DTSTAMP:20261016T152049Z
+DTEND;TZID=Europe/Berlin:20261128T170000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-3@eurotrip2026
-SUMMARY:GuruWalk Mysteries of the Danube — confirmar horário na reserva
-DESCRIPTION:GuruWalk Mysteries of the Danube — confirmar horário na reserva
-LOCATION:Budapeste — Essential + Mysteries
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261128T170000
-DTEND;TZID=Europe/Berlin:20261128T190000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-11-28-4@eurotrip2026
 SUMMARY:Szimpla / Instant (ruin bars)
 DESCRIPTION:Szimpla / Instant (ruin bars)
-LOCATION:Budapeste — Essential + Mysteries
+LOCATION:Budapeste — GuruWalk Essential + Buda
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261128T190000
+DTSTART;TZID=Europe/Berlin:20261128T170000
 DTEND;TZID=Europe/Berlin:20261128T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-29@eurotrip2026
@@ -1055,7 +936,7 @@ LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-0@eurotrip2026
@@ -1065,7 +946,7 @@ LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T090000
 DTEND;TZID=Europe/Berlin:20261129T104500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-1@eurotrip2026
@@ -1075,7 +956,7 @@ LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T110000
 DTEND;TZID=Europe/Berlin:20261129T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-2@eurotrip2026
@@ -1085,7 +966,7 @@ LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T130000
 DTEND;TZID=Europe/Berlin:20261129T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-3@eurotrip2026
@@ -1095,7 +976,7 @@ LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T170000
 DTEND;TZID=Europe/Berlin:20261129T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-30@eurotrip2026
@@ -1108,7 +989,7 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-0@eurotrip2026
@@ -1118,7 +999,7 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T073000
 DTEND;TZID=Europe/Berlin:20261130T081500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-1@eurotrip2026
@@ -1128,7 +1009,7 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T083000
 DTEND;TZID=Europe/Berlin:20261130T091500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-3@eurotrip2026
@@ -1140,200 +1021,171 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T140000
 DTEND;TZID=Europe/Berlin:20261130T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-01@eurotrip2026
-SUMMARY:Berlim — 2× GuruWalk Mitte - EuroTrip 2026
-DESCRIPTION:09:00–09:45 - Café · Rewe To Go Friedrichstraße · caminho ao encontro (Mi
- tte)\\n10:00–12:30 - GuruWalk Berlin Highlights — Brandenburg\, Reichsta
- g\, Memorial (eixo do tour)\\n12:30–14:15 - Almoço · deslocação ao ponto
-  da tarde\\n14:30–17:00 - GuruWalk Berlin Wall & Cold War\\n17:00–21:00 
- - East Side Gallery (trecho curto) se faltou · volta Alex · jantar
-LOCATION:Berlim — 2× GuruWalk Mitte
+SUMMARY:Berlim — DIY Mitte + GuruWalk Cold War - EuroTrip 2026
+DESCRIPTION:09:00–10:30 - Café · Memorial do Holocausto → Brandenburger Tor → Reichst
+ ag (exterior\; cúpula só com reserva)\\n10:30–14:00 - Almoço · deslocaçã
+ o ao encontro do tour (confirmar ponto na reserva)\\n14:30–17:30 - GuruW
+ alk Berlin Wall & Cold War (~3 h)\\n17:30–21:00 - East Side Gallery (tre
+ cho curto) · volta Alex · jantar
+LOCATION:Berlim — DIY Mitte + GuruWalk Cold War
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-0@eurotrip2026
-SUMMARY:Café · Rewe To Go Friedrichstraße · caminho ao encontro (Mitte)
-DESCRIPTION:Café · Rewe To Go Friedrichstraße · caminho ao encontro (Mitte)
-LOCATION:Berlim — 2× GuruWalk Mitte
+SUMMARY:Café · Memorial do Holocausto → Brandenburger Tor → Reichstag (exterior\;
+  cú
+DESCRIPTION:Café · Memorial do Holocausto → Brandenburger Tor → Reichstag (exterior\;
+  cúpula só com reserva)
+LOCATION:Berlim — DIY Mitte + GuruWalk Cold War
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261201T090000
-DTEND;TZID=Europe/Berlin:20261201T094500
-DTSTAMP:20261016T152049Z
+DTEND;TZID=Europe/Berlin:20261201T103000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-1@eurotrip2026
-SUMMARY:GuruWalk Berlin Highlights — Brandenburg\, Reichstag\, Memorial (eixo do 
- tour
-DESCRIPTION:GuruWalk Berlin Highlights — Brandenburg\, Reichstag\, Memorial (eixo do 
- tour)
-LOCATION:Berlim — 2× GuruWalk Mitte
+SUMMARY:Almoço · deslocação ao encontro do tour (confirmar ponto na reserva)
+DESCRIPTION:Almoço · deslocação ao encontro do tour (confirmar ponto na reserva)
+LOCATION:Berlim — DIY Mitte + GuruWalk Cold War
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261201T100000
-DTEND;TZID=Europe/Berlin:20261201T123000
-DTSTAMP:20261016T152049Z
+DTSTART;TZID=Europe/Berlin:20261201T103000
+DTEND;TZID=Europe/Berlin:20261201T140000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-2@eurotrip2026
-SUMMARY:Almoço · deslocação ao ponto da tarde
-DESCRIPTION:Almoço · deslocação ao ponto da tarde
-LOCATION:Berlim — 2× GuruWalk Mitte
+SUMMARY:GuruWalk Berlin Wall & Cold War (~3 h)
+DESCRIPTION:GuruWalk Berlin Wall & Cold War (~3 h)
+LOCATION:Berlim — DIY Mitte + GuruWalk Cold War
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261201T123000
-DTEND;TZID=Europe/Berlin:20261201T141500
-DTSTAMP:20261016T152049Z
+DTSTART;TZID=Europe/Berlin:20261201T143000
+DTEND;TZID=Europe/Berlin:20261201T173000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-3@eurotrip2026
-SUMMARY:GuruWalk Berlin Wall & Cold War
-DESCRIPTION:GuruWalk Berlin Wall & Cold War
-LOCATION:Berlim — 2× GuruWalk Mitte
+SUMMARY:East Side Gallery (trecho curto) · volta Alex · jantar
+DESCRIPTION:East Side Gallery (trecho curto) · volta Alex · jantar
+LOCATION:Berlim — DIY Mitte + GuruWalk Cold War
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261201T143000
-DTEND;TZID=Europe/Berlin:20261201T170000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-12-01-4@eurotrip2026
-SUMMARY:East Side Gallery (trecho curto) se faltou · volta Alex · jantar
-DESCRIPTION:East Side Gallery (trecho curto) se faltou · volta Alex · jantar
-LOCATION:Berlim — 2× GuruWalk Mitte
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261201T170000
+DTSTART;TZID=Europe/Berlin:20261201T173000
 DTEND;TZID=Europe/Berlin:20261201T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-02@eurotrip2026
-SUMMARY:Berlim — 2× GuruWalk + compras - EuroTrip 2026
-DESCRIPTION:Compras hub\\n09:00–09:45 - Café · caminho ao encontro (eixo alternativo 
- / Kreuzberg)\\n10:00–12:30 - GuruWalk Berlin Alternative\\n12:30–14:00 -
-  Almoço · deslocação à Museum Island\\n14:00–16:00 - GuruWalk Museum Isl
- and (exterior)\\n16:00–21:00 - Compras Alex / Ku’damm / Primark · mercad
- os de Natal · mala Praga
-LOCATION:Berlim — 2× GuruWalk + compras
+SUMMARY:Berlim — GuruWalk Kreuzberg + compras - EuroTrip 2026
+DESCRIPTION:Compras hub\\n09:00–09:45 - Café · caminho ao encontro ( Kreuzberg — ver 
+ reserva)\\n10:00–13:00 - GuruWalk Kreuzberg — Heart of Berlin\\n13:00–16
+ :00 - Almoço · buffer / volta Alexanderplatz\\n16:00–21:00 - Compras Ale
+ x / Ku’damm / Primark · mercados de Natal · mala Praga
+LOCATION:Berlim — GuruWalk Kreuzberg + compras
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-0@eurotrip2026
-SUMMARY:Café · caminho ao encontro (eixo alternativo / Kreuzberg)
-DESCRIPTION:Café · caminho ao encontro (eixo alternativo / Kreuzberg)
-LOCATION:Berlim — 2× GuruWalk + compras
+SUMMARY:Café · caminho ao encontro ( Kreuzberg — ver reserva)
+DESCRIPTION:Café · caminho ao encontro ( Kreuzberg — ver reserva)
+LOCATION:Berlim — GuruWalk Kreuzberg + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T090000
 DTEND;TZID=Europe/Berlin:20261202T094500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-1@eurotrip2026
-SUMMARY:GuruWalk Berlin Alternative
-DESCRIPTION:GuruWalk Berlin Alternative
-LOCATION:Berlim — 2× GuruWalk + compras
+SUMMARY:GuruWalk Kreuzberg — Heart of Berlin
+DESCRIPTION:GuruWalk Kreuzberg — Heart of Berlin
+LOCATION:Berlim — GuruWalk Kreuzberg + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T100000
-DTEND;TZID=Europe/Berlin:20261202T123000
-DTSTAMP:20261016T152049Z
+DTEND;TZID=Europe/Berlin:20261202T130000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-2@eurotrip2026
-SUMMARY:Almoço · deslocação à Museum Island
-DESCRIPTION:Almoço · deslocação à Museum Island
-LOCATION:Berlim — 2× GuruWalk + compras
+SUMMARY:Almoço · buffer / volta Alexanderplatz
+DESCRIPTION:Almoço · buffer / volta Alexanderplatz
+LOCATION:Berlim — GuruWalk Kreuzberg + compras
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261202T123000
-DTEND;TZID=Europe/Berlin:20261202T140000
-DTSTAMP:20261016T152049Z
+DTSTART;TZID=Europe/Berlin:20261202T130000
+DTEND;TZID=Europe/Berlin:20261202T160000
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-3@eurotrip2026
-SUMMARY:GuruWalk Museum Island (exterior)
-DESCRIPTION:GuruWalk Museum Island (exterior)
-LOCATION:Berlim — 2× GuruWalk + compras
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261202T140000
-DTEND;TZID=Europe/Berlin:20261202T160000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-12-02-4@eurotrip2026
 SUMMARY:Compras Alex / Ku’damm / Primark · mercados de Natal · mala Praga
 DESCRIPTION:Compras Alex / Ku’damm / Primark · mercados de Natal · mala Praga
-LOCATION:Berlim — 2× GuruWalk + compras
+LOCATION:Berlim — GuruWalk Kreuzberg + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T160000
 DTEND;TZID=Europe/Berlin:20261202T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-03@eurotrip2026
-SUMMARY:Berlim → Praga + tour noite - EuroTrip 2026
+SUMMARY:Berlim → Praga - EuroTrip 2026
 DESCRIPTION:08:00–08:45 - Check-out · S-Bahn Alex → Südkreuz\\n10:20–14:20 - Flix Süd
- kreuz → Florenc\\n14:30–17:30 - Hotel Alton → Wenceslas Square → Old Tow
- n Square + Relógio (exterior)\\n18:00–20:00 - GuruWalk Legends & Beer — 
- nám. J. Palacha / Rudolfinum\\n20:00–21:00 - Jantar leve · dormir
-LOCATION:Berlim → Praga + tour noite
+ kreuz → Florenc\\n14:30–17:30 - Hotel Alton · check-in · descanso · jant
+ ar leve perto do hotel (centro velho amanhã com guia)\\n17:30–21:00 - Pa
+ sseio curto opcional Wenceslas Square (exterior) · dormir cedo
+LOCATION:Berlim → Praga
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-0@eurotrip2026
 SUMMARY:Check-out · S-Bahn Alex → Südkreuz
 DESCRIPTION:Check-out · S-Bahn Alex → Südkreuz
-LOCATION:Berlim → Praga + tour noite
+LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T080000
 DTEND;TZID=Europe/Berlin:20261203T084500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-1@eurotrip2026
 SUMMARY:Flix Südkreuz → Florenc
 DESCRIPTION:Flix Südkreuz → Florenc
-LOCATION:Berlim → Praga + tour noite
+LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T102000
 DTEND;TZID=Europe/Berlin:20261203T142000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-2@eurotrip2026
-SUMMARY:Hotel Alton → Wenceslas Square → Old Town Square + Relógio (exterior)
-DESCRIPTION:Hotel Alton → Wenceslas Square → Old Town Square + Relógio (exterior)
-LOCATION:Berlim → Praga + tour noite
+SUMMARY:Hotel Alton · check-in · descanso · jantar leve perto do hotel (centro ve
+ lh
+DESCRIPTION:Hotel Alton · check-in · descanso · jantar leve perto do hotel (centro ve
+ lho amanhã com guia)
+LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T143000
 DTEND;TZID=Europe/Berlin:20261203T173000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-3@eurotrip2026
-SUMMARY:GuruWalk Legends & Beer — nám. J. Palacha / Rudolfinum
-DESCRIPTION:GuruWalk Legends & Beer — nám. J. Palacha / Rudolfinum
-LOCATION:Berlim → Praga + tour noite
+SUMMARY:Passeio curto opcional Wenceslas Square (exterior) · dormir cedo
+DESCRIPTION:Passeio curto opcional Wenceslas Square (exterior) · dormir cedo
+LOCATION:Berlim → Praga
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261203T180000
-DTEND;TZID=Europe/Berlin:20261203T200000
-DTSTAMP:20261016T152049Z
-END:VEVENT
-BEGIN:VEVENT
-UID:fast-2026-12-03-4@eurotrip2026
-SUMMARY:Jantar leve · dormir
-DESCRIPTION:Jantar leve · dormir
-LOCATION:Berlim → Praga + tour noite
-CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261203T200000
+DTSTART;TZID=Europe/Berlin:20261203T173000
 DTEND;TZID=Europe/Berlin:20261203T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-04@eurotrip2026
@@ -1347,7 +1199,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-0@eurotrip2026
@@ -1357,7 +1209,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T090000
 DTEND;TZID=Europe/Berlin:20261204T103000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-1@eurotrip2026
@@ -1367,7 +1219,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T110000
 DTEND;TZID=Europe/Berlin:20261204T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-2@eurotrip2026
@@ -1377,7 +1229,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T130000
 DTEND;TZID=Europe/Berlin:20261204T144500
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-3@eurotrip2026
@@ -1387,7 +1239,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T150000
 DTEND;TZID=Europe/Berlin:20261204T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-4@eurotrip2026
@@ -1397,7 +1249,7 @@ LOCATION:Praga — 2× GuruWalk castelo + centro
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T170000
 DTEND;TZID=Europe/Berlin:20261204T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-05@eurotrip2026
@@ -1413,7 +1265,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-0@eurotrip2026
@@ -1423,7 +1275,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T080000
 DTEND;TZID=Europe/Berlin:20261205T083000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-1@eurotrip2026
@@ -1433,7 +1285,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T083000
 DTEND;TZID=Europe/Berlin:20261205T093000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-2@eurotrip2026
@@ -1443,7 +1295,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T093000
 DTEND;TZID=Europe/Berlin:20261205T120000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-3@eurotrip2026
@@ -1453,7 +1305,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T123000
 DTEND;TZID=Europe/Berlin:20261205T140000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-4@eurotrip2026
@@ -1463,7 +1315,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T143000
 DTEND;TZID=Europe/Berlin:20261205T160000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-5@eurotrip2026
@@ -1473,7 +1325,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T160000
 DTEND;TZID=Europe/Berlin:20261205T180000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-6@eurotrip2026
@@ -1483,7 +1335,7 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T180000
 DTEND;TZID=Europe/Berlin:20261205T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-06@eurotrip2026
@@ -1496,7 +1348,7 @@ LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-0@eurotrip2026
@@ -1506,7 +1358,7 @@ LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T100000
 DTEND;TZID=Europe/Berlin:20261206T130000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-1@eurotrip2026
@@ -1516,7 +1368,7 @@ LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T130000
 DTEND;TZID=Europe/Berlin:20261206T150000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-2@eurotrip2026
@@ -1526,7 +1378,7 @@ LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T150000
 DTEND;TZID=Europe/Berlin:20261206T170000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-3@eurotrip2026
@@ -1536,18 +1388,19 @@ LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T170000
 DTEND;TZID=Europe/Berlin:20261206T210000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-07@eurotrip2026
 SUMMARY:Bruxelas → Brasil - EuroTrip 2026
 DESCRIPTION:Sem turismo urbano\\n04:30–05:00 - Táxi hotel → BRU Zaventem\\n07:00 - Vo
- o BRU → MAD → GRU\\nNo aeroporto - Tax Free + café
+ o BRU → MAD → GRU ( Pago · IB0604 + IB0271)\\nNo aeroporto - Tax Free + 
+ café
 LOCATION:Bruxelas → Brasil
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-07-0@eurotrip2026
@@ -1557,16 +1410,16 @@ LOCATION:Bruxelas → Brasil
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261207T043000
 DTEND;TZID=Europe/Berlin:20261207T050000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-07-1@eurotrip2026
-SUMMARY:Voo BRU → MAD → GRU
-DESCRIPTION:Voo BRU → MAD → GRU
+SUMMARY:Voo BRU → MAD → GRU ( Pago · IB0604 + IB0271)
+DESCRIPTION:Voo BRU → MAD → GRU ( Pago · IB0604 + IB0271)
 LOCATION:Bruxelas → Brasil
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261207T070000
 DTEND;TZID=Europe/Berlin:20261207T083000
-DTSTAMP:20261016T152049Z
+DTSTAMP:20261019T004629Z
 END:VEVENT
 END:VCALENDAR

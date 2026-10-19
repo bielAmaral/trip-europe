@@ -34,8 +34,7 @@
 | Trecho | Partida | Chegada | Notas |
 | --- | --- | --- | --- |
 | KL 644  JFK -> AMS  KL 1853  AMS -> MUC | 18 nov  21h20 | 19 nov  13h30 | Reservado FLEX  loc. EQZEWL  R$ 4.359,12 (ARGO)  conexo AMS ~1h35  mo + despacho. |
-| IB0604  BRU -> MAD | 7 dez  07h00 | 7 dez  09h25 | Alarme 03:00  sair hotel ~03:45 para BRU. |
-| IB0271  MAD -> GRU | 7 dez  11h50 | 7 dez  19h00 | Conexo em Madrid ~2h25; no atrasar o primeiro trecho. |
+| IB0604  BRU -> MAD  IB0271  MAD -> GRU | 7 dez  07h00 | 7 dez  19h00 (GRU) | Pago  alarme 03:00  sair hotel ~03:45  conexo MAD ~2h25  app Iberia + boarding offline. |
 
 ### Short-haul flight checklist (Ryanair Schengen)
 

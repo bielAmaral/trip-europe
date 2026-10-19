@@ -85,9 +85,8 @@ Munique → Salzburgo → Viena → Bratislava → Budapeste
 
 | Trecho | Partida | Chegada | Notas |
 |--------|---------|---------|-------|
-| KL644 JFK→AMS · KL1853 AMS→MUC | 18 nov 21:20 | 19 nov 13:30 | **Reservado** FLEX · EQZEWL · **R$ 4.359,12** (ARGO) |
-| IB0604 BRU→MAD | 7 dez 07:00 | 7 dez 09:25 | Sair hotel ~**03:45** · alarme **03:00** |
-| IB0271 MAD→GRU | 7 dez 11:50 | 7 dez 19:00 | Conexão ~2h25 |
+| KL644 JFK→AMS · KL1853 AMS→MUC | 18 nov 21:20 | 19 nov 13:30 | **Pago** FLEX · EQZEWL · **R$ 4.359,12** (ARGO) |
+| IB0604 BRU→MAD · IB0271 MAD→GRU | 7 dez 07:00 | 7 dez 19:00 GRU | **Pago** · alarme **03:00** · sair hotel ~**03:45** · conexão MAD ~2h25 |
 
 ### Curtos na UE (Omio)
 

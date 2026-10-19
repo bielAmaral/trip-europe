@@ -247,7 +247,7 @@
 | Time | Plan |
 | --- | --- |
 | 04:30-05:00 | Taxi hotel -> BRU Zaventem |
-| 07:00 | Voo BRU -> MAD -> GRU |
+| 07:00 | Voo BRU -> MAD -> GRU (Pago  IB0604 + IB0271) |
 | No aeroporto | Tax Free + cafe |
 
 **Transit / transport detail:**
