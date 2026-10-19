@@ -656,6 +656,25 @@ html[data-theme="dark"] .fast-plan__badge--guruwalk {
   margin: 0.35rem 0 0;
   padding-left: 1.15rem;
 }
+/* Fonte das curiosidades — injetadas em Passo a passo no mapa (app-mapas.js) */
+.walk-route.day-pontos {
+  display: none !important;
+}
+
+.walk-route-section-head,
+.mapas-walk-section-head {
+  list-style: none;
+  font-weight: 600;
+  margin: 0.75rem 0 0.35rem;
+  padding: 0;
+  color: var(--text-muted, #555);
+}
+.mapas-walk-section-head--rest {
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--border, #ccc);
+}
+
 .walk-route {
   margin-top: 0.75rem;
 }

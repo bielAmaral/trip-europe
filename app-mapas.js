@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var CSV_URL = "data/mapas-paradas.csv?v=37";
+  var CSV_URL = "data/mapas-paradas.csv?v=38";
 
   var daysById = {};
 
@@ -176,7 +176,76 @@
     return [base].concat(parts);
   }
 
-  function matchStopActivity(stop, fastRows) {
+  function normalizePlaceKey(s) {
+    return String(s || "")
+      .toLowerCase()
+      .replace(/\([^)]*\)/g, "")
+      .split(/[+·/—–-]/)[0]
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
+  function parseWalkStopsFromDay(dayId) {
+    var dayEl = document.getElementById(dayId);
+    if (!dayEl) return [];
+    var out = [];
+    dayEl.querySelectorAll(".walk-route .walk-route__stops > li").forEach(function (li) {
+      var strong = li.querySelector("strong");
+      var title = strong ? strong.textContent.trim() : "";
+      if (!title) return;
+      var full = li.textContent.trim();
+      var tip = full;
+      if (full.indexOf(title) === 0) {
+        tip = full.slice(title.length).replace(/^[\s(—–-]+/, "").trim();
+        if (tip.charAt(0) === "(") {
+          var close = tip.indexOf(")");
+          if (close >= 0) tip = tip.slice(close + 1).replace(/^[\s—–-]+/, "").trim();
+        }
+      }
+      out.push({ title: title, tip: tip });
+    });
+    return out;
+  }
+
+  function findStopForWalkTitle(title, stops) {
+    var key = normalizePlaceKey(title);
+    if (!key) return null;
+    var best = null;
+    var bestScore = 0;
+    stops.forEach(function (s) {
+      if (s.category === "transport" || s.category === "hotel" || s.category === "airport") {
+        return;
+      }
+      var nk = normalizePlaceKey(s.name_pt);
+      if (!nk) return;
+      var score = 0;
+      if (nk === key) score = 100;
+      else if (nk.indexOf(key) >= 0 || key.indexOf(nk) >= 0) score = 60;
+      else {
+        var parts = key.split(/\s+/).filter(function (w) {
+          return w.length >= 4;
+        });
+        parts.forEach(function (w) {
+          if (nk.indexOf(w) >= 0) score += 15;
+        });
+      }
+      if (score > bestScore) {
+        bestScore = score;
+        best = s;
+      }
+    });
+    return bestScore >= 30 ? best : null;
+  }
+
+  function mapsSearchForWalkTitle(title) {
+    return (
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent(title)
+    );
+  }
+
+  function matchStopActivity(stop, fastRows, walkTip) {
+    if (walkTip) return walkTip;
     if (stop.do_here_pt) return stop.do_here_pt;
     var keys = stopKeywords(stop.name_pt);
     var i;
@@ -337,10 +406,94 @@
     return li;
   }
 
+  function renderWalkOnlyStop(index, walkItem, matchedStop, compact) {
+    var li = document.createElement("li");
+    li.className =
+      "mapas-stop mapas-stop--sight mapas-stop--walk" +
+      (compact ? " mapas-stop--compact" : "");
+
+    var num = document.createElement("span");
+    num.className = "mapas-stop__num";
+    num.textContent = index;
+    li.appendChild(num);
+
+    if (!compact) {
+      var badge = document.createElement("span");
+      badge.className = "mapas-stop__cat";
+      badge.textContent = "Rota a pé";
+      li.appendChild(badge);
+    }
+
+    var name = document.createElement("span");
+    name.className = "mapas-stop__name";
+    name.textContent = walkItem.title;
+    li.appendChild(name);
+
+    if (walkItem.tip) {
+      var doHere = document.createElement("span");
+      doHere.className = "mapas-stop__do";
+      doHere.textContent = walkItem.tip;
+      li.appendChild(doHere);
+    }
+
+    var url =
+      (matchedStop && matchedStop.maps_search_url) ||
+      mapsSearchForWalkTitle(walkItem.title);
+    var link = document.createElement("a");
+    link.className = compact ? "mapas-inline-link" : "mapas-stop__maps btn-maps";
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", "Abrir " + walkItem.title + " no Google Maps");
+    link.textContent = "Maps";
+    li.appendChild(link);
+
+    return li;
+  }
+
+  function buildWalkTipsIndex(walkItems, dayStops) {
+    var byStopKey = {};
+    var unmatched = [];
+    walkItems.forEach(function (w) {
+      var stop = findStopForWalkTitle(w.title, dayStops);
+      if (stop) {
+        byStopKey[stop.order + ":" + stop.name_pt] = w.tip;
+      } else {
+        unmatched.push(w);
+      }
+    });
+    return { byStopKey: byStopKey, unmatched: unmatched };
+  }
+
   function buildStopListOl(day, listClass, fastRows) {
     var compact = listClass && listClass.indexOf("--dia") >= 0;
     var ol = document.createElement("ol");
     ol.className = listClass || "mapas-stop-list";
+
+    var walkItems = parseWalkStopsFromDay(day.day_id);
+    var walkIdx = buildWalkTipsIndex(walkItems, day.stops);
+
+    if (compact && walkItems.length) {
+      var walkLabel = document.createDocumentFragment();
+      var head = document.createElement("li");
+      head.className = "mapas-walk-section-head";
+      head.textContent = "Rota a pé — ordem e curiosidade";
+      ol.appendChild(head);
+
+      walkItems.forEach(function (w, i) {
+        var matched = findStopForWalkTitle(w.title, day.stops);
+        ol.appendChild(renderWalkOnlyStop(i + 1, w, matched, compact));
+      });
+
+      if (day.stops.some(function (s) {
+        return s.category === "transport" || s.category === "hotel" || s.category === "airport";
+      })) {
+        var sep = document.createElement("li");
+        sep.className = "mapas-walk-section-head mapas-walk-section-head--rest";
+        sep.textContent = "Restante do dia (transporte, hotel, extras)";
+        ol.appendChild(sep);
+      }
+    }
 
     var prev = null;
     day.stops.forEach(function (s) {
@@ -348,7 +501,16 @@
         var legEl = renderLeg(s, prev, s, compact);
         if (legEl) ol.appendChild(legEl);
       }
-      var activity = compact ? matchStopActivity(s, fastRows || []) : "";
+      var stopKey = s.order + ":" + s.name_pt;
+      var walkTip = walkIdx.byStopKey[stopKey] || "";
+      var activity = compact
+        ? matchStopActivity(s, fastRows || [], walkTip)
+        : walkTip || "";
+      if (compact && walkItems.length && walkTip && s.category === "sight") {
+        /* já listado na secção rota a pé — evita duplicar parada */
+        prev = s;
+        return;
+      }
       ol.appendChild(renderStop(s, compact, activity));
       prev = s;
     });
@@ -405,7 +567,10 @@
     inner.appendChild(buildMapasDayIntro(fastCtx));
     var stepsLabel = document.createElement("p");
     stepsLabel.className = "mapas-day-intro__label mapas-day-intro__label--steps";
-    stepsLabel.textContent = "Ordem das paradas (como chegar entre elas)";
+    stepsLabel.textContent =
+      parseWalkStopsFromDay(day.day_id).length
+        ? "Passo a passo — rota a pé + deslocações do dia"
+        : "Ordem das paradas (como chegar entre elas)";
     inner.appendChild(stepsLabel);
     inner.appendChild(
       buildStopListOl(day, "mapas-stop-list mapas-stop-list--dia", fastCtx.rows)

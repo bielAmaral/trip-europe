@@ -219,7 +219,7 @@ def parse_guruwalk(html: str) -> list[IcsEvent]:
         events.append(
             IcsEvent(
                 uid=f"guruwalk-{d.isoformat()}-{h:02d}{mi:02d}@eurotrip2026",
-                summary=f"GuruWalk: {tour_cell[:70]}",
+                summary=f"Rota a pé: {tour_cell[:70]}",
                 description=notes + "\\nChegue 10 min antes.",
                 location=notes[:100],
                 dtstart=start_dt,
