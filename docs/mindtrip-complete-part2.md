@@ -7,17 +7,17 @@
 - **Daily budget cap:** EUR 75 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
 - **Day mode:** Voo amanh 11:25
-- **Hotel:** Medos Hotel Budapest
+- **Hotel:** Budapest Panorama Central
 - **Tags:** Teto EUR 75 | media | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
 
 | Time | Plan |
 | --- | --- |
-| 09:00-10:45 | Cafe  Tesco Kazinczy 16  caminho ao tour |
-| 11:00-13:00 | GuruWalk Jewish Quarter | https://www.guruwalk.com/walks/32765 |
-| 13:00-17:00 | Margaret Bridge / Margitsziget (exterior)  buffer descanso |
-| 17:00-21:00 | Jantar leve  mala Berlim  dormir razoavel |
+| 09:00-10:45 | Cafe, comprar agua/lanche no Tesco Kazinczy 16 e caminhar ate Madach ter. |
+| 11:00-13:30 | Tour Jewish Quarter  Madach ter  ~2h30 - 12 paradas (~2h30)  1 Sinagoga Rumbach (exterior) -> ult. Encerramento no bairro  subhorarios no expandir |
+| 13:30-17:00 | Fim do tour no Jewish Quarter -> Margaret Bridge/Margitsziget; usar como passeio leve e descanso. |
+| 17:00-21:00 | Jantar cedo, fechar mala para o voo e deixar o 100E preparado. |
 
 **Transit / transport detail:**
 - Grande Mercado Central (Nagyvasarcsarnok): M4 (verde) ou M3 - estaco Fovam ter (M4) / Kalvin ter (M3) a pe ao mercado.
@@ -35,7 +35,7 @@
 - **Daily budget cap:** EUR 40 (1 adult solo, all-in excl. hotel)
 - **Energy level:** leve
 - **Day mode:** Ryanair 11:25
-- **Hotel:** Medos -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)
+- **Hotel:** Budapest Panorama Central -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)
 - **Tags:** Teto EUR 40 | leve | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
@@ -45,7 +45,7 @@
 | 07:30-08:15 | Check-out  cafe/kit Astoria  sair para 100E |
 | ~08:30-09:15 | 100E -> BUD (Ryanair + bagagem  Pago Omio) |
 | 11:25-~12:55 | Voo BUD -> BER (confira terminal no bilhete) |
-| 14:00-21:00 | Check-in Premier Inn -> Alexanderplatz + Fernsehturm (exterior)  jantar Rewe |
+| 14:00-21:00 | BER -> hotel: FEX/S9 + U5 (ver transit)  check-in Premier Inn Alex  Alexanderplatz + Fernsehturm (exterior)  jantar Rewe To Go Alex ou Five Guys Alex 2 |
 
 **Transit / transport detail:**
 - Centro -> BUD: autocarro expresso 100E (~35-45 min) - meta no aeroporto ~09:15 para voo 11h25.
@@ -57,7 +57,7 @@
 
 ---
 
-### 2026-12-01 - 1 dez  ter Berlim - 2 GuruWalk MitteBaseTour
+### 2026-12-01 - 1 dez  ter Berlim - Mitte manh + Guerra Fria a peBaseTour
 
 - **Daily budget cap:** EUR 110 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -68,24 +68,23 @@
 
 | Time | Plan |
 | --- | --- |
-| 09:00-09:45 | Cafe  Rewe To Go Friedrichstrasse  caminho ao encontro (Mitte) |
-| 10:00-12:30 | GuruWalk Berlin Highlights - Brandenburg, Reichstag, Memorial (eixo do tour) | https://www.guruwalk.com/walks/36662 |
-| 12:30-14:15 | Almoco  deslocaco ao ponto da tarde |
-| 14:30-17:00 | GuruWalk Berlin Wall & Cold War | https://www.guruwalk.com/walks/47158 |
-| 17:00-21:00 | East Side Gallery (trecho curto) se faltou  volta Alex  jantar |
+| 09:00-10:30 | Cafe  Memorial do Holocausto -> Brandenburger Tor -> Reichstag (exterior; cupula so com reserva) |
+| 10:30-14:00 | Topografia do Terror ou cupula do Reichstag (conforme reserva/local do tour)  almoco Rewe To Go Friedrichstrasse  deslocaco ao encontro tour 14:30 - U-Bahn Anton-Wilhelm-Amo (ponto na reserva; est. 20-25 min do Mitte) |
+| 14:30-17:30 | Tour Cold War  U-Bahn Anton-Wilhelm-Amo  ~3 h  bilhete AB - 12 paradas (~3h)  1 Detlev-Rohwedder-Haus -> ult. Encerramento Mitte  subhorarios no expandir |
+| 17:30-21:00 | Tour termina em Mitte -> deslocaco ate Warschauer Strasse  East Side Gallery por 30 min  S-Bahn -> Alexanderplatz  jantar  Alexanderplatz a noite  opcional Generator as 21h |
 
 **Transit / transport detail:**
-- Hotel (Alexanderplatz) -> tours Mitte: U5 Alexanderplatz -> Brandenburger Tor - encontros dos 2 GuruWalks costumam ser neste eixo.
+- Hotel (Alexanderplatz) -> Mitte (manh DIY + encontro tarde): U5 Alexanderplatz -> Brandenburger Tor.
 - Tarde (Muro / Cold War): seguir guia - normalmente S-Bahn / U-Bahn ate trechos do Muro ou Ostbahnhof.
-- East Side Gallery (opcional): S-Bahn Ostbahnhof ou U1 Warschauer Strasse.
+- East Side Gallery -> Alexanderplatz: usar S3/S5/S7/S9 desde Warschauer Strasse ou Ostbahnhof; U1 no e direta para Alex.
 - WARNING: Memorial do Holocausto fica junto a Brandenburg; Reichstag (cupula) exige reserva previa se quiser entrar.
 
-- Cortar se atrasar: East Side Gallery (manter os 2 GuruWalks)
+- Cortar se atrasar: East Side Gallery (manter Cold War)
 - Noite: Generator (pub crawl 21h) ou Kreuzberg
 
 ---
 
-### 2026-12-02 - 2 dez  qua Berlim - 2 GuruWalk + comprasBaseTourCompras
+### 2026-12-02 - 2 dez  qua Berlim - Kreuzberg a pe + comprasBaseTourCompras
 
 - **Daily budget cap:** EUR 120 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -97,14 +96,14 @@
 
 | Time | Plan |
 | --- | --- |
-| 09:00-09:45 | Cafe  caminho ao encontro (eixo alternativo / Kreuzberg) |
-| 10:00-12:30 | GuruWalk Berlin Alternative | https://www.guruwalk.com/walks/52050 |
-| 12:30-14:00 | Almoco  deslocaco a Museum Island |
-| 14:00-16:00 | GuruWalk Museum Island (exterior) | https://www.guruwalk.com/walks/46449 |
-| 16:00-21:00 | Compras Alex / Ku'damm / Primark  mercados de Natal  mala Praga |
+| 07:30-09:00 | Slot preferido lavanderia (confirmar loja no Maps)  terminar secagem antes de sair |
+| 09:00-10:00 | Cafe to-go  caminho ate Moritzplatz  chegar ao encontro do tour (Kreuzberg - ver reserva) |
+| 10:00-13:00 | Tour Kreuzberg  Moritzplatz / Aufbau Haus  ~3 h - 11 paradas (~3h)  1 Prinzessinnengarten -> ult. Street art Goerlitzer / Schlesisches Tor  subhorarios no expandir |
+| 13:00-16:00 | Almoco Kreuzberg (Markthalle Neun area ou Doener)  Oberbaumbruecke no caminho  U1/U8 -> Alexanderplatz  pausa hotel / banheiro |
+| 16:00-21:00 | Compras hub: Alexa / Primark Alex -> U2 Alex -> Zoologischer Garten  Ku'damm / Primark  mercados Natal (opcional)  volta U2  jantar  mala Praga |
 
 **Transit / transport detail:**
-- Mitte -> East Side Gallery: S-Bahn Brandenburger Tor -> Ostbahnhof (S3 / S5 / S7 / S9) + ~10 min a pe ou U1 ate Warschauer Strasse.
+- Kreuzberg / Moritzplatz -> Alexanderplatz: U1/U8 conforme a saida do tour, com no maximo uma troca - confirmar no BVG/Maps.
 - Ostbahnhof / Warschauer -> Alexanderplatz: S-Bahn ou U5 / U8 conforme origem.
 - Alexanderplatz -> Ku'damm: U2 Alexanderplatz -> Zoologischer Garten (eixo comercial ocidental).
 - Volta: U2/U5/S-Bahn para Hauptbahnhof.
@@ -114,7 +113,7 @@
 
 ---
 
-### 2026-12-03 - 3 dez  qui Berlim -> Praga + tour noiteTransferenciaTour
+### 2026-12-03 - 3 dez  qui Berlim -> PragaTransferencia
 
 - **Daily budget cap:** EUR 50 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
@@ -127,9 +126,8 @@
 | --- | --- |
 | 08:00-08:45 | Check-out  S-Bahn Alex -> Suedkreuz |
 | 10:20-14:20 | Flix Suedkreuz -> Florenc |
-| 14:30-17:30 | Hotel Alton -> Wenceslas Square -> Old Town Square + Relogio (exterior) |
-| 18:00-20:00 | GuruWalk Legends & Beer - nam. J. Palacha / Rudolfinum | https://www.guruwalk.com/walks/57909 |
-| 20:00-21:00 | Jantar leve  dormir |
+| 14:30-17:30 | Florenc -> Metro C Florenc -> I.P. Pavlova (~2 min, Maps) + pe Hotel Alton  check-in  jantar leve Albert Legerova / Billa perto |
+| 17:30-21:00 | Opcional: Metro C -> Wenceslas Square (exterior, 30-40 min)  volta hotel  dormir cedo |
 
 **Transit / transport detail:**
 - Hotel (Alexanderplatz) -> Suedkreuz (FlixBus): S-Bahn (ex. S2 / S25 / S26 conforme BVG) Alexanderplatz -> Suedkreuz (~15 min).
@@ -141,12 +139,12 @@
 - Staromestske -> Karluv most: a pe (fluxo turistico).
 - WARNING: Bilhete PID: compre carto/dia conforme a estadia; valide antes de entrar.
 
-- Cortar se atrasar: Old Town (manter tour 18h)
+- Cortar se atrasar: passeio Wenceslas (priorizar sono)
 - Critico: Hotel 08:45  Flix 10:20
 
 ---
 
-### 2026-12-04 - 4 dez  sex Praga - 2 GuruWalk castelo + centroBaseTourCompras
+### 2026-12-04 - 4 dez  sex Praga - Castelo + centro a peBaseTourCompras
 
 - **Daily budget cap:** EUR 130 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -159,10 +157,10 @@
 | Time | Plan |
 | --- | --- |
 | 09:00-10:30 | Charles Bridge (cedo) -> Klarov 1 (encontro castelo) |
-| 11:00-13:00 | GuruWalk Prague Castle - guarda-chuva vermelho 100 | https://www.guruwalk.com/walks/39714 |
-| 13:00-14:45 | Almoco  Billa Malostranske nam.  caminho ao Powder Tower |
-| 15:00-17:00 | GuruWalk Old Town & Jewish Quarter | https://www.guruwalk.com/walks/36530 |
-| 17:00-21:00 | Compras Na Prikope / Palladium  noite: Sophie's + Vinohrady |
+| 11:00-13:15 | Tour Castle  Klarov 1  ~2h15  bilhete transporte  troca de guardas 12h se no horario - 12 paradas (~2h15)  1 Klarov (saida metr Malostranska) -> ult. Descida ao Mala Strana  encontro Klarov 1  subhorarios no expandir |
+| 13:15-14:45 | Almoco  Billa Malostranske nam.  caminho ao Powder Tower |
+| 15:00-17:45 | Tour centro e Josefov  Powder Tower  ~2h45 - 12 paradas (~2h45)  1 Powder Tower (Prasna brana) -> ult. John Lennon Wall  encontro Powder Tower  subhorarios no expandir |
+| 17:45-21:00 | Compras Na Prikope / Palladium (mesma zona, pe)  jantar mall ou Billa  noite Sophie's + Vinohrady (opcional)  1 metro ida/volta hotel |
 
 **Transit / transport detail:**
 - Hotel -> Cafe Savoy (Vitezna / Smichov): Metro C I.P. Pavlova -> Florenc -> Metro B Florenc -> Andel + curto a pe ou eletrico 9 / 12 / 20.
@@ -181,7 +179,7 @@
 - **Energy level:** leve
 - **Day mode:** Ryanair PRG->CRL 12:30 + Flibco to Midi
 - **Hotel:** Alton -> Hotel des Colonies Brussels Rogier (check-in 5 Dec)
-- **Tags:** Teto EUR 60 | leve | FAST  exterior  09:00-21:00
+- **Tags:** Teto EUR 60 | leve | FAST  voo + transferencia  08:00-21:00
 
 **Schedule (locked):**
 
@@ -218,10 +216,10 @@
 
 | Time | Plan |
 | --- | --- |
-| 10:00-13:00 | Grand Place + Galeries Saint-Hubert (exterior) |
-| 13:00-15:00 | Almoco (Chez Leon / Exki)  Mont des Arts (opcional) |
-| 15:00-17:00 | Compras buffer Rue Neuve / Apple  Tax Free prep |
-| 17:00-21:00 | Mala 100%  jantar leve  dormir cedo |
+| 10:00-13:00 | Grand Place -> Galeries Saint-Hubert -> Manneken Pis/Bourse - circuito central a pe |
+| 13:00-15:00 | Almoco no centro  Mont des Arts opcional |
+| 15:00-17:00 | Compras buffer na Rue Neuve  Tax Free |
+| 17:00-21:00 | Mala 100%  jantar leve  dormir cedo para o voo |
 
 **Transit / transport detail:**
 - Rogier -> Grand Place / Bourse: metro 1/5 ou a pe (~15 min).
@@ -240,15 +238,16 @@
 - **Energy level:** minima
 - **Day mode:** Sem turismo urbano
 - **Hotel:** Hotel des Colonies -> BRU airport 04:30
-- **Tags:** Teto EUR 20 | minima | FAST  exterior  09:00-21:00
+- **Tags:** Teto EUR 20 | minima | FAST  aeroporto  03:00-07:00
 
 **Schedule (locked):**
 
 | Time | Plan |
 | --- | --- |
-| 04:30-05:00 | Taxi hotel -> BRU Zaventem |
-| 07:00 | Voo BRU -> MAD -> GRU (Pago  IB0604 + IB0271) |
-| No aeroporto | Tax Free + cafe |
+| 03:00 | Alarme  documentos e bagagem ja separados na noite anterior |
+| 03:30-04:30 | Bolt/taxi hotel -> BRU Zaventem - reserva recomendada |
+| 05:00-07:00 | Check-in Iberia  seguranca  Tax Free  cafe |
+| 07:00 | Voo BRU -> MAD -> GRU  IB0604 + IB0271 |
 
 **Transit / transport detail:**
 - Hotel (Rogier) -> BRU: transfer reservado ou comboio IC a partir de Bruxelles-Central / Nord - confira horario na SNCB para chegar 2h antes do voo.

@@ -47,9 +47,9 @@ def fold_ics(text: str) -> str:
     text = text.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
     lines: list[str] = []
     while len(text) > 73:
-        lines.append(text[:73])
-        text = " " + text[73:]
-    lines.append(text)
+        lines.append(text[:73].rstrip())
+        text = " " + text[73:].lstrip()
+    lines.append(text.rstrip())
     return "\r\n".join(lines)
 
 
@@ -165,8 +165,8 @@ def fixed_hotels() -> list[IcsEvent]:
         ("2026-11-19", "2026-11-22", "Hotel Munique", "Check-in 19 nov, check-out 22 nov"),
         ("2026-11-22", "2026-11-24", "Hotel Salzburgo", "Check-in 22 nov, check-out 24 nov"),
         ("2026-11-24", "2026-11-26", "Hotel Viena", "Check-in 24 nov, check-out 26 nov"),
-        ("2026-11-26", "2026-11-28", "Hotel Bratislava", "Check-in 26 nov, check-out 28 nov"),
-        ("2026-11-28", "2026-11-30", "Hotel Budapeste", "Check-in 28 nov, check-out 30 nov"),
+        ("2026-11-26", "2026-11-27", "Hotel Bratislava", "Check-in 26 nov, check-out 27 nov"),
+        ("2026-11-27", "2026-11-30", "Hotel Budapeste", "Budapest Panorama Central, Károly körút 10 · check-in 27 nov, check-out 30 nov"),
         ("2026-11-30", "2026-12-03", "Hotel Berlim", "Check-in 30 nov, check-out 3 dez"),
         ("2026-12-03", "2026-12-05", "Hotel Praga", "Check-in 3 dez, check-out 5 dez"),
         ("2026-12-05", "2026-12-07", "Hotel Bruxelas", "Mercure Rogier, check-out 7 dez"),
@@ -350,7 +350,8 @@ def main() -> int:
         f"{body}\r\n"
         "END:VCALENDAR\r\n"
     )
-    OUT.write_text(cal, encoding="utf-8")
+    # LF keeps the generated artifact diff-friendly; calendar clients accept it.
+    OUT.write_text(cal.replace("\r\n", "\n"), encoding="utf-8")
     print(f"Wrote {len(events)} events -> {OUT}")
     return 0
 

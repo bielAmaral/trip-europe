@@ -134,6 +134,7 @@
     transport: "Deslocação — confira horário no bilhete / app Omio.",
     sight: "Passear e fotos; detalhe no plano por horário acima.",
     food: "Comer ou comprar algo para o kit / jantar.",
+    gift: "Comprar souvenir pequeno no próprio eixo; confirmar horário e stock no Maps.",
     night: "Bar ou zona de noite — 1 drink e dormir se amanhã tiver trem cedo.",
     tour: "Tour / visita — gorjeta em cash se for gratuito.",
   };
@@ -580,13 +581,17 @@
   }
 
   function ensureScheduleLabel(plan) {
-    if (plan.querySelector(".fast-plan__schedule-label")) return;
     var tableWrap = plan.querySelector(".fast-plan__table-wrap");
     if (!tableWrap) return;
-    var schedLabel = document.createElement("p");
-    schedLabel.className = "fast-plan__schedule-label";
-    schedLabel.textContent = "Plano do dia — comece por aqui (horários)";
-    tableWrap.insertAdjacentElement("beforebegin", schedLabel);
+    var schedLabel = plan.querySelector(".fast-plan__schedule-label");
+    if (!schedLabel) {
+      schedLabel = document.createElement("p");
+      schedLabel.className = "fast-plan__schedule-label";
+      tableWrap.insertAdjacentElement("beforebegin", schedLabel);
+    }
+    schedLabel.innerHTML =
+      '<span class="fast-plan__schedule-title">Janelas do dia</span>' +
+      '<span class="fast-plan__schedule-hint">Detalhe: expandir abaixo</span>';
   }
 
   function injectDayMapRoteiro(day) {
@@ -688,6 +693,7 @@
     });
     renderMapasSection(days);
     injectFastPlanLegs(days);
+    if (window.roteiroRefreshFastPlanExpand) window.roteiroRefreshFastPlanExpand();
     if (window.refreshLucide) window.refreshLucide();
   }
 

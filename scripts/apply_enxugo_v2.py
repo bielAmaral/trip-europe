@@ -185,7 +185,7 @@ def main() -> None:
     # Dia 7 fast-plan
     html = html.replace(
         "<tr><td class=\"fast-plan__when\">04:30–05:00</td><td>Táxi hotel → <strong>BRU Zaventem</strong></td></tr>",
-        "<tr><td class=\"fast-plan__when\">03:00</td><td><strong>Alarme</strong></td></tr>\n              <tr><td class=\"fast-plan__when\">03:30–04:30</td><td>Bolt/táxi hotel → <strong>BRU Zaventem</strong></td></tr>\n              <tr><td class=\"fast-plan__when\">05:00–07:00</td><td>Check-in Iberia · <strong>Tax Free</strong></td></tr>",
+        "<tr><td class=\"fast-plan__when\">03:00</td><td><strong>Alarme</strong></td></tr>\n              <tr><td class=\"fast-plan__when\">03:30–04:30</td><td>Bolt/táxi hotel → <strong>BRU Zaventem</strong></td></tr>\n              <tr><td class=\"fast-plan__when\">05:00–07:00</td><td>Check-in Iberia · <strong>Tax Free</strong> · café</td></tr>",
     )
     html = html.replace(
         "<tr><td class=\"fast-plan__when\">No aeroporto</td><td><strong>Tax Free</strong> + café</td></tr>\n",

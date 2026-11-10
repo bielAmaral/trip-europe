@@ -1,4 +1,4 @@
-const CACHE = "roteiro-pwa-v75";
+const CACHE = "roteiro-pwa-v78";
 const PRECACHE = [
   "./",
   "./index.html",
@@ -8,6 +8,8 @@ const PRECACHE = [
   "./app.css",
   "./app-views.js",
   "./app-mapas.js",
+  "./app-fast-plan-expand.js",
+  "./data/fast-plan-window-details.json",
   "./app-search-ui.js",
   "./data/mapas-paradas.csv",
   "./data/mapas-my-maps.csv",

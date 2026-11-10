@@ -209,10 +209,10 @@ HOTELS_BY_DATE = {
     "2026-11-24": "Lasserhof -> Hotel Zipser Vienna (check-in 24 Nov)",
     "2026-11-25": "Hotel Zipser Vienna (Lange Gasse 49)",
     "2026-11-26": "Zipser -> Danubia Gate Bratislava (check-in 26 Nov)",
-    "2026-11-27": "Danubia Gate -> Medos Hotel Budapest (check-in 27 Nov)",
-    "2026-11-28": "Medos Hotel Budapest",
-    "2026-11-29": "Medos Hotel Budapest",
-    "2026-11-30": "Medos -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)",
+    "2026-11-27": "Danubia Gate -> Budapest Panorama Central (check-in 27 Nov)",
+    "2026-11-28": "Budapest Panorama Central",
+    "2026-11-29": "Budapest Panorama Central",
+    "2026-11-30": "Budapest Panorama Central -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)",
     "2026-12-01": "Premier Inn Berlin Alexanderplatz",
     "2026-12-02": "Premier Inn Berlin Alexanderplatz",
     "2026-12-03": "Premier Inn -> Alton Prague (check-in 3 Dec)",
@@ -272,13 +272,13 @@ def build_document(index_path: Path) -> str:
               "- Atel Hotel Lasserhof: Lasserstrasse 47, 5020 Salzburg, Austria",
               "- Hotel Zipser: Lange Gasse 49, 1080 Wien, Austria",
               "- Danubia Gate: Dunajska 26, 811 01 Bratislava, Slovakia",
-              "- Medos Hotel: Rakoczi ut 40, 1072 Budapest, Hungary",
+              "- Budapest Panorama Central: Károly körút 10, 1052 Budapest, Hungary",
               "- Premier Inn Berlin Alexanderplatz: Otto-Braun-Strasse 69, 10178 Berlin",
               "- Alton Hotel: Legerova 1581/22, 120 00 Praha 2, Czechia",
               "- Hotel des Colonies Brussels: Rue des Croisades 6, 1210 Brussels", "",
               "---", "", "## DAILY BUDGET TABLE", ""]
     lines.append(md_table(table_with_id(html, 'operacional-tabela-dias')))
-    lines += ["", "---", "", "## GURUWALK TOURS (17 BOOKED - LOCKED TIMES)", ""]
+    lines += ["", "---", "", "## GURUWALK TOURS (ACTIVE BOOKINGS - LOCKED TIMES)", ""]
     lines.append(md_table(table_with_class(html, 'guruwalk-table', 'id="guruwalk"')))
     tips = html[html.find("guruwalk-tips"): html.find("guruwalk-tips") + 2000]
     lines.append("")

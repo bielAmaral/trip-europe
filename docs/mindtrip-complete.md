@@ -96,7 +96,7 @@ Total indicative: ~R$ 11,423 (verify on Booking)
 - Atel Hotel Lasserhof: Lasserstrasse 47, 5020 Salzburg, Austria
 - Hotel Zipser: Lange Gasse 49, 1080 Wien, Austria
 - Danubia Gate: Dunajska 26, 811 01 Bratislava, Slovakia
-- Medos Hotel: Rakoczi ut 40, 1072 Budapest, Hungary
+- Budapest Panorama Central: Károly körút 10, 1052 Budapest, Hungary
 - Premier Inn Berlin Alexanderplatz: Otto-Braun-Strasse 69, 10178 Berlin
 - Alton Hotel: Legerova 1581/22, 120 00 Praha 2, Czechia
 - Hotel des Colonies Brussels: Rue des Croisades 6, 1210 Brussels
@@ -108,54 +108,32 @@ Total indicative: ~R$ 11,423 (verify on Booking)
 | Data | Cidade | Energia | Teto EUR | Foco | Dia |
 | --- | --- | --- | --- | --- | --- |
 | 19 nov | Munique | Leve | 70 | Chegada  jet lag | # |
-| 20 nov | Munique | Pleno | 110 | GuruWalk 10h15 + tarde livre + Euro Bar/Glockenbach | # |
-| 21 nov | Fuessen | Maxima | 85 | GuruWalk + castelo  volta 18h  sem noite | # |
+| 20 nov | Munique | Pleno | 110 | Rota Altstadt 10h15 + tarde livre + Euro Bar/Glockenbach | # |
+| 21 nov | Fuessen | Maxima | 85 | Fuessen a pe + castelo  volta 18h  sem noite | # |
 | 22 nov | -> Salzburgo | Media | 55 | DB ICE 12h09 Hbf | # |
 | 23 nov | Salzburgo | Pleno | 75 | Altstadt + Festung | # |
 | 24 nov | -> Viena | Media | 95 | RJX 63 11h07  Donaukanal | # |
 | 25 nov | Viena | Pleno | 95 | Schoenbrunn + compras | # |
 | 26 nov | -> Bratislava | Leve | 35 | Flix tarde | # |
 | 27 nov | -> Budapeste | Media | 50 | Flix manh | # |
-| 28 nov | Budapeste | Pleno | 95 | 2 GuruWalk + ruin bars (sab) | # |
+| 28 nov | Budapeste | Pleno | 95 | Pest a pe + Buda + ruin bars (sab) | # |
 | 29 nov | Budapeste | Media | 75 | Urbano  poupar p/ voo | # |
 | 30 nov | -> Berlim | Leve | 40 | Pago Ryanair 11h25 | # |
-| 1 dez | Berlim | Pleno | 110 | Generator + mercados | # |
+| 1 dez | Berlim | Pleno | 110 | Cold War + East Side opcional  Alex/Generator | # |
 | 2 dez | Berlim | Pleno | 120 | Compras (hub Alex) | # |
 | 3 dez | -> Praga | Media | 50 | Flix 10h20 | # |
 | 4 dez | Praga | Pleno | 130 | Compras + Vinohrady | # |
 | 5 dez | -> Bruxelas | Leve | 60 | Pago Ryanair 12h30 CRL | # |
-| 6 dez | Bruxelas | Leve | 60 | Compras buffer  Tax Free  Bolt madrugada | # |
+| 6 dez | Bruxelas | Media | 75 | Grand Place  compras buffer  Tax Free  Bolt madrugada | # |
 | 7 dez | -> Brasil | Minima | 20 | Embarque 07h00 | # |
 
 ---
 
-## GURUWALK TOURS (17 BOOKED - LOCKED TIMES)
+## GURUWALK TOURS (ACTIVE BOOKINGS - LOCKED TIMES)
 
-| Data | Hora | Tour | Encontro / notas |
-| --- | --- | --- | --- |
-| 20 nov  Munique | 10:15 | Explore Munich  Patrick | https://www.guruwalk.com/walks/62314 | Marienplatz / centro - tarde livre Englischer Garten + compras |
-| 21 nov  Fuessen | 10:15 | Fuessen Historic Center  Camilo | https://www.guruwalk.com/walks/71793-fussen-historic-center-tour | Tourist Info  cash gorjeta  min. 3 pessoas  castelo depois (Flix 16:00) |
-| 23 nov  Salzburgo | 11:00 | Salzburg Highlights | https://www.guruwalk.com/walks/61281 | Altstadt |
-| 23 nov  Salzburgo | 14:00 | Sound of Music / cidade | https://www.guruwalk.com/walks/47069 | Tarde - dormir cedo (RJX 11:07 amanh) |
-| 25 nov  Viena | 10:15 | Vienna Old Town | https://www.guruwalk.com/walks/36416 | Manh |
-| 25 nov  Viena | 14:15 | Vienna Imperial | https://www.guruwalk.com/walks/55482 | Tarde - Schoenbrunn cedo (07:30) no plano do dia |
-| 26 nov  Viena | - | Vienna by Night (cancelado) | Dia de Flix 12:35 -> Bratislava - Ring DIY na noite de 25 nov se quiser |
-| 28 nov  Budapeste | 10:00 | Free Essential Budapest | https://www.guruwalk.com/walks/40704 | Pest - manh |
-| 28 nov  Budapeste | ~17:00 | Mysteries of the Danube | https://www.guruwalk.com/walks/42809 | Confirmar horario  min. 6 pessoas  noite Szimpla / Instant |
-| 29 nov  Budapeste | 11:00 | Jewish Quarter | https://www.guruwalk.com/walks/32765 | Domingo - voo Berlim amanh |
-| 1 dez  Berlim | 10:00 | Berlin Highlights | https://www.guruwalk.com/walks/36662 | Mitte |
-| 1 dez  Berlim | 14:30 | Berlin Wall & Cold War | https://www.guruwalk.com/walks/47158 | Tarde |
-| 2 dez  Berlim | 10:00 | Berlin Alternative | https://www.guruwalk.com/walks/52050 | Manh |
-| 2 dez  Berlim | 14:00 | Museum Island (exterior) | https://www.guruwalk.com/walks/46449 | Tarde + compras |
-| 3 dez  Praga | 18:00 | Legends & Beer | https://www.guruwalk.com/walks/57909 | nam. J. Palacha / Rudolfinum - guarda-chuvas branco e azul claro |
-| 4 dez  Praga | 11:00 | Prague Castle | https://www.guruwalk.com/walks/39714 | Klarov 1 (saida Malostranska) - guarda-chuva vermelho 100 |
-| 4 dez  Praga | 15:00 | Old Town & Jewish Quarter | https://www.guruwalk.com/walks/36530 | Powder Tower, Na Prikope - guarda-chuva vermelho 100 |
+_No data_
 
 **GuruWalk tips:**
-- Gorjeta: EUR 10-20 por pessoa (no e obrigatorio, mas e a norma).
-- Grupo: muitos tours limitam a 6 adultos - reserve cedo.
-- Chuva: tours costumam correr na mesma; leve capa.
-- Cancelado? Plano B = roteiro DIY do dia (sem tour).
 
 ---
 
@@ -167,9 +145,9 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | --- | --- | --- | --- | --- | --- |
 | 19 nov | Hbf / check-in | REWE im Hauptbahnhof | Tudo num lugar (chegada) | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Hauptbahnhof+M%C3%BCnchen | # |
 | 20 nov | Englischer Garten | REWE City Giselastrasse 22 | Antes de entrar no parque (~7 min) | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Giselstra%C3%9Fe+22+M%C3%BCnchen | # |
-| 21 nov | Neuschwanstein | Kit no castelo (~12h15) |  Montar kit 22 nov no REWE Arnulf (sem tempo pos-GuruWalk)  ou lanche rapido em Hohenschwangau | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Arnulfstra%C3%9Fe+106+M%C3%BCnchen | # |
+| 21 nov | Neuschwanstein | Kit no castelo (~12h15) |  Montar kit 22 nov no REWE Arnulf (sem tempo pos-rota Fuessen)  ou lanche rapido em Hohenschwangau | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Arnulfstra%C3%9Fe+106+M%C3%BCnchen | # |
 | 22 nov | DB ICE 12h09 Hbf | REWE Arnulfstrasse 106 |  ~11h30 (4 min do hotel)  kit no trem | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Arnulfstra%C3%9Fe+106+M%C3%BCnchen | # |
-| 23 nov | GuruWalk Altstadt | Spar Getreidegasse 33 | No meio do tour (~1 min) | Maps | https://www.google.com/maps/search/?api=1&amp;query=Spar+Getreidegasse+33+Salzburg | # |
+| 23 nov | Rota Altstadt | Spar Getreidegasse 33 | No meio do tour (~1 min) | Maps | https://www.google.com/maps/search/?api=1&amp;query=Spar+Getreidegasse+33+Salzburg | # |
 | 24 nov | RJX 63 11h07 | Spar Salzburg Hbf |  Montar kit ~10h30  almoco no comboio | Maps | https://www.google.com/maps/search/?api=1&amp;query=Spar+Salzburg+Hauptbahnhof | # |
 | 25 nov | Stephansplatz | Anker Brot Kaerntner Str. + Billa ao lado | Po + frios no mesmo quarteiro | Maps | https://www.google.com/maps/search/?api=1&amp;query=Anker+Brot+K%C3%A4rntner+Str+Wien | # |
 | 26 nov | Flix VIB 12h35 | Billa Lange Gasse 48 |  ~11h30 (1 min do Zipser) | Maps | https://www.google.com/maps/search/?api=1&amp;query=Billa+Lange+Gasse+48+Wien | # |
@@ -177,7 +155,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | 28 nov | Great Market Hall | Nagyvasarcsarnok (Fovam ter) |  Po + fiambre + queijo no mercado | Maps | https://www.google.com/maps/search/?api=1&amp;query=Great+Market+Hall+Budapest | # |
 | 29 nov | Jewish Quarter tour | Tesco Express Kazinczy 16 | ~1 min do tour | Maps | https://www.google.com/maps/search/?api=1&amp;query=Tesco+Kazinczy+16+Budapest | # |
 | 30 nov | Voo 11h25 BUD | Spar/Tesco Astoria (Karoly krt.) |  ~08h00 cafe  100E ~08h30 (2h antes) | Maps | https://www.google.com/maps/search/?api=1&amp;query=Spar+Astoria+Budapest | # |
-| 1 dez | GuruWalk Mitte | Rewe To Go Friedrichstrasse | ~12 min de Brandenburg/Holocaust | Maps | https://www.google.com/maps/search/?api=1&amp;query=Rewe+To+Go+Friedrichstra%C3%9Fe+Berlin | # |
+| 1 dez | Rota Mitte tarde | Rewe To Go Friedrichstrasse | ~12 min de Brandenburg/Holocaust | Maps | https://www.google.com/maps/search/?api=1&amp;query=Rewe+To+Go+Friedrichstra%C3%9Fe+Berlin | # |
 | 2 dez | Museum Island | REWE City Dorotheenstrasse | ~10 min da ilha dos museus | Maps | https://www.google.com/maps/search/?api=1&amp;query=REWE+Dorotheenstra%C3%9Fe+Berlin | # |
 | 3 dez | Flix Suedkreuz->Praga | Rewe To Go Alex ou Edeka Suedkreuz |  ~09h antes do Flix 10h20 | Maps | https://www.google.com/maps/search/?api=1&amp;query=Edeka+S%C3%BCdKreuz+Berlin | # |
 | 4 dez | Prague Castle | Billa Malostranske nam. 22 | Abaixo do castelo (~6 min) | Maps | https://www.google.com/maps/search/?api=1&amp;query=Billa+Malostransk%C3%A9+n%C3%A1m%C4%9Bst%C3%AD+Prague | # |
@@ -272,7 +250,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ## DAY-BY-DAY EXECUTABLE PLAN (PRIMARY)
 
-### 2026-11-19 - 19 nov  qua Munique - chegadaAereoBase
+### 2026-11-19 - 19 nov  qui Munique - chegadaAereoBase
 
 - **Daily budget cap:** EUR 70 (1 adult solo, all-in excl. hotel)
 - **Energy level:** leve
@@ -286,7 +264,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | --- | --- |
 | 13:30-16:00 | MUC -> S8/S1 -> Hbf (~40 min) -> hotel check-in / bagagem |
 | 16:00-18:30 | Marienplatz -> Neues Rathaus (fachada) -> Frauenkirche (exterior) -> Viktualienmarkt (snack) |
-| 18:30-21:00 | Pe Karlsplatz ou volta hotel  jantar REWE/McDonald's Hbf  dormir cedo (jet lag) |
+| 18:30-21:00 | U-Bahn/S-Bahn hotel -> Karlsplatz (Stachus) (~5 min)  passeio leve 30 min (est.)  volta Hbf  jantar REWE ou McDonald's Hbf  dormir cedo (jet lag) |
 
 **Transit / transport detail:**
 - MUC -> centro: S1 ou S8 (e outras S-Bahn na Stammstrecke) Flughafen Muenchen -> Hauptbahnhof (40 min).
@@ -301,7 +279,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-11-20 - 20 nov  qui Munique - GuruWalk + tarde livreBaseTourCompras
+### 2026-11-20 - 20 nov  sex Munique - Altstadt a pe + tarde livreBaseTourCompras
 
 - **Daily budget cap:** EUR 110 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -313,9 +291,10 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 09:00-12:00 | Hofgarten -> Odeonsplatz -> Ludwigstrasse / Siegestor (foto) |
-| 12:00-17:00 | Englischer Garten (Eisbach, Chinesischer Turm) -> margem Isar  almoco padaria/quiosque |
-| 17:00-21:00 | Compras leves Kaufingerstrasse  jantar rapido  mala Fuessen amanh |
+| 09:00-10:00 | Cafe to-go  deslocaco -> Odeonsplatz / Viscardigasse (encontro) |
+| 10:15-12:15 | Tour Altstadt  inicio Viscardigasse  ~2 h - 12 paradas (~2h)  1 Viscardigasse -> ult. Hofbraeuhaus  encontro Viscardigasse  subhorarios no expandir |
+| 12:15-17:00 | Englischer Garten (Eisbach + Chinesischer Turm) -> U3/U6 ate Sendlinger Tor  Asamkirche + Sendlinger Tor  almoco no caminho, sem voltar ao hotel |
+| 17:00-21:00 | Compras Kaufingerstrasse / Neuhauser (eixo unico, pe)  jantar REWE Arnulf ou Five Guys (Maps)  mala Fuessen  1 transporte de volta ao hotel |
 
 **Transit / transport detail:**
 - Hbf -> Odeonsplatz / Hofgarten: U4 Hauptbahnhof -> Odeonsplatz (2 paragens) + pe ao Hofgarten.
@@ -329,7 +308,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-11-21 - 21 nov  sex Munique - GuruWalk Fuessen + NeuschwansteinconeTour
+### 2026-11-21 - 21 nov  sab Munique - Fuessen a pe + NeuschwansteinconeTour
 
 - **Daily budget cap:** EUR 85 (1 adult solo, all-in excl. hotel)
 - **Energy level:** maxima
@@ -341,31 +320,31 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 07:30-07:45 | Cafe + mochila leve  cash para GuruWalk (~EUR 20) |
-| 07:45 | Saida hotel -> ZOB |
-| 08:00-10:15 | Flix ZOB -> Fuessen Kemptener Str. (2h15) |
-| 10:15-11:45 | GuruWalk - centro historico Fuessen (Camilo  Tourist Info) | https://www.guruwalk.com/walks/71793-fussen-historic-center-tour |
-| 11:45-12:15 | Caminha -> paragem autocarro 73/78 (perto da estaco) -> Hohenschwangau |
-| 12:15-15:00 | Neuschwanstein (exterior +/- interior slot ~13:00) + Marienbruecke  lanche kit |
-| 15:00-15:45 | Desce + autocarro 73/78 -> caminha ate Pulverturm (~15 min) |
-| 16:00-18:00 | Flix Pulverturm -> ZOB -> S-Bahn hotel |
-| 18:00-19:30 | Jantar leve  mala Salzburgo (ICE amanh 12:09 Hbf) |
+| 07:30-07:45 | Cafe simples e mochila leve; sair sem despachar bagagem. |
+| 07:45 | Hotel -> Muenchen ZOB para embarque. |
+| 08:00-10:15 | FlixBus Muenchen ZOB -> Fuessen Kemptener Str.; no confundir com a parada de volta. |
+| 10:15-11:45 | Tour Historic Center  Tourist Info  ~1h30 - 5 paradas (~1h30)  1 Reichenstrasse -> ult. Lech / Marktplatz  subhorarios no expandir |
+| 11:45-12:15 | Tourist Info -> parada do nibus 73/78 -> Hohenschwangau. |
+| 12:15-15:00 | Hohenschwangau -> Neuschwanstein -> Marienbruecke; lanche do kit. |
+| 15:00-15:45 | Descida -> 73/78 -> caminhada ate Pulverturm. |
+| 16:00-18:00 | FlixBus Pulverturm -> Muenchen ZOB; no planejar passeio na chegada. |
+| 18:00-19:30 | Jantar leve e mala para Salzburgo; dormir cedo. |
 
 **Transit / transport detail:**
 - Ida: Muenchen ZOB 08:00 -> Fuessen Kemptener Strasse 10:15 (2h15).
-- GuruWalk: 10:15-11:45 - encontro Tourist Information (centro). Gorjeta so cash.
+- Rota a pe: 10:15-11:45 - encontro Tourist Information (centro). so cash.
 - Fuessen -> castelo: autocarro 73 ou 78 - estaco/Bahnhof -> Hohenschwangau (~12 min)  depois pe ou shuttle ate o castelo/Marienbruecke.
 - Volta: Pulverturm 16:00 -> ZOB 18:00 (2h). Chegar a paragem ate 15:45.
 - Paragens diferentes: desce na Kemptener Str. (ida)  embarca no Pulverturm (volta) - ~15 min a pe entre elas.
 - WARNING: Dia apertado, sem folga. Plano B transporte: RE Muenchen Hbf -> Fuessen + mesmo autocarro 73/78 (ignorar horarios Flix).
 
 - Cortar se atrasar: interior do castelo -> depois Alpsee (ja fora do plano)
-- Critico: Flix 16:00 unica volta  ida Kemptener Str.  volta Pulverturm  GuruWalk = chegada 10:15 = inicio tour
-- Plano B chuva: GuruWalk + vista castelo de baixo + Marienbruecke se aberta
+- Critico: Flix 16:00 unica volta  ida Kemptener Str.  volta Pulverturm  chegada 10:15 = inicio rota a pe
+- Plano B chuva: rota a pe + vista castelo de baixo + Marienbruecke se aberta
 
 ---
 
-### 2026-11-22 - 22 nov  sab Munique -> SalzburgoTransferencia
+### 2026-11-22 - 22 nov  dom Munique -> SalzburgoTransferencia
 
 - **Daily budget cap:** EUR 55 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
@@ -378,18 +357,18 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | --- | --- |
 | 09:00-11:30 | Check-out  REWE Arnulf (kit)  bagagem -> Muenchen Hbf |
 | 12:09-~14:10 | DB ICE 1215 -> Salzburg Hbf (Pago XP) |
-| 14:30-21:00 | Hotel Lasserhof  Mirabellgarten -> Getreidegasse/Altstadt -> Dom (exterior) |
+| 14:30-21:00 | Hotel -> Mirabellgarten (pe, 10 min) -> Getreidegasse -> Dom (exterior)  jantar Altstadt  sem voltar ao hotel ate o fim |
 
 **Transit / transport detail:**
 - Hbf -> Salzburg Hbf: ICE 1215  12:09 (Omio / DB - Pago XP).
 - Hbf -> hotel: a pe ~15 min (Lasserhof) ou autocarro curto - confira Maps.
 
-- Cortar se atrasar: Mirabell se ICE atrasar
+- Cortar se atrasar: Mirabell se ICE/check-in atrasar
 - Noite: Leve - transferencia
 
 ---
 
-### 2026-11-23 - 23 nov  dom Salzburgo - 2 GuruWalkBaseTour
+### 2026-11-23 - 23 nov  seg Salzburgo - Festung + Altstadt a peBaseTour
 
 - **Daily budget cap:** EUR 75 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -401,17 +380,16 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | Time | Plan |
 | --- | --- |
 | 08:30-10:30 | Festung Hohensalzburg (exterior / funicular) - cortar se atrasar para o tour |
-| 11:00-12:30 | GuruWalk Salzburg Highlights - Altstadt | https://www.guruwalk.com/walks/61281 |
+| 11:00-12:30 | Tour Highlights  entrada sul Mirabell  ~1h45 - 11 paradas (~1h45)  1 Mirabellgarten -> ult. Festung Hohensalzburg (vista exterior)  subhorarios no expandir |
 | 12:30-14:00 | Almoco  Spar Getreidegasse 33 no caminho |
-| 14:00-16:00 | GuruWalk Sound of Music / cidade | https://www.guruwalk.com/walks/47069 |
-| 16:00-21:00 | Makartsteg / Salzach se faltou  jantar  mala + dormir cedo (RJX 11:07 amanh) |
+| 14:00-21:00 | Pe Makartsteg -> margem Salzach  Mozart Geburtshaus / Getreidegasse  jantar leve  mala + dormir cedo (RJX 11:07 amanh) |
 
 **Transit / transport detail:**
 - Hbf -> Festung / Altstadt: normalmente a pe (15 min) pela Elisabethstrasse / Rainerstrasse.
 - Subida ao Festung: Funicular Festungsbahn (partida junto a base no centro historico) ou caminhada ingreme.
 - Mirabell  centro velho: a pe pelo rio Staatsbruecke / Mozartsteg.
 
-- Cortar se atrasar: Festung (manter os 2 GuruWalks)
+- Cortar se atrasar: Festung (manter rota a pe)
 - Noite: YoHo bar (4 min do hotel) - leve
 
 ---
@@ -429,8 +407,8 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | --- | --- |
 | 09:00-10:45 | Cafe to-go  check-out  Spar Hbf (kit)  Salzburg Hbf |
 | 11:07-13:32 | OeBB RJX 63 -> Wien Hbf (Pago Wise) |
-| 14:00-17:00 | Hotel Zipser  Prater (exterior) -> Naschmarkt (snack) |
-| 17:00-21:00 | Donaukanal  jantar Billa  compras leves (matriz 24 nov) |
+| 14:30-17:00 | Hbf -> hotel Zipser  deixar bagagem  Prater (exterior) -> Naschmarkt (snack, se houver tempo) |
+| 17:00-21:00 | U1/U4 -> Donaukanal (est. 15 min)  passeio margem  jantar Billa Zipser  compras leves  volta 1 linha metro |
 
 **Transit / transport detail:**
 - Salzburg Hbf -> Wien Hbf: RJX 63  11:07-13:32 (OeBB - Pago Wise) - no perder este comboio.
@@ -446,7 +424,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-11-25 - 25 nov  qua Viena - 2 GuruWalk + SchoenbrunnBaseTourCompras
+### 2026-11-25 - 25 nov  qua Viena - Centro a pe + SchoenbrunnBaseTourCompras
 
 - **Daily budget cap:** EUR 95 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -459,10 +437,8 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | Time | Plan |
 | --- | --- |
 | 07:30-09:30 | Schoenbrunn (fachada + jardins, so exterior) - cortar se precisar dormir mais |
-| 10:15-12:00 | GuruWalk Vienna Old Town | https://www.guruwalk.com/walks/36416 |
-| 12:00-14:00 | Almoco Anker Brot / Billa (Kaerntner Str.) |
-| 14:15-16:00 | GuruWalk Vienna Imperial | https://www.guruwalk.com/walks/55482 |
-| 16:00-21:00 | Compras leves  Ring (luzes)  jantar  mala Bratislava |
+| 10:15-12:15 | Tour Old Town Part 1  Staatsoper  ~2 h - 6 paradas (~2h)  1 Staatsoper -> ult. Stephansdom  encontro Staatsoper  subhorarios no expandir |
+| 12:15-21:00 | Almoco Anker Brot / Billa  Ring sentido horario a pe: Stephansdom -> Graben -> Hofburg -> Rathaus/Parlament (fachadas, luzes)  Manner/im no eixo Graben  jantar  mala Bratislava |
 
 **Transit / transport detail:**
 - Hotel -> Schoenbrunn (cedo): U2 desde Rathaus (ou Schottentor) ate Karlsplatz -> U4 ate Schoenbrunn - sair ~07:30.
@@ -470,8 +446,8 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - Ring a noite (fachadas): a pe a partir de Stephansplatz ou eletricos 1 / 2 / D (paragens Parlament, Rathausplatz, etc.).
 - Volta: U4 + U2 para Rathaus / hotel (Josefstadt).
 
-- Cortar se atrasar: Schoenbrunn (manter os 2 GuruWalks)
-- Noite: Ring iluminado (DIY) - substitui o tour noturno cancelado do dia 26
+- Cortar se atrasar: Schoenbrunn (manter rota a pe)
+- Noite: Ring iluminado (DIY)
 
 ---
 
@@ -486,9 +462,9 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 09:00-12:00 | Manh livre Josefstadt  check-out 11:00  VIB 12:00 |
+| 09:00-12:15 | Manh livre Josefstadt  check-out 11:00  seguir para VIB e chegar ate 12:15 |
 | 12:35-13:45 | Flix VIB -> Most SNP |
-| 14:00-21:00 | Hotel -> Stare Mesto -> Bratislava Castle (exterior)  jantar Old Town |
+| 14:00-21:00 | Metro -> hotel  Stare Mesto (centro a pe) -> Castle (exterior, subida ~20 min)  jantar Old Town  1 ida/volta hotel |
 
 **Transit / transport detail:**
 - Hotel -> VIB: U-Bahn + curto a pe conforme Google Maps (terminal de autocarros internacional).
@@ -497,7 +473,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - WARNING: Se usar Petrzalka (comboio) em vez de Most SNP, recalcule ligaco ao hotel.
 
 - Cortar se atrasar: Castle (so Old Town)
-- Tours: sem GuruWalk em Viena hoje - Flix 12:35 (ver lista: Vienna by Night cancelado)
+- Tours: sem rota guiada - Flix 12:35 para Bratislava
 - Noite: Downtown Backpackers + Obchodna  centro DIY (sem tour extra)
 
 ---
@@ -506,7 +482,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 - **Daily budget cap:** EUR 50 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
-- **Hotel:** Danubia Gate -> Medos Hotel Budapest (check-in 27 Nov)
+- **Hotel:** Danubia Gate -> Budapest Panorama Central (check-in 27 Nov)
 - **Tags:** Teto EUR 50 | media | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
@@ -516,7 +492,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | 08:30-10:20 | Check-out  Mlynske Nivy |
 | 10:50-13:25 | Flix -> Budapest Kelenfoeld |
 | 14:00-17:00 | Metro -> hotel -> Basilica (exterior) -> Andrassy (exterior) |
-| 17:00-21:00 | Chain Bridge -> vistas Buda Castle (Pest, exterior) |
+| 17:00-21:00 | Shoes on the Danube -> Chain Bridge a pe  margem Pest com vista Buda Castle (exterior)  jantar perto do hotel  sem subir Buda hoje |
 
 **Transit / transport detail:**
 - Nivy -> Kelenfoeld: 10:50-13:25 FlixBus (Pago Wise EUR 21,23 - confira horario no PDF).
@@ -528,12 +504,12 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-11-28 - 28 nov  sab Budapeste - Essential + MysteriesconeTourCompras
+### 2026-11-28 - 28 nov  sab Budapeste - Pest a pe + BudaconeTourCompras
 
 - **Daily budget cap:** EUR 95 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
 - **Day mode:** Sabado ruin bars
-- **Hotel:** Medos Hotel Budapest
+- **Hotel:** Budapest Panorama Central
 - **Tags:** Teto EUR 95 | plena | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
@@ -541,10 +517,9 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | Time | Plan |
 | --- | --- |
 | 09:00-10:00 | Cafe leve  caminho ao ponto do tour (Pest) |
-| 10:00-12:30 | GuruWalk Free Essential Budapest | https://www.guruwalk.com/walks/40704 |
-| 12:30-16:30 | Great Market Hall (snack) -> Parlamento / Shoes on the Danube (exterior) -> Fisherman's Bastion + Matthias (exterior) |
-| ~17:00-19:00 | GuruWalk Mysteries of the Danube - confirmar horario na reserva | https://www.guruwalk.com/walks/42809 |
-| 19:00-21:00 | Szimpla / Instant (ruin bars) |
+| 10:00-12:30 | Tour Essential  Madach ter / Sissi  ~2h30  termina no Parlamento - 10 paradas (~2h30)  1 Madach ter (estatua Sissi) -> ult. Parlamento  encontro Madach ter / Sissi  subhorarios no expandir |
+| 12:30-17:00 | Snack Great Market Hall (opcional) -> Chain Bridge -> Fisherman's Bastion + Matthias (exterior) - tour da manh ja cobre Pest |
+| 17:00-21:00 | Buffer hotel  Szimpla Kert ou Instant (ruin bars - confirmar fila Maps)  jantar leve antes/depois  ultimo metro ~23h (est.) |
 
 **Transit / transport detail:**
 - -> Basilica St. Stephen: M1 (amarela) Bajcsy-Zsilinszky ut ou M3 Arany Janos utca - ambos perto da basilica.
@@ -553,7 +528,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - -> Buda / Castelo / Fisherman's: atravessa a ponte a pe -> funicular Siklo (Baixa Buda) ou autocarro 16 desde Deak Ferenc ter / Szell Kalman ter (M2) conforme cansaco.
 - Volta Pest: M2 da margem Buda (Szell Kalman ter ou atravessa de novo a pe) para o hotel.
 
-- Cortar se atrasar: Bastion (manter os 2 GuruWalks + ruin bar)
+- Cortar se atrasar: Bastion (manter Essential + ruin bar)
 - Plano B chuva: Vaci utca comercial
 
 ---
@@ -563,17 +538,17 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - **Daily budget cap:** EUR 75 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
 - **Day mode:** Voo amanh 11:25
-- **Hotel:** Medos Hotel Budapest
+- **Hotel:** Budapest Panorama Central
 - **Tags:** Teto EUR 75 | media | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
 
 | Time | Plan |
 | --- | --- |
-| 09:00-10:45 | Cafe  Tesco Kazinczy 16  caminho ao tour |
-| 11:00-13:00 | GuruWalk Jewish Quarter | https://www.guruwalk.com/walks/32765 |
-| 13:00-17:00 | Margaret Bridge / Margitsziget (exterior)  buffer descanso |
-| 17:00-21:00 | Jantar leve  mala Berlim  dormir razoavel |
+| 09:00-10:45 | Cafe, comprar agua/lanche no Tesco Kazinczy 16 e caminhar ate Madach ter. |
+| 11:00-13:30 | Tour Jewish Quarter  Madach ter  ~2h30 - 12 paradas (~2h30)  1 Sinagoga Rumbach (exterior) -> ult. Encerramento no bairro  subhorarios no expandir |
+| 13:30-17:00 | Fim do tour no Jewish Quarter -> Margaret Bridge/Margitsziget; usar como passeio leve e descanso. |
+| 17:00-21:00 | Jantar cedo, fechar mala para o voo e deixar o 100E preparado. |
 
 **Transit / transport detail:**
 - Grande Mercado Central (Nagyvasarcsarnok): M4 (verde) ou M3 - estaco Fovam ter (M4) / Kalvin ter (M3) a pe ao mercado.
@@ -591,7 +566,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - **Daily budget cap:** EUR 40 (1 adult solo, all-in excl. hotel)
 - **Energy level:** leve
 - **Day mode:** Ryanair 11:25
-- **Hotel:** Medos -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)
+- **Hotel:** Budapest Panorama Central -> Premier Inn Berlin Alexanderplatz (check-in 30 Nov)
 - **Tags:** Teto EUR 40 | leve | FAST  exterior  09:00-21:00
 
 **Schedule (locked):**
@@ -601,7 +576,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | 07:30-08:15 | Check-out  cafe/kit Astoria  sair para 100E |
 | ~08:30-09:15 | 100E -> BUD (Ryanair + bagagem  Pago Omio) |
 | 11:25-~12:55 | Voo BUD -> BER (confira terminal no bilhete) |
-| 14:00-21:00 | Check-in Premier Inn -> Alexanderplatz + Fernsehturm (exterior)  jantar Rewe |
+| 14:00-21:00 | BER -> hotel: FEX/S9 + U5 (ver transit)  check-in Premier Inn Alex  Alexanderplatz + Fernsehturm (exterior)  jantar Rewe To Go Alex ou Five Guys Alex 2 |
 
 **Transit / transport detail:**
 - Centro -> BUD: autocarro expresso 100E (~35-45 min) - meta no aeroporto ~09:15 para voo 11h25.
@@ -613,7 +588,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-12-01 - 1 dez  ter Berlim - 2 GuruWalk MitteBaseTour
+### 2026-12-01 - 1 dez  ter Berlim - Mitte manh + Guerra Fria a peBaseTour
 
 - **Daily budget cap:** EUR 110 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -624,24 +599,23 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 09:00-09:45 | Cafe  Rewe To Go Friedrichstrasse  caminho ao encontro (Mitte) |
-| 10:00-12:30 | GuruWalk Berlin Highlights - Brandenburg, Reichstag, Memorial (eixo do tour) | https://www.guruwalk.com/walks/36662 |
-| 12:30-14:15 | Almoco  deslocaco ao ponto da tarde |
-| 14:30-17:00 | GuruWalk Berlin Wall & Cold War | https://www.guruwalk.com/walks/47158 |
-| 17:00-21:00 | East Side Gallery (trecho curto) se faltou  volta Alex  jantar |
+| 09:00-10:30 | Cafe  Memorial do Holocausto -> Brandenburger Tor -> Reichstag (exterior; cupula so com reserva) |
+| 10:30-14:00 | Topografia do Terror ou cupula do Reichstag (conforme reserva/local do tour)  almoco Rewe To Go Friedrichstrasse  deslocaco ao encontro tour 14:30 - U-Bahn Anton-Wilhelm-Amo (ponto na reserva; est. 20-25 min do Mitte) |
+| 14:30-17:30 | Tour Cold War  U-Bahn Anton-Wilhelm-Amo  ~3 h  bilhete AB - 12 paradas (~3h)  1 Detlev-Rohwedder-Haus -> ult. Encerramento Mitte  subhorarios no expandir |
+| 17:30-21:00 | Tour termina em Mitte -> deslocaco ate Warschauer Strasse  East Side Gallery por 30 min  S-Bahn -> Alexanderplatz  jantar  Alexanderplatz a noite  opcional Generator as 21h |
 
 **Transit / transport detail:**
-- Hotel (Alexanderplatz) -> tours Mitte: U5 Alexanderplatz -> Brandenburger Tor - encontros dos 2 GuruWalks costumam ser neste eixo.
+- Hotel (Alexanderplatz) -> Mitte (manh DIY + encontro tarde): U5 Alexanderplatz -> Brandenburger Tor.
 - Tarde (Muro / Cold War): seguir guia - normalmente S-Bahn / U-Bahn ate trechos do Muro ou Ostbahnhof.
-- East Side Gallery (opcional): S-Bahn Ostbahnhof ou U1 Warschauer Strasse.
+- East Side Gallery -> Alexanderplatz: usar S3/S5/S7/S9 desde Warschauer Strasse ou Ostbahnhof; U1 no e direta para Alex.
 - WARNING: Memorial do Holocausto fica junto a Brandenburg; Reichstag (cupula) exige reserva previa se quiser entrar.
 
-- Cortar se atrasar: East Side Gallery (manter os 2 GuruWalks)
+- Cortar se atrasar: East Side Gallery (manter Cold War)
 - Noite: Generator (pub crawl 21h) ou Kreuzberg
 
 ---
 
-### 2026-12-02 - 2 dez  qua Berlim - 2 GuruWalk + comprasBaseTourCompras
+### 2026-12-02 - 2 dez  qua Berlim - Kreuzberg a pe + comprasBaseTourCompras
 
 - **Daily budget cap:** EUR 120 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -653,14 +627,14 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 09:00-09:45 | Cafe  caminho ao encontro (eixo alternativo / Kreuzberg) |
-| 10:00-12:30 | GuruWalk Berlin Alternative | https://www.guruwalk.com/walks/52050 |
-| 12:30-14:00 | Almoco  deslocaco a Museum Island |
-| 14:00-16:00 | GuruWalk Museum Island (exterior) | https://www.guruwalk.com/walks/46449 |
-| 16:00-21:00 | Compras Alex / Ku'damm / Primark  mercados de Natal  mala Praga |
+| 07:30-09:00 | Slot preferido lavanderia (confirmar loja no Maps)  terminar secagem antes de sair |
+| 09:00-10:00 | Cafe to-go  caminho ate Moritzplatz  chegar ao encontro do tour (Kreuzberg - ver reserva) |
+| 10:00-13:00 | Tour Kreuzberg  Moritzplatz / Aufbau Haus  ~3 h - 11 paradas (~3h)  1 Prinzessinnengarten -> ult. Street art Goerlitzer / Schlesisches Tor  subhorarios no expandir |
+| 13:00-16:00 | Almoco Kreuzberg (Markthalle Neun area ou Doener)  Oberbaumbruecke no caminho  U1/U8 -> Alexanderplatz  pausa hotel / banheiro |
+| 16:00-21:00 | Compras hub: Alexa / Primark Alex -> U2 Alex -> Zoologischer Garten  Ku'damm / Primark  mercados Natal (opcional)  volta U2  jantar  mala Praga |
 
 **Transit / transport detail:**
-- Mitte -> East Side Gallery: S-Bahn Brandenburger Tor -> Ostbahnhof (S3 / S5 / S7 / S9) + ~10 min a pe ou U1 ate Warschauer Strasse.
+- Kreuzberg / Moritzplatz -> Alexanderplatz: U1/U8 conforme a saida do tour, com no maximo uma troca - confirmar no BVG/Maps.
 - Ostbahnhof / Warschauer -> Alexanderplatz: S-Bahn ou U5 / U8 conforme origem.
 - Alexanderplatz -> Ku'damm: U2 Alexanderplatz -> Zoologischer Garten (eixo comercial ocidental).
 - Volta: U2/U5/S-Bahn para Hauptbahnhof.
@@ -670,7 +644,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 ---
 
-### 2026-12-03 - 3 dez  qui Berlim -> Praga + tour noiteTransferenciaTour
+### 2026-12-03 - 3 dez  qui Berlim -> PragaTransferencia
 
 - **Daily budget cap:** EUR 50 (1 adult solo, all-in excl. hotel)
 - **Energy level:** media
@@ -683,9 +657,8 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | --- | --- |
 | 08:00-08:45 | Check-out  S-Bahn Alex -> Suedkreuz |
 | 10:20-14:20 | Flix Suedkreuz -> Florenc |
-| 14:30-17:30 | Hotel Alton -> Wenceslas Square -> Old Town Square + Relogio (exterior) |
-| 18:00-20:00 | GuruWalk Legends & Beer - nam. J. Palacha / Rudolfinum | https://www.guruwalk.com/walks/57909 |
-| 20:00-21:00 | Jantar leve  dormir |
+| 14:30-17:30 | Florenc -> Metro C Florenc -> I.P. Pavlova (~2 min, Maps) + pe Hotel Alton  check-in  jantar leve Albert Legerova / Billa perto |
+| 17:30-21:00 | Opcional: Metro C -> Wenceslas Square (exterior, 30-40 min)  volta hotel  dormir cedo |
 
 **Transit / transport detail:**
 - Hotel (Alexanderplatz) -> Suedkreuz (FlixBus): S-Bahn (ex. S2 / S25 / S26 conforme BVG) Alexanderplatz -> Suedkreuz (~15 min).
@@ -697,12 +670,12 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - Staromestske -> Karluv most: a pe (fluxo turistico).
 - WARNING: Bilhete PID: compre carto/dia conforme a estadia; valide antes de entrar.
 
-- Cortar se atrasar: Old Town (manter tour 18h)
+- Cortar se atrasar: passeio Wenceslas (priorizar sono)
 - Critico: Hotel 08:45  Flix 10:20
 
 ---
 
-### 2026-12-04 - 4 dez  sex Praga - 2 GuruWalk castelo + centroBaseTourCompras
+### 2026-12-04 - 4 dez  sex Praga - Castelo + centro a peBaseTourCompras
 
 - **Daily budget cap:** EUR 130 (1 adult solo, all-in excl. hotel)
 - **Energy level:** plena
@@ -715,10 +688,10 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 | Time | Plan |
 | --- | --- |
 | 09:00-10:30 | Charles Bridge (cedo) -> Klarov 1 (encontro castelo) |
-| 11:00-13:00 | GuruWalk Prague Castle - guarda-chuva vermelho 100 | https://www.guruwalk.com/walks/39714 |
-| 13:00-14:45 | Almoco  Billa Malostranske nam.  caminho ao Powder Tower |
-| 15:00-17:00 | GuruWalk Old Town & Jewish Quarter | https://www.guruwalk.com/walks/36530 |
-| 17:00-21:00 | Compras Na Prikope / Palladium  noite: Sophie's + Vinohrady |
+| 11:00-13:15 | Tour Castle  Klarov 1  ~2h15  bilhete transporte  troca de guardas 12h se no horario - 12 paradas (~2h15)  1 Klarov (saida metr Malostranska) -> ult. Descida ao Mala Strana  encontro Klarov 1  subhorarios no expandir |
+| 13:15-14:45 | Almoco  Billa Malostranske nam.  caminho ao Powder Tower |
+| 15:00-17:45 | Tour centro e Josefov  Powder Tower  ~2h45 - 12 paradas (~2h45)  1 Powder Tower (Prasna brana) -> ult. John Lennon Wall  encontro Powder Tower  subhorarios no expandir |
+| 17:45-21:00 | Compras Na Prikope / Palladium (mesma zona, pe)  jantar mall ou Billa  noite Sophie's + Vinohrady (opcional)  1 metro ida/volta hotel |
 
 **Transit / transport detail:**
 - Hotel -> Cafe Savoy (Vitezna / Smichov): Metro C I.P. Pavlova -> Florenc -> Metro B Florenc -> Andel + curto a pe ou eletrico 9 / 12 / 20.
@@ -737,7 +710,7 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - **Energy level:** leve
 - **Day mode:** Ryanair PRG->CRL 12:30 + Flibco to Midi
 - **Hotel:** Alton -> Hotel des Colonies Brussels Rogier (check-in 5 Dec)
-- **Tags:** Teto EUR 60 | leve | FAST  exterior  09:00-21:00
+- **Tags:** Teto EUR 60 | leve | FAST  voo + transferencia  08:00-21:00
 
 **Schedule (locked):**
 
@@ -774,10 +747,10 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 
 | Time | Plan |
 | --- | --- |
-| 10:00-13:00 | Grand Place + Galeries Saint-Hubert (exterior) |
-| 13:00-15:00 | Almoco (Chez Leon / Exki)  Mont des Arts (opcional) |
-| 15:00-17:00 | Compras buffer Rue Neuve / Apple  Tax Free prep |
-| 17:00-21:00 | Mala 100%  jantar leve  dormir cedo |
+| 10:00-13:00 | Grand Place -> Galeries Saint-Hubert -> Manneken Pis/Bourse - circuito central a pe |
+| 13:00-15:00 | Almoco no centro  Mont des Arts opcional |
+| 15:00-17:00 | Compras buffer na Rue Neuve  Tax Free |
+| 17:00-21:00 | Mala 100%  jantar leve  dormir cedo para o voo |
 
 **Transit / transport detail:**
 - Rogier -> Grand Place / Bourse: metro 1/5 ou a pe (~15 min).
@@ -796,15 +769,16 @@ Eat walking 12:00-13:00. Budget ~EUR 6-10/person.
 - **Energy level:** minima
 - **Day mode:** Sem turismo urbano
 - **Hotel:** Hotel des Colonies -> BRU airport 04:30
-- **Tags:** Teto EUR 20 | minima | FAST  exterior  09:00-21:00
+- **Tags:** Teto EUR 20 | minima | FAST  aeroporto  03:00-07:00
 
 **Schedule (locked):**
 
 | Time | Plan |
 | --- | --- |
-| 04:30-05:00 | Taxi hotel -> BRU Zaventem |
-| 07:00 | Voo BRU -> MAD -> GRU (Pago  IB0604 + IB0271) |
-| No aeroporto | Tax Free + cafe |
+| 03:00 | Alarme  documentos e bagagem ja separados na noite anterior |
+| 03:30-04:30 | Bolt/taxi hotel -> BRU Zaventem - reserva recomendada |
+| 05:00-07:00 | Check-in Iberia  seguranca  Tax Free  cafe |
+| 07:00 | Voo BRU -> MAD -> GRU  IB0604 + IB0271 |
 
 **Transit / transport detail:**
 - Hotel (Rogier) -> BRU: transfer reservado ou comboio IC a partir de Bruxelles-Central / Nord - confira horario na SNCB para chegar 2h antes do voo.

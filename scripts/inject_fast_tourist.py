@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Inject FAST TOURIST hour-by-hour blocks into #dias and strip duplicate slots."""
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -106,7 +107,7 @@ PLANS = {
             ("13:45–15:45", "Flix <strong>ZOB → Salzburg P+R Süd</strong>"),
             ("16:00–21:00", "Ônibus/táxi → hotel → <strong>Mirabellgarten</strong> → <strong>Getreidegasse/Altstadt</strong> → <strong>Dom</strong> (exterior)"),
         ],
-        cut="Mirabell se Flix atrasar",
+        cut="Mirabell se ICE/check-in atrasar",
         night="Leve — transferência",
     ),
     "day-2026-11-23": dict(
@@ -148,7 +149,7 @@ PLANS = {
         budget=35,
         energy="leve",
         rows=[
-            ("09:00–12:00", "Manhã livre <strong>Josefstadt</strong> · check-out <strong>11:00</strong> · <strong>VIB 12:00</strong>"),
+            ("09:00–12:15", "Manhã livre <strong>Josefstadt</strong> · check-out <strong>11:00</strong> · chegar à <strong>VIB até 12:15</strong> para o Flix 12:35"),
             ("12:35–13:45", "Flix <strong>VIB → Most SNP</strong>"),
             ("14:00–21:00", "Hotel → <strong>Staré Mesto</strong> → <strong>Bratislava Castle</strong> (exterior) · jantar Old Town"),
         ],
@@ -348,4 +349,11 @@ def main():
 
 
 if __name__ == "__main__":
+    # Este injetor pertence ao pipeline antigo e não pode sobrescrever
+    # index.html, que hoje é gerado pelo build_fast_plan_window_details.py.
+    if "--legacy-allow" not in sys.argv:
+        raise SystemExit(
+            "ABORTADO: script legado. Use build_fast_plan_window_details.py; "
+            "para executar conscientemente o legado, passe --legacy-allow."
+        )
     main()

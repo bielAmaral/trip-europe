@@ -34,7 +34,8 @@ for (const t of tabs) {
       if (!el) return { ok: false, reason: "element missing" };
       const cs = getComputedStyle(el);
       const r = el.getBoundingClientRect();
-      const insideExplorar = !!document.getElementById("explorar")?.contains(el);
+      const explorar = document.getElementById("explorar");
+      const insideExplorar = !!explorar && el !== explorar && explorar.contains(el);
       return {
         ok: !el.hasAttribute("hidden") && cs.visibility === "visible" && r.height > 20,
         tab: document.body.getAttribute("data-app-tab"),

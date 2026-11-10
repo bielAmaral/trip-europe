@@ -30,7 +30,7 @@ DESCRIPTION:Check-in 19 nov\, check-out 22 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-22@eurotrip2026
@@ -39,7 +39,7 @@ DESCRIPTION:Check-in 22 nov\, check-out 24 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-24@eurotrip2026
@@ -48,25 +48,26 @@ DESCRIPTION:Check-in 24 nov\, check-out 26 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261126
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-26@eurotrip2026
 SUMMARY:Hotel Bratislava
-DESCRIPTION:Check-in 26 nov\, check-out 28 nov
+DESCRIPTION:Check-in 26 nov\, check-out 27 nov
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261126
-DTEND;VALUE=DATE:20261128
-DTSTAMP:20261019T010707Z
+DTEND;VALUE=DATE:20261127
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
-UID:hotel-2026-11-28@eurotrip2026
+UID:hotel-2026-11-27@eurotrip2026
 SUMMARY:Hotel Budapeste
-DESCRIPTION:Check-in 28 nov\, check-out 30 nov
+DESCRIPTION:Budapest Panorama Central\, Károly körút 10 · check-in 27 nov\, check-out
+ 30 nov
 CATEGORIES:Hotel
-DTSTART;VALUE=DATE:20261128
+DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-11-30@eurotrip2026
@@ -75,7 +76,7 @@ DESCRIPTION:Check-in 30 nov\, check-out 3 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261203
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-12-03@eurotrip2026
@@ -84,7 +85,7 @@ DESCRIPTION:Check-in 3 dez\, check-out 5 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:hotel-2026-12-05@eurotrip2026
@@ -93,7 +94,7 @@ DESCRIPTION:Mercure Rogier\, check-out 7 dez
 CATEGORIES:Hotel
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261207
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:transport-2026-11-22-1209@eurotrip2026
@@ -103,7 +104,7 @@ LOCATION:Muenchen Hbf
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261122T120900
 DTEND;TZID=Europe/Berlin:20261122T141000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT60M
@@ -118,7 +119,7 @@ LOCATION:Salzburg Hbf
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261124T110700
 DTEND;TZID=Europe/Berlin:20261124T133200
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -133,7 +134,7 @@ LOCATION:Vienna Erdberg
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261126T123500
 DTEND;TZID=Europe/Berlin:20261126T163500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -148,7 +149,7 @@ LOCATION:Bratislava
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261127T105000
 DTEND;TZID=Europe/Berlin:20261127T132000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -163,7 +164,7 @@ LOCATION:BUD
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261130T112500
 DTEND;TZID=Europe/Berlin:20261130T124000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT120M
@@ -178,7 +179,7 @@ LOCATION:Berlin Suedkreuz
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261203T102000
 DTEND;TZID=Europe/Berlin:20261203T152000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT45M
@@ -193,7 +194,7 @@ LOCATION:PRG
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261205T123000
 DTEND;TZID=Europe/Berlin:20261205T141500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT120M
@@ -208,7 +209,7 @@ LOCATION:BRU
 CATEGORIES:Transporte
 DTSTART;TZID=Europe/Berlin:20261207T070000
 DTEND;TZID=Europe/Berlin:20261207T115000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT180M
@@ -224,7 +225,7 @@ LOCATION:JFK
 CATEGORIES:Voo
 DTSTART;TZID=America/New_York:20261118T212000
 DTEND;TZID=Europe/Berlin:20261119T133000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT180M
@@ -239,7 +240,7 @@ LOCATION:Odeonsplatz / Viscardigasse
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261120T101500
 DTEND;TZID=Europe/Berlin:20261120T121500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -254,7 +255,7 @@ LOCATION:Tourist Information
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261121T101500
 DTEND;TZID=Europe/Berlin:20261121T121500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -269,7 +270,7 @@ LOCATION:Mirabellgarten
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261123T110000
 DTEND;TZID=Europe/Berlin:20261123T130000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -284,7 +285,7 @@ LOCATION:Staatsoper
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261125T101500
 DTEND;TZID=Europe/Berlin:20261125T121500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -299,7 +300,7 @@ LOCATION:Madách tér
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261128T100000
 DTEND;TZID=Europe/Berlin:20261128T120000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -314,7 +315,7 @@ LOCATION:Madách tér
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261129T110000
 DTEND;TZID=Europe/Berlin:20261129T130000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -329,7 +330,7 @@ LOCATION:U Anton-Wilhelm-Amo
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261201T143000
 DTEND;TZID=Europe/Berlin:20261201T163000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -344,7 +345,7 @@ LOCATION:Moritzplatz
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261202T100000
 DTEND;TZID=Europe/Berlin:20261202T120000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -359,7 +360,7 @@ LOCATION:Klárov 1
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261204T110000
 DTEND;TZID=Europe/Berlin:20261204T130000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -374,7 +375,7 @@ LOCATION:Powder Tower
 CATEGORIES:Tour
 DTSTART;TZID=Europe/Berlin:20261204T150000
 DTEND;TZID=Europe/Berlin:20261204T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT30M
@@ -384,16 +385,17 @@ END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-19@eurotrip2026
 SUMMARY:Munique — chegada - EuroTrip 2026
-DESCRIPTION:Chegada ~13h30 (KLM) · sem saída 09:00\\n13:30–16:00 - MUC → S8/S1 → Hbf 
+DESCRIPTION:Chegada ~13h30 (KLM) · sem saída 09:00\\n13:30–16:00 - MUC → S8/S1 → Hbf
  (~40 min) → hotel check-in / bagagem\\n16:00–18:30 - Marienplatz → Neues
-  Rathaus (fachada) → Frauenkirche (exterior) → Viktualienmarkt (snack)\\
- n18:30–21:00 - Pé Karlsplatz ou volta hotel · jantar REWE/McDonald’s Hbf
-  · dormir cedo (jet lag)
+ Rathaus (fachada) → Frauenkirche (exterior) → Viktualienmarkt (snack)\\n
+ 18:30–21:00 - U-Bahn/S-Bahn hotel → Karlsplatz (Stachus) (~5 min) · pass
+ eio leve 30 min (est.) · volta Hbf · jantar REWE ou McDonald’s Hbf · dor
+ mir cedo (jet lag)
 LOCATION:Munique — chegada
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-0@eurotrip2026
@@ -403,7 +405,7 @@ LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T133000
 DTEND;TZID=Europe/Berlin:20261119T160000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-1@eurotrip2026
@@ -415,34 +417,38 @@ LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T160000
 DTEND;TZID=Europe/Berlin:20261119T183000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-19-2@eurotrip2026
-SUMMARY:Pé Karlsplatz ou volta hotel · jantar REWE/McDonald’s Hbf · dormir cedo (
- je
-DESCRIPTION:Pé Karlsplatz ou volta hotel · jantar REWE/McDonald’s Hbf · dormir cedo (
- jet lag)
+SUMMARY:U-Bahn/S-Bahn hotel → Karlsplatz (Stachus) (~5 min) · passeio leve 30 min
+ (
+DESCRIPTION:U-Bahn/S-Bahn hotel → Karlsplatz (Stachus) (~5 min) · passeio leve 30 min
+ (est.) · volta Hbf · jantar REWE ou McDonald’s Hbf · dormir cedo (jet la
+ g)
 LOCATION:Munique — chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261119T183000
 DTEND;TZID=Europe/Berlin:20261119T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-20@eurotrip2026
 SUMMARY:Munique — Altstadt a pé + tarde livre - EuroTrip 2026
 DESCRIPTION:Janela compras\\n09:00–10:00 - Café to-go · deslocação → Odeonsplatz / Vi
- scardigasse (encontro)\\n10:15–12:15 - Rota a pé — abrir Passo a passo n
- o mapa (curiosidades em cada parada)\\n12:15–17:00 - Englischer Garten (
- Eisbach\, Chinesischer Turm) → margem Isar · almoço padaria/quiosque\\n1
- 7:00–21:00 - Compras leves Kaufingerstraße · jantar rápido · mala Füssen
-  amanhã
+ scardigasse (encontro)\\n10:15–12:15 - Tour Altstadt · início Viscardiga
+ sse · ~2 h — 12 paradas (~2h) · 1ª Viscardigasse → últ. Hofbräuhaus · en
+ contro Viscardigasse · subhorários no expandir\\n12:15–17:00 - Englische
+ r Garten (Eisbach + Chinesischer Turm) → U3/U6 até Sendlinger Tor · Asam
+ kirche + Sendlinger Tor · almoço no caminho\, sem voltar ao hotel\\n17:0
+ 0–21:00 - Compras Kaufingerstraße / Neuhauser (eixo único\, pé) · jantar
+ REWE Arnulf ou Five Guys (Maps) · mala Füssen · 1 transporte de volta ao
+ hotel
 LOCATION:Munique — Altstadt a pé + tarde livre
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-0@eurotrip2026
@@ -452,161 +458,172 @@ LOCATION:Munique — Altstadt a pé + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T090000
 DTEND;TZID=Europe/Berlin:20261120T100000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Altstadt · início Viscardigasse · ~2 h — 12 paradas (~2h) · 1ª Visca
+ rd
+DESCRIPTION:Tour Altstadt · início Viscardigasse · ~2 h — 12 paradas (~2h) · 1ª Visca
+ rdigasse → últ. Hofbräuhaus · encontro Viscardigasse · subhorários no ex
+ pandir
 LOCATION:Munique — Altstadt a pé + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T101500
 DTEND;TZID=Europe/Berlin:20261120T121500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-2@eurotrip2026
-SUMMARY:Englischer Garten (Eisbach\, Chinesischer Turm) → margem Isar · almoço pa
- dar
-DESCRIPTION:Englischer Garten (Eisbach\, Chinesischer Turm) → margem Isar · almoço pa
- daria/quiosque
+SUMMARY:Englischer Garten (Eisbach + Chinesischer Turm) → U3/U6 até Sendlinger To
+ r
+DESCRIPTION:Englischer Garten (Eisbach + Chinesischer Turm) → U3/U6 até Sendlinger To
+ r · Asamkirche + Sendlinger Tor · almoço no caminho\, sem voltar ao hote
+ l
 LOCATION:Munique — Altstadt a pé + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T121500
 DTEND;TZID=Europe/Berlin:20261120T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-20-3@eurotrip2026
-SUMMARY:Compras leves Kaufingerstraße · jantar rápido · mala Füssen amanhã
-DESCRIPTION:Compras leves Kaufingerstraße · jantar rápido · mala Füssen amanhã
+SUMMARY:Compras Kaufingerstraße / Neuhauser (eixo único\, pé) · jantar REWE Arnul
+ f o
+DESCRIPTION:Compras Kaufingerstraße / Neuhauser (eixo único\, pé) · jantar REWE Arnul
+ f ou Five Guys (Maps) · mala Füssen · 1 transporte de volta ao hotel
 LOCATION:Munique — Altstadt a pé + tarde livre
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261120T170000
 DTEND;TZID=Europe/Berlin:20261120T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-21@eurotrip2026
 SUMMARY:Munique — Füssen a pé + Neuschwanstein - EuroTrip 2026
-DESCRIPTION:Sem noite · Füssen\\n07:30–07:45 - Café + mochila leve\\n07:45 - Saída ho
- tel → ZOB\\n08:00–10:15 - Flix ZOB → Füssen Kemptener Str. (2h15)\\n10:1
- 5–11:45 - Rota a pé — abrir Passo a passo no mapa (curiosidades em cada 
- parada)\\n11:45–12:15 - Caminha → paragem autocarro 73/78 (perto da esta
- ção) → Hohenschwangau\\n12:15–15:00 - Neuschwanstein (exterior ± interio
- r slot ~13:00 ) + Marienbrücke · lanche kit\\n15:00–15:45 - Desce + auto
- carro 73/78 → caminha até Pulverturm (~15 min)\\n16:00–18:00 - Flix Pulv
- erturm → ZOB → S-Bahn hotel\\n18:00–19:30 - Jantar leve · mala Salzburgo
-  (ICE amanhã 12:09 Hbf)
+DESCRIPTION:Sem noite · Füssen\\n07:30–07:45 - Café simples e mochila leve\; sair sem
+ despachar bagagem.\\n07:45 - Hotel → München ZOB para embarque.\\n08:00–
+ 10:15 - FlixBus München ZOB → Füssen Kemptener Str.\; não confundir com
+ a parada de volta.\\n10:15–11:45 - Tour Historic Center · Tourist Info ·
+ ~1h30 — 5 paradas (~1h30) · 1ª Reichenstraße → últ. Lech / Marktplatz ·
+ subhorários no expandir\\n11:45–12:15 - Tourist Info → parada do ônibus
+ 73/78 → Hohenschwangau.\\n12:15–15:00 - Hohenschwangau → Neuschwanstein
+ → Marienbrücke\; lanche do kit.\\n15:00–15:45 - Descida → 73/78 → caminh
+ ada até Pulverturm.\\n16:00–18:00 - FlixBus Pulverturm → München ZOB\; n
+ ão planejar passeio na chegada.\\n18:00–19:30 - Jantar leve e mala para
+ Salzburgo\; dormir cedo.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-0@eurotrip2026
-SUMMARY:Café + mochila leve
-DESCRIPTION:Café + mochila leve
+SUMMARY:Café simples e mochila leve\; sair sem despachar bagagem.
+DESCRIPTION:Café simples e mochila leve\; sair sem despachar bagagem.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T073000
 DTEND;TZID=Europe/Berlin:20261121T074500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-1@eurotrip2026
-SUMMARY:Saída hotel → ZOB
-DESCRIPTION:Saída hotel → ZOB
+SUMMARY:Hotel → München ZOB para embarque.
+DESCRIPTION:Hotel → München ZOB para embarque.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T074500
 DTEND;TZID=Europe/Berlin:20261121T091500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-2@eurotrip2026
-SUMMARY:Flix ZOB → Füssen Kemptener Str. (2h15)
-DESCRIPTION:Flix ZOB → Füssen Kemptener Str. (2h15)
+SUMMARY:FlixBus München ZOB → Füssen Kemptener Str.\; não confundir com a parada
+ de
+DESCRIPTION:FlixBus München ZOB → Füssen Kemptener Str.\; não confundir com a parada
+ de volta.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T080000
 DTEND;TZID=Europe/Berlin:20261121T101500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-3@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Historic Center · Tourist Info · ~1h30 — 5 paradas (~1h30) · 1ª Reic
+ he
+DESCRIPTION:Tour Historic Center · Tourist Info · ~1h30 — 5 paradas (~1h30) · 1ª Reic
+ henstraße → últ. Lech / Marktplatz · subhorários no expandir
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T101500
 DTEND;TZID=Europe/Berlin:20261121T114500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-4@eurotrip2026
-SUMMARY:Caminha → paragem autocarro 73/78 (perto da estação) → Hohenschwangau
-DESCRIPTION:Caminha → paragem autocarro 73/78 (perto da estação) → Hohenschwangau
+SUMMARY:Tourist Info → parada do ônibus 73/78 → Hohenschwangau.
+DESCRIPTION:Tourist Info → parada do ônibus 73/78 → Hohenschwangau.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T114500
 DTEND;TZID=Europe/Berlin:20261121T121500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-5@eurotrip2026
-SUMMARY:Neuschwanstein (exterior ± interior slot ~13:00 ) + Marienbrücke · lanche
-  k
-DESCRIPTION:Neuschwanstein (exterior ± interior slot ~13:00 ) + Marienbrücke · lanche
-  kit
+SUMMARY:Hohenschwangau → Neuschwanstein → Marienbrücke\; lanche do kit.
+DESCRIPTION:Hohenschwangau → Neuschwanstein → Marienbrücke\; lanche do kit.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T121500
 DTEND;TZID=Europe/Berlin:20261121T150000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-6@eurotrip2026
-SUMMARY:Desce + autocarro 73/78 → caminha até Pulverturm (~15 min)
-DESCRIPTION:Desce + autocarro 73/78 → caminha até Pulverturm (~15 min)
+SUMMARY:Descida → 73/78 → caminhada até Pulverturm.
+DESCRIPTION:Descida → 73/78 → caminhada até Pulverturm.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T150000
 DTEND;TZID=Europe/Berlin:20261121T154500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-7@eurotrip2026
-SUMMARY:Flix Pulverturm → ZOB → S-Bahn hotel
-DESCRIPTION:Flix Pulverturm → ZOB → S-Bahn hotel
+SUMMARY:FlixBus Pulverturm → München ZOB\; não planejar passeio na chegada.
+DESCRIPTION:FlixBus Pulverturm → München ZOB\; não planejar passeio na chegada.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T160000
 DTEND;TZID=Europe/Berlin:20261121T180000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-21-8@eurotrip2026
-SUMMARY:Jantar leve · mala Salzburgo (ICE amanhã 12:09 Hbf)
-DESCRIPTION:Jantar leve · mala Salzburgo (ICE amanhã 12:09 Hbf)
+SUMMARY:Jantar leve e mala para Salzburgo\; dormir cedo.
+DESCRIPTION:Jantar leve e mala para Salzburgo\; dormir cedo.
 LOCATION:Munique — Füssen a pé + Neuschwanstein
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261121T180000
 DTEND;TZID=Europe/Berlin:20261121T193000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-22@eurotrip2026
 SUMMARY:Munique → Salzburgo - EuroTrip 2026
 DESCRIPTION:09:00–11:30 - Check-out · REWE Arnulf (kit) · bagagem → München Hbf\\n12:
- 09–~14:10 - DB ICE 1215 → Salzburg Hbf ( Pago XP)\\n14:30–21:00 - Hotel 
- Lasserhof · Mirabellgarten → Getreidegasse/Altstadt → Dom (exterior)
+ 09–~14:10 - DB ICE 1215 → Salzburg Hbf ( Pago XP)\\n14:30–21:00 - Hotel
+ → Mirabellgarten (pé\, 10 min) → Getreidegasse → Dom (exterior) · jantar
+ Altstadt · sem voltar ao hotel até o fim
 LOCATION:Munique → Salzburgo
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-22-0@eurotrip2026
@@ -616,33 +633,35 @@ LOCATION:Munique → Salzburgo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261122T090000
 DTEND;TZID=Europe/Berlin:20261122T113000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-22-2@eurotrip2026
-SUMMARY:Hotel Lasserhof · Mirabellgarten → Getreidegasse/Altstadt → Dom (exterior
- )
-DESCRIPTION:Hotel Lasserhof · Mirabellgarten → Getreidegasse/Altstadt → Dom (exterior
- )
+SUMMARY:Hotel → Mirabellgarten (pé\, 10 min) → Getreidegasse → Dom (exterior) · j
+ ant
+DESCRIPTION:Hotel → Mirabellgarten (pé\, 10 min) → Getreidegasse → Dom (exterior) · j
+ antar Altstadt · sem voltar ao hotel até o fim
 LOCATION:Munique → Salzburgo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261122T143000
 DTEND;TZID=Europe/Berlin:20261122T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-23@eurotrip2026
 SUMMARY:Salzburgo — Festung + Altstadt a pé - EuroTrip 2026
 DESCRIPTION:08:30–10:30 - Festung Hohensalzburg (exterior / funicular) — cortar se at
- rasar para o tour\\n11:00–12:30 - Rota a pé — abrir Passo a passo no map
- a (curiosidades em cada parada)\\n12:30–14:00 - Almoço · Spar Getreidega
- sse 33 no caminho\\n14:00–21:00 - Makartsteg / Salzach · jantar leve · m
- ala + dormir cedo (RJX 11:07 amanhã)
+ rasar para o tour\\n11:00–12:30 - Tour Highlights · entrada sul Mirabell
+ · ~1h45 — 11 paradas (~1h45) · 1ª Mirabellgarten → últ. Festung Hohensal
+ zburg (vista exterior) · subhorários no expandir\\n12:30–14:00 - Almoço
+ · Spar Getreidegasse 33 no caminho\\n14:00–21:00 - Pé Makartsteg → marge
+ m Salzach · Mozart Geburtshaus / Getreidegasse · jantar leve · mala + do
+ rmir cedo (RJX 11:07 amanhã)
 LOCATION:Salzburgo — Festung + Altstadt a pé
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-0@eurotrip2026
@@ -654,17 +673,20 @@ LOCATION:Salzburgo — Festung + Altstadt a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T083000
 DTEND;TZID=Europe/Berlin:20261123T103000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Highlights · entrada sul Mirabell · ~1h45 — 11 paradas (~1h45) · 1ª
+ Mi
+DESCRIPTION:Tour Highlights · entrada sul Mirabell · ~1h45 — 11 paradas (~1h45) · 1ª
+ Mirabellgarten → últ. Festung Hohensalzburg (vista exterior) · subhorári
+ os no expandir
 LOCATION:Salzburgo — Festung + Altstadt a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T110000
 DTEND;TZID=Europe/Berlin:20261123T123000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-2@eurotrip2026
@@ -674,32 +696,33 @@ LOCATION:Salzburgo — Festung + Altstadt a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T123000
 DTEND;TZID=Europe/Berlin:20261123T140000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-23-3@eurotrip2026
-SUMMARY:Makartsteg / Salzach · jantar leve · mala + dormir cedo (RJX 11:07 amanhã
- )
-DESCRIPTION:Makartsteg / Salzach · jantar leve · mala + dormir cedo (RJX 11:07 amanhã
- )
+SUMMARY:Pé Makartsteg → margem Salzach · Mozart Geburtshaus / Getreidegasse · jan
+ ta
+DESCRIPTION:Pé Makartsteg → margem Salzach · Mozart Geburtshaus / Getreidegasse · jan
+ tar leve · mala + dormir cedo (RJX 11:07 amanhã)
 LOCATION:Salzburgo — Festung + Altstadt a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261123T140000
 DTEND;TZID=Europe/Berlin:20261123T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-24@eurotrip2026
 SUMMARY:Salzburgo → Viena — Prater\, Naschmarkt e chegada - EuroTrip 2026
 DESCRIPTION:09:00–10:45 - Café to-go · check-out · Spar Hbf (kit) · Salzburg Hbf\\n11
- :07–13:32 - ÖBB RJX 63 → Wien Hbf ( Pago Wise)\\n14:00–17:00 - Hotel Zip
- ser · Prater (exterior) → Naschmarkt (snack)\\n17:00–21:00 - Donaukanal 
- · jantar Billa · compras leves ( matriz 24 nov )
+ :07–13:32 - ÖBB RJX 63 → Wien Hbf ( Pago Wise)\\n14:30–17:00 - Hbf → hot
+ el Zipser · deixar bagagem · Prater (exterior) → Naschmarkt (snack\, se
+ houver tempo)\\n17:00–21:00 - U1/U4 → Donaukanal (est. 15 min) · passeio
+ margem · jantar Billa Zipser · compras leves · volta 1 linha metro
 LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261124
 DTEND;VALUE=DATE:20261125
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-0@eurotrip2026
@@ -709,120 +732,135 @@ LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261124T090000
 DTEND;TZID=Europe/Berlin:20261124T104500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-2@eurotrip2026
-SUMMARY:Hotel Zipser · Prater (exterior) → Naschmarkt (snack)
-DESCRIPTION:Hotel Zipser · Prater (exterior) → Naschmarkt (snack)
+SUMMARY:Hbf → hotel Zipser · deixar bagagem · Prater (exterior) → Naschmarkt (sna
+ ck
+DESCRIPTION:Hbf → hotel Zipser · deixar bagagem · Prater (exterior) → Naschmarkt (sna
+ ck\, se houver tempo)
 LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261124T140000
+DTSTART;TZID=Europe/Berlin:20261124T143000
 DTEND;TZID=Europe/Berlin:20261124T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-24-3@eurotrip2026
-SUMMARY:Donaukanal · jantar Billa · compras leves ( matriz 24 nov )
-DESCRIPTION:Donaukanal · jantar Billa · compras leves ( matriz 24 nov )
+SUMMARY:U1/U4 → Donaukanal (est. 15 min) · passeio margem · jantar Billa Zipser ·
+ c
+DESCRIPTION:U1/U4 → Donaukanal (est. 15 min) · passeio margem · jantar Billa Zipser ·
+ compras leves · volta 1 linha metro
 LOCATION:Salzburgo → Viena — Prater\, Naschmarkt e chegada
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261124T170000
 DTEND;TZID=Europe/Berlin:20261124T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-25@eurotrip2026
 SUMMARY:Viena — Centro a pé + Schönbrunn - EuroTrip 2026
 DESCRIPTION:Compras\\n07:30–09:30 - Schönbrunn (fachada + jardins\, só exterior ) — c
- ortar se precisar dormir mais\\n10:15–12:00 - Rota a pé — abrir Passo a 
- passo no mapa (curiosidades em cada parada)\\n12:00–21:00 - Almoço Anker
-  Brot / Billa · compras leves · Ring (fachadas\, luzes) · jantar · mala 
- Bratislava
+ ortar se precisar dormir mais\\n10:15–12:15 - Tour Old Town Part 1 · Sta
+ atsoper · ~2 h — 6 paradas (~2h) · 1ª Staatsoper → últ. Stephansdom · en
+ contro Staatsoper · subhorários no expandir\\n12:15–21:00 - Almoço Anker
+ Brot / Billa · Ring sentido horário a pé: Stephansdom → Graben → Hofburg
+ → Rathaus/Parlament (fachadas\, luzes) · Manner/ímã no eixo Graben · jan
+ tar · mala Bratislava
 LOCATION:Viena — Centro a pé + Schönbrunn
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-0@eurotrip2026
 SUMMARY:Schönbrunn (fachada + jardins\, só exterior ) — cortar se precisar dormir
-  ma
+ ma
 DESCRIPTION:Schönbrunn (fachada + jardins\, só exterior ) — cortar se precisar dormir
-  mais
+ mais
 LOCATION:Viena — Centro a pé + Schönbrunn
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261125T073000
 DTEND;TZID=Europe/Berlin:20261125T093000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Old Town Part 1 · Staatsoper · ~2 h — 6 paradas (~2h) · 1ª Staatsope
+ r
+DESCRIPTION:Tour Old Town Part 1 · Staatsoper · ~2 h — 6 paradas (~2h) · 1ª Staatsope
+ r → últ. Stephansdom · encontro Staatsoper · subhorários no expandir
 LOCATION:Viena — Centro a pé + Schönbrunn
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261125T101500
-DTEND;TZID=Europe/Berlin:20261125T120000
-DTSTAMP:20261019T010707Z
+DTEND;TZID=Europe/Berlin:20261125T121500
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-25-2@eurotrip2026
-SUMMARY:Almoço Anker Brot / Billa · compras leves · Ring (fachadas\, luzes) · jan
- tar
-DESCRIPTION:Almoço Anker Brot / Billa · compras leves · Ring (fachadas\, luzes) · jan
- tar · mala Bratislava
+SUMMARY:Almoço Anker Brot / Billa · Ring sentido horário a pé: Stephansdom → Grab
+ en
+DESCRIPTION:Almoço Anker Brot / Billa · Ring sentido horário a pé: Stephansdom → Grab
+ en → Hofburg → Rathaus/Parlament (fachadas\, luzes) · Manner/ímã no eixo
+ Graben · jantar · mala Bratislava
 LOCATION:Viena — Centro a pé + Schönbrunn
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261125T120000
+DTSTART;TZID=Europe/Berlin:20261125T121500
 DTEND;TZID=Europe/Berlin:20261125T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-26@eurotrip2026
 SUMMARY:Viena → Bratislava - EuroTrip 2026
-DESCRIPTION:09:00–12:00 - Manhã livre Josefstadt · check-out 11:00 · VIB 12:00\\n12:3
- 5–13:45 - Flix VIB → Most SNP\\n14:00–21:00 - Hotel → Staré Mesto → Brat
- islava Castle (exterior) · jantar Old Town
+DESCRIPTION:09:00–12:15 - Manhã livre Josefstadt · check-out 11:00 · seguir para VIB
+ e chegar até 12:15\\n12:35–13:45 - Flix VIB → Most SNP\\n14:00–21:00 - M
+ etro → hotel · Staré Mesto (centro a pé) → Castle (exterior\, subida ~20
+ min) · jantar Old Town · 1 ida/volta hotel
 LOCATION:Viena → Bratislava
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-26-0@eurotrip2026
-SUMMARY:Manhã livre Josefstadt · check-out 11:00 · VIB 12:00
-DESCRIPTION:Manhã livre Josefstadt · check-out 11:00 · VIB 12:00
+SUMMARY:Manhã livre Josefstadt · check-out 11:00 · seguir para VIB e chegar até 1
+ 2:
+DESCRIPTION:Manhã livre Josefstadt · check-out 11:00 · seguir para VIB e chegar até 1
+ 2:15
 LOCATION:Viena → Bratislava
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261126T090000
-DTEND;TZID=Europe/Berlin:20261126T120000
-DTSTAMP:20261019T010707Z
+DTEND;TZID=Europe/Berlin:20261126T121500
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-26-2@eurotrip2026
-SUMMARY:Hotel → Staré Mesto → Bratislava Castle (exterior) · jantar Old Town
-DESCRIPTION:Hotel → Staré Mesto → Bratislava Castle (exterior) · jantar Old Town
+SUMMARY:Metro → hotel · Staré Mesto (centro a pé) → Castle (exterior\, subida ~20
+ mi
+DESCRIPTION:Metro → hotel · Staré Mesto (centro a pé) → Castle (exterior\, subida ~20
+ min) · jantar Old Town · 1 ida/volta hotel
 LOCATION:Viena → Bratislava
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261126T140000
 DTEND;TZID=Europe/Berlin:20261126T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-27@eurotrip2026
 SUMMARY:Bratislava → Budapeste - EuroTrip 2026
 DESCRIPTION:08:30–10:20 - Check-out · Mlynské Nivy\\n10:50–13:25 - Flix → Budapest Ke
  lenföld\\n14:00–17:00 - Metro → hotel → Basílica (exterior) → Andrássy (
- exterior)\\n17:00–21:00 - Chain Bridge → vistas Buda Castle (Pest\, exte
- rior)
+ exterior)\\n17:00–21:00 - Shoes on the Danube → Chain Bridge a pé · marg
+ em Pest com vista Buda Castle (exterior) · jantar perto do hotel · sem s
+ ubir Buda hoje
 LOCATION:Bratislava → Budapeste
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-0@eurotrip2026
@@ -832,7 +870,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T083000
 DTEND;TZID=Europe/Berlin:20261127T102000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-1@eurotrip2026
@@ -842,7 +880,7 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T105000
 DTEND;TZID=Europe/Berlin:20261127T132500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-2@eurotrip2026
@@ -852,31 +890,36 @@ LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T140000
 DTEND;TZID=Europe/Berlin:20261127T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-27-3@eurotrip2026
-SUMMARY:Chain Bridge → vistas Buda Castle (Pest\, exterior)
-DESCRIPTION:Chain Bridge → vistas Buda Castle (Pest\, exterior)
+SUMMARY:Shoes on the Danube → Chain Bridge a pé · margem Pest com vista Buda Cast
+ le
+DESCRIPTION:Shoes on the Danube → Chain Bridge a pé · margem Pest com vista Buda Cast
+ le (exterior) · jantar perto do hotel · sem subir Buda hoje
 LOCATION:Bratislava → Budapeste
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261127T170000
 DTEND;TZID=Europe/Berlin:20261127T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-28@eurotrip2026
 SUMMARY:Budapeste — Pest a pé + Buda - EuroTrip 2026
 DESCRIPTION:Sábado ruin bars\\n09:00–10:00 - Café leve · caminho ao ponto do tour (Pe
- st)\\n10:00–12:30 - Rota a pé — abrir Passo a passo no mapa (curiosidade
- s em cada parada)\\n12:30–17:00 - Snack Great Market Hall (opcional) → C
- hain Bridge → Fisherman's Bastion + Matthias (exterior) — tour da manhã 
- já cobre Pest\\n17:00–21:00 - Szimpla / Instant (ruin bars)
+ st)\\n10:00–12:30 - Tour Essential · Madách tér / Sissi · ~2h30 · termin
+ a no Parlamento — 10 paradas (~2h30) · 1ª Madách tér (estátua Sissi) → ú
+ lt. Parlamento · encontro Madách tér / Sissi · subhorários no expandir\\
+ n12:30–17:00 - Snack Great Market Hall (opcional) → Chain Bridge → Fishe
+ rman's Bastion + Matthias (exterior) — tour da manhã já cobre Pest\\n17:
+ 00–21:00 - Buffer hotel · Szimpla Kert ou Instant (ruin bars — confirmar
+ fila Maps) · jantar leve antes/depois · último metro ~23h (est.)
 LOCATION:Budapeste — Pest a pé + Buda
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261128
 DTEND;VALUE=DATE:20261129
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-0@eurotrip2026
@@ -886,106 +929,122 @@ LOCATION:Budapeste — Pest a pé + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T090000
 DTEND;TZID=Europe/Berlin:20261128T100000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Essential · Madách tér / Sissi · ~2h30 · termina no Parlamento — 10
+ pa
+DESCRIPTION:Tour Essential · Madách tér / Sissi · ~2h30 · termina no Parlamento — 10
+ paradas (~2h30) · 1ª Madách tér (estátua Sissi) → últ. Parlamento · enco
+ ntro Madách tér / Sissi · subhorários no expandir
 LOCATION:Budapeste — Pest a pé + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T100000
 DTEND;TZID=Europe/Berlin:20261128T123000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-2@eurotrip2026
 SUMMARY:Snack Great Market Hall (opcional) → Chain Bridge → Fisherman's Bastion +
-  M
+ M
 DESCRIPTION:Snack Great Market Hall (opcional) → Chain Bridge → Fisherman's Bastion +
-  Matthias (exterior) — tour da manhã já cobre Pest
+ Matthias (exterior) — tour da manhã já cobre Pest
 LOCATION:Budapeste — Pest a pé + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T123000
 DTEND;TZID=Europe/Berlin:20261128T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-28-3@eurotrip2026
-SUMMARY:Szimpla / Instant (ruin bars)
-DESCRIPTION:Szimpla / Instant (ruin bars)
+SUMMARY:Buffer hotel · Szimpla Kert ou Instant (ruin bars — confirmar fila Maps)
+ ·
+DESCRIPTION:Buffer hotel · Szimpla Kert ou Instant (ruin bars — confirmar fila Maps)
+ · jantar leve antes/depois · último metro ~23h (est.)
 LOCATION:Budapeste — Pest a pé + Buda
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261128T170000
 DTEND;TZID=Europe/Berlin:20261128T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-29@eurotrip2026
 SUMMARY:Budapeste — Jewish Quarter tour - EuroTrip 2026
-DESCRIPTION:Voo amanhã 11:25\\n09:00–10:45 - Café · Tesco Kazinczy 16 · caminho ao to
- ur\\n11:00–13:00 - Rota a pé — abrir Passo a passo no mapa (curiosidades
-  em cada parada)\\n13:00–17:00 - Margaret Bridge / Margitsziget (exterio
- r) · buffer descanso\\n17:00–21:00 - Jantar leve · mala Berlim · dormir 
- razoável
+DESCRIPTION:Voo amanhã 11:25\\n09:00–10:45 - Café\, comprar água/lanche no Tesco Kazi
+ nczy 16 e caminhar até Madách tér.\\n11:00–13:30 - Tour Jewish Quarter ·
+ Madách tér · ~2h30 — 12 paradas (~2h30) · 1ª Sinagoga Rumbach (exterior)
+ → últ. Encerramento no bairro · subhorários no expandir\\n13:30–17:00 -
+ Fim do tour no Jewish Quarter → Margaret Bridge/Margitsziget\; usar como
+ passeio leve e descanso.\\n17:00–21:00 - Jantar cedo\, fechar mala para
+ o voo e deixar o 100E preparado.
 LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261129
 DTEND;VALUE=DATE:20261130
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-0@eurotrip2026
-SUMMARY:Café · Tesco Kazinczy 16 · caminho ao tour
-DESCRIPTION:Café · Tesco Kazinczy 16 · caminho ao tour
+SUMMARY:Café\, comprar água/lanche no Tesco Kazinczy 16 e caminhar até Madách tér
+ .
+DESCRIPTION:Café\, comprar água/lanche no Tesco Kazinczy 16 e caminhar até Madách tér
+ .
 LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T090000
 DTEND;TZID=Europe/Berlin:20261129T104500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Jewish Quarter · Madách tér · ~2h30 — 12 paradas (~2h30) · 1ª Sinago
+ ga
+DESCRIPTION:Tour Jewish Quarter · Madách tér · ~2h30 — 12 paradas (~2h30) · 1ª Sinago
+ ga Rumbach (exterior) → últ. Encerramento no bairro · subhorários no exp
+ andir
 LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T110000
-DTEND;TZID=Europe/Berlin:20261129T130000
-DTSTAMP:20261019T010707Z
+DTEND;TZID=Europe/Berlin:20261129T133000
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-2@eurotrip2026
-SUMMARY:Margaret Bridge / Margitsziget (exterior) · buffer descanso
-DESCRIPTION:Margaret Bridge / Margitsziget (exterior) · buffer descanso
+SUMMARY:Fim do tour no Jewish Quarter → Margaret Bridge/Margitsziget\; usar como
+ pas
+DESCRIPTION:Fim do tour no Jewish Quarter → Margaret Bridge/Margitsziget\; usar como
+ passeio leve e descanso.
 LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261129T130000
+DTSTART;TZID=Europe/Berlin:20261129T133000
 DTEND;TZID=Europe/Berlin:20261129T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-29-3@eurotrip2026
-SUMMARY:Jantar leve · mala Berlim · dormir razoável
-DESCRIPTION:Jantar leve · mala Berlim · dormir razoável
+SUMMARY:Jantar cedo\, fechar mala para o voo e deixar o 100E preparado.
+DESCRIPTION:Jantar cedo\, fechar mala para o voo e deixar o 100E preparado.
 LOCATION:Budapeste — Jewish Quarter tour
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261129T170000
 DTEND;TZID=Europe/Berlin:20261129T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-11-30@eurotrip2026
 SUMMARY:Budapeste → Berlim (voo 11h25) - EuroTrip 2026
 DESCRIPTION:Ryanair 11:25\\n07:30–08:15 - Check-out · café/kit Astoria · sair para 10
  0E\\n~08:30–09:15 - 100E → BUD (Ryanair + bagagem · Pago Omio)\\n11:25–~
- 12:55 - Voo BUD → BER (confira terminal no bilhete)\\n14:00–21:00 - Chec
- k-in Premier Inn → Alexanderplatz + Fernsehturm (exterior) · jantar Rewe
+ 12:55 - Voo BUD → BER (confira terminal no bilhete)\\n14:00–21:00 - BER
+ → hotel: FEX/S9 + U5 (ver transit) · check-in Premier Inn Alex · Alexand
+ erplatz + Fernsehturm (exterior) · jantar Rewe To Go Alex ou Five Guys A
+ lex 2
 LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261130
 DTEND;VALUE=DATE:20261201
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-0@eurotrip2026
@@ -995,7 +1054,7 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T073000
 DTEND;TZID=Europe/Berlin:20261130T081500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-1@eurotrip2026
@@ -1005,142 +1064,186 @@ LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T083000
 DTEND;TZID=Europe/Berlin:20261130T091500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-11-30-3@eurotrip2026
-SUMMARY:Check-in Premier Inn → Alexanderplatz + Fernsehturm (exterior) · jantar R
- ew
-DESCRIPTION:Check-in Premier Inn → Alexanderplatz + Fernsehturm (exterior) · jantar R
- ewe
+SUMMARY:BER → hotel: FEX/S9 + U5 (ver transit) · check-in Premier Inn Alex · Alex
+ an
+DESCRIPTION:BER → hotel: FEX/S9 + U5 (ver transit) · check-in Premier Inn Alex · Alex
+ anderplatz + Fernsehturm (exterior) · jantar Rewe To Go Alex ou Five Guy
+ s Alex 2
 LOCATION:Budapeste → Berlim (voo 11h25)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261130T140000
 DTEND;TZID=Europe/Berlin:20261130T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-01@eurotrip2026
 SUMMARY:Berlim — Mitte manhã + Guerra Fria a pé - EuroTrip 2026
 DESCRIPTION:09:00–10:30 - Café · Memorial do Holocausto → Brandenburger Tor → Reichst
- ag (exterior\; cúpula só com reserva)\\n10:30–14:00 - Almoço · deslocaçã
- o ao encontro do tour (confirmar ponto na reserva)\\n14:30–17:30 - Rota 
- a pé — abrir Passo a passo no mapa (curiosidades em cada parada)\\n17:30
- –21:00 - East Side Gallery (trecho curto) · volta Alex · jantar
+ ag (exterior\; cúpula só com reserva)\\n10:30–14:00 - Topografia do Terr
+ or ou cúpula do Reichstag (conforme reserva/local do tour) · almoço Rewe
+ To Go Friedrichstraße · deslocação ao encontro tour 14:30 — U-Bahn Anton
+ -Wilhelm-Amo (ponto na reserva\; est. 20–25 min do Mitte)\\n14:30–17:30
+ - Tour Cold War · U-Bahn Anton-Wilhelm-Amo · ~3 h · bilhete AB — 12 para
+ das (~3h) · 1ª Detlev-Rohwedder-Haus → últ. Encerramento Mitte · subhorá
+ rios no expandir\\n17:30–21:00 - Tour termina em Mitte → deslocação até
+ Warschauer Straße · East Side Gallery por 30 min · S-Bahn → Alexanderpla
+ tz · jantar · Alexanderplatz à noite · opcional Generator às 21h
 LOCATION:Berlim — Mitte manhã + Guerra Fria a pé
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-0@eurotrip2026
 SUMMARY:Café · Memorial do Holocausto → Brandenburger Tor → Reichstag (exterior\;
-  cú
+ cú
 DESCRIPTION:Café · Memorial do Holocausto → Brandenburger Tor → Reichstag (exterior\;
-  cúpula só com reserva)
+ cúpula só com reserva)
 LOCATION:Berlim — Mitte manhã + Guerra Fria a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261201T090000
 DTEND;TZID=Europe/Berlin:20261201T103000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-1@eurotrip2026
-SUMMARY:Almoço · deslocação ao encontro do tour (confirmar ponto na reserva)
-DESCRIPTION:Almoço · deslocação ao encontro do tour (confirmar ponto na reserva)
+SUMMARY:Topografia do Terror ou cúpula do Reichstag (conforme reserva/local do to
+ ur
+DESCRIPTION:Topografia do Terror ou cúpula do Reichstag (conforme reserva/local do to
+ ur) · almoço Rewe To Go Friedrichstraße · deslocação ao encontro tour 14
+ :30 — U-Bahn Anton-Wilhelm-Amo (ponto na reserva\; est. 20–25 min do Mit
+ te)
 LOCATION:Berlim — Mitte manhã + Guerra Fria a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261201T103000
 DTEND;TZID=Europe/Berlin:20261201T140000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-2@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Cold War · U-Bahn Anton-Wilhelm-Amo · ~3 h · bilhete AB — 12 paradas
+ (
+DESCRIPTION:Tour Cold War · U-Bahn Anton-Wilhelm-Amo · ~3 h · bilhete AB — 12 paradas
+ (~3h) · 1ª Detlev-Rohwedder-Haus → últ. Encerramento Mitte · subhorários
+ no expandir
 LOCATION:Berlim — Mitte manhã + Guerra Fria a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261201T143000
 DTEND;TZID=Europe/Berlin:20261201T173000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-01-3@eurotrip2026
-SUMMARY:East Side Gallery (trecho curto) · volta Alex · jantar
-DESCRIPTION:East Side Gallery (trecho curto) · volta Alex · jantar
+SUMMARY:Tour termina em Mitte → deslocação até Warschauer Straße · East Side Gall
+ er
+DESCRIPTION:Tour termina em Mitte → deslocação até Warschauer Straße · East Side Gall
+ ery por 30 min · S-Bahn → Alexanderplatz · jantar · Alexanderplatz à noi
+ te · opcional Generator às 21h
 LOCATION:Berlim — Mitte manhã + Guerra Fria a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261201T173000
 DTEND;TZID=Europe/Berlin:20261201T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-02@eurotrip2026
 SUMMARY:Berlim — Kreuzberg a pé + compras - EuroTrip 2026
-DESCRIPTION:Compras hub\\n09:00–09:45 - Café · caminho ao encontro ( Kreuzberg — ver 
- reserva)\\n10:00–13:00 - Rota a pé — abrir Passo a passo no mapa (curios
- idades em cada parada)\\n13:00–16:00 - Almoço · buffer / volta Alexander
- platz\\n16:00–21:00 - Compras Alex / Ku’damm / Primark · mercados de Nat
- al · mala Praga
+DESCRIPTION:Compras hub\\n07:30–09:00 - Slot preferido lavanderia (confirmar loja no
+ Maps) · terminar secagem antes de sair\\n09:00–10:00 - Café to-go · cami
+ nho até Moritzplatz · chegar ao encontro do tour ( Kreuzberg — ver reser
+ va)\\n10:00–13:00 - Tour Kreuzberg · Moritzplatz / Aufbau Haus · ~3 h —
+ 11 paradas (~3h) · 1ª Prinzessinnengarten → últ. Street art Görlitzer /
+ Schlesisches Tor · subhorários no expandir\\n13:00–16:00 - Almoço Kreuzb
+ erg ( Markthalle Neun área ou Döner) · Oberbaumbrücke no caminho · U1/U8
+ → Alexanderplatz · pausa hotel / banheiro\\n16:00–21:00 - Compras hub: A
+ lexa / Primark Alex → U2 Alex → Zoologischer Garten · Ku’damm / Primark
+ · mercados Natal (opcional) · volta U2 · jantar · mala Praga
 LOCATION:Berlim — Kreuzberg a pé + compras
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261202
 DTEND;VALUE=DATE:20261203
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-0@eurotrip2026
-SUMMARY:Café · caminho ao encontro ( Kreuzberg — ver reserva)
-DESCRIPTION:Café · caminho ao encontro ( Kreuzberg — ver reserva)
+SUMMARY:Slot preferido lavanderia (confirmar loja no Maps) · terminar secagem ant
+ es
+DESCRIPTION:Slot preferido lavanderia (confirmar loja no Maps) · terminar secagem ant
+ es de sair
 LOCATION:Berlim — Kreuzberg a pé + compras
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261202T090000
-DTEND;TZID=Europe/Berlin:20261202T094500
-DTSTAMP:20261019T010707Z
+DTSTART;TZID=Europe/Berlin:20261202T073000
+DTEND;TZID=Europe/Berlin:20261202T090000
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-02-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Café to-go · caminho até Moritzplatz · chegar ao encontro do tour ( Kreuz
+ be
+DESCRIPTION:Café to-go · caminho até Moritzplatz · chegar ao encontro do tour ( Kreuz
+ berg — ver reserva)
+LOCATION:Berlim — Kreuzberg a pé + compras
+CATEGORIES:Plano
+DTSTART;TZID=Europe/Berlin:20261202T090000
+DTEND;TZID=Europe/Berlin:20261202T100000
+DTSTAMP:20261110T030308Z
+END:VEVENT
+BEGIN:VEVENT
+UID:fast-2026-12-02-2@eurotrip2026
+SUMMARY:Tour Kreuzberg · Moritzplatz / Aufbau Haus · ~3 h — 11 paradas (~3h) · 1ª
+ P
+DESCRIPTION:Tour Kreuzberg · Moritzplatz / Aufbau Haus · ~3 h — 11 paradas (~3h) · 1ª
+ Prinzessinnengarten → últ. Street art Görlitzer / Schlesisches Tor · sub
+ horários no expandir
 LOCATION:Berlim — Kreuzberg a pé + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T100000
 DTEND;TZID=Europe/Berlin:20261202T130000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
-UID:fast-2026-12-02-2@eurotrip2026
-SUMMARY:Almoço · buffer / volta Alexanderplatz
-DESCRIPTION:Almoço · buffer / volta Alexanderplatz
+UID:fast-2026-12-02-3@eurotrip2026
+SUMMARY:Almoço Kreuzberg ( Markthalle Neun área ou Döner) · Oberbaumbrücke no cam
+ in
+DESCRIPTION:Almoço Kreuzberg ( Markthalle Neun área ou Döner) · Oberbaumbrücke no cam
+ inho · U1/U8 → Alexanderplatz · pausa hotel / banheiro
 LOCATION:Berlim — Kreuzberg a pé + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T130000
 DTEND;TZID=Europe/Berlin:20261202T160000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
-UID:fast-2026-12-02-3@eurotrip2026
-SUMMARY:Compras Alex / Ku’damm / Primark · mercados de Natal · mala Praga
-DESCRIPTION:Compras Alex / Ku’damm / Primark · mercados de Natal · mala Praga
+UID:fast-2026-12-02-4@eurotrip2026
+SUMMARY:Compras hub: Alexa / Primark Alex → U2 Alex → Zoologischer Garten · Ku’da
+ mm
+DESCRIPTION:Compras hub: Alexa / Primark Alex → U2 Alex → Zoologischer Garten · Ku’da
+ mm / Primark · mercados Natal (opcional) · volta U2 · jantar · mala Prag
+ a
 LOCATION:Berlim — Kreuzberg a pé + compras
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261202T160000
 DTEND;TZID=Europe/Berlin:20261202T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-03@eurotrip2026
 SUMMARY:Berlim → Praga - EuroTrip 2026
 DESCRIPTION:08:00–08:45 - Check-out · S-Bahn Alex → Südkreuz\\n10:20–14:20 - Flix Süd
- kreuz → Florenc\\n14:30–17:30 - Hotel Alton · check-in · descanso · jant
- ar leve perto do hotel (centro velho amanhã com guia)\\n17:30–21:00 - Pa
- sseio curto opcional Wenceslas Square (exterior) · dormir cedo
+ kreuz → Florenc\\n14:30–17:30 - Florenc → Metro C Florenc → I.P. Pavlova
+ (~2 min\, Maps) + pé Hotel Alton · check-in · jantar leve Albert Legerov
+ a / Billa perto\\n17:30–21:00 - Opcional: Metro C → Wenceslas Square (ex
+ terior\, 30–40 min) · volta hotel · dormir cedo
 LOCATION:Berlim → Praga
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-0@eurotrip2026
@@ -1150,7 +1253,7 @@ LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T080000
 DTEND;TZID=Europe/Berlin:20261203T084500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-1@eurotrip2026
@@ -1160,44 +1263,51 @@ LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T102000
 DTEND;TZID=Europe/Berlin:20261203T142000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-2@eurotrip2026
-SUMMARY:Hotel Alton · check-in · descanso · jantar leve perto do hotel (centro ve
- lh
-DESCRIPTION:Hotel Alton · check-in · descanso · jantar leve perto do hotel (centro ve
- lho amanhã com guia)
+SUMMARY:Florenc → Metro C Florenc → I.P. Pavlova (~2 min\, Maps) + pé Hotel Alton
+ ·
+DESCRIPTION:Florenc → Metro C Florenc → I.P. Pavlova (~2 min\, Maps) + pé Hotel Alton
+ · check-in · jantar leve Albert Legerova / Billa perto
 LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T143000
 DTEND;TZID=Europe/Berlin:20261203T173000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-03-3@eurotrip2026
-SUMMARY:Passeio curto opcional Wenceslas Square (exterior) · dormir cedo
-DESCRIPTION:Passeio curto opcional Wenceslas Square (exterior) · dormir cedo
+SUMMARY:Opcional: Metro C → Wenceslas Square (exterior\, 30–40 min) · volta hotel
+ ·
+DESCRIPTION:Opcional: Metro C → Wenceslas Square (exterior\, 30–40 min) · volta hotel
+ · dormir cedo
 LOCATION:Berlim → Praga
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261203T173000
 DTEND;TZID=Europe/Berlin:20261203T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-04@eurotrip2026
 SUMMARY:Praga — Castelo + centro a pé - EuroTrip 2026
 DESCRIPTION:Compras + noite CZ\\n09:00–10:30 - Charles Bridge (cedo) → Klárov 1 (enco
- ntro castelo)\\n11:00–13:00 - Rota a pé — abrir Passo a passo no mapa (c
- uriosidades em cada parada)\\n13:00–14:45 - Almoço · Billa Malostranské 
- nám. · caminho ao Powder Tower\\n15:00–17:00 - Rota a pé — abrir Passo a
-  passo no mapa (curiosidades em cada parada)\\n17:00–21:00 - Compras Na 
- Příkopě / Palladium · noite: Sophie's + Vinohrady
+ ntro castelo)\\n11:00–13:15 - Tour Castle · Klárov 1 · ~2h15 · bilhete t
+ ransporte · troca de guardas 12h se no horário — 12 paradas (~2h15) · 1ª
+ Klárov (saída metrô Malostranská) → últ. Descida ao Malá Strana · encont
+ ro Klárov 1 · subhorários no expandir\\n13:15–14:45 - Almoço · Billa Mal
+ ostranské nám. · caminho ao Powder Tower\\n15:00–17:45 - Tour centro e J
+ osefov · Powder Tower · ~2h45 — 12 paradas (~2h45) · 1ª Powder Tower (Pr
+ ašná brána) → últ. John Lennon Wall · encontro Powder Tower · subhorário
+ s no expandir\\n17:45–21:00 - Compras Na Příkopě / Palladium (mesma zona
+ \, pé) · jantar mall ou Billa · noite Sophie's + Vinohrady (opcional) ·
+ 1 metro ida/volta hotel
 LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-0@eurotrip2026
@@ -1207,17 +1317,21 @@ LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T090000
 DTEND;TZID=Europe/Berlin:20261204T103000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-1@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour Castle · Klárov 1 · ~2h15 · bilhete transporte · troca de guardas 12
+ h
+DESCRIPTION:Tour Castle · Klárov 1 · ~2h15 · bilhete transporte · troca de guardas 12
+ h se no horário — 12 paradas (~2h15) · 1ª Klárov (saída metrô Malostrans
+ ká) → últ. Descida ao Malá Strana · encontro Klárov 1 · subhorários no e
+ xpandir
 LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T110000
-DTEND;TZID=Europe/Berlin:20261204T130000
-DTSTAMP:20261019T010707Z
+DTEND;TZID=Europe/Berlin:20261204T131500
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-2@eurotrip2026
@@ -1225,75 +1339,81 @@ SUMMARY:Almoço · Billa Malostranské nám. · caminho ao Powder Tower
 DESCRIPTION:Almoço · Billa Malostranské nám. · caminho ao Powder Tower
 LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261204T130000
+DTSTART;TZID=Europe/Berlin:20261204T131500
 DTEND;TZID=Europe/Berlin:20261204T144500
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-3@eurotrip2026
-SUMMARY:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
-DESCRIPTION:Rota a pé — abrir Passo a passo no mapa (curiosidades em cada parada)
+SUMMARY:Tour centro e Josefov · Powder Tower · ~2h45 — 12 paradas (~2h45) · 1ª Po
+ wd
+DESCRIPTION:Tour centro e Josefov · Powder Tower · ~2h45 — 12 paradas (~2h45) · 1ª Po
+ wder Tower (Prašná brána) → últ. John Lennon Wall · encontro Powder Towe
+ r · subhorários no expandir
 LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261204T150000
-DTEND;TZID=Europe/Berlin:20261204T170000
-DTSTAMP:20261019T010707Z
+DTEND;TZID=Europe/Berlin:20261204T174500
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-04-4@eurotrip2026
-SUMMARY:Compras Na Příkopě / Palladium · noite: Sophie's + Vinohrady
-DESCRIPTION:Compras Na Příkopě / Palladium · noite: Sophie's + Vinohrady
+SUMMARY:Compras Na Příkopě / Palladium (mesma zona\, pé) · jantar mall ou Billa ·
+ no
+DESCRIPTION:Compras Na Příkopě / Palladium (mesma zona\, pé) · jantar mall ou Billa ·
+ noite Sophie's + Vinohrady (opcional) · 1 metro ida/volta hotel
 LOCATION:Praga — Castelo + centro a pé
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261204T170000
+DTSTART;TZID=Europe/Berlin:20261204T174500
 DTEND;TZID=Europe/Berlin:20261204T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-05@eurotrip2026
 SUMMARY:Praga → Bruxelas (Ryanair PRG→CRL) - EuroTrip 2026
-DESCRIPTION:Ryanair PRG→CRL 12:30 + Flibco → Midi\\n08:00–08:30 - Albert Legerova 75 
- — kit almoço (2 min do Alton)\\n08:30–09:30 - Check-out · metro C/A → Ve
- leslavín + autocarro 119 → PRG\\n09:30–12:00 - Aeroporto PRG — Ryanair 1
- 2:30 (bagagens 10+23 kg · Omio pago)\\n12:30–14:00 - Voo PRG → CRL (Char
- leroi) · Ryanair FR 69\\n14:30–16:00 - Ônibus Flibco CRL → Bruxelles-Mid
- i (~1h)\\n16:00–18:00 - Metro 2/6 Midi → Rogier · check-in Colonies\\n18
- :00–21:00 - Five Guys Rue Neuve 123 (~5 min) · encontro prima
+DESCRIPTION:Ryanair PRG→CRL 12:30 + Flibco → Midi\\n08:00–08:30 - Kit de almoço no Al
+ bert Legerova 75 — confirmar abertura no Maps\\n08:30–09:30 - Check-out
+ Alton · Metro C/A → Veleslavín · ônibus 119 → PRG\\n09:30–12:00 - PRG: b
+ agagem\, segurança e espera para Ryanair 12:30\\n12:30–14:00 - Voo PRG →
+ CRL (Charleroi) · Ryanair FR 69\\n14:30–16:00 - Ônibus Flibco CRL → Brux
+ elles-Midi (~1h) — horário depende da fila\\n16:00–18:00 - Midi → Rogier
+ · check-in Colonies · deixar mala\\n18:00–21:00 - Rue Neuve + jantar Fiv
+ e Guys · encontro com a prima
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-0@eurotrip2026
-SUMMARY:Albert Legerova 75 — kit almoço (2 min do Alton)
-DESCRIPTION:Albert Legerova 75 — kit almoço (2 min do Alton)
+SUMMARY:Kit de almoço no Albert Legerova 75 — confirmar abertura no Maps
+DESCRIPTION:Kit de almoço no Albert Legerova 75 — confirmar abertura no Maps
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T080000
 DTEND;TZID=Europe/Berlin:20261205T083000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-1@eurotrip2026
-SUMMARY:Check-out · metro C/A → Veleslavín + autocarro 119 → PRG
-DESCRIPTION:Check-out · metro C/A → Veleslavín + autocarro 119 → PRG
+SUMMARY:Check-out Alton · Metro C/A → Veleslavín · ônibus 119 → PRG
+DESCRIPTION:Check-out Alton · Metro C/A → Veleslavín · ônibus 119 → PRG
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T083000
 DTEND;TZID=Europe/Berlin:20261205T093000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-2@eurotrip2026
-SUMMARY:Aeroporto PRG — Ryanair 12:30 (bagagens 10+23 kg · Omio pago)
-DESCRIPTION:Aeroporto PRG — Ryanair 12:30 (bagagens 10+23 kg · Omio pago)
+SUMMARY:PRG: bagagem\, segurança e espera para Ryanair 12:30
+DESCRIPTION:PRG: bagagem\, segurança e espera para Ryanair 12:30
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T093000
 DTEND;TZID=Europe/Berlin:20261205T120000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-3@eurotrip2026
@@ -1303,121 +1423,145 @@ LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T123000
 DTEND;TZID=Europe/Berlin:20261205T140000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-4@eurotrip2026
-SUMMARY:Ônibus Flibco CRL → Bruxelles-Midi (~1h)
-DESCRIPTION:Ônibus Flibco CRL → Bruxelles-Midi (~1h)
+SUMMARY:Ônibus Flibco CRL → Bruxelles-Midi (~1h) — horário depende da fila
+DESCRIPTION:Ônibus Flibco CRL → Bruxelles-Midi (~1h) — horário depende da fila
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T143000
 DTEND;TZID=Europe/Berlin:20261205T160000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-5@eurotrip2026
-SUMMARY:Metro 2/6 Midi → Rogier · check-in Colonies
-DESCRIPTION:Metro 2/6 Midi → Rogier · check-in Colonies
+SUMMARY:Midi → Rogier · check-in Colonies · deixar mala
+DESCRIPTION:Midi → Rogier · check-in Colonies · deixar mala
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T160000
 DTEND;TZID=Europe/Berlin:20261205T180000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-05-6@eurotrip2026
-SUMMARY:Five Guys Rue Neuve 123 (~5 min) · encontro prima
-DESCRIPTION:Five Guys Rue Neuve 123 (~5 min) · encontro prima
+SUMMARY:Rue Neuve + jantar Five Guys · encontro com a prima
+DESCRIPTION:Rue Neuve + jantar Five Guys · encontro com a prima
 LOCATION:Praga → Bruxelas (Ryanair PRG→CRL)
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261205T180000
 DTEND;TZID=Europe/Berlin:20261205T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-06@eurotrip2026
 SUMMARY:Bruxelas — descanso + prep voo - EuroTrip 2026
-DESCRIPTION:Descanso + prep voo\\n10:00–13:00 - Grand Place + Galeries Saint-Hubert (
- exterior)\\n13:00–15:00 - Almoço (Chez Léon / Exki) · Mont des Arts (opc
- ional)\\n15:00–17:00 - Compras buffer Rue Neuve / Apple · Tax Free prep\
- \n17:00–21:00 - Mala 100% · jantar leve · dormir cedo
+DESCRIPTION:Descanso + prep voo\\n10:00–13:00 - Grand Place → Galeries Saint-Hubert →
+ Manneken Pis / Bourse — circuito central a pé\\n13:00–15:00 - Almoço no
+ centro · Mont des Arts opcional\\n15:00–17:00 - Compras buffer na Rue Ne
+ uve · Tax Free\\n17:00–21:00 - Mala 100% · jantar leve · dormir cedo par
+ a o voo
 LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-0@eurotrip2026
-SUMMARY:Grand Place + Galeries Saint-Hubert (exterior)
-DESCRIPTION:Grand Place + Galeries Saint-Hubert (exterior)
+SUMMARY:Grand Place → Galeries Saint-Hubert → Manneken Pis / Bourse — circuito ce
+ nt
+DESCRIPTION:Grand Place → Galeries Saint-Hubert → Manneken Pis / Bourse — circuito ce
+ ntral a pé
 LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T100000
 DTEND;TZID=Europe/Berlin:20261206T130000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-1@eurotrip2026
-SUMMARY:Almoço (Chez Léon / Exki) · Mont des Arts (opcional)
-DESCRIPTION:Almoço (Chez Léon / Exki) · Mont des Arts (opcional)
+SUMMARY:Almoço no centro · Mont des Arts opcional
+DESCRIPTION:Almoço no centro · Mont des Arts opcional
 LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T130000
 DTEND;TZID=Europe/Berlin:20261206T150000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-2@eurotrip2026
-SUMMARY:Compras buffer Rue Neuve / Apple · Tax Free prep
-DESCRIPTION:Compras buffer Rue Neuve / Apple · Tax Free prep
+SUMMARY:Compras buffer na Rue Neuve · Tax Free
+DESCRIPTION:Compras buffer na Rue Neuve · Tax Free
 LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T150000
 DTEND;TZID=Europe/Berlin:20261206T170000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-06-3@eurotrip2026
-SUMMARY:Mala 100% · jantar leve · dormir cedo
-DESCRIPTION:Mala 100% · jantar leve · dormir cedo
+SUMMARY:Mala 100% · jantar leve · dormir cedo para o voo
+DESCRIPTION:Mala 100% · jantar leve · dormir cedo para o voo
 LOCATION:Bruxelas — descanso + prep voo
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261206T170000
 DTEND;TZID=Europe/Berlin:20261206T210000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:day-2026-12-07@eurotrip2026
 SUMMARY:Bruxelas → Brasil - EuroTrip 2026
-DESCRIPTION:Sem turismo urbano\\n04:30–05:00 - Táxi hotel → BRU Zaventem\\n07:00 - Vo
- o BRU → MAD → GRU ( Pago · IB0604 + IB0271)\\nNo aeroporto - Tax Free + 
- café
+DESCRIPTION:Sem turismo urbano\\n03:00 - Alarme · documentos e bagagem já separados n
+ a noite anterior\\n03:30–04:30 - Bolt/táxi hotel → BRU Zaventem — reserv
+ a recomendada\\n05:00–07:00 - Check-in Iberia · segurança · Tax Free · c
+ afé\\n07:00 - Voo BRU → MAD → GRU · IB0604 + IB0271
 LOCATION:Bruxelas → Brasil
 CATEGORIES:Dia
 DTSTART;VALUE=DATE:20261207
 DTEND;VALUE=DATE:20261208
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-07-0@eurotrip2026
-SUMMARY:Táxi hotel → BRU Zaventem
-DESCRIPTION:Táxi hotel → BRU Zaventem
+SUMMARY:Alarme · documentos e bagagem já separados na noite anterior
+DESCRIPTION:Alarme · documentos e bagagem já separados na noite anterior
 LOCATION:Bruxelas → Brasil
 CATEGORIES:Plano
-DTSTART;TZID=Europe/Berlin:20261207T043000
-DTEND;TZID=Europe/Berlin:20261207T050000
-DTSTAMP:20261019T010707Z
+DTSTART;TZID=Europe/Berlin:20261207T030000
+DTEND;TZID=Europe/Berlin:20261207T043000
+DTSTAMP:20261110T030308Z
 END:VEVENT
 BEGIN:VEVENT
 UID:fast-2026-12-07-1@eurotrip2026
-SUMMARY:Voo BRU → MAD → GRU ( Pago · IB0604 + IB0271)
-DESCRIPTION:Voo BRU → MAD → GRU ( Pago · IB0604 + IB0271)
+SUMMARY:Bolt/táxi hotel → BRU Zaventem — reserva recomendada
+DESCRIPTION:Bolt/táxi hotel → BRU Zaventem — reserva recomendada
+LOCATION:Bruxelas → Brasil
+CATEGORIES:Plano
+DTSTART;TZID=Europe/Berlin:20261207T033000
+DTEND;TZID=Europe/Berlin:20261207T043000
+DTSTAMP:20261110T030308Z
+END:VEVENT
+BEGIN:VEVENT
+UID:fast-2026-12-07-2@eurotrip2026
+SUMMARY:Check-in Iberia · segurança · Tax Free · café
+DESCRIPTION:Check-in Iberia · segurança · Tax Free · café
+LOCATION:Bruxelas → Brasil
+CATEGORIES:Plano
+DTSTART;TZID=Europe/Berlin:20261207T050000
+DTEND;TZID=Europe/Berlin:20261207T070000
+DTSTAMP:20261110T030308Z
+END:VEVENT
+BEGIN:VEVENT
+UID:fast-2026-12-07-3@eurotrip2026
+SUMMARY:Voo BRU → MAD → GRU · IB0604 + IB0271
+DESCRIPTION:Voo BRU → MAD → GRU · IB0604 + IB0271
 LOCATION:Bruxelas → Brasil
 CATEGORIES:Plano
 DTSTART;TZID=Europe/Berlin:20261207T070000
 DTEND;TZID=Europe/Berlin:20261207T083000
-DTSTAMP:20261019T010707Z
+DTSTAMP:20261110T030308Z
 END:VEVENT
 END:VCALENDAR

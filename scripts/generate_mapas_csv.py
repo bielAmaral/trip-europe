@@ -47,9 +47,10 @@ DAYS = [
             (5, "sight", "Englischer Garten", "Englischer Garten, Munich, Germany"),
             (6, "sight", "Chinesischer Turm", "Chinesischer Turm, Englischer Garten, Munich, Germany"),
             (7, "sight", "Eisbachwelle", "Eisbachwelle, Munich, Germany"),
-            (8, "sight", "Isar (Gärtnerplatz)", "Gärtnerplatz, Munich, Germany"),
-            (9, "sight", "Kaufingerstraße", "Kaufingerstraße, Munich, Germany"),
-            (10, "night", "Euro Bar (noite)", "Euro Youth Hotel Munich, Bayerstraße 5, Munich, Germany"),
+            (8, "sight", "Sendlinger Tor", "Sendlinger Tor, Munich, Germany"),
+            (9, "sight", "Asamkirche", "Asamkirche, Sendlinger Straße 32, Munich, Germany"),
+            (10, "sight", "Kaufingerstraße", "Kaufingerstraße, Munich, Germany"),
+            (11, "night", "Euro Bar (noite)", "Euro Youth Hotel Munich, Bayerstraße 5, Munich, Germany"),
         ],
     },
     {
@@ -59,13 +60,14 @@ DAYS = [
         "stops": [
             (1, "hotel", "B&B Hotel München-Hbf", "B&B Hotel München-Hbf, Arnulfstraße 30, München, Germany"),
             (2, "transport", "München ZOB", "München ZOB, Arnulfstraße, Munich, Germany"),
-            (3, "transport", "Füssen Pulverturm (FlixBus)", "Pulverturmstraße 1, 87629 Füssen, Germany"),
-            (4, "sight", "Schloss Hohenschwangau", "Schloss Hohenschwangau, Schwangau, Germany"),
-            (5, "sight", "Neuschwanstein Castle", "Neuschwanstein Castle, Schwangau, Germany"),
-            (6, "sight", "Marienbrücke", "Marienbrücke, Schwangau, Germany"),
-            (7, "sight", "Alpsee (opcional)", "Alpsee, 87645 Schwangau, Germany"),
-            (8, "transport", "Füssen Pulverturm (volta)", "Pulverturmstraße 1, 87629 Füssen, Germany"),
-            (9, "transport", "München ZOB", "München ZOB, Munich, Germany"),
+            (3, "transport", "Füssen Kemptener Str. (Flix ida)", "Kemptener Straße, 87629 Füssen, Germany"),
+            (4, "tour", "GuruWalk Füssen (Tourist Info)", "Tourist Information Füssen, Kaiser-Max-Straße 1, Füssen, Germany"),
+            (5, "transport", "Füssen Bahnhof (bus 73/78)", "Füssen station, Bahnhofstraße, Füssen, Germany"),
+            (6, "sight", "Schloss Hohenschwangau", "Schloss Hohenschwangau, Schwangau, Germany"),
+            (7, "sight", "Neuschwanstein Castle", "Neuschwanstein Castle, Schwangau, Germany"),
+            (8, "sight", "Marienbrücke", "Marienbrücke, Schwangau, Germany"),
+            (9, "transport", "Füssen Pulverturm (Flix volta)", "Pulverturmstraße 1, 87629 Füssen, Germany"),
+            (10, "transport", "München ZOB", "München ZOB, Munich, Germany"),
         ],
     },
     {
@@ -75,8 +77,8 @@ DAYS = [
         "stops": [
             (1, "hotel", "B&B Hotel München-Hbf (check-out)", "B&B Hotel München-Hbf, Arnulfstraße 30, München, Germany"),
             (2, "sight", "Marienplatz (se sobrar tempo)", "Marienplatz, Munich, Germany"),
-            (3, "transport", "München ZOB", "München ZOB, Munich, Germany"),
-            (4, "transport", "Salzburg P+R Süd (FlixBus)", "Salzburg P+R Süd, Austria"),
+            (3, "transport", "München Hauptbahnhof (ICE 1215)", "München Hauptbahnhof, Germany"),
+            (4, "transport", "Salzburg Hauptbahnhof (ICE 1215)", "Salzburg Hauptbahnhof, Austria"),
             (5, "hotel", "Atel Hotel Lasserhof", "Atel Hotel Lasserhof, Lasserstraße 47, 5020 Salzburg, Austria"),
             (6, "sight", "Mirabellgarten", "Mirabell Palace and Gardens, Salzburg, Austria"),
             (7, "sight", "Getreidegasse", "Getreidegasse, Salzburg, Austria"),
@@ -95,7 +97,8 @@ DAYS = [
             (5, "sight", "Getreidegasse", "Getreidegasse, Salzburg, Austria"),
             (6, "sight", "Mozartplatz", "Mozartplatz, Salzburg, Austria"),
             (7, "sight", "Makartsteg", "Makartsteg, Salzburg, Austria"),
-            (8, "night", "YoHo Hostel bar", "YoHo International Youth Hostel, Paracelsusstraße 9, Salzburg, Austria"),
+            (8, "gift", "Fürst Mozartkugel / souvenir", "Getreidegasse 47, Salzburg, Austria"),
+            (9, "night", "YoHo Hostel bar", "YoHo International Youth Hostel, Paracelsusstraße 9, Salzburg, Austria"),
         ],
     },
     {
@@ -105,7 +108,7 @@ DAYS = [
         "stops": [
             (1, "hotel", "Atel Hotel Lasserhof (check-out)", "Atel Hotel Lasserhof, Lasserstraße 47, Salzburg, Austria"),
             (2, "transport", "Salzburg Hauptbahnhof", "Salzburg Hauptbahnhof, Austria"),
-            (3, "transport", "Wien Hauptbahnhof (ICE 10:00)", "Wien Hauptbahnhof, Austria"),
+            (3, "transport", "Wien Hauptbahnhof (RJX 63)", "Wien Hauptbahnhof, Austria"),
             (4, "hotel", "Hotel Zipser", "Hotel Zipser, Lange Gasse 49, 1080 Wien, Austria"),
             (5, "sight", "Prater", "Prater, Vienna, Austria"),
             (6, "sight", "Naschmarkt", "Naschmarkt, Vienna, Austria"),
@@ -120,12 +123,13 @@ DAYS = [
         "stops": [
             (1, "hotel", "Hotel Zipser", "Hotel Zipser, Lange Gasse 49, Wien, Austria"),
             (2, "sight", "Schönbrunn Palace", "Schönbrunn Palace, Vienna, Austria"),
-            (3, "sight", "Stadtpark", "Stadtpark, Vienna, Austria"),
+            (3, "sight", "Staatsoper (encontro tour)", "Vienna State Opera, Vienna, Austria"),
             (4, "sight", "Stephansdom", "St. Stephen's Cathedral, Vienna, Austria"),
             (5, "sight", "Graben", "Graben, Vienna, Austria"),
             (6, "sight", "Hofburg", "Hofburg Palace, Vienna, Austria"),
             (7, "sight", "Rathaus", "Vienna City Hall, Austria"),
             (8, "sight", "Parlamento", "Austrian Parliament Building, Vienna, Austria"),
+            (9, "gift", "Manner / souvenir", "Graben, Vienna, Austria"),
         ],
     },
     {
@@ -151,7 +155,7 @@ DAYS = [
             (1, "hotel", "Danubia Gate Hotel (check-out)", "Danubia Gate Hotel, Dunajská 26, Bratislava, Slovakia"),
             (2, "transport", "Bratislava Nivy (Mlynské Nivy)", "Bratislava Nivy bus station, Slovakia"),
             (3, "transport", "Budapest Kelenföld (FlixBus)", "Budapest Kelenföld, Hungary"),
-            (4, "hotel", "Medos Hotel", "Medos Hotel, Rákóczi út 40, Budapest, Hungary"),
+            (4, "hotel", "Budapest Panorama Central", "Budapest Panorama Central, Károly körút 10, 1052 Budapest, Hungary"),
             (5, "sight", "Basílica de Santo Estêvão", "Szent István tér 1, Budapest, Hungary"),
             (6, "sight", "Andrássy út", "Andrássy Avenue, Budapest, Hungary"),
             (7, "sight", "Chain Bridge", "Széchenyi Chain Bridge, Budapest, Hungary"),
@@ -163,23 +167,24 @@ DAYS = [
         "date": "28 nov",
         "title": "Budapeste — Pest icónico",
         "stops": [
-            (1, "hotel", "Medos Hotel", "Medos Hotel, Rákóczi út 40, Budapest, Hungary"),
+            (1, "hotel", "Budapest Panorama Central", "Budapest Panorama Central, Károly körút 10, 1052 Budapest, Hungary"),
             (2, "sight", "Parlamento", "Hungarian Parliament Building, Budapest, Hungary"),
             (3, "sight", "Shoes on the Danube", "Shoes on the Danube Bank, Budapest, Hungary"),
             (4, "sight", "Great Market Hall", "Great Market Hall, Budapest, Hungary"),
-            (5, "sight", "Fisherman's Bastion", "Fisherman's Bastion, Budapest, Hungary"),
-            (6, "sight", "Matthias Church", "Matthias Church, Budapest, Hungary"),
-            (7, "night", "Maverick Soho bar", "Maverick City Lodge Budapest, Kazinczy utca 24-26, Budapest, Hungary"),
-            (8, "night", "Szimpla Kert", "Szimpla Kert, Budapest, Hungary"),
-            (9, "night", "Instant-Fogas", "Instant-Fogas, Budapest, Hungary"),
+            (5, "sight", "Chain Bridge", "Széchenyi Chain Bridge, Budapest, Hungary"),
+            (6, "sight", "Fisherman's Bastion", "Fisherman's Bastion, Budapest, Hungary"),
+            (7, "sight", "Matthias Church", "Matthias Church, Budapest, Hungary"),
+            (8, "night", "Maverick Soho bar", "Maverick City Lodge Budapest, Kazinczy utca 24-26, Budapest, Hungary"),
+            (9, "night", "Szimpla Kert", "Szimpla Kert, Budapest, Hungary"),
+            (10, "night", "Instant-Fogas", "Instant-Fogas, Budapest, Hungary"),
         ],
     },
     {
         "day_id": "day-2026-11-29",
         "date": "29 nov",
-        "title": "Budapeste — descanso",
+        "title": "Budapeste — Jewish Quarter tour",
         "stops": [
-            (1, "hotel", "Medos Hotel", "Medos Hotel, Rákóczi út 40, Budapest, Hungary"),
+            (1, "hotel", "Budapest Panorama Central", "Budapest Panorama Central, Károly körút 10, 1052 Budapest, Hungary"),
             (2, "sight", "Jewish Quarter (opcional)", "Dohány utca 2, Budapest, Hungary"),
             (3, "sight", "Margaret Bridge", "Margaret Bridge, Budapest, Hungary"),
             (4, "sight", "Margaret Island", "Margaret Island, Budapest, Hungary"),
@@ -190,7 +195,7 @@ DAYS = [
         "date": "30 nov",
         "title": "Budapeste → Berlim",
         "stops": [
-            (1, "hotel", "Medos Hotel (check-out)", "Medos Hotel, Rákóczi út 40, Budapest, Hungary"),
+            (1, "hotel", "Budapest Panorama Central (check-out)", "Budapest Panorama Central, Károly körút 10, 1052 Budapest, Hungary"),
             (2, "sight", "Basílica (último passeio)", "Szent István tér 1, Budapest, Hungary"),
             (3, "airport", "Budapest Airport (BUD)", "Budapest Airport, Hungary"),
             (4, "airport", "Berlin Brandenburg Airport (BER)", "Berlin Brandenburg Airport, Germany"),
@@ -210,23 +215,26 @@ DAYS = [
             (4, "sight", "Tiergarten", "Tiergarten, Berlin, Germany"),
             (5, "sight", "Holocaust Memorial", "Memorial to the Murdered Jews of Europe, Berlin, Germany"),
             (6, "sight", "Potsdamer Platz", "Potsdamer Platz, Berlin, Germany"),
-            (7, "sight", "East Side Gallery", "East Side Gallery, Berlin, Germany"),
-            (8, "sight", "Alexanderplatz (volta)", "Alexanderplatz 1, 10178 Berlin, Germany"),
-            (9, "night", "Generator Berlin (noite)", "Generator Berlin Alexanderplatz, Otto-Braun-Straße 65, Berlin, Germany"),
+            (7, "sight", "Topografia do Terror", "Topography of Terror, Niederkirchnerstraße 8, Berlin, Germany"),
+            (8, "sight", "East Side Gallery", "East Side Gallery, Berlin, Germany"),
+            (9, "sight", "Alexanderplatz (volta)", "Alexanderplatz 1, 10178 Berlin, Germany"),
+            (10, "night", "Generator Berlin (noite)", "Generator Berlin Alexanderplatz, Otto-Braun-Straße 65, Berlin, Germany"),
         ],
     },
     {
         "day_id": "day-2026-12-02",
         "date": "2 dez",
-        "title": "Berlim — compras",
+        "title": "Berlim — Kreuzberg + compras",
         "stops": [
             (1, "hotel", "Premier Inn Alexanderplatz", "Premier Inn Berlin Alexanderplatz, Berlin, Germany"),
-            (2, "sight", "Unter den Linden", "Unter den Linden, Berlin, Germany"),
-            (3, "sight", "Berliner Dom", "Berlin Cathedral, Germany"),
-            (4, "sight", "Lustgarten", "Lustgarten, Berlin, Germany"),
-            (5, "sight", "Museum Island", "Museum Island, Berlin, Germany"),
-            (6, "sight", "Gendarmenmarkt", "Gendarmenmarkt, Berlin, Germany"),
-            (7, "sight", "Kurfürstendamm", "Kurfürstendamm, Berlin, Germany"),
+            (2, "transport", "Moritzplatz (encontro tour)", "Moritzplatz, Berlin, Germany"),
+            (3, "sight", "Markthalle Neun", "Markthalle Neun, Eisenbahnstraße 42-43, Berlin, Germany"),
+            (4, "sight", "Schlesisches Tor (fim tour)", "Schlesisches Tor, Berlin, Germany"),
+            (5, "sight", "Oberbaumbrücke", "Oberbaumbrücke, Berlin, Germany"),
+            (6, "transport", "Alexanderplatz (volta)", "Alexanderplatz 1, 10178 Berlin, Germany"),
+            (7, "sight", "Alexa / Primark Alexanderplatz", "Alexa Berlin, Grunerstraße 20, Berlin, Germany"),
+            (8, "gift", "AMPELMANN Alexanderplatz", "Alexanderplatz 1, 10178 Berlin, Germany"),
+            (9, "sight", "Kurfürstendamm", "Kurfürstendamm, Berlin, Germany"),
         ],
     },
     {
@@ -280,9 +288,11 @@ DAYS = [
             (1, "hotel", "Hotel des Colonies", "Hotel des Colonies Brussels, Rue des Croisades 6, Brussels, Belgium"),
             (2, "sight", "Grand Place", "Grand Place, Brussels, Belgium"),
             (3, "sight", "Galeries Royales Saint-Hubert", "Galeries Royales Saint-Hubert, Brussels, Belgium"),
-            (4, "sight", "Mont des Arts", "Mont des Arts, Brussels, Belgium"),
-            (5, "sight", "Rue Neuve (opcional)", "Rue Neuve, Brussels, Belgium"),
-            (6, "hotel", "Hotel des Colonies (prep voo)", "Hotel des Colonies Brussels, Belgium"),
+            (4, "sight", "Manneken Pis", "Manneken Pis, Brussels, Belgium"),
+            (5, "sight", "Bourse", "Bourse, Brussels, Belgium"),
+            (6, "sight", "Mont des Arts", "Mont des Arts, Brussels, Belgium"),
+            (7, "sight", "Rue Neuve (opcional)", "Rue Neuve, Brussels, Belgium"),
+            (8, "hotel", "Hotel des Colonies (prep voo)", "Hotel des Colonies Brussels, Belgium"),
         ],
     },
     {
@@ -302,6 +312,7 @@ CAT_PT = {
     "airport": "Aeroporto",
     "sight": "Ponto turístico",
     "food": "Comida",
+    "gift": "Souvenir",
     "night": "Noite",
 }
 
@@ -501,12 +512,12 @@ def write_csvs() -> int:
             )
 
     with FULL_CSV.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=full_fields)
+        w = csv.DictWriter(f, fieldnames=full_fields, lineterminator="\n")
         w.writeheader()
         w.writerows(rows_full)
 
     with MYMAPS_CSV.open("w", encoding="utf-8-sig", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=mymaps_fields)
+        w = csv.DictWriter(f, fieldnames=mymaps_fields, lineterminator="\n")
         w.writeheader()
         w.writerows(rows_mymaps)
 

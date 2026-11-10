@@ -819,13 +819,138 @@ html[data-theme="dark"] .fast-plan__mapa-detail .mapas-stop--compact .mapas-inli
   color: var(--muted, #64748b);
 }
 .fast-plan__schedule-label {
-  font-weight: 700;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.65rem;
   font-size: 0.9rem;
   margin: 0.5rem 0 0.35rem;
   color: var(--forest, #166534);
 }
+.fast-plan__schedule-title {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+.fast-plan__schedule-hint {
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--muted-deep, #64748b);
+}
 html[data-theme="dark"] .fast-plan__schedule-label {
   color: #34d399;
+}
+html[data-theme="dark"] .fast-plan__schedule-hint {
+  color: #94a3b8;
+}
+.fast-plan-expand {
+  margin: 0.65rem 0 0.5rem;
+}
+.fast-plan-expand__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 2px solid color-mix(in srgb, var(--forest, #0d9488) 40%, var(--line));
+  background: var(--card-solid, #fff);
+  color: var(--forest, #166534);
+  cursor: pointer;
+}
+.fast-plan-expand__toggle:hover,
+.fast-plan-expand__toggle:focus-visible {
+  border-color: var(--forest, #0d9488);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--forest) 22%, transparent);
+  outline: none;
+}
+html[data-theme="dark"] .fast-plan-expand__toggle {
+  color: #6ee7b7;
+  border-color: color-mix(in srgb, #34d399 35%, var(--line));
+}
+.fast-plan-expand__panel {
+  margin-top: 0.55rem;
+}
+.fast-plan-expand__panel[hidden] {
+  display: none !important;
+}
+.fast-plan-expand__table-wrap {
+  max-height: none;
+  overflow: visible;
+}
+.fast-plan-expand-table .fast-plan-expand__anchor td {
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 45%, transparent);
+  font-size: 0.88rem;
+}
+.fast-plan-expand__anchor-label {
+  font-style: normal;
+  font-weight: 700;
+  color: var(--muted-deep);
+}
+.fast-plan-expand-table .fast-plan-expand__stop td:first-child {
+  vertical-align: top;
+  padding-left: 0.85rem;
+  border-left: 3px solid color-mix(in srgb, var(--forest) 35%, transparent);
+}
+.fast-plan-expand__offset {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--muted-deep);
+  margin-top: 0.1rem;
+}
+.fast-plan-expand__tip {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--muted-deep);
+  margin-top: 0.15rem;
+  line-height: 1.35;
+}
+.fast-plan-expand__section-head td {
+  padding-top: 0.75rem;
+  font-size: 0.82rem;
+  border-top: 1px dashed var(--line-subtle, #e2e8f0);
+}
+.fast-plan-expand__optional td {
+  background: color-mix(in srgb, var(--accent-2, #7c3aed) 6%, transparent);
+}
+.fast-plan-expand__note {
+  margin: 0.4rem 0 0;
+  font-size: 0.75rem;
+}
+.fast-plan__day-note {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--forest-soft, #ccfbf1) 35%, transparent);
+  border-left: 3px solid color-mix(in srgb, var(--forest) 50%, transparent);
+}
+.fast-plan-expand__tag {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, #f59e0b 18%, transparent);
+  color: #92400e;
+}
+html[data-theme="dark"] .fast-plan-expand__tag {
+  color: #fbbf24;
+}
+.fast-plan-expand__stop--optional td:last-child {
+  opacity: 0.92;
+}
+.fast-plan-expand__stop--transit td:first-child {
+  border-left-color: color-mix(in srgb, #3b82f6 55%, var(--forest));
+}
+.fast-plan-expand__meta td {
+  font-size: 0.78rem;
 }
 .fast-plan__mapa-detail .mapas-leg--compact {
   display: grid;
@@ -1143,14 +1268,6 @@ body.has-app-ui .cursor-root {
   border-left-color: #ca8a04;
   background: color-mix(in srgb, #fef3c7 50%, var(--card, #fff));
 }
-.fast-plan__schedule-label {
-  margin: 1.1rem 0 0.45rem;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted-deep);
-}
 
 /* Roteiro do mapa dentro de cada dia (#dias) */
 .dia-mapa-roteiro {
@@ -1371,6 +1488,10 @@ ol.mapas-stop-list {
   background: #ffedd5;
   color: #c2410c;
 }
+.mapas-stop--gift .mapas-stop__cat {
+  background: #fef3c7;
+  color: #92400e;
+}
 .mapas-stop--transport .mapas-stop__cat {
   background: #f3e8ff;
   color: #6b21a8;
@@ -1398,6 +1519,10 @@ html[data-theme="dark"] .mapas-stop--sight .mapas-stop__cat {
 html[data-theme="dark"] .mapas-stop--food .mapas-stop__cat {
   background: #7c2d12;
   color: #fdba74;
+}
+html[data-theme="dark"] .mapas-stop--gift .mapas-stop__cat {
+  background: #78350f;
+  color: #fde68a;
 }
 html[data-theme="dark"] .mapas-stop--transport .mapas-stop__cat {
   background: #581c87;

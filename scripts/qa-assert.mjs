@@ -42,6 +42,7 @@ const mustHave = [
   'src="app-shell.js',
   'src="app-core.js',
   'src="app-mapas.js',
+  'src="app-fast-plan-expand.js',
   'src="app-views.js',
   "src=\"app-search-ui.js\"",
   "href=\"styles.css\"",
@@ -69,6 +70,44 @@ if (dayMatches.length < 19) {
   err("esperados 19+ blocos de dia; encontrado " + dayMatches.length);
 }
 console.log("QA OK: " + dayMatches.length + " IDs day-2026-… (details dia)");
+
+const expectedDateLabels = {
+  "19 nov": "qui",
+  "20 nov": "sex",
+  "21 nov": "sáb",
+  "22 nov": "dom",
+  "23 nov": "seg",
+};
+for (const [date, weekday] of Object.entries(expectedDateLabels)) {
+  if (!html.includes(`date-tag">${date} · ${weekday}`)) {
+    err(`dia da semana incorreto ou ausente: ${date} · ${weekday}`);
+  }
+}
+console.log("QA OK: calendário 19–23 nov alinhado com 2026");
+
+const forbiddenContent = [
+  "VIB 12:00",
+  "Cortar se atrasar:</strong> Mirabell se Flix",
+  "Mitte → East Side Gallery",
+  "Generator + mercados</td>",
+];
+for (const s of forbiddenContent) {
+  if (html.includes(s)) err(`conteúdo obsoleto: "${s}"`);
+}
+const requiredContent = [
+  "chegar até <strong>12:15</strong>",
+  "11:00–13:30",
+  "15:00–17:45",
+  "07:30–09:00",
+  "03:30–04:30",
+  "Füssen Kemptener Str.",
+  "Tourist Info → parada do ônibus 73/78",
+  "Margaret Bridge/Margitsziget",
+];
+for (const s of requiredContent) {
+  if (!html.includes(s)) err(`correção esperada ausente: "${s}"`);
+}
+console.log("QA OK: janelas críticas e transporte sem contradições conhecidas");
 
 const fastPlans = html.match(/class="fast-plan"/g) || [];
 if (fastPlans.length < 19) {
@@ -118,7 +157,83 @@ if (explorarClose < 0 || horariosPos < explorarClose) {
 }
 console.log("QA OK: #explorar fecha antes de #horarios-bilhetes");
 
-const appFiles = ["styles.css", "app.css", "app-shell.js", "app-core.js", "app-mapas.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml"];
+const appFiles = ["styles.css", "app.css", "app-shell.js", "app-core.js", "app-mapas.js", "app-fast-plan-expand.js", "app-views.js", "app-search-ui.js", "sw.js", "manifest.webmanifest", "data/mapas-paradas.csv", "data/mapas-my-maps.csv", "data/mapas-roteiro.kml", "data/fast-plan-window-details.json"];
+
+const windowDetails = JSON.parse(
+  readFileSync(join(root, "data/fast-plan-window-details.json"), "utf8")
+);
+for (const dayId of [
+  "day-2026-11-21",
+  "day-2026-11-29",
+  "day-2026-12-01",
+  "day-2026-12-02",
+  "day-2026-12-05",
+  "day-2026-12-06",
+  "day-2026-12-07",
+]) {
+  if (!windowDetails.days?.[dayId]) {
+    err(`faltam detalhes no expandir para ${dayId}`);
+  }
+}
+console.log("QA OK: detalhes do expandir cobrem dias críticos e 5–7 dez");
+
+const rangeDuration = (label) => {
+  const m = String(label).match(
+    /^(\d{1,2}):(\d{2})\s*[–—-]\s*(\d{1,2}):(\d{2})$/
+  );
+  if (!m) return null;
+  return (Number(m[3]) * 60 + Number(m[4])) -
+    (Number(m[1]) * 60 + Number(m[2]));
+};
+for (const [dayId, day] of Object.entries(windowDetails.days || {})) {
+  for (const [label, window_] of Object.entries(day.windows || {})) {
+    const available = rangeDuration(label);
+    if (available == null) continue;
+    const planned = (window_.blocks || []).reduce(
+      (sum, block) => sum + Number(block.durMin || 0),
+      0
+    );
+    if (planned > available) {
+      err(`${dayId} ${label}: blocos somam ${planned} min, janela tem ${available} min`);
+    }
+  }
+}
+console.log("QA OK: soma de durMin não excede as janelas declaradas");
+
+const canonicalArtifacts = [
+  "index.html",
+  "roteiro.html",
+  "data/EuroTrip-2026.ics",
+  "data/mapas-paradas.csv",
+  "data/mapas-my-maps.csv",
+  "data/mapas-roteiro.kml",
+  "docs/mindtrip-complete.html",
+  "docs/mindtrip-complete.md",
+  "docs/mindtrip-complete-part1.html",
+  "docs/mindtrip-complete-part1.md",
+  "docs/mindtrip-complete-part2.html",
+  "docs/mindtrip-complete-part2.md",
+];
+const forbiddenCanonical = ["Medos Hotel", "P+R Süd (FlixBus)", "ICE 10:00"];
+for (const file of canonicalArtifacts) {
+  const content = readFileSync(join(root, file), "utf8");
+  for (const forbidden of forbiddenCanonical) {
+    if (content.includes(forbidden)) {
+      err(`conteúdo antigo "${forbidden}" em ${file}`);
+    }
+  }
+}
+console.log("QA OK: artefatos canônicos sem hotel/transporte obsoletos");
+
+const mapsStops = readFileSync(join(root, "data/mapas-paradas.csv"), "utf8");
+for (const marker of [
+  "Füssen Kemptener Str.",
+  "Tourist Information Füssen",
+  "Füssen Bahnhof",
+]) {
+  if (!mapsStops.includes(marker)) err(`mapa de Füssen sem parada: ${marker}`);
+}
+console.log("QA OK: sequência do mapa de Füssen inclui ida, tour, estação e retorno");
 
 const mymaps = readFileSync(join(root, "data/mapas-my-maps.csv"), "utf8");
 if (!mymaps.includes("Latitude") || !mymaps.includes("Longitude")) {
