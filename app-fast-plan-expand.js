@@ -102,9 +102,7 @@
     tr.innerHTML =
       '<td class="fast-plan__when">' +
       escapeHtml(formatHm(atMin)) +
-      '<span class="fast-plan-expand__offset">+' +
-      offset +
-      " min</span></td><td>" +
+      "</td><td>" +
       title +
       (tipHtml || "") +
       "</td>";

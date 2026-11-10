@@ -54,6 +54,12 @@ WINDOW_SPECS: dict[str, dict] = {
                         "html": "Jantar leve <strong>REWE Arnulfstraße</strong> ou McDonald’s Hbf",
                         "kind": "food",
                     },
+                    {
+                        "at": "20:15",
+                        "durMin": 45,
+                        "html": "Voltar ao B&B Hotel, separar roupa do dia seguinte e dormir; não abrir outro bairro",
+                        "kind": "buffer",
+                    },
                 ],
                 "cutFirst": "Karlsplatz — ir direto jantar + hotel",
                 "rainAlt": "Marienplatz arcadas + compras Hbf",
@@ -73,7 +79,7 @@ WINDOW_SPECS: dict[str, dict] = {
                     {
                         "at": "12:15",
                         "durMin": 15,
-                        "html": "Metro até entrada norte do parque — definir pin no Maps",
+                        "html": "<strong>U3/U6</strong> Odeonsplatz → Universität; sair pela entrada norte e seguir direto para a <strong>Eisbachwelle</strong>",
                         "kind": "transit",
                         "estimate": True,
                     },
@@ -104,8 +110,8 @@ WINDOW_SPECS: dict[str, dict] = {
                     },
                     {
                         "at": "15:50",
-                        "durMin": 25,
-                        "html": "Caminhar para Kaufingerstraße; deixar compras e souvenir no eixo do centro",
+                        "durMin": 70,
+                        "html": "Asamkirche → Kaufingerstraße/Marienplatz; localizar as lojas e encerrar este circuito às 17:00",
                         "kind": "transit",
                         "estimate": True,
                     },
@@ -122,7 +128,7 @@ WINDOW_SPECS: dict[str, dict] = {
                     {
                         "at": "17:00",
                         "durMin": 120,
-                        "html": "Shopping a pé — não cruzar cidade de novo",
+                        "html": "Kaufingerstraße → Neuhauser Straße: escolher no máximo 1–2 lojas e comprar ímã/Lebkuchen só se estiver no caminho",
                         "kind": "must",
                     },
                     {
@@ -132,9 +138,15 @@ WINDOW_SPECS: dict[str, dict] = {
                         "kind": "food",
                     },
                     {
-                        "at": "20:00",
+                        "at": "19:45",
                         "durMin": 60,
-                        "html": "Mala + opcional noite Glockenbach (só se energia)",
+                        "html": "Voltar ao hotel, fechar a mala de Füssen e separar bilhete; Glockenbach/Euro Bar só se ainda houver energia",
+                        "kind": "buffer",
+                    },
+                    {
+                        "at": "20:45",
+                        "durMin": 15,
+                        "html": "Alarme, água e luzes apagadas para o dia de Neuschwanstein",
                         "kind": "buffer",
                     },
                 ],
@@ -338,33 +350,39 @@ WINDOW_SPECS: dict[str, dict] = {
                         "kind": "must",
                     },
                     {
-                        "at": "15:15",
+                        "at": "14:45",
                         "durMin": 60,
                         "html": "<strong>Makartsteg</strong> → margem do Salzach — fotos e caminhada linear",
                         "kind": "must",
                     },
                     {
-                        "at": "16:15",
+                        "at": "15:45",
                         "durMin": 45,
                         "html": "Souvenir compacto: Mozartkugel/Fürst ou ímã na Getreidegasse; sem desvio",
                         "kind": "optional",
                     },
                     {
-                        "at": "17:00",
+                        "at": "16:30",
                         "durMin": 90,
                         "html": "Jantar cedo no centro e voltar ao Lasserhof a pé",
                         "kind": "food",
                     },
                     {
-                        "at": "18:30",
+                        "at": "18:00",
                         "durMin": 90,
                         "html": "Mala, documentos e dormir; não abrir novo eixo turístico",
                         "kind": "must",
                     },
                     {
-                        "at": "20:00",
+                        "at": "19:30",
                         "durMin": 60,
                         "html": "Descanso no hotel e alarme para o RJX das 11:07",
+                        "kind": "buffer",
+                    },
+                    {
+                        "at": "20:30",
+                        "durMin": 30,
+                        "html": "Deixar roupa e documentos prontos; luzes apagadas até 21:00",
                         "kind": "buffer",
                     },
                 ],
@@ -402,8 +420,14 @@ WINDOW_SPECS: dict[str, dict] = {
                     },
                     {
                         "at": "19:15",
-                        "durMin": 105,
-                        "html": "Compras matriz 24 nov / noite a&o bar (opcional)",
+                        "durMin": 60,
+                        "html": "Billa Zipser para água/lanche e volta ao hotel; não criar novo desvio de compras",
+                        "kind": "food",
+                    },
+                    {
+                        "at": "20:15",
+                        "durMin": 45,
+                        "html": "a&o bar apenas como 1 drink opcional; sair cedo e dormir para Schönbrunn",
                         "kind": "optional",
                     },
                 ],
@@ -429,38 +453,38 @@ WINDOW_SPECS: dict[str, dict] = {
                         "kind": "food",
                     },
                     {
-                        "at": "12:45",
+                        "at": "13:00",
                         "durMin": 150,
                         "html": "<strong>Ring exterior</strong> — Stephansdom → Graben → Hofburg/Heldenplatz → Rathaus/Parlament, sem zig-zag",
                         "kind": "must",
                     },
                     {
-                        "at": "15:15",
+                        "at": "15:30",
                         "durMin": 45,
                         "html": "Rathausplatz/Parlament iluminados e fotos; se houver mercado, uma volta curta",
                         "kind": "must",
                     },
                     {
-                        "at": "16:00",
+                        "at": "16:15",
                         "durMin": 30,
                         "html": "Souvenir no próprio eixo: Manner/ímã em Graben-Stephansplatz — cortar se fila",
                         "kind": "optional",
                         "cutFirst": True,
                     },
                     {
-                        "at": "16:30",
+                        "at": "16:45",
                         "durMin": 60,
                         "html": "Hotel → separar mala e documentos para Bratislava",
                         "kind": "buffer",
                     },
                     {
-                        "at": "17:30",
+                        "at": "17:45",
                         "durMin": 90,
                         "html": "Jantar no centro e voltar cedo; Flix só amanhã às 12:35",
                         "kind": "food",
                     },
                     {
-                        "at": "19:00",
+                        "at": "19:15",
                         "durMin": 105,
                         "html": "Hotel: banho, fechar mochila e descanso; sem segundo eixo turístico",
                         "kind": "buffer",
@@ -499,9 +523,15 @@ WINDOW_SPECS: dict[str, dict] = {
                     },
                     {
                         "at": "18:30",
-                        "durMin": 150,
-                        "html": "Volta a pé hotel · Obchodná leve (opcional)",
+                        "durMin": 45,
+                        "html": "Obchodná: caminhada curta e fotos nas fachadas; não subir outro miradouro",
                         "kind": "optional",
+                    },
+                    {
+                        "at": "19:15",
+                        "durMin": 105,
+                        "html": "Voltar ao Downtown Backpackers, banho e descanso; manter a noite no centro",
+                        "kind": "buffer",
                     },
                 ],
                 "cutFirst": "Castle (ficar só Staré Mesto)",
@@ -561,10 +591,16 @@ WINDOW_SPECS: dict[str, dict] = {
                         "kind": "food",
                     },
                     {
-                        "at": "19:00",
+                        "at": "18:45",
                         "durMin": 120,
-                        "html": "Ruin bar — 1 só se cansado",
+                        "html": "<strong>Szimpla Kert</strong>: entrar, ver o pátio e tomar 1 drink; se a fila passar de 20 min, voltar ao hotel",
                         "kind": "must",
+                    },
+                    {
+                        "at": "20:45",
+                        "durMin": 15,
+                        "html": "Caminhar de volta ao hotel; não encaixar segundo bar",
+                        "kind": "buffer",
                     },
                 ],
                 "cutFirst": "Segundo bar",
@@ -627,8 +663,14 @@ WINDOW_SPECS: dict[str, dict] = {
                     },
                     {
                         "at": "15:45",
-                        "durMin": 75,
+                        "durMin": 45,
                         "html": "Voltar ao Panorama Central, banho e descanso antes de arrumar a mala",
+                        "kind": "buffer",
+                    },
+                    {
+                        "at": "16:30",
+                        "durMin": 30,
+                        "html": "Água, banheiro e preparar a mala; estar no hotel às 17:00",
                         "kind": "buffer",
                     },
                 ],
@@ -685,7 +727,7 @@ WINDOW_SPECS: dict[str, dict] = {
                     {
                         "at": "16:00",
                         "durMin": 90,
-                        "html": "Alex + Fernsehturm World Time — só exterior",
+                        "html": "<strong>Alexanderplatz</strong>: Weltzeituhr + base da <strong>Fernsehturm</strong> + Rotes Rathaus — tudo exterior",
                         "kind": "must",
                     },
                     {
@@ -762,7 +804,9 @@ WINDOW_SPECS: dict[str, dict] = {
                     "Tour termina em Mitte → deslocação até <strong>Warschauer Straße</strong> · "
                     "<strong>East Side Gallery</strong> por 30 min · "
                     "<strong>S-Bahn</strong> → <strong>Alexanderplatz</strong> · "
-                    "jantar · <strong>Alexanderplatz à noite</strong> · "
+                    "jantar 19:00–20:15 · <strong>Weltzeituhr</strong> (fotos) · "
+                    "<strong>Fernsehturm</strong> exterior (base) · "
+                    "<strong>Rotes Rathaus</strong> (fachada) · "
                     "opcional <strong>Generator</strong> às 21h"
                 ),
                 "blocks": [
@@ -804,11 +848,37 @@ WINDOW_SPECS: dict[str, dict] = {
                     },
                     {
                         "at": "20:15",
-                        "durMin": 30,
+                        "durMin": 10,
                         "html": (
-                            "<strong>Alexanderplatz à noite</strong> — Fernsehturm exterior, "
-                            "Weltzeituhr e Rotes Rathaus; depois hotel ou "
-                            "<strong>Generator</strong> às 21h se houver reserva"
+                            "Sair do restaurante e ir para o centro da <strong>Alexanderplatz</strong>; "
+                            "ficar junto à <strong>Weltzeituhr</strong> para fotos e orientação"
+                        ),
+                        "kind": "must",
+                    },
+                    {
+                        "at": "20:25",
+                        "durMin": 10,
+                        "html": (
+                            "Caminhar até a base da <strong>Fernsehturm</strong>; fazer fotos da torre e "
+                            "da praça — não entrar sem ingresso/reserva"
+                        ),
+                        "kind": "must",
+                    },
+                    {
+                        "at": "20:35",
+                        "durMin": 20,
+                        "html": (
+                            "Ir a pé até o <strong>Rotes Rathaus</strong> e ver a fachada iluminada; "
+                            "voltar pela praça em direção ao hotel"
+                        ),
+                        "kind": "must",
+                    },
+                    {
+                        "at": "20:55",
+                        "durMin": 5,
+                        "html": (
+                            "Escolha final: <strong>Generator Alexanderplatz</strong> (Otto-Braun-Straße 65) "
+                            "se houver reserva/pub crawl às 21h; sem reserva, voltar ao Premier Inn"
                         ),
                         "kind": "must",
                     },
@@ -968,6 +1038,12 @@ WINDOW_SPECS: dict[str, dict] = {
                         "html": "Jantar perto hotel — centro velho amanhã com guia",
                         "kind": "food",
                     },
+                    {
+                        "at": "17:00",
+                        "durMin": 30,
+                        "html": "Banheiro e decisão: seguir para Wenceslas às 17:30 ou dormir cedo",
+                        "kind": "buffer",
+                    },
                 ],
             },
             "17:30–21:00": {
@@ -1021,6 +1097,12 @@ WINDOW_SPECS: dict[str, dict] = {
                         "durMin": 30,
                         "html": "Sophie's Hostel apenas se estiver no caminho e houver energia; caso contrário, voltar ao Alton e dormir",
                         "kind": "optional",
+                    },
+                    {
+                        "at": "20:30",
+                        "durMin": 30,
+                        "html": "Voltar ao Alton, separar documentos e dormir; não iniciar Vinohrady depois das 20:30",
+                        "kind": "buffer",
                     },
                 ],
                 "cutFirst": "Vinohrady noite",
@@ -1140,12 +1222,18 @@ WINDOW_SPECS: dict[str, dict] = {
                 ],
             },
             "15:00–17:00": {
-                "macro": "Compras buffer na <strong>Rue Neuve</strong> · Tax Free",
+                "macro": "<strong>Mont des Arts</strong> e vista da cidade · depois <strong>Rue Neuve</strong> apenas se alguma loja estiver aberta",
                 "blocks": [
                     {
                         "at": "15:00",
-                        "durMin": 120,
-                        "html": "Resolver apenas o que faltou; confirmar lojas abertas e guardar comprovantes",
+                        "durMin": 60,
+                        "html": "<strong>Mont des Arts</strong>: escadaria, jardim e vista para a torre da Prefeitura; fotos",
+                        "kind": "must",
+                    },
+                    {
+                        "at": "16:00",
+                        "durMin": 60,
+                        "html": "<strong>Rue Neuve</strong>: comprar somente chocolate/speculoos ou resolver Tax Free se as lojas estiverem abertas; domingo é incerto",
                         "kind": "optional",
                         "cutFirst": True,
                     }

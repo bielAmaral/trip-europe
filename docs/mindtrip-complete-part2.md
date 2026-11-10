@@ -71,7 +71,7 @@
 | 09:00-10:30 | Cafe  Memorial do Holocausto -> Brandenburger Tor -> Reichstag (exterior; cupula so com reserva) |
 | 10:30-14:00 | Topografia do Terror ou cupula do Reichstag (conforme reserva/local do tour)  almoco Rewe To Go Friedrichstrasse  deslocaco ao encontro tour 14:30 - U-Bahn Anton-Wilhelm-Amo (ponto na reserva; est. 20-25 min do Mitte) |
 | 14:30-17:30 | Tour Cold War  U-Bahn Anton-Wilhelm-Amo  ~3 h  bilhete AB - 12 paradas (~3h)  1 Detlev-Rohwedder-Haus -> ult. Encerramento Mitte  subhorarios no expandir |
-| 17:30-21:00 | Tour termina em Mitte -> deslocaco ate Warschauer Strasse  East Side Gallery por 30 min  S-Bahn -> Alexanderplatz  jantar  Alexanderplatz a noite  opcional Generator as 21h |
+| 17:30-21:00 | Tour termina em Mitte -> deslocaco ate Warschauer Strasse  East Side Gallery por 30 min  S-Bahn -> Alexanderplatz  jantar 19:00-20:15  Weltzeituhr (fotos)  Fernsehturm exterior (base)  Rotes Rathaus (fachada)  opcional Generator as 21h |
 
 **Transit / transport detail:**
 - Hotel (Alexanderplatz) -> Mitte (manh DIY + encontro tarde): U5 Alexanderplatz -> Brandenburger Tor.
@@ -218,7 +218,7 @@
 | --- | --- |
 | 10:00-13:00 | Grand Place -> Galeries Saint-Hubert -> Manneken Pis/Bourse - circuito central a pe |
 | 13:00-15:00 | Almoco no centro  Mont des Arts opcional |
-| 15:00-17:00 | Compras buffer na Rue Neuve  Tax Free |
+| 15:00-17:00 | Mont des Arts e vista da cidade  depois Rue Neuve apenas se alguma loja estiver aberta |
 | 17:00-21:00 | Mala 100%  jantar leve  dormir cedo para o voo |
 
 **Transit / transport detail:**
